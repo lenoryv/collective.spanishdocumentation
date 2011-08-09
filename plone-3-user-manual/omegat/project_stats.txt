@@ -1,0 +1,30 @@
+Estadísticas del proyecto
+
+Total:
+	Segmentos	2430
+	Palabras	27867
+	Caracteres (sin espacios)	146542
+	Caracteres (con espacios)	170732
+Únicos pendientes:
+	Segmentos	907
+	Palabras	3991
+	Caracteres (sin espacios)	31208
+	Caracteres (con espacios)	32863
+Únicos:
+	Segmentos	1871
+	Palabras	25677
+	Caracteres (sin espacios)	131587
+	Caracteres (con espacios)	154549
+Únicos pendientes:
+	Segmentos	500
+	Palabras	2267
+	Caracteres (sin espacios)	19030
+	Caracteres (con espacios)	19771
+
+Estadísticas por archivo:
+
+Nombre de archivo	Palabras en total	Palabras pendientes	Caracteres en total (sin espacios)	Caracteres pendientes (sin espacios)	Caracteres en total (con espacios)	Caracteres pendientes (con espacios)
+plone-3-user-manual.html	25357	1708	129803	15844	152423	16072
+plone-3-user-manual_archivos/additemmenufolder.html	900	825	5769	5320	6355	5859
+plone-3-user-manual_archivos/advancedstatepanel.html	927	845	6068	5577	6686	6141
+plone-3-user-manual_archivos/profilejohnsmith.html	683	613	4902	4467	5268	4791
