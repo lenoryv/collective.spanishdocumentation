@@ -1,0 +1,1211 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8"><title>Installing Plone — Plone CMS: Open Source Content Management</title><!-- base href="http://plone.org/documentation/manual/installing-plone/" --><link rel="alternate" type="application/rss+xml" href="http://feeds.plone.org/plonenews" title="Plone News"><link rel="alternate" type="application/rss+xml" href="http://feeds.plone.org/plonereleases" title="Plone Releases"><link rel="alternate" type="application/rss+xml" href="http://feeds.plone.org/ploneevents" title="Upcoming Plone Events"><link rel="alternate" type="application/rss+xml" href="http://feeds.plone.org/ploneaddons" title="Latest Plone &amp; Add-on Releases"><link rel="alternate" type="application/rss+xml" href="http://feeds.plone.org/plonetraining" title="Upcoming Plone Training"><link rel="alternate" type="application/rss+xml" href="http://feeds.plone.org/ploneblogs" title="Plone Blogs"><link rel="alternate" type="application/rss+xml" href="http://feeds.plone.org/plone-security" title="Plone Security Advisories"><!--[if IE]><style type="text/css" media="all">@import url(/ie.css);</style><![endif]--><!--[if lte IE 6]><script src="/ie6warn.js" type="text/javascript"></script><![endif]--><script src="installing-plone_archivos/ga.js" type="text/javascript"></script><script type="text/javascript" src="installing-plone_archivos/jquery-cachekey7059.js"></script><script type="text/javascript" src="installing-plone_archivos/popupforms-cachekey4563.js"></script><script type="text/javascript" src="installing-plone_archivos/resourcecioppino.js"></script><style type="text/css">@import url(http://plone.org/portal_css/Sunburst%20Theme/print-cachekey3245.css);</style><style type="text/css">@import url(http://plone.org/portal_css/Sunburst%20Theme/newplone-cachekey7635.css);</style><style type="text/css" media="screen">@import url(http://plone.org/portal_css/Sunburst%20Theme/resourceplone.app.jquerytools.overlays-cachekey5924.css);</style><style type="text/css" media="screen">@import url(http://plone.org/portal_css/Sunburst%20Theme/resourceProducts.PloneSoftwareCenter.stylesheetspsc-cachekey4912.css);</style><style type="text/css" media="all">@import url(http://plone.org/portal_css/Sunburst%20Theme/psc-cachekey1695.css);</style><style type="text/css">@import url(http://plone.org/portal_css/Sunburst%20Theme/resourcecioppino.twothumbs.stylesheetstwothumbs-cachekey0775.css);</style><link rel="kinetic-stylesheet" type="text/css" href="http://plone.org/portal_kss/Sunburst%20Theme/resourcetinymce.ksstinymce-cachekey4684.kss"><link rel="kinetic-stylesheet" type="text/css" href="http://plone.org/portal_kss/Sunburst%20Theme/at-cachekey2728.kss"></head><body class="template-referencemanual-all-pages portaltype-helpcenterreferencemanual section-documentation"><div id="outer-wrapper"><div id="inner-wrapper"><div id="nav"><a id="portal-logo" title="Home" accesskey="1" href="http://plone.org/">
+    <img src="installing-plone_archivos/logo.png" alt="" title="" width="215" height="56"></a><form id="search" name="searchform" action="http://plone.org/search"><input id="search-site" name="SearchableText" title="Search this site…" accesskey="4" class="inputLabel inputLabelActive" size="15" type="text"></form><div id="nav-bar"><div id="user"><a id="login-link" href="http://plone.org/login">Log in</a><a id="user-id" href="http://plone.org/@@personal-preferences"><span id="username"></span></a><div id="login-popup"><span class="loginText">Login to Plone.org</span><form id="login-slide-form" action="https://plone.org/login_form" method="post"><div class="form"><input id="came-from-input" value="" name="came_from" type="hidden"><input name="form.submitted" value="1" type="hidden"><label for="__ac_name">username</label><input id="__ac_name" value="" name="__ac_name" size="15" type="text"><label for="__ac_password">password</label><input id="__ac_password" value="" name="__ac_password" size="15" type="password"><br><a href="http://plone.org/mail_password_form?userid=">Forgot password?</a></div><input value="Let me in!" name="submit" class="context" type="submit"></form><span class="createText"><a href="http://plone.org/@@register">Click here</a> to create an account</span></div></div><ul id="main-nav" class="navigation"><li id="portaltab-index_html" class="plain"><a href="http://plone.org/" title="">Home</a></li><li id="portaltab-products" class="plain"><a href="http://plone.org/products" title="Plone releases and available add-on products for Plone. Make sure you have Plone installed before downloading the add-ons — and make sure you are using add-ons that have been certified for use with your particular version.">Download &amp; Extend</a></li><li id="portaltab-documentation" class="selected"><a href="http://plone.org/documentation" title="The primary source for Plone documentation.">Documentation</a></li><li id="portaltab-contribute" class="plain"><a href="http://plone.org/contribute" title="Contains all developer-related material.">Get Involved</a></li><li id="portaltab-foundation" class="plain"><a href="http://plone.org/foundation" title="The Plone Foundation exists to further the development, marketing, and legal affairs of Plone and the Plone community.">Plone Foundation</a></li><li id="portaltab-support" class="plain"><a href="http://plone.org/support" title="Support and contact details for the Plone project.">Support</a></li><li id="portaltab-providers" class="plain"><a href="http://plone.org/providers" title="">Providers</a></li></ul></div><ul id="sub-nav" class="navigation"><li>
+            <a href="http://plone.org/documentation/manual" class="selected" title="Manuals are larger works of documentation describing particular technologies or concepts in a detailed, structured manner.">Manuals</a>
+        </li>
+        <li>
+            <a href="http://plone.org/documentation/kb" title="Community-contributed tutorials and how-tos.">Knowledge Base</a>
+        </li>
+        <li>
+            <a href="http://plone.org/documentation/faq" title="Frequently Asked Questions.">FAQs</a>
+        </li>
+        <li>
+            <a href="http://plone.org/documentation/error" title="Error reference section.">Error Reference</a>
+        </li>
+        <li>
+            <a href="http://plone.org/documentation/link" title="Links section.">Links</a>
+        </li>
+        <li>
+            <a href="http://plone.org/documentation/glossary" title="Glossary of terms for Plone.">Glossary</a>
+        </li>
+    </ul></div><div id="edit-bar"><div id="action-menu"></div><div id="edit-menu"></div></div><div id="content-wrapper"><div class="grid-row"><div class="grid-cell position-leftmost width-two-thirds"><div id="viewlet-above-content"></div><div id="content">
+            <div>
+
+                <h1>
+                    Installing Plone
+                </h1>
+
+                <p class="discreet visualNoPrint">
+                    <a href="http://plone.org/documentation/manual/installing-plone">« Return to page index</a>
+                </p>
+
+                <p class="documentDescription">The basics of installing Plone on Windows, OS X, Linux, *BSD and nearly every other platform.</p>
+
+                
+    
+        <div class="referenceManualCollation depth-1">
+
+            <h1>
+                1.
+                Installation Quick Guide
+            </h1>
+
+            <p class="documentDescription">How to install Plone on your box, step by step. Short version.</p>
+    
+            <div>
+                
+                    <div><h2><span class="Apple-style-span">Linux/BSD</span></h2>
+
+<h3>Prerequisites</h3>
+
+<p>Before installing Plone on Linux, BSD or other Unix-like operating
+systems, you should make sure that you have the following packages
+installed:</p>
+
+<div>
+
+<ul><li>
+
+<p>gcc, a C compiler</p>
+
+</li><li>
+
+<p>g++, &nbsp;software to extend gcc to compile C++ code</p>
+
+</li><li>
+
+<p>GNU make, a compilation tool</p>
+
+</li><li>
+
+<p>GNU tar, package for creating tar archives</p>
+
+</li><li>
+
+<p>bzip2 and gzip decompression packages</p>
+
+</li></ul></div>
+
+<p>The following packages are also recommended, although they aren't needed to build Plone</p>
+
+<div>
+
+<ul><li>
+
+<p>libssl, a package that allows the use of TSL with your mail server.</p>
+
+</li><li>
+
+<p>readline, a GNU package that increases the ability of applications to edit terminal commands.</p>
+
+</li></ul></div>
+
+<h3>Getting the Plone Installer</h3>
+
+<p>The installer for Linux/BSD/Unix, called the Unified Installer, can be downloaded from&nbsp;<a href="http://plone.org/products" target="_blank">this page</a>&nbsp;of the Plone website.</p>
+
+<ol><li>Click on the <em>Download Plone</em> button and you will be taken to page that lists the various installers for Plone.&nbsp;</li><li>Click on the link for the Unified Installer to begin downloading Plone. &nbsp;</li><li>After
+it has finished downloading, open up a terminal and change directories
+to where the installer file you downloaded is located. &nbsp;</li><li>Extract
+the installer by typing "tar xzf InstallerName ", where InstallerName
+is the name of the Plone Installer you downloaded. &nbsp;</li><li>In your command prompt enter the directory of the folder you just extracted.</li></ol><h3>Configuring your Plone installation</h3>
+
+<p>The first thing you must decide when installing Plone is decide
+whether you would like a ZEO or a standalone installation. You should
+probably use ZEO if you are going to be using Plone for any production.
+However, if you are just testing out Plone or are going to use it for
+development, the standalone option would be best. For a more in-depth
+discussion read&nbsp;<a href="http://plone.org/documentation/manual/installing-plone/installing-on-linux-unix-bsd/to-zeo-or-not-to-zeo" target="_blank">this section</a>. &nbsp;</p>
+
+<p>To initiate the installation type "./install.sh method" where method
+is either "standalone" or "zeo". If you would like to install Plone in
+server mode type "<strong>sudo</strong>&nbsp;./install.sh method" or
+run the installation script as root some other way. A complete list of
+command-line options can be found&nbsp;<a href="http://plone.org/documentation/kb/installing-plone-with-the-unified-installer/command-line-options" target="_blank">here</a>.</p>
+
+<h3>Last steps</h3>
+
+<p>Near the end of the installation, the installer should have printed
+out the default username and password for your Plone installation to
+the terminal. &nbsp;If you have trouble finding them, they are also
+listed inside of a text file called <em>adminPassword.txt</em> (which can be found in the <em>zinstance</em> folder of your Plone installation).</p>
+
+<p>To start Plone:</p>
+
+<ol><li>"cd" to your Plone install directory.</li><li>Enter your zinstance folder.</li><li>Execute "./bin/plonectl start". (The port Plone uses may be adjusted in buildout.cfg and then running "/bin/buildout").</li><li>Browse to your instance by visting <em>http://localhost:8080</em> in your web browser. If you specified another port, use it instead of <em>8080</em>.</li><li>Click
+on "Create a new Plone site" and enter your login information to start
+using Plone. Enter in the requested information and then submit the
+form to finish the creation of your site. You can find your site at
+http://localhost:8080/<em>SiteName</em>, where "SiteName" is the Id of your Plone site.</li></ol><p>To stop the Plone process run "./bin/plonectl stop". &nbsp;Have fun using Plone!</p>
+
+<h2><span class="Apple-style-span">OS X</span></h2>
+
+<p><span class="Apple-style-span">If you want to use Plone on a desktop
+Mac, the OS X binary installer is a good choice. It uses the OS X
+installer and provides a visual controller. However, since it provides
+pre-compiled binaries, it's very hard to add new components that
+require binary builds. If you need to do that, add XCode to your system
+and use the Unified Installer.<br></span></p>
+
+<h2>Windows (2000, 2003, XP, Vista, 7)</h2>
+
+<h3>Getting Plone</h3>
+
+<p>You can download Plone for Windows from&nbsp;<a href="http://plone.org/products" target="_blank">this page</a>.</p>
+
+<ol><li>Click on the&nbsp;<em>Download Plone</em>&nbsp;button.</li><li>Click on the link for the Windows Installer and save it to a memorable location like your Desktop.</li><li>Double-click the installer file to initiate the installation process.</li></ol><h3>The Plone Installation Wizard</h3>
+
+<ol><li>Enter the directory where you would like to install Plone to.
+&nbsp;For most people, the default entry should be fine.(Click "Next"
+after each step to continue)</li><li>Enter in your desired username and password for the administrator account.</li><li>Review the current configuration options.</li><li>During
+the installation a progress bar will show how close the installer is to
+completion. &nbsp;Mark the check boxes to show whether you would like
+to add Plone as a service so that it will automatically run at
+startup.(Note: This can be changed at any time by running
+"bin\instance.exe remove" from your install directory) &nbsp;or if you
+would like to run Plone after exiting the installer.</li></ol><h3>Starting up Plone</h3>
+
+<p>If you decided not to make Plone a service you can start and stop
+your Plone instances by going to your Plone directory in your command
+line and executing:</p>
+
+<pre>bin/instance.exe fg</pre>
+
+<p>or by using the Plone Controller GUI. &nbsp;</p>
+
+<p>The Plone Controller can be found in your menu at Start → All
+Programs → Plone → Plone Controller. &nbsp;It is used to edit Plone's
+settings and to start or stop Plone. If you decide that you want to
+make Plone a service execute:</p>
+
+<pre>bin/instance.exe install</pre>
+
+<p>Likewise, to unistall Plone execute:</p>
+
+<pre>bin/instance.exe remove</pre>
+
+<p>Once you have started an instance of Plone, you can view it by
+visiting http://localhost:8080 in your web browser. If it won't load,
+make sure that your firewall hasn't blocked the TCP port 8080.&nbsp;</p>
+
+<p>Click on "Create a new Plone site" and enter your login information
+to start using Plone. &nbsp;Enter in the requested information and then
+submit the form to finish the creation of your site. &nbsp;You can find
+your site at http://localhost:8080/<em>SiteName</em>, where "SiteName" is the Id of your Plone site. Have fun with Plone!</p></div>
+                
+                
+            </div>
+
+            
+
+        </div>        
+    
+    
+        <div class="referenceManualCollation depth-1">
+
+            <h1>
+                2.
+                Installing on Linux / Unix / BSD
+            </h1>
+
+            <p class="documentDescription">The
+Unified Installer is a source-distribution kit that includes nearly
+everything necessary to build Plone on Linux, OS X, BSD and most Unix
+workalikes</p>
+    
+            
+
+            
+                
+    
+        <div class="referenceManualCollation depth-2">
+
+            <h1>
+                2.1.
+                What is the Unified Installer?
+            </h1>
+
+            <p class="documentDescription">A brief introduction to the installer, the case for using it, its options and recent changes.</p>
+    
+            <div>
+                
+                    <div><p>The Unified Installer is a source
+
+installation kit for installing Python, Zope, Plone and their
+
+dependencies on Unix-like platforms. It has two major components:</p>
+
+<ul><li>The source packages for Python, Zope,
+
+Plone, a couple of system libraries and some Python libraries;</li><li>An installation script that uses the
+
+packages to create a ready-to-run, relatively self-contained,
+
+Python/Zope/Plone install that meets the Plone community's
+
+best-practices standards.</li></ul><p>The
+new Zope/Plone install will use its
+own copy of Python, and the Python installed by the Unified Installer
+will not replace your system's copy of Python. You may optionally use
+your system (or some other) Python, and the Unified Installer will use
+it without modifying it or your site libraries.</p>
+
+<h3>Why the Unified Installer? Why Not System
+
+Packages/Ports?</h3>
+
+<p>On the Plone help lists and channel, the suggestion to "just use the
+
+Unified Installer" often draws one of two reactions:</p>
+
+<blockquote>
+
+<p><em>I prefer to manage the source install
+
+myself, picking all the target directories;</em></p>
+
+</blockquote>
+
+<p>There's nothing wrong with that, though
+
+if you use the Unified Installer's target directories you may find it
+
+easier to get help from the Plone community.</p>
+
+<p>If you still choose to install by hand,
+
+that's fine. You may still find it convenient to download the Unified
+
+Installer in order to get all the packages together, and you may find
+
+it useful to read the UI's install.sh script for ideas on building
+
+particular components.</p>
+
+<blockquote>
+
+<p><em>I prefer to use my platform's
+
+ports/packages mechanism.</em></p>
+
+</blockquote>
+
+<p>The history of platform packages for
+
+Zope and Plone is a troubled one. Platform packages have been of
+
+uneven quality and have used installation trees that make it
+
+difficult for the community to offer help when problems occur. Also,
+
+platform packages have historically been vulnerable to changes in the
+
+system Python. Zope/Plone is very picky about the version of Python
+
+used to run it, and an update of the system Python when some other
+
+item is installed can easily break Zope/Plone. At this point, you may
+
+be thinking that this just means that the packages have poorly
+
+specified dependencies. The Unified Installer was created because
+
+generation after generation of packages did not solve this problem.</p>
+
+<h3>Major Unified Installer Options</h3>
+
+<p>The Unified Installer for Plone has
+
+three major options:</p>
+
+<ul><li>Install as root or normal user;</li><li> Install as a ZEO Cluster, or a
+
+stand-alone Zope;</li><li>Install the full kit, or just a
+
+single running instance.</li></ul><p>Each of these options are described in
+
+a separate section.</p>
+
+<blockquote>
+
+<p><strong>Note:</strong> Prior versions of the Unified
+
+Installer do not have these options</p>
+
+</blockquote>
+
+<h3>Changes for Plone 4</h3>
+
+<ul><li>The installer now includes a <em>develop.cfg</em> configuration
+file, which you may use after the initial installation to configure a
+common development environment. To use it, run buildout with the
+command:<br><pre>bin/buildout -c develop.cfg</pre>
+
+</li><li>The installer now requires that SSL development libraries be
+preinstalled on your system (usually done with openSSL). If it can't
+find them, it halts. If you wish, you may bypass this requirement,
+which will result in an installation that can't use ESMTP for mail.<br></li></ul><h3>Changes for Plone 3.1</h3>
+
+<ul><li>The Unified Installer now uses buildout to configure Plone 
+
+instances, which makes it much easier for you to control add-ons and 
+
+upgrade your Plone installation.</li><li>It's much easier to add 
+
+additional Zope/Plone instances to an existing install base.</li><li>There
+
+ are additional options for:</li>
+
+<ul><li>Controlling the installation target directory;</li><li>Setting a
+
+ user other than "admin" and/or setting a password of your choice;</li><li>Using
+
+ an already installed Python 2.4 (possibly the system copy). virtualenv 
+
+is used to isolate the new installation so that your system Python is 
+
+not touched.</li></ul><li>If libjpeg or libz installation is required, it's done locally to 
+
+the new install. Even in a root-mode install, your system libraries are 
+
+not touched.</li></ul><h3>Changes for Plone 3</h3>
+
+<p>If you've used the Unified Installer
+
+for prior versions of Plone, you'll already know that the options
+
+above are new. There are a few additional changes:</p>
+
+<ul><li>The installation script tries to
+
+determine whether or not you need new builds of the libz and libjpeg.
+
+If you don't, it won't build them.</li><li>The UI now works more easily with
+
+odd-duck platforms like Solaris, where common GNU build tools may be
+
+in uncommon locations.</li><li>This version omits some optional
+
+products (TextIndexNG#, ReportLab) bundled with prior versions.</li><li>This version includes the new Python
+
+easy install kit, though it doesn't use it.</li></ul><p>&nbsp;</p></div>
+                
+                
+            </div>
+
+            
+
+        </div>        
+    
+    
+        <div class="referenceManualCollation depth-2">
+
+            <h1>
+                2.2.
+                Root or User Install?
+            </h1>
+
+            <p class="documentDescription">The cases for and against installation as the root user.</p>
+    
+            <div>
+                
+                    <div><p>The install.sh script for the Unified
+
+Installer may be run as root (typically via sudo) or as a normal
+
+user. Key differences are:
+
+</p><p><br><strong>The root (production) install:</strong></p>
+
+<ul><li>Installs by default to
+
+/usr/local/Plone;</li><li>Creates a "plone" user,
+
+sets this user as owner of the data files, and configures Zope
+
+to run as the effective user "plone".</li><li>Program and configuration files are owned by the root user, and should not be writable by the Zope process. <br></li></ul><p><strong>The normal (non-root) user install:</strong></p>
+
+<ul><li>Installs by default to
+
+$HOME/Plone;</li><li>Is meant to be run by and under the
+
+effective user id of the installing user.</li></ul><h3>Why Choose root or normal?</h3>
+
+<p>Installing as root (or with root
+
+privileges via sudo) may be the best choice for a production installation
+
+of Plone. Since this install runs under the user id of a user created
+
+specifically for this purpose, it should have a more controllable
+
+level of access to resources. It is a generally accepted "best
+
+practice" to run persistent processes (like Zope) as unique
+
+users with limited rights.</p>
+
+<p class="callout">If you install via root, though, be careful not to
+run "sudo bin/buildout" except in offline mode since this would
+immediately run setup downloaded programs. Instead, obtain distribution
+files from validated sources, put them in buildout-cache/download/dist
+and run buildout in offline mode.</p>
+
+<p>Installing as a normal user (perhaps
+
+with your own user identity) may be a better choice for a test or
+
+development instance. It makes it very easy to install and edit
+
+custom products without worrying about user rights or identities.</p>
+
+<p>&nbsp;</p></div>
+                
+                
+            </div>
+
+            
+
+        </div>        
+    
+    
+        <div class="referenceManualCollation depth-2">
+
+            <h1>
+                2.3.
+                To ZEO or Not to Zeo?
+            </h1>
+
+            <p class="documentDescription">The
+Unified Installer will install Zope to either run in a Client/Server or
+stand-alone configuration. Here are the merits of each.</p>
+    
+            <div>
+                
+                    <div><p>The Unified Installer offers two
+
+different strategies for your Zope configuration:
+
+</p><ul><li>A ZEO Client/Server configuration.
+
+ZEO (Zope Enterprise Objects) allows you to have several Zope clients
+
+processes (or separate servers) that share a common object database
+
+server process.</li><li>A stand-alone Zope instance.<br></li></ul><p><strong>The stand-alone Zope instance</strong> is
+
+simpler to understand, integrate and control, and is probably the
+
+best choice for a simple or test environment.</p>
+
+<p><strong>The ZEO Client/Server
+
+configuration</strong>, though, has several advantages for production or
+
+development use:</p>
+
+<ul><li>Better load balancing options. Even
+
+without a load-balancing proxy, running independent client and server
+
+processes can spread the load better on modern multi-core servers.
+
+With a load-balancing proxy, even better results are possible.</li><li>The ability to run scripts against a
+
+live site. You may use "zopectl run" to run scripts on one
+
+of the clients while others serve the site to the Internet.</li><li>Better debugging. You may run one
+
+client in debug mode while the rest run in production mode. You may
+
+then have improved diagnostics for the debug instance. You'll also be
+
+able to use introspection tools like Clouseau and "zopectl
+
+debug" against a live site.</li><li>You may reserve a client for
+
+administrative access (it'll have its own port). Then, if you're
+
+slashdotted before you're ready, you'll be able to make changes via
+
+the administrative client even when your public client slows down.</li></ul><p>&nbsp;</p></div>
+                
+                
+            </div>
+
+            
+
+        </div>        
+    
+    
+        <div class="referenceManualCollation depth-2">
+
+            <h1>
+                2.4.
+                Running the Unified Installer
+            </h1>
+
+            <p class="documentDescription">Preparing to run and running the Unified Installer</p>
+    
+            <div>
+                
+                    <div><h3>Preparations</h3>
+
+<p>Crank up your platform's package manager and make
+
+sure you've got the following installed:</p>
+
+<ul><li>gcc, the GNU Compiler Collection.</li><li>g++, the C++ extensions for gcc.</li><li>GNU make, the fundamental
+
+build-control tool.</li><li>GNU tar. This is the version of tar
+
+on all Linux, BSD and OS X platforms, but not Solaris.</li><li>bzip2 and gzip
+
+decompression packages. gzip is nearly standard; some platforms will require that bzip2 be installed.<br></li></ul><blockquote>
+
+<p>Ideally, you should also have the <em>libssl </em>and <em>readline </em>libraries
+and development headers loaded (usually, the libssl-dev and
+readline-dev packages). These are not required, but add desirable
+functionality. <em>libssl </em>is required to use TLS with your mail
+server, which may be vital if it's not local. See the Unified Installer
+README.txt for details.</p>
+
+</blockquote>
+
+<p>Now, choose a convenient working
+
+directory and unpack the .tar.gz archive (tarball) of the Unified
+
+Installer:</p>
+
+<pre>tar zxf Plone-VERSION-UnifiedInstaller.tar.gz</pre>
+
+<p>Then change into the newly created
+
+directory:</p>
+
+<pre>cd Plone-VERSION-UnifiedInstaller</pre>
+
+<p>("VERSION-" will vary with
+
+release.)</p>
+
+<h3>Running install.sh</h3>
+
+<p>If you've chosen to install with root
+
+privileges, either su to root or precede these commands with sudo.</p>
+
+<p><strong>ZEO Installation:</strong></p>
+
+<pre>./install.sh zeo</pre>
+
+<p><strong><br>Stand-Alone Zope Installation:</strong></p>
+
+<pre>./install.sh standalone</pre>
+
+<p>Then, sit back and watch the progress messages.</p>
+
+<p><strong>If the progress messages don't start,</strong>
+
+it will typically mean that a vital installation tool is missing. Use
+
+your package manager to install the tool, and try again.</p>
+
+<p><strong>If the installation succeeds,</strong> you'll
+
+see a set of instructions for starting your new Zope/Plone install.
+
+Make note of the password for the "admin" user. These
+
+instructions will also be available in README.txt file, and the pass word in "adminPassword.txt", in your new install.</p>
+
+<p><strong>If the installation should fail,</strong> don't
+
+panic. Make note of any error messages or diagnostics and, if you
+
+can't remedy the problem yourself, ask for help in the plone-setup
+
+mailing list or the #plone IRC channel. We'll need precise
+
+information about your platform and all possible diagnostic
+
+information to help. Also, make sure to check the <em>Platform Notes</em>
+
+section of the README.txt file included with the installer to see if there might be a work-around or
+
+special requirement note for your platform.</p>
+
+<blockquote>
+
+<p>The install script creates a detailed log file, install.log, that may help diagnose an installation failure.</p>
+
+</blockquote>
+
+<h3>Checking your installation</h3>
+
+<p>If your installation succeeded, try starting it by following the
+instructions displayed at the end of the install process (or in the
+README.txt file in the install directory). Startup problems are
+uncommon, but do occasionally happen. The most common cause is that
+some other process has already claimed the 8080 port (or one or more of
+the 8100, 8080 and 8081 ports if you're using ZEO). You may wish to
+stop or kill the competing process if it's an old Zope/Plone
+installation. If not, you may reassign the ports used by your Plone
+installation by editing the buildout.cfg file and running bin/buildout
+to reassign ports.</p>
+
+<p>If the start is successful, test your installation by opening a web
+browser and navigating to http://localhost:8080. (If you're testing on
+another machine, substitute your server host name for "localhost".)</p>
+
+<p>You should see a Zope welcome message. A test Plone site should be
+available at http://localhost:8080/Plone, and the Zope Management
+Interface at http://localhost:8080/manage.</p>
+
+<p>If Zope appears to be running, but you cannot connect, check to see if a firewall may be in place and blocking the connection.</p></div>
+                
+                
+            </div>
+
+            
+
+        </div>        
+    
+    
+        <div class="referenceManualCollation depth-2">
+
+            <h1>
+                2.5.
+                Creating New Instances
+            </h1>
+
+            <p class="documentDescription">The Unified Installer may be used to create additional Zope/Plone instances.</p>
+    
+            <div>
+                
+                    <div><p>Once you have used the Unified
+
+Installer to build a complete Plone install, you may wish to
+
+create additional working instances to run other sites (or sets of
+
+sites). The Unified Installer makes it possible to set up new
+
+instances that will use the Python and Zope code base of your main
+
+install.</p>
+
+<p>To install a new instance, first decide
+whether it will be a root or normal-user install. You may use the
+code base of a root-level install for a new root-level instance, or a
+non-root install for a new non-root instance. Also, the new instance
+may be a ZEO or stand-alone
+install, independent of the choice made for the main installation.</p>
+
+<h3>The Commands<br></h3>
+
+<p>Change into the directory containing
+
+the install.sh file of your unpacked Universal Installer.</p>
+
+<p>
+
+Precede the following commands by
+
+"sudo" or by using "su -" to switch to root</p>
+
+<p><strong>For a ZEO cluster instance:</strong></p>
+
+<pre>./install.sh zeo --instance=new_instance_name</pre>
+
+<p><strong>For a stand-alone Zope instance:</strong></p>
+
+<pre>./install.sh standalone --instance=new_instance_name
+</pre>
+
+<p><span class="visualHighlight">new_instance_name</span> should be a
+simple directory name -- not a full pathname. The new directory will be
+created as a new subdirectory of your full installation and will share
+its Python and buildout cache.</p>
+
+<h3>Setting New Ports</h3>
+
+<p>Your new instance isn't ready to run yet, because it's set to use
+the default ports and will conflict with the previous installation.
+Fortunately, that's easy to fix.</p>
+
+<p>Change into the directory containing your new instance and open buildout.cfg with your favorite text editor.</p>
+
+<p>If this is a standalone instance, you'll need to set a new port in just one spot:</p>
+
+<pre>http-address = 8080</pre>
+
+<p>There's a little more work for a ZEO instance. You'll need to change
+two http-address entries (one for each client) and the port for the ZEO
+server, which is set in the line:</p>
+
+<pre>zeo-address = 127.0.0.1:8100</pre>
+
+<p>Change only the port number (8100); leave the IP address alone.</p>
+
+<h3>Build It</h3>
+
+<p>Save your changes and run buildout to update all the parts of the installation:</p>
+
+<pre>bin/buildout
+</pre>
+
+<p>If this is a root install, preface the command with "sudo" or use su to change to root.</p>
+
+<p>You're now ready to run your new instance.</p></div>
+                
+                
+            </div>
+
+            
+
+        </div>        
+    
+    
+        <div class="referenceManualCollation depth-2">
+
+            <h1>
+                2.6.
+                Command-Line Options
+            </h1>
+
+            <p class="documentDescription">Some less commonly used Unified Installer options that may still be useful to you.</p>
+    
+            <div>
+                
+                    <div><p>You may add the following options to your install.sh command line to more finely control your installation:</p>
+
+<dl><dt>--target=pathname</dt>
+
+<dd>Use to specify top-level path for installs. Plone instances and Python will be built inside this directory.
+
+
+
+</dd><dt>--user=user-name</dt>
+
+<dd>In a root install, sets the effective user for running the instance. Default is 'plone'. Ignored for non-root installs.</dd>
+
+
+
+<dt>--with-python=/fullpathtopython2.x</dt>
+
+<dd>If you have an already built Python that's adequate to run Zope/Plone, you may specify it here.<br><a href="http://pypi.python.org/pypi/virtualenv/"><strong>virtualenv</strong></a>
+will be used to create an isolated Python environment for the
+installation. Your system's site library will not be touched. Python
+2.4 is required for Plone 3.x, Python 2.6 for Plone 4.<br>
+Your Python must meet the needs of Plone, and the installer will test
+it for zlib, libssl and xml support before building for it.</dd>
+
+
+
+<dt>--password=InstancePassword</dt>
+
+<dd>If not specified, a random password will be generated.</dd><dt>--without-ssl</dt><dd>SSL
+(usually OpenSSL) development libraries are needed to build a Python
+that will support SSL and TLS. Without it, Plone will be unable to use
+TLS in SMTP. The Unified Installer will ordinarily stop if it can't
+find the SSL headers and libraries. Use this option to tell the
+installer that you know what you're doing, and wish to proceed without
+SSL.</dd><dt>--without-lxml </dt><dd>lxml, a Python wrapper for libxml2
+and libxslt, is not required for Plone 4.1. But it is needed by some
+popular addons like plone.app.theming. Unless you specify this flag,
+the installer will try to build lxml with static libxml2 and libxslt
+libraries. This may not work on all platforms. <br></dd></dl><h3></h3>
+
+<dl><dt>--nobuildout</dt><dd>Skip running bin/buildout. You should know what you're doing. The 
+
+main use for this option is if you want to use the Unified Installer to 
+
+put all the pieces together, then plug in your own buildout.cfg.</dd></dl><p>The
+Unified Installer will try and figure out whether or not you have the
+libz, libjpeg and readline libraries on your system. If you do, great;
+if not, the installer will try to build them in the lib/ subdirectory
+of your installation target and link to them directly. This may not be
+what you want. If not, use the following command-line options to tune
+the behavior.</p>
+
+<p><strong>--libz=auto|yes|no</strong></p>
+
+<p><strong>--libjpeg=auto|yes|no</strong></p>
+
+<p><strong>--readline=auto|yes|no</strong></p>
+
+<dl><dt>auto</dt><dd>to have this program determine whether or not you need the
+
+library installed. If needed, will be installed to $PLONE_HOME. This is the default behavior.<br></dd><dt>yes</dt><dd>to force install to $PLONE_HOME (or $LOCAL_HOME) for static link -- even if a system copy of the library is available.<br></dd>
+
+<dt>no</dt><dd>to force no installation of the library.<br></dd></dl></div>
+                
+                
+            </div>
+
+            
+
+        </div>        
+    
+    
+        <div class="referenceManualCollation depth-2">
+
+            <h1>
+                2.7.
+                Ubuntu / Debian Package Installation
+            </h1>
+
+            <p class="documentDescription">How to install required packages on Debian/Ubuntu style systems.
+
+</p>
+    
+            <div>
+                
+                    <div><p>Before installing you may install the needed system packages by running:</p>
+
+<pre>sudo apt-get install build-essential
+sudo apt-get install libssl-dev
+sudo apt-get install libxml2-dev
+sudo apt-get install libbz2-dev</pre>
+
+<p>It's also very desirable to use system packages for common libraries, rather than to have the installer use its own:</p>
+
+<pre>sudo apt-get install libjpeg62-dev
+sudo apt-get install libreadline5-dev</pre>
+
+<p>And, if you want to enable Word and PDF document indexing:</p>
+
+<pre>sudo apt-get install wv
+sudo apt-get install poppler-utils</pre></div>
+                
+                
+            </div>
+
+            
+
+        </div>        
+    
+    
+        <div class="referenceManualCollation depth-2">
+
+            <h1>
+                2.8.
+                Platform Notes
+            </h1>
+
+            <p class="documentDescription">User-contributed notes on using the Unified Installer on particular platforms</p>
+    
+            <div>
+                
+                    <div><div class="comment">
+
+<h3><a id="1203088324" name="1203088324">
+
+                    Install on Solaris 10 (x86)
+
+                    </a></h3>
+
+<div class="documentByLine">Posted by Michael Bobzin at 
+
+                    Feb 15, 2008 03:12 PM</div>
+
+<div class="commentBody">Hi,<br><br>for getting the installation done on Solaris 10 (x86) I had to <br>change some lines in install.sh</div>
+
+<pre>#!/bin/bash
+...
+#Build Python
+...
+if [ $NEED_LOCAL -eq 1 ]
+then
+ ...
+else
+&nbsp;&nbsp;&nbsp; export LD_LIBRARY_PATH=/usr/local/lib
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ./configure \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --prefix=$PY_HOME \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --with-readline \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --with-zlib \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --disable-tk \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --with-gcc="$GCC" \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --with-cxx="$GPP" 
+fi</pre>
+
+</div>
+
+<div class="comment">
+
+<h3><a id="1207423874" name="1207423874">nstalling on Solaris 10 (SPARC)
+
+                    </a></h3>
+
+<div class="documentByLine">Posted by Joni Barnoff at 
+
+                    Apr 05, 2008 07:31 PM</div>
+
+<pre>LD_LIBRARY_PATH=/usr/local/ssl/lib</pre>
+
+<div class="commentBody"><br>This is needed to include libssl in python build</div>
+
+</div>
+
+<div class="comment">
+
+<h3><a id="1237566081" name="1237566081">Installing on Solaris 10 (SPARC)
+
+                    </a></h3>
+
+<div class="documentByLine">Posted by Jim Leek at 
+
+                    Mar 20, 2009 04:21 PM</div>
+
+<div class="commentBody">The
+
+main issues on Solaris are due to the fact that the installer script
+
+(install.sh) cannot always get the correct paths for the correct
+
+versions of software on Solaris. It also has problems finding the
+
+correct libraries in the Solaris environment. To add to this install.sh
+
+uses the basic Bourne shell (#!/bin/sh), which means that some of the
+
+commands which are part of the Linux Bourne shell and which are not
+
+present in the Solaris Bourne shell just do not work. Notably the -e
+
+(exists) switch is not present in the Solaris Bourne shell:</div>
+
+<pre>if [ -e $INSTALL_LOG ]       # Does not work in Solaris.</pre>
+
+<div class="commentBody"><br>In order to solve this do the following:<br><br>1. The locations of all dependencies need to be located on Solaris:<br>&nbsp;(a) gcc - /usr/local/bin/gcc (gcc-3.4.6 installed from www.sunfreeware.com - default on solaris 10 is /opt/sfw/bin/gcc)<br>&nbsp;(b) g++ - /usr/local/bin/g++ (Installed with gcc-3.4.6 - default on solaris 10 = /opt/sfw/bin/g++)<br>&nbsp;(c) gmake - /opt/sfw/bin/gmake<br>&nbsp;(d) gtar - /usr/sfw/bin/gtar<br>&nbsp;(e) gzip - /usr/bin/gzip<br>&nbsp;(f) bzip2 - /usr/bin/bzip2<br><br>In addition install.sh uses the "whoami" shell command, which on Solaris is in:<br><br>&nbsp;(g) whoami - /usr/ucb/whoami<br><br>2. Ensure the above PATHs are all in the system path:</div>
+
+<pre>PATH=$PATH:/opt/sfw/bin:/usr/sfw/bin:/usr/ucb:/usr/ccs/bin
+export PATH
+</pre>
+
+<div class="commentBody"><br>(If /usr/ccs/bin is not added, the Python compile will fail with "gmake: ar: Command not found".)<br><br>3.
+
+As the -e switch is not present in the Solaris Bourne shell, install.sh
+
+and all other scripts must be changed to bash: #!/usr/bin/bash<br><br>4.
+
+install.sh uses the "which" shell command to locate the software it
+
+needs for the build. To ensure the correct versions of the software
+
+were used (rather than any Solaris defaults), install.sh was modified
+
+to explicitly set the location of each piece of software:</div>
+
+<pre>GCC=/usr/local/bin/gcc
+GPP=/usr/local/bin/g++
+GNU_MAKE=/opt/sfw/bin/gmake
+GNU_TAR=/usr/sfw/bin/gtar
+GUNZIP=/usr/bin/gunzip
+BUNZIP2=/usr/bin/bunzip2</pre>
+
+<div class="commentBody"><br>5. During the Python build, both the "libssl" and "readline" libraries are needed. Add them to the system library path:</div>
+
+<pre>LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/ssl/lib:/opt/sfw/lib
+export LD_LIBRARY_PATH</pre>
+
+<div class="commentBody"><br>For more info see:<br><a href="http://www.eng.ox.ac.uk/Plone/solaris/plone-installation" rel="nofollow">http://www.eng.ox.ac.uk/Plone/solaris/plone-installation</a></div>
+
+</div>
+
+<h3><a id="1220969012" name="1220969012">Solaris 10 x86 
+
+                    </a></h3>
+
+<div class="documentByLine">Posted by Coopertino at 
+
+                    Sep 09, 2008 02:03 PM</div>
+
+<pre>cat /etc/release
+Solaris 10 8/07 s10x_u4wos_12b X86</pre>
+
+<p>&nbsp;The install went smoothly, after the following 2 mods :</p>
+
+<p>intall.sh line 1</p>
+
+<pre>from #! /bin/sh  --&gt; #! /bin/bash</pre>
+
+<p>install.sh line 81</p>
+
+<p>
+
+from GNU_TAR=`which tar`  --&gt; GNU_TAR=`which gtar`</p>
+
+<p>&nbsp;</p></div>
+                
+                
+            </div>
+
+            
+
+        </div>        
+    
+
+            
+
+        </div>        
+    
+    
+        <div class="referenceManualCollation depth-1">
+
+            <h1>
+                3.
+                Installing on Windows
+            </h1>
+
+            <p class="documentDescription">How to get Plone up and running on Windows, not for serious development</p>
+    
+            <div>
+                
+                    <div><p>The
+binary installer for Windows is the option to choose if you want to try
+out Plone on Windows or host a site but not serious development. Should
+you want to do serious development, check&nbsp;<a class="external-link" href="http://plone.org/documentation/kb/using-buildout-on-windows">this document</a>.</p>
+
+<p>Otherwise, continue reading these instructions, taken from the&nbsp;<a class="external-link" href="http://plone.org/documentation/manual/installing-plone/installing-on-windows-old/www.catapultsolutions.net">Catapult Solutions</a>&nbsp;site.</p>
+
+<h2><span class="typeface-js-vector-container"><span class="typeface-js-selected-text">Downloading and Installing&nbsp;</span><span class="typeface-js-selected-text">Plone</span></span></h2>
+
+<ol style="list-style-type: decimal;"><li>Download the installer from this page on plone.org:&nbsp;<a class="external-link" href="http://plone.org/products/plone">http://plone.org/products/plone</a>.</li><li>Save it in a place you can remember, such as your desktop.</li><li>After the download is completed, double-click on the installer file to run it.</li><li>Go through the installation wizard. Never install Plone in the same folder of a previous installation, always use a new one.<br></li><li>Write down the installation location, such as "C:\Program Files\Plone". You'll need this later.</li><li>Write down the Username and Password you enter in the wizard. You'll need this later too.</li><li>Wait while the installer Extracts files and sets up your Plone instance.</li></ol><h2><span class="typeface-js-vector-container"><span class="typeface-js-selected-text">Starting/stopping&nbsp;</span><span class="typeface-js-selected-text">Plone</span></span></h2>
+
+<h3>Using the Controller</h3>
+
+<p>You can access the Plone Windows Controller from the Start button
+â Programs â Plone. You can use the controller to&nbsp;start/stop
+the Plone server (Zope) and check its status.</p>
+
+<h3>Using the command line</h3>
+
+<p>After the installer is finished, open a Command Prompt window (usually in Start &gt; All Programs &gt; Accessories).</p>
+
+<p>Move into your Plone installation directory, which you wrote down earlier. Example: cd "\Program Files\Plone".</p>
+
+<p>To start your Plone instance for the first time, issue this command: "bin\instance.exe fg".</p>
+
+<p>This will start Plone in debug mode. It will display the port number
+that Plone is running on, which is 8080 by default. You will know your
+Plone instance has finished starting and is ready when you see the
+message "INFO Zope Ready to handle requests" in the terminal.</p>
+
+<p>To stop Plone, just use a CTRL-C in you Command Prompt window.</p>
+
+<h2><span class="typeface-js-vector-container"><span class="typeface-js-selected-text">Starting&nbsp;</span><span class="typeface-js-selected-text">Plone&nbsp;</span><span class="typeface-js-selected-text">as&nbsp;</span><span class="typeface-js-selected-text">a&nbsp;</span><span class="typeface-js-selected-text">service</span></span><br></h2>
+
+<p>If you'd like Plone to start as a service when you start your
+computer you'll need to CD into your Plone install directory, then
+issue the following command in your Command Prompt window:
+"bin\instance install". This will install a new service that will show
+up in your Services Management Console. It will be listed as: "Zope
+instance at C:\Program Files\Plone\parts\instance.exe" if you installed
+to "C:\Program Files\Plone".</p>
+
+<p>After the service is installed you can start Plone immediately by
+issuing the following command in your Command Prompt window:
+"bin\instance.exe start", or use the Plone Controller (see above).</p>
+
+<p>If you'd like to remove the service later, just CD into your Plone
+install directory, then issue this command in your Command Prompt
+window: "bin\instance.exe remove".</p>
+
+<h2><span class="typeface-js-vector-container"><span class="typeface-js-selected-text">Accessing&nbsp;</span><span class="typeface-js-selected-text">Plone</span></span></h2>
+
+<p>You may need to tell your firewall to open TCP Port 8080 before you can access Plone's web interface.</p>
+
+<p>Open a browser window and browse to http://localhost:8080/. Click on
+the button with the text "Create a new Plone site" on it. You'll be
+asked for the username and password that you wrote down earlier.</p>
+
+<p>Give your site an Id, like "Plone", and a Title, like "My Plone
+Site". You can also select the site language and some additional
+products for installing. Then click on the "Add Plone Site" button near
+the bottom of the page. It will take a few seconds to create your Plone
+site<br><br>After your site is created you can access it with this URL: <em>http://localhost:8080/Plone</em>, where "Plone" is the Id you gave to your site.</p>
+
+<p>&nbsp;</p></div>
+                
+                
+            </div>
+
+            
+
+        </div>        
+    
+
+
+            </div>
+        </div><div id="viewlet-below-content">
+</div></div><!-- End cell --><div class="grid-cell position-two-thirds width-third"><div id="sidebar"><div id="portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e74656e745f747970650a48656c7043656e7465725265666572656e63654d616e75616c0a706f72746c65745f7068635f61626f7574" class="portletWrapper kssattr-portlethash-706c6f6e652e6c656674636f6c756d6e0a636f6e74656e745f747970650a48656c7043656e7465725265666572656e63654d616e75616c0a706f72746c65745f7068635f61626f7574">
+
+
+  
+    <div>
+
+<dl class="portlet"><dt class="portletHeader">
+		About
+	</dt>
+
+	<dd class="portletItem">
+
+    
+
+    <div id="phcMetadata">
+      	<p><strong>Use with</strong>:
+      	Plone 4, Plone 3<br><strong>Relevant for</strong>:
+      	  Integrators, Customizers
+        
+      	</p>
+
+        
+
+            <img src="installing-plone_archivos/smcmahon.jpeg" alt="" class="portraitPhoto" style="margin: 0pt 1em 0.5em 0pt; float: left;" width="75" height="100"><p>This document was contributed by
+               <a href="http://plone.org/author/smcmahon">Steve McMahon</a>,
+               and last modified
+               257
+               days ago.
+            </p>
+            
+        
+    </div>	
+
+    <p></p>
+	
+    <p>
+    <img src="installing-plone_archivos/speakplone_sm.png" alt="" style="float: left;" width="80" height="28">
+      Visit our 
+      <a href="http://plone.org/support/chat">chat rooms</a> or 
+      <a href="http://plone.org/support/forums">support forums</a> 
+      if you have more specific questions.
+    </p>
+
+    <p>You can also learn how to design, build, and deploy a website in Plone 
+    through one of the numerous 
+    <a href="http://plone.org/events/training">Plone training sessions</a> around the world.
+    </p>
+
+    <p>Report errors, omissions, etc., to the documentation by emailing <a href="mailto:plone-docs@lists.sourceforge.net">plone-docs@lists.sourceforge.net</a></p>
+
+  </dd>
+
+</dl></div>
+  
+
+  
+
+</div></div></div></div><!-- End row --><div class="grid-row"><div class="grid-cell position-leftmost width-full"><div id="footer-portlets"></div></div></div><!-- End footer portlets row --></div><div style="clear: both;">&nbsp;</div></div><!-- end inner-wrapper --><div id="push"></div></div><!-- end outer-wrapper --><div id="footer-wrapper"><div id="footer-gradient"></div><div id="footer"><a id="footer-logo" href="http://plone.org/" title="Plone CMS, the open source content management system"></a><p>The Plone<sup>®</sup> CMS/WCM is © 2000–2010 the Plone Foundation and friends. Site hosted by <a href="http://www.sixfeetup.com/" style="color: white;">Six Feet Up</a>.</p><p>Plone<sup>®</sup> and the Plone logo are registered trademarks of the Plone Foundation. You’re looking good today.</p><div id="sitemap"><!-- <dl>
+				<dt><a href="">Plone for…</a></dt>
+				<dd><a href="">Small/Medium Business </a></dd>
+				<dd><a href="">Enterprise            </a></dd>
+				<dd><a href="">Non-profits           </a></dd>
+				<dd><a href="">Government            </a></dd>
+				<dd><a href="">Education             </a></dd>
+				<dd><a href="">Science               </a></dd>
+				<dd><a href="">Media &amp; Publishing</a></dd>
+			</dl> --><dl><dt><a href="http://plone.org/products">Downloads</a></dt><dd><a href="http://plone.org/download">Get Plone</a></dd><dd><a href="http://plone.org/products?getCategories=themes">Themes</a></dd><dd><a href="http://plone.org/products?getCategories=dev">Development tools</a></dd><dd><a href="http://plone.org/products?getCategories=auth">Authentication</a></dd><dd><a href="http://plone.org/products">…and more.</a></dd></dl><dl><dt><a href="http://plone.org/documentation">Documentation</a></dt><dd><a href="http://plone.org/documentation/faq/">FAQs</a></dd><dd><a href="http://plone.org/documentation/movies/">Tutorial videos</a></dd><dd><a href="http://plone.org/documentation/manual">Manuals</a></dd><dd><a href="http://plone.org/documentation/books">Books</a></dd><!-- <dd><a href="">Knowledge Base</a></dd> --><dd><a href="http://plone.org/documentation/error">Error Reference</a></dd><!-- <dd><a href="">Module documentation</a></dd> --><dd><a href="http://plone.net/sites">Sites using Plone</a></dd></dl><dl><dt><a href="http://dev.plone.org/plone">Developers</a></dt><dd><a href="http://dev.plone.org/plone/roadmap">Roadmap</a></dd><dd><a href="http://dev.plone.org/plone">Report bugs in Plone</a></dd><dd><a href="http://dev.plone.org/plone.org">Report website issues</a></dd><dd><a href="http://dev.plone.org/plone/timeline">Latest changes</a></dd><dd><a href="http://dev.plone.org/plone/browser">Browse source</a></dd><dd><a href="http://dev.plone.org/plone">Contribute to Plone</a></dd><dd><a href="http://planet.plone.org/">Community blogs</a></dd></dl><dl><dt><a href="http://plone.org/foundation">Plone Foundation</a></dt><dd><a href="http://plone.org/foundation/foundation-donations">Donate</a></dd><dd><a href="http://plone.org/foundation/donors">Sponsors</a></dd><dd><a href="http://plone.org/foundation/meetings/minutes">Meeting minutes</a></dd><dd><a href="http://plone.org/team/FoundationBoard">Current board</a></dd><dd><a href="http://plone.org/foundation/members">Foundation members</a></dd><dd><a href="http://plone.org/foundation/membership">Apply for membership</a></dd><dd><a href="http://plone.org/foundation#contact">Contact</a></dd></dl><dl><dt><a href="http://plone.org/support">Support</a></dt><dd><a href="http://plone.net/providers">Commercial services</a></dd><dd><a href="http://plone.org/support/chat">Chat room</a></dd><dd><a href="http://plone.org/support/forums">Forums</a></dd><dd><a href="http://plone.org/support/for">Sector-specific forums</a></dd><dd><a href="http://plone.org/support/region">Region-specific forums</a></dd><dd><a href="http://plone.org/support/local-user-groups">Local user groups</a></dd><dd><a href="http://plone.org/events/training">Training</a></dd></dl></div></div></div><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1907133-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script></body></html>

@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx11.dtd">
+<tmx version="1.1">
+  <header
+    creationtool="OmegaT"
+    creationtoolversion="2.0.5_4"
+    segtype="sentence"
+    o-tmf="OmegaT TMX"
+    adminlang="EN-US"
+    srclang="EN-US"
+    datatype="plaintext"
+  >
+  </header>
+  <body>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Installing Plone — Plone CMS: Open Source Content Management</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Instalación de Plone — Plone CMS: Sistema de Gestión de Contenidos de Código Abierto</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Installing Plone</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Instalación de Plone</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The basics of installing Plone on Windows, OS X, Linux, *BSD and nearly every other platform.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Información básica para la instalación de Plone en Windows, OS X, Linux, BSD (distribución de software Berkeley) y prácticamente cualquier otra plataforma. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Installation Quick Guide</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Guía rápida de Instalación</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>How to install Plone on your box, step by step.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Como instalar Plone, paso a paso.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Short version.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Versión corta</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Prerequisites</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Requisitos previos</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Before installing Plone on Linux, BSD or other Unix-like operating systems, you should make sure that you have the following packages installed:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Antes de instalar Plone en Linux, BSD, o cualquier otro sistema operativo basado en Unix, debería asegurarse que tiene los siguientes paquetes instalados:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>gcc, a C compiler</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Compilador gcc, a C</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>g++,  software to extend gcc to compile C++ code</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Software g++, extensión de gcc para compilar código C++</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>GNU make, a compilation tool</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>GNU make, una herramienta de compilación</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>GNU tar, package for creating tar archives</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>GNU tar, paquete para crear archivos tar</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>bzip2 and gzip decompression packages</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Paquetes para descomprimir: bzip2 y gzip </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The following packages are also recommended, although they aren't needed to build Plone</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Los siguientes paquetes también son recomendados, pero no son necesarios para construir Plone</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>libssl, a package that allows the use of TSL with your mail server.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>libssl, le permite usar TSL como su servidor de correo electrónico.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>readline, a GNU package that increases the ability of applications to edit terminal commands.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>readline, un paquete GNU que incrementa la habilidad de las aplicaciones para editar los comandos de Terminal.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Getting the Plone Installer</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Obtener el instalador de Plone</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The installer for Linux/BSD/Unix, called the Unified Installer, can be downloaded from &lt;a0&gt;this page&lt;/a0&gt; of the Plone website.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El instalador para Linux/BSD/Unix, denominado Unified Installer (Instalador Unificado), se puede descargar de &lt;a0&gt;esta página&lt;/a0&gt; en el sitio web de Plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Click on the &lt;e0&gt;Download Plone&lt;/e0&gt; button and you will be taken to page that lists the various installers for Plone.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Haga clic en &lt;e0&gt;Download Plone&lt;/e0&gt; (descargar Plone), y este le llevará a la página que contiene los distintos instaladores de Plone .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Click on the link for the Unified Installer to begin downloading Plone.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Haga clic en el enlace Unified Installer para comenzar a descargar Plone. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>After it has finished downloading, open up a terminal and change directories to where the installer file you downloaded is located.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Después que la descarga haya finalizado, abra la Terminal y cambie los directorios donde el archivo del instalador que usted descargó está localizado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Extract the installer by typing âtar xzf InstallerNameâ, where InstallerName is the name of the Plone Installer you downloaded.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Descomprima el instalador escribiendo  âtar xzf InstallerNameâ, donde InstallerName es el nombre del instalador de Plone que usted descargó.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In your command prompt enter the directory of the folder you just extracted.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>En su Terminal de comandos introduzca el directorio de la carpeta que usted acaba de extraer.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Configuring your Plone installation</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Configurando su Instalación Plone</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The first thing you must decide when installing Plone is decide whether you would like a ZEO or a standalone installation.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Lo primero que debe decidir al momento de instalar Plone es si quiere una instalación ZEO o una instalación autónoma.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You should probably use ZEO if you are going to be using Plone for any production.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Probablemente debería escoger ZEO si va a usar Plone para cualquier producción.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, if you are just testing out Plone or are going to use it for development, the standalone option would be best.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Sin embargo, si simplemente está probando Plone o lo va a usar para formación, la opción autónoma se adecuaría mejor.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For a more in-depth discussion read &lt;a0&gt;this section&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Para un discusión más profunda lea &lt;a0&gt;esta sección&lt;/a0&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To initiate the installation type â./install.sh methodâ where method is either âstandaloneâ or âzeoâ.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Para comenzar la instalación escriba â./install.sh methodâ donde method es âstandaloneâ (autónoma) o âzeoâ.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you would like to install Plone in server mode type â&lt;s0&gt;sudo&lt;/s0&gt; ./install.sh methodâ or run the installation script as root some other way.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si desea instalar Plone en modo servidor escriba â&lt;s0&gt;sudo&lt;/s0&gt; ./install.sh methodâ o ejecute el script de instalación como root de alguna otra manera.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A complete list of command-line options can be found &lt;a1&gt;here&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>una lista completa de opciones de líneas de comandos se puede encontrar &lt;a1&gt;aquí&lt;/a1&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Last steps</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Últimos pasos</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Near the end of the installation, the installer should have printed out the default username and password for your Plone installation to the terminal.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Cerca del final de la instalación, el instalador debió haber mostrado su nombre de usuario y contraseña para su instalación Plone en la Terminal.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg> If you have trouble finding them, they are also listed inside of a text file called &lt;e0&gt;adminPassword.txt&lt;/e0&gt; (which can be found in the &lt;e1&gt;zinstance&lt;/e1&gt; folder of your Plone installation).</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si tiene problemas encontrándolos, estos están también listados en un archivo de texto llamado &lt;e0&gt;adminPassword.txt&lt;/e0&gt; (el cual se puede encontrar en la carpeta &lt;e1&gt;zinstance&lt;/e1&gt; de instalación Plone).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To start Plone:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Para iniciar Plone:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&quot;cd&quot; to your Plone install directory.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Haga un &quot;cd&quot; al directorio de su instalación Plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Enter your zinstance folder.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Entre en su carpeta zinstance.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Execute â./bin/plonectl startâ.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Ejecute â./bin/plonectl startâ.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(The port Plone uses may be adjusted in buildout.cfg and then running &quot;/bin/buildout&quot;).</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>(El puerto que usa Plone se puede establecer en buildout.cfg para luego ejecutar &quot;/bin/buildout&quot;).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Browse to your instance by visting &lt;e0&gt;http://localhost:8080&lt;/e0&gt; in your web browser.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Navegue a su instancia visitando &lt;e0&gt;http://localhost:8080&lt;/e0&gt; en su navegador web.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you specified another port, use it instead of &lt;e1&gt;8080&lt;/e1&gt;.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si usted estableció otro puerto, úselo en vez del &lt;e1&gt;8080&lt;/e1&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Click on âCreate a new Plone siteâ and enter your login information to start using Plone.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Haga clic en âCreate a new Plone siteâ (Crear un nuevo sitio Plone) e introduzca su información de inicio de sesión para comenzar a usar Plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Enter in the requested information and then submit the form to finish the creation of your site.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Introduzca la información requerida y luego envíe el formulario para finalizar la creación de su sitio.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can find your site at http://localhost:8080/&lt;e0&gt;SiteName&lt;/e0&gt;, where &quot;SiteName&quot; is the Id of your Plone site.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Usted puede encontrar su sitio en http://localhost:8080/&lt;e0&gt;SiteName&lt;/e0&gt;, donde &quot;SiteName&quot; es la identificación de su sitio Plone. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To stop the Plone process run â./bin/plonectl stopâ.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Para detener el proceso Plone ejecute â./bin/plonectl stopâ.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg> Have fun using Plone!</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>¡Diviertase usando Plone!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you want to use Plone on a desktop Mac, the OS X binary installer is a good choice.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si usted quiere usar Plone en un escritorio Mac, el instalador binario OS X es una buena opción.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It uses the OS X installer and provides a visual controller.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Usa el instalador para OS X y contiene un controlador visual.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, since it provides pre-compiled binaries, it's very hard to add new components that require binary builds.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Sin embargo, ya que provee binarios precompilados, es muy dificil agregar nuevos componentes que requieran construcciones binarias.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you need to do that, add XCode to your system and use the Unified Installer.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si usted necesita hacer eso, agregue XCode a su sistema y use el instalador Unificado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Getting Plone</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Obtener Plone</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can download Plone for Windows from &lt;a0&gt;this page&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Puede descargar Plone para Windows de &lt;a0&gt;esta página&lt;/a0&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Click on the &lt;e0&gt;Download Plone&lt;/e0&gt; button.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Haga clic en el botón &lt;e0&gt;Download Plone&lt;/e0&gt; (Descargar Plone).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Click on the link for the Windows Installer and save it to a memorable location like your Desktop.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Haga clic en el enlace para el instalador de Windows y guárdelo en locación que recuerde como su Escritorio.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Double-click the installer file to initiate the installation process.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Haga doble-clic en el instalador para iniciar el proceso de instalación.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The Plone Installation Wizard</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El Asistente de instalación de Plone</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Enter the directory where you would like to install Plone to.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Introduzca el directorio donde le gustaría instalar Plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg> For most people, the default entry should be fine.(Click &quot;Next&quot; after each step to continue)</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>La mayoría de personas están de acuerdo con la ubicación predeterminada. (Haga clic en &quot;Next&quot; (Siguiente) al finalizar cada paso para continuar)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Enter in your desired username and password for the administrator account.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Introduzca el nombre de usuario y contraseña que desee para la cuenta del administrador. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Review the current configuration options.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Revise las opciones de configuración actual.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>During the installation a progress bar will show how close the installer is to completion.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Durante el proceso de instalación una barra mostrará que tan cerca está la instalación de completarse. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg> Mark the check boxes to show whether you would like to add Plone as a service so that it will automatically run at startup.(Note: This can be changed at any time by running âbin\instance.exe removeâ from your install directory)  or if you would like to run Plone after exiting the installer.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg> Marque las casillas de confirmación para determinar si usted quiere agregar Plone como un servicio para que se inicie automáticamente con el inicio de Windows. (Nota: esto se puede cambiar en cualquier momento ejecutando âbin\instance.exe removeâ en su directorio de instalación) o si desea ejecutar Plone después de terminar la instalación.  </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Starting up Plone</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>iniciando Plone</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you decided not to make Plone a service you can start and stop your Plone instances by going to your Plone directory in your command line and executing:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si usted decidió no hacer de Plone un servicio, usted lo puede iniciar y detener a través del directorio de Plone en su línea de comandos y ejecutar:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>or by using the Plone Controller GUI.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>o mediante el uso del Controlador GUI (interfaz gráfica de usuario) de Plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The Plone Controller can be found in your menu at Start â All Programs â Plone â Plone Controller.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El Controlador de Plone se puede encontrar en su menú de Inicio â Todos los programas â Plone â Plone Controller.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg> It is used to edit Plone's settings and to start or stop Plone.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Se usa para modificar la configuración de Plone, así como para iniciarlo o detenerlo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you decide that you want to make Plone a service execute:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si usted decide hacer de Plone un servicio ejecute:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Likewise, to unistall Plone execute:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Del mismo modo, para desinstalar ejecute: </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Once you have started an instance of Plone, you can view it by visiting http://localhost:8080 in your web browser.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Una vez que usted haya iniciado una instancia de Plone, la puede ver visitando http://localhost:8080 en su navegador web.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If it won't load, make sure that your firewall hasn't blocked the TCP port 8080.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si no se carga, asegúrese de que su Firewall no ha bloqueado el puerto TCP 8080.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg> Enter in the requested information and then submit the form to finish the creation of your site.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Ingrese la información solicitada y luego envíe el formulario para finalizar la creación de su sitio.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg> You can find your site at http://localhost:8080/&lt;e0&gt;SiteName&lt;/e0&gt;, where &quot;SiteName&quot; is the Id of your Plone site.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Puede encontrar su sitio en http://localhost:8080/&lt;e0&gt;SiteName&lt;/e0&gt;, donde &quot;SiteName&quot; es la identificación de su sitio Plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Have fun with Plone!</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>¡Diviertase con Plone!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Installing on Linux / Unix / BSD</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Instalando en Linux / Unix / BSD</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The Unified Installer is a source-distribution kit that includes nearly everything necessary to build Plone on Linux, OS X, BSD and most Unix workalikes</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El instalador Unificado en un conjunto código fuente-distribución que incluye prácticamente todo lo necesario para construir Plone en Linux, OS X, BSD y la mayoría de sistemas Unix.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>What is the Unified Installer?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>¿Qué es el instalador Unificado?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A brief introduction to the installer, the case for using it, its options and recent changes.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Breve introducción al instalador, el caso para utilizarlo, sus opciones y cambios recientes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The Unified Installer is a source installation kit for installing Python, Zope, Plone and their dependencies on Unix-like platforms.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El instalador unificado es una compilación desde el código fuente para ofrecer Python, Zope, Plone y sus dependencias para plataformas de tipo Unix.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It has two major components:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Posee dos componentes principales:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The source packages for Python, Zope, Plone, a couple of system libraries and some Python libraries;</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Los paquetes de código fuente para Python, Zope, Plone, un par de librerías de sistema y unas librerías de Python;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An installation script that uses the packages to create a ready-to-run, relatively self-contained, Python/Zope/Plone install that meets the Plone community's best-practices standards.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Un script de instalación que usa paquetes para crear una instalación lista-para-usarse, relativamente autocontrolada, de Python/Zope/Plone que cumple con los estándares de prácticas recomendadas en la comunidad Plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The new Zope/Plone install will use its own copy of Python, and the Python installed by the Unified Installer will not replace your system's copy of Python.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>La nueva instalación Zope/Plone usará, luego de terminada la instalación, su propia copia de Python que no remplazará su copia de Python en el sistema.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You may optionally use your system (or some other) Python, and the Unified Installer will use it without modifying it or your site libraries.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si lo desea, puede usar el Python de su sistema (o algún otro), y el instalador Unificado lo usará sin tener que modificarlo en las librerías de su sitio.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Why the Unified Installer?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>¿Por qué el instalador Unificado?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Why Not System Packages/Ports?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>¿Por qué no un sistema de Paquetes/Puertos?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>On the Plone help lists and channel, the suggestion to &quot;just use the Unified Installer&quot; often draws one of two reactions:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>En las listas de ayuda y canales IRC de Plone, la sugerencia &quot;simplemente use el instalador Unificado&quot;, generalmente resulta en una de dos reacciones:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>I prefer to manage the source install myself, picking all the target directories;</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Yo prefiero controlar la instalación de código fuente por mí mismo, y escoger todos los directorios de destinos;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There's nothing wrong with that, though if you use the Unified Installer's target directories you may find it easier to get help from the Plone community.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>No hay nada malo en eso, sin embargo, si usted utiliza los directorios destinos del instalador Unificado podrá ver que le facilitará obtener ayuda de la comunidad de Plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you still choose to install by hand, that's fine.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si aún así elige instalarlos manualmente, está bien.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You may still find it convenient to download the Unified Installer in order to get all the packages together, and you may find it useful to read the UI's install.sh script for ideas on building particular components.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Usted todavía puede encontrar conveniente descargar el instalador Unificado con el fin de obtener todos los paquetes juntos, y puede que le resulte útil leer el escrito de la interfaz de usuario install.sh para ideas sobre la construcción de componente particulares.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>I prefer to use my platform's ports/packages mechanism.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Yo prefiero usar mi mecanismo de plataformas de puertos/paquetes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The history of platform packages for Zope and Plone is a troubled one.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>La historia de paquetes de plataforma para Zope y Plone es una problemática.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Platform packages have been of uneven quality and have used installation trees that make it difficult for the community to offer help when problems occur.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Paquetes de plataforma han sido de calidad desigual y han utilizado árboles de instalación que dificultan la ayuda que pueda ofrecer la comunidad cuando los problemas se presentan.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Also, platform packages have historically been vulnerable to changes in the system Python.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Igualmente, p</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

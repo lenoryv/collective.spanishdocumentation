@@ -1,0 +1,2856 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header
+    creationtool="OmegaT"
+    creationtoolversion="2.0.5_4"
+    segtype="sentence"
+    o-tmf="OmegaT TMX"
+    adminlang="EN-US"
+    srclang="EN-US"
+    datatype="plaintext"
+  >
+  </header>
+  <body>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Installing Plone — Plone CMS: Open Source Content Management</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Instalación de Plone — Plone CMS: Sistema de Gestión de Contenidos de Código Abierto</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Installing Plone</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Instalación de Plone</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The basics of installing Plone on Windows, OS X, Linux, *BSD and nearly every other platform.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Información básica para la instalación de Plone en Windows, OS X, Linux, BSD (distribución de software Berkeley) y prácticamente cualquier otra plataforma. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Installation Quick Guide</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Guía rápida de Instalación</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>How to install Plone on your box, step by step.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Como instalar Plone, paso a paso.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Short version.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Versión corta</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Prerequisites</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Requisitos previos</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Before installing Plone on Linux, BSD or other Unix-like operating systems, you should make sure that you have the following packages installed:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Antes de instalar Plone en Linux, BSD, o cualquier otro sistema operativo basado en Unix, debería asegurarse que tiene los siguientes paquetes instalados:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>gcc, a C compiler</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Compilador gcc, a C</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>g++,  software to extend gcc to compile C++ code</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Software g++, extensión de gcc para compilar código C++</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>GNU make, a compilation tool</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>GNU make, una herramienta de compilación</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>GNU tar, package for creating tar archives</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>GNU tar, paquete para crear archivos tar</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>bzip2 and gzip decompression packages</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Paquetes para descomprimir: bzip2 y gzip </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The following packages are also recommended, although they aren't needed to build Plone</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Los siguientes paquetes también son recomendados, pero no son necesarios para construir Plone</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>libssl, a package that allows the use of TSL with your mail server.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>libssl, le permite usar TSL como su servidor de correo electrónico.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>readline, a GNU package that increases the ability of applications to edit terminal commands.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>readline, un paquete GNU que incrementa la capacidad de las aplicaciones para editar los comandos de Terminal.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Getting the Plone Installer</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Obtener el instalador de Plone</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The installer for Linux/BSD/Unix, called the Unified Installer, can be downloaded from <bpt i='0' x='0'>&lt;a0&gt;</bpt>this page<ept i='0'>&lt;/a0&gt;</ept> of the Plone website.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>El instalador para Linux/BSD/Unix, denominado Unified Installer (Instalador Unificado), se puede descargar de <bpt i='0' x='0'>&lt;a0&gt;</bpt>esta página<ept i='0'>&lt;/a0&gt;</ept> en el sitio web de Plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Click on the <bpt i='0' x='0'>&lt;e0&gt;</bpt>Download Plone<ept i='0'>&lt;/e0&gt;</ept> button and you will be taken to page that lists the various installers for Plone.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Haga clic en <bpt i='0' x='0'>&lt;e0&gt;</bpt>Download Plone<ept i='0'>&lt;/e0&gt;</ept> (descargar Plone), y este le llevará a la página que contiene los distintos instaladores de Plone .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Click on the link for the Unified Installer to begin downloading Plone.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Haga clic en el enlace Unified Installer para comenzar la descarga de Plone. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>After it has finished downloading, open up a terminal and change directories to where the installer file you downloaded is located.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Después que la descarga haya finalizado, abra la Terminal y cambie los directorios donde el archivo del instalador que usted descargó está localizado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Extract the installer by typing <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>tar xzf InstallerName <bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>, where InstallerName is the name of the Plone Installer you downloaded.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Descomprima el instalador escribiendo <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>tar xzf InstallerName <bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>, donde InstallerName es el nombre del instalador de Plone que usted descargó.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>In your command prompt enter the directory of the folder you just extracted.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>En su Terminal de comandos introduzca el directorio de la carpeta que usted acaba de extraer.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Configuring your Plone installation</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Configurando su Instalación Plone</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The first thing you must decide when installing Plone is decide whether you would like a ZEO or a standalone installation.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Lo primero que debe decidir al momento de instalar Plone es si quiere una instalación ZEO o una instalación autónoma.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You should probably use ZEO if you are going to be using Plone for any production.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Probablemente debería escoger ZEO si va a usar Plone para cualquier producción.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>However, if you are just testing out Plone or are going to use it for development, the standalone option would be best.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Sin embargo, si simplemente está probando Plone o lo va a usar para formación, la opción autónoma se adecuaría mejor.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>For a more in-depth discussion read <bpt i='0' x='0'>&lt;a0&gt;</bpt>this section<ept i='0'>&lt;/a0&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Para un discusión más profunda de este tema lea <bpt i='0' x='0'>&lt;a0&gt;</bpt>esta sección<ept i='0'>&lt;/a0&gt;</ept>.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>To initiate the installation type <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>./install.sh method<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> where method is either <bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>standalone<bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept> or <bpt i='4' x='4'>&lt;s4&gt;</bpt>&quot;<ept i='4'>&lt;/s4&gt;</ept>zeo<bpt i='5' x='5'>&lt;s5&gt;</bpt>&quot;<ept i='5'>&lt;/s5&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Para comenzar la instalación escriba <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>./install.sh metho<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> donde method es <bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>standalone<bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept> (autónoma) o <bpt i='4' x='4'>&lt;s4&gt;</bpt>&quot;<ept i='4'>&lt;/s4&gt;</ept>zeo<bpt i='5' x='5'>&lt;s5&gt;</bpt>&quot;<ept i='5'>&lt;/s5&gt;</ept>.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If you would like to install Plone in server mode type <bpt i='6' x='6'>&lt;s6&gt;</bpt>&quot;<ept i='6'>&lt;/s6&gt;</ept><bpt i='7' x='7'>&lt;s7&gt;</bpt>sudo<ept i='7'>&lt;/s7&gt;</ept> ./install.sh method<bpt i='8' x='8'>&lt;s8&gt;</bpt>&quot;<ept i='8'>&lt;/s8&gt;</ept> or run the installation script as root some other way.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Si desea instalar Plone en modo servidor escriba <bpt i='6' x='6'>&lt;s6&gt;</bpt>&quot;<ept i='6'>&lt;/s6&gt;</ept><bpt i='7' x='7'>&lt;s7&gt;</bpt>sudo<ept i='7'>&lt;/s7&gt;</ept> ./install.sh method<bpt i='8' x='8'>&lt;s8&gt;</bpt>&quot;<ept i='8'>&lt;/s8&gt;</ept> o ejecute el script de instalación como root de alguna otra manera.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>A complete list of command-line options can be found <bpt i='9' x='9'>&lt;a9&gt;</bpt>here<ept i='9'>&lt;/a9&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Una lista completa de opciones de líneas de comando la puede encontrar <bpt i='9' x='9'>&lt;a9&gt;</bpt>aquí<ept i='9'>&lt;/a9&gt;</ept>.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Last steps</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Últimos pasos</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Near the end of the installation, the installer should have printed out the default username and password for your Plone installation to the terminal.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Cercano del final de la instalación, el instalador debió haber mostrado su nombre de usuario y contraseña para su instalación Plone en la Terminal.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg> If you have trouble finding them, they are also listed inside of a text file called <bpt i='0' x='0'>&lt;e0&gt;</bpt>adminPassword.txt<ept i='0'>&lt;/e0&gt;</ept> (which can be found in the <bpt i='1' x='1'>&lt;e1&gt;</bpt>zinstance<ept i='1'>&lt;/e1&gt;</ept> folder of your Plone installation).</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Si tiene problemas encontrándolos, estos están también listados en un archivo de texto llamado <bpt i='0' x='0'>&lt;e0&gt;</bpt>adminPassword.txt<ept i='0'>&lt;/e0&gt;</ept> (el cual se puede encontrar en la carpeta <bpt i='1' x='1'>&lt;e1&gt;</bpt>zinstance<ept i='1'>&lt;/e1&gt;</ept> de la instalación de Plone).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>To start Plone:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Para iniciar Plone:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>cd<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> to your Plone install directory.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Haga un <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>cd<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> al directorio de su instalación Plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Enter your zinstance folder.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Entre en su carpeta zinstance.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Execute <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>./bin/plonectl start<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Ejecute <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>./bin/plonectl start<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>(The port Plone uses may be adjusted in buildout.cfg and then running <bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>/bin/buildout<bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept>).</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>(El puerto que usa Plone se puede ajustar en buildout.cfg para luego ejecutar <bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>/bin/buildout<bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept>).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Browse to your instance by visting <bpt i='0' x='0'>&lt;e0&gt;</bpt>http://localhost:8080<ept i='0'>&lt;/e0&gt;</ept> in your web browser.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Navegue a su instancia visitando <bpt i='0' x='0'>&lt;e0&gt;</bpt>http://localhost:8080<ept i='0'>&lt;/e0&gt;</ept> en su navegador web.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If you specified another port, use it instead of <bpt i='1' x='1'>&lt;e1&gt;</bpt>8080<ept i='1'>&lt;/e1&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Si usted estableció otro puerto, use ese en vez del <bpt i='1' x='1'>&lt;e1&gt;</bpt>8080<ept i='1'>&lt;/e1&gt;</ept>.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Click on <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>Create a new Plone site<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> and enter your login information to start using Plone.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Haga clic en <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>Create a new Plone site<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> (Crear un nuevo sitio Plone) e introduzca su información de inicio de sesión para comenzar a usar Plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Enter in the requested information and then submit the form to finish the creation of your site.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Introduzca la información requerida y luego envíe el formulario para finalizar la creación de su sitio.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You can find your site at http://localhost:8080/<bpt i='2' x='2'>&lt;e2&gt;</bpt>SiteName<ept i='2'>&lt;/e2&gt;</ept>, where <bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept>SiteName<bpt i='4' x='4'>&lt;s4&gt;</bpt>&quot;<ept i='4'>&lt;/s4&gt;</ept> is the Id of your Plone site.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Usted puede encontrar su sitio en http://localhost:8080/<bpt i='2' x='2'>&lt;e2&gt;</bpt>SiteName<ept i='2'>&lt;/e2&gt;</ept>, donde <bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept>SiteName<bpt i='4' x='4'>&lt;s4&gt;</bpt>&quot;<ept i='4'>&lt;/s4&gt;</ept> es el identificador de su sitio Plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>To stop the Plone process run <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>./bin/plonectl stop<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Para detener el proceso Plone ejecute <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>./bin/plonectl stop<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg> Have fun using Plone!</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>¡Diviértase usando Plone!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If you want to use Plone on a desktop Mac, the OS X binary installer is a good choice.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Si usted quiere usar Plone en un escritorio Mac, el instalador binario OS X es una buena opción.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>It uses the OS X installer and provides a visual controller.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Este proporciona el instalador para OS X y contiene un controlador visual.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>However, since it provides pre-compiled binaries, it's very hard to add new components that require binary builds.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Sin embargo, ya que provee binarios pre-compilados, es muy difícil agregar nuevos componentes que requieran construcciones binarias.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If you need to do that, add XCode to your system and use the Unified Installer.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Si usted tiene la necesidad realizar esa acción, pues entonces agregue XCode a su sistema y use el instalador Unificado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Windows (2000, 2003, XP, Vista, 7)</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>MS Windows (2000, 2003, XP, Vista, 7)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Getting Plone</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Obtener Plone</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You can download Plone for Windows from <bpt i='0' x='0'>&lt;a0&gt;</bpt>this page<ept i='0'>&lt;/a0&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Puede descargar Plone para Windows de <bpt i='0' x='0'>&lt;a0&gt;</bpt>esta página<ept i='0'>&lt;/a0&gt;</ept>.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Click on the <bpt i='0' x='0'>&lt;e0&gt;</bpt>Download Plone<ept i='0'>&lt;/e0&gt;</ept> button.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Haga clic en el botón <bpt i='0' x='0'>&lt;e0&gt;</bpt>Download Plone<ept i='0'>&lt;/e0&gt;</ept> (Descargar Plone).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Click on the link for the Windows Installer and save it to a memorable location like your Desktop.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Haga clic en el enlace para el instalador de Windows y guárdelo en una locación que sea fácil de recordar tal como su Escritorio.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Double-click the installer file to initiate the installation process.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Haga doble-clic en el instalador para iniciar el proceso de instalación.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The Plone Installation Wizard</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Asistente de instalación de Plone</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Enter the directory where you would like to install Plone to.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Introduzca el directorio donde le gustaría instalar Plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg> For most people, the default entry should be fine.(Click <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>Next<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> after each step to continue)</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>La mayoría de personas están de acuerdo con la ubicación predeterminada. (Haga clic en <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>Next<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> (Siguiente) al finalizar cada paso para continuar)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Enter in your desired username and password for the administrator account.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Introduzca el nombre de usuario y contraseña que desee para la cuenta del administrador. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Review the current configuration options.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Revise las opciones de configuración actual.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>During the installation a progress bar will show how close the installer is to completion.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Durante el proceso de instalación una barra mostrará que tan cerca está la instalación de completarse. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg> Mark the check boxes to show whether you would like to add Plone as a service so that it will automatically run at startup.(Note: This can be changed at any time by running <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>bin\instance.exe remove<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> from your install directory)  or if you would like to run Plone after exiting the installer.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg> Marque las casillas de confirmación para determinar si usted quiere agregar Plone como un servicio para que se inicie automáticamente con el inicio de Windows. (Nota: esto se puede cambiar en cualquier momento ejecutando <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>bin\instance.exe remove<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> en su directorio de instalación) o si desea ejecutar Plone después de que la instalación haya culminado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Starting up Plone</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>iniciando Plone</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If you decided not to make Plone a service you can start and stop your Plone instances by going to your Plone directory in your command line and executing:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Si usted decidió no hacer de Plone un servicio, usted lo puede iniciar y detener a través del directorio de Plone en su línea de comandos y a continuación ejecutar:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>or by using the Plone Controller GUI.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>o mediante el uso del Controlador GUI (interfaz gráfica de usuario) de Plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The Plone Controller can be found in your menu at Start → All Programs → Plone → Plone Controller.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>El Controlador de Plone se puede encontrar en su menú de Inicio → Todos los programas → Plone → Plone Controller.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg> It is used to edit Plone's settings and to start or stop Plone.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Este se usa para modificar la configuración de Plone, así como para iniciarlo o detenerlo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If you decide that you want to make Plone a service execute:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Ahora si usted decide hacer de Plone un servicio ejecute:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Likewise, to unistall Plone execute:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Del mismo modo, para la desinstalación ejecute: </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Once you have started an instance of Plone, you can view it by visiting http://localhost:8080 in your web browser.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Una vez que usted haya iniciado una instancia de Plone, la puede ver visitando http://localhost:8080 en su navegador web.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If it won't load, make sure that your firewall hasn't blocked the TCP port 8080.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Si no se carga, asegúrese de que su Firewall no ha bloqueado el puerto TCP 8080.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg> Enter in the requested information and then submit the form to finish the creation of your site.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Ingrese la información solicitada y luego envíe el formulario para finalizar la creación de su sitio.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg> You can find your site at http://localhost:8080/<bpt i='2' x='2'>&lt;e2&gt;</bpt>SiteName<ept i='2'>&lt;/e2&gt;</ept>, where <bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept>SiteName<bpt i='4' x='4'>&lt;s4&gt;</bpt>&quot;<ept i='4'>&lt;/s4&gt;</ept> is the Id of your Plone site.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Usted puede encontrar su sitio en http://localhost:8080/<bpt i='2' x='2'>&lt;e2&gt;</bpt>SiteName<ept i='2'>&lt;/e2&gt;</ept>, donde <bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept>SiteName<bpt i='4' x='4'>&lt;s4&gt;</bpt>&quot;<ept i='4'>&lt;/s4&gt;</ept> es el identificador de su sitio Plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Have fun with Plone!</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>¡Diviértase con Plone!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Installing on Linux / Unix / BSD</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Instalando en Linux / Unix / BSD</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The Unified Installer is a source-distribution kit that includes nearly everything necessary to build Plone on Linux, OS X, BSD and most Unix workalikes</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>El instalador Unificado en un kit de código fuente-distribución que incluye prácticamente todo lo necesario para construir Plone en Linux, OS X, BSD y la mayoría de sistemas Unix.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>What is the Unified Installer?</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>¿Qué es el instalador Unificado?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>A brief introduction to the installer, the case for using it, its options and recent changes.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Breve introducción al instalador, el caso para utilizarlo, sus opciones y cambios recientes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The Unified Installer is a source installation kit for installing Python, Zope, Plone and their dependencies on Unix-like platforms.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>El instalador unificado es un kit de instalación de código fuente para instalar Python, Zope, Plone y sus dependencias en plataformas de tipo Unix.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>It has two major components:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Posee dos componentes principales:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The source packages for Python, Zope, Plone, a couple of system libraries and some Python libraries;</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Los paquetes de código fuente para Python, Zope, Plone, un par de librerías de sistema y unas librerías de Python;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>An installation script that uses the packages to create a ready-to-run, relatively self-contained, Python/Zope/Plone install that meets the Plone community's best-practices standards.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Un script de instalación que usa paquetes para crear una instalación lista-para-usarse, relativamente autocontrolada, de Python/Zope/Plone que cumple con los estándares de prácticas recomendadas en la comunidad Plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The new Zope/Plone install will use its own copy of Python, and the Python installed by the Unified Installer will not replace your system's copy of Python.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>La nueva instalación Zope/Plone usará, luego de terminada la instalación, su propia copia de Python que no remplazará su copia de Python en el sistema.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You may optionally use your system (or some other) Python, and the Unified Installer will use it without modifying it or your site libraries.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Si lo desea, puede usar el Python de su sistema (o algún otro), y el instalador Unificado lo usará sin tener que modificarlo en las librerías de su sitio.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Why the Unified Installer?</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>¿Por qué el instalador Unificado?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Why Not System Packages/Ports?</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>¿Por qué no un sistema de Paquetes/Puertos?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>On the Plone help lists and channel, the suggestion to <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>just use the Unified Installer<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> often draws one of two reactions:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>En las listas de ayuda y canales IRC de Plone, la sugerencia <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>simplemente use el instalador Unificado<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>, generalmente resulta en una de dos reacciones:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>I prefer to manage the source install myself, picking all the target directories;</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Yo prefiero controlar la instalación de código fuente por mí mismo, y escoger todos los directorios de destinos;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>There's nothing wrong with that, though if you use the Unified Installer's target directories you may find it easier to get help from the Plone community.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>No hay nada malo en eso, sin embargo, si usted utiliza los directorios de destinos del instalador Unificado podrá ver que le facilitará obtener ayuda de la comunidad de Plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If you still choose to install by hand, that's fine.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Si aún así elige instalarlos manualmente, está bien.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You may still find it convenient to download the Unified Installer in order to get all the packages together, and you may find it useful to read the UI's install.sh script for ideas on building particular components.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Usted todavía puede encontrar conveniente descargar el instalador Unificado con el fin de obtener todos los paquetes juntos, y puede que le resulte útil leer el escrito de la interfaz de usuario install.sh para ideas sobre la construcción de componente particulares.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>I prefer to use my platform's ports/packages mechanism.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Yo prefiero usar mi mecanismo de plataformas de puertos/paquetes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The history of platform packages for Zope and Plone is a troubled one.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>La historia de paquetes de plataforma para Zope y Plone es una problemática.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Platform packages have been of uneven quality and have used installation trees that make it difficult for the community to offer help when problems occur.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Paquetes de plataforma han sido de calidad desigual y han utilizado árboles de instalación que dificultan la ayuda que pueda ofrecer la comunidad cuando los problemas se presentan.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Also, platform packages have historically been vulnerable to changes in the system Python.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Igualmente,  los paquetes de plataforma han sido históricamente vulnerables a cambios en el sistema de Python.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Zope/Plone is very picky about the version of Python used to run it, and an update of the system Python when some other item is installed can easily break Zope/Plone.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Zope/Plone es muy exigente al escoger la versión de Python con la cual ejecutarse, además cualquier actualización del sistema Python, cuando otro elemento está instalado, puede fácilmente afectar o dañar a Zope/Plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>At this point, you may be thinking that this just means that the packages have poorly specified dependencies.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>En este punto, puede que este pensando que esto simplemente quiere decir que los paquetes tienen deficiencias con respecto a las dependencias especificadas.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The Unified Installer was created because generation after generation of packages did not solve this problem.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>El instalador Unificado se creó porque generación tras generación de paquetes no resolvieron este problema.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Major Unified Installer Options</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Opciones principales del instalador Unificado</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The Unified Installer for Plone has three major options:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>El instalador Unificado para Plone posee tres características principales:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Install as root or normal user;</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Instalar como root o como usuario normal;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Install as a ZEO Cluster, or a stand-alone Zope;</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Instalar como un Cluster de objetos empresariales Zope - ZEO, o una instancia autónoma de Zope;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Install the full kit, or just a single running instance.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Instalar el kit completo, o una simple instancia de ejecución.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Each of these options are described in a separate section.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Cada una de estas opciones están descritas en secciones separadas.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i='0' x='0'>&lt;s0&gt;</bpt>Note:<ept i='0'>&lt;/s0&gt;</ept> Prior versions of the Unified Installer do not have these options</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg><bpt i='0' x='0'>&lt;s0&gt;</bpt>Nota:<ept i='0'>&lt;/s0&gt;</ept> Las versiones anteriores del instalador Unificado no vienen con estas opciones</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Changes for Plone 4</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Cambios en Plone 4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The installer now includes a <bpt i='0' x='0'>&lt;e0&gt;</bpt>develop.cfg<ept i='0'>&lt;/e0&gt;</ept> configuration file, which you may use after the initial installation to configure a common development environment.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>El instalador ahora incluye un archivo de configuración <bpt i='0' x='0'>&lt;e0&gt;</bpt>develop.cfg<ept i='0'>&lt;/e0&gt;</ept>, el cual puede usar después de la instalación inicial para configurar un entorno común de desarrollo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>To use it, run buildout with the command:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Para usarlo, ejecute buildout con el comando:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The installer now requires that SSL development libraries be preinstalled on your system (usually done with openSSL).</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>El instalador ahora requiere que las librerías de desarrollo SSL sean instaladas previamente en su sistema (usualmente se hace con openSSL)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If it can't find them, it halts.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Si no las puede encontrar, este se detendrá.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If you wish, you may bypass this requirement, which will result in an installation that can't use ESMTP for mail.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Si lo desea puede omitir este requerimiento, lo que resultará en una instalación que no puede usar el servicio ESMTP (extensión del Protocolo Simple de Transferencia de Correo) para correo electrónico. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Changes for Plone 3.1</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Cambios en Plone 3.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The Unified Installer now uses buildout to configure Plone instances, which makes it much easier for you to control add-ons and upgrade your Plone installation.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>El instalador Unificado ahora usa buildout para configurar las instancias de Plone, lo que hace más fácil controlar productos adicionales y actualizaciones de su instalación Plone. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>It's much easier to add additional Zope/Plone instances to an existing install base.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Es mucho más sencillo agregar instancias adicionales de Zope/PLone a una base de instalación existente.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>There are additional options for:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Existen opciones adicionales para:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Controlling the installation target directory;</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Controlar el directorio de destino de la instalación;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Setting a user other than <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>admin<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> and/or setting a password of your choice;</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Establecer un usuario aparte del <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>admin<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> y/o configurar la contraseña de su elección;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Using an already installed Python 2.4 (possibly the system copy).</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>El uso de una versión instalada de Python 2.4 (posiblemente una copia del sistema).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>virtualenv is used to isolate the new installation so that your system Python is not touched.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Se usa virtualenv para aislar la instalación nueva y así su sistema de Python no es tocado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If libjpeg or libz installation is required, it's done locally to the new install.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Si se requiere la instalación de libjpeg o libz, se hace localmente a la nueva instalación.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Even in a root-mode install, your system libraries are not touched.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Incluso en un modo instalación root, sus librerías en el sistema no son tocadas.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Changes for Plone 3</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Cambios en Plone 3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If you've used the Unified Installer for prior versions of Plone, you'll already know that the options above are new.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Si usted ha usado el instalador Unificado para versiones anteriores de Plone, ya sabrá que las opciones anteriores son nuevas. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>There are a few additional changes:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Hay algunos cambios adicionales:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The installation script tries to determine whether or not you need new builds of the libz and libjpeg.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>El script de instalación trata de determinar si necesita o no nuevas construcciones de libz y libjpeg.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If you don't, it won't build them.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Si no las necesita, no las construirá.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The UI now works more easily with odd-duck platforms like Solaris, where common GNU build tools may be in uncommon locations.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>La Interfaz de Usuario ahora trabaja más cómoda con plataformas odd-duck como Solaris, donde la herramientas GNU pueden estar en locaciones inusuales.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This version omits some optional products (TextIndexNG#, ReportLab) bundled with prior versions.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Esta versión omite algunos productos adicionales (TextIndexNG#, ReportLab) incluidos en versiones anteriores.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This version includes the new Python easy install kit, though it doesn't use it.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Aunque esta versión trae el nuevo kit de fácil instalación de Python, no lo usa.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Root or User Install?</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>¿Instalación como root o usuario normal?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The cases for and against installation as the root user.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Casos donde se recomienda o no la instalación como usuario root.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The install.sh script for the Unified Installer may be run as root (typically via sudo) or as a normal user.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>El script install.sh para el instalador Unificado puede ser ejecutado como root (típicamente usando el comando sudo) o como un usuario normal.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Key differences are:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Las diferencias claves son:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The root (production) install:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>La instalación root (usada para producción):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Installs by default to /usr/local/Plone;</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Instala por defecto en /usr/local/Plone;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Creates a <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>plone<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> user, sets this user as owner of the data files, and configures Zope to run as the effective user <bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>plone<bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Crea un usuario <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>plone<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> y establece este usuario como propietario de los archivos de datos (Data.fs). Configura Zope para correr como el usuario efectivo <bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>plone<bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept>.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Program and configuration files are owned by the root user, and should not be writable by the Zope process.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Los archivos de programa y configuración son propiedad del usuario root, y no deberían modificarse por los procesos de Zope.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The normal (non-root) user install:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>La instalación de usuario normal (no root):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Installs by default to $HOME/Plone;</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Instala por defecto en $HOME/Plone;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Is meant to be run by and under the effective user id of the installing user.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Esta destinada a ser ejecutada por y bajo el identificador efectivo de usuario de la persona que instala.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Why Choose root or normal?</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>¿Por qué escoger entre instalación normal o root?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Installing as root (or with root privileges via sudo) may be the best choice for a production installation of Plone.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Instalar como root (o con privilegios root a través de sudo) puede ser la mejor opción para instalaciones de producción de Plone. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Since this install runs under the user id of a user created specifically for this purpose, it should have a more controllable level of access to resources.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Ya que la instalación se ejecuta bajo el identificador de un usuario creado específicamente para este propósito, debería tener un nivel de control de acceso más alto a los recursos. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>It is a generally accepted <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>best practice<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> to run persistent processes (like Zope) as unique users with limited rights.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Generalmente esto es aceptado como la <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>mejor practica<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>; ejecutar procesos persistentes (como Zope) por medio de usuarios únicos con permisos limitados.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If you install via root, though, be careful not to run <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>sudo bin/buildout<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> except in offline mode since this would immediately run setup downloaded programs.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>De igual forma al instalar como root, tenga cuidado y no ejecute <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>sudo bin/buildout<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> excepto cuando esté trabajando offline (sin conexión), ya que si no lo hace inmediatamente ejecutara una setup (instalación) de los programas descargados.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Instead, obtain distribution files from validated sources, put them in buildout-cache/download/dist and run buildout in offline mode.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>En lugar de esto, obtenga archivos de distribución de fuentes validadas, colóquelas en buildout-cache/download/dist y ejecute buildout en el modo sin conexión.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Installing as a normal user (perhaps with your own user identity) may be a better choice for a test or development instance.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>La instalación como usuario normal (quizás con su propria identificación de usuario) puede ser la mejor opción para una instancia de prueba o desarrollo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>It makes it very easy to install and edit custom products without worrying about user rights or identities.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Se hace muy sencillo instalar y editar productos personalizados sin tener que preocuparse por los derechos o identidades de los usuarios.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>To ZEO or Not to Zeo?</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>¿Ser ZEO o no ser ZEO?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The Unified Installer will install Zope to either run in a Client/Server or stand-alone configuration.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>El instalador Unificado instalará Zope ya sea para ejecutarse en una configuración Cliente/Servidor o en una configuración autónoma.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Here are the merits of each.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Aquí están los méritos de ambas.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The Unified Installer offers two different strategies for your Zope configuration:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>El instalador Unificado ofrece dos estrategias distintas para la configuración de Zope:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>A ZEO Client/Server configuration.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Una configuración ZEO de Cliente/Servidor. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>ZEO (Zope Enterprise Objects) allows you to have several Zope clients processes (or separate servers) that share a common object database server process.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>ZEO (del inglés Zope Enterprise Objects) le permite tener varios procesos de clientes Zope (o servidores separados) que comparten una base común de datos de objetos de procesos de servidores.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>A stand-alone Zope instance.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Una instancia autónoma de Zope. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i='0' x='0'>&lt;s0&gt;</bpt>The stand-alone Zope instance<ept i='0'>&lt;/s0&gt;</ept> is simpler to understand, integrate and control, and is probably the best choice for a simple or test environment.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg><bpt i='0' x='0'>&lt;s0&gt;</bpt>La instancia autónoma de Zope<ept i='0'>&lt;/s0&gt;</ept> es más fácil de entender, integrar y controlar, y probablemente es la mejor opción para un entorno sencillo o de prueba.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i='0' x='0'>&lt;s0&gt;</bpt>The ZEO Client/Server configuration<ept i='0'>&lt;/s0&gt;</ept>, though, has several advantages for production or development use:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg><bpt i='0' x='0'>&lt;s0&gt;</bpt>La configuración ZEO Cliente/Servidor<ept i='0'>&lt;/s0&gt;</ept>, no obstante, posee algunas ventajas para el uso de producción y también desarrollo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Better load balancing options.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Mejores opciones de balanceo de carga.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Even without a load-balancing proxy, running independent client and server processes can spread the load better on modern multi-core servers.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Incluso sin un proxy de balanceo de cargas, clientes independientes y procesos de servidores pueden distribuir mejor las cargas en servidores modernos multi-núcleo. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>With a load-balancing proxy, even better results are possible.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Con un proxy de balanceo de carga, mejores resultados son posibles.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The ability to run scripts against a live site.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>La capacidad de ejecutar scripts contra un sitio en producción.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You may use <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>zopectl run<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> to run scripts on one of the clients while others serve the site to the Internet.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Usted puede usar <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>zopectl run<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> para ejecutar scripts en alguno de los clientes mientras que otros sirven el sitio a Internet.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Better debugging.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Mejor depuración.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You may run one client in debug mode while the rest run in production mode.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Usted puede correr un cliente en modo depuración mientras que el resto corre en modo producción.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You may then have improved diagnostics for the debug instance.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>De esta manera puede mejorar los diagnósticos para la instancia de depuración.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You'll also be able to use introspection tools like Clouseau and <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>zopectl debug<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> against a live site.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>También podrá usar herramientas de introspección como Clouseau y el comando <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>zopectl debug<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> en contra de un sitio en producción.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You may reserve a client for administrative access (it'll have its own port).</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Usted puede reservar un cliente para acceso administrativo (tendrá su propio puerto).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Then, if you're slashdotted before you're ready, you'll be able to make changes via the administrative client even when your public client slows down.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Luego si usted tiene un incremento súbito en la demanda del sitio antes de que esté listo, podrá realizar cambios a través del cliente administrativo, incluso cuando su cliente público se ralentice.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Running the Unified Installer</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Ejecutando el instalador Unificado</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Preparing to run and running the Unified Installer</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Preparar la ejecución y ejecutar el instalador Unificado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Preparations</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Preparaciones</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Crank up your platform's package manager and make sure you've got the following installed:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Verifique su plataforma de administrador de paquetes y asegúrese que tenga los siguientes instalados:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>gcc, the GNU Compiler Collection.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>gcc, La colección del Compilador GNU.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>g++, the C++ extensions for gcc.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>g++, Las extensiones de C++ para gcc.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>GNU make, the fundamental build-control tool.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>GNU make, la herramienta fundamental de control y construcción.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This is the version of tar on all Linux, BSD and OS X platforms, but not Solaris.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Esta es la versión de tar para todos las plataformas Linux, BSD y OS X, pero no Solaris.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>bzip2 and gzip decompression packages.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Paquetes para descomprimir: bzip2 y gzip.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>gzip is nearly standard; some platforms will require that bzip2 be installed.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Paquetes para descompresión bzip2 y gzip. gzip es casi estándar; en algunas plataformas será requerida la instalación del paquete bzip2. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Ideally, you should also have the <bpt i='0' x='0'>&lt;e0&gt;</bpt>libssl <ept i='0'>&lt;/e0&gt;</ept>and <bpt i='1' x='1'>&lt;e1&gt;</bpt>readline <ept i='1'>&lt;/e1&gt;</ept>libraries and development headers loaded (usually, the libssl-dev and readline-dev packages).</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Idealmente debería tener también las librerías <bpt i='0' x='0'>&lt;e0&gt;</bpt>libssl <ept i='0'>&lt;/e0&gt;</ept>y <bpt i='1' x='1'>&lt;e1&gt;</bpt>readline <ept i='1'>&lt;/e1&gt;</ept>, y los encabezados de desarrollo cargados (usualmente los paquetes libssl-dev y readline-dev).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>These are not required, but add desirable functionality.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Realmente estos no son requeridas, pero agregan una funcionalidad deseable.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i='2' x='2'>&lt;e2&gt;</bpt>libssl <ept i='2'>&lt;/e2&gt;</ept>is required to use TLS with your mail server, which may be vital if it's not local.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg><bpt i='2' x='2'>&lt;e2&gt;</bpt>libssl <ept i='2'>&lt;/e2&gt;</ept> se requiere para usar TLS (Seguridad de la Capa de Transporte) con su servidor de correo electrónico, lo cual puede ser vital si este no es local.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>See the Unified Installer README.txt for details.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Para detalles lea el instalador Unificado README.txt </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Now, choose a convenient working directory and unpack the .tar.gz archive (tarball) of the Unified Installer:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Ahora escoja un directorio conveniente de trabajo para extraer el archivo .tar.gz (tarball) del instalador Unificado:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Then change into the newly created directory:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Luego vaya al nuevo directorio creado:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>(<bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>VERSION-<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> will vary with release.)</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>(<bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>VERSION-<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> cambiará con cada versión.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Running install.sh</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Ejecutando install.sh</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If you've chosen to install with root privileges, either su to root or precede these commands with sudo.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Si usted se decidió por la instalación con privilegios root; ya sea por el comando su a root o precediendo estos comandos con el comando sudo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>ZEO Installation:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Instalación ZEO:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Stand-Alone Zope Installation:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Instalación autónoma de Zope:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Then, sit back and watch the progress messages.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Pues ahora acomódese y observe los mensajes de progreso.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i='0' x='0'>&lt;s0&gt;</bpt>If the progress messages don't start,<ept i='0'>&lt;/s0&gt;</ept> it will typically mean that a vital installation tool is missing.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg><bpt i='0' x='0'>&lt;s0&gt;</bpt>Si los mensajes de progreso no comienzan,<ept i='0'>&lt;/s0&gt;</ept> generalmente significa que falta alguna herramienta vital de instalación.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Use your package manager to install the tool, and try again.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Use su administrador de paquetes para instalar la herramienta, y trate nuevamente.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i='0' x='0'>&lt;s0&gt;</bpt>If the installation succeeds,<ept i='0'>&lt;/s0&gt;</ept> you'll see a set of instructions for starting your new Zope/Plone install.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg><bpt i='0' x='0'>&lt;s0&gt;</bpt>Si la instalación tiene éxito,<ept i='0'>&lt;/s0&gt;</ept> usted verá un conjunto de instrucciones para la nueva instalación de Zope/Plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Make note of the password for the <bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>admin<bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept> user.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Haga una nota de la contraseña usada para el usuario<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>admin<bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>These instructions will also be available in README.txt file, and the pass word in <bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept>adminPassword.txt<bpt i='4' x='4'>&lt;s4&gt;</bpt>&quot;<ept i='4'>&lt;/s4&gt;</ept>, in your new install.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Estas instrucciones también estarán disponibles en el archivo README.txt, y la contraseña en el archivo <bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept>adminPassword.txt<bpt i='4' x='4'>&lt;s4&gt;</bpt>&quot;<ept i='4'>&lt;/s4&gt;</ept> de su nueva instalación.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i='0' x='0'>&lt;s0&gt;</bpt>If the installation should fail,<ept i='0'>&lt;/s0&gt;</ept> don't panic.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg><bpt i='0' x='0'>&lt;s0&gt;</bpt>Si la instalación falla,<ept i='0'>&lt;/s0&gt;</ept> no entre en pánico.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Make note of any error messages or diagnostics and, if you can't remedy the problem yourself, ask for help in the plone-setup mailing list or the #plone IRC channel.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Anote los mensajes de errores y diagnósticos para que en el caso de que usted no pueda resolverlos por sí mismo, pida ayuda en la lista de correo de plone-setup o en el canal IRC #plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>We'll need precise information about your platform and all possible diagnostic information to help.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Nosotros necesitaremos información precisa sobre su plataforma y toda la información de diagnostico posible para ayudarlo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Also, make sure to check the <bpt i='1' x='1'>&lt;e1&gt;</bpt>Platform Notes<ept i='1'>&lt;/e1&gt;</ept> section of the README.txt file included with the installer to see if there might be a work-around or special requirement note for your platform.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Además asegúrese de revisar la sección <bpt i='1' x='1'>&lt;e1&gt;</bpt>Notas de plataforma<ept i='1'>&lt;/e1&gt;</ept> en el archivo README.txt que viene con el instalador para ver si hay algún tipo de trabajo o requerimiento especial en relación a su plataforma.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The install script creates a detailed log file, install.log, that may help diagnose an installation failure.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>El programa de instalación crea un archivo detallado de registro, llamado install.log, que puede ayudar al diagnostico de una instalación fallida.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Checking your installation</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Revisando su instalación</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If your installation succeeded, try starting it by following the instructions displayed at the end of the install process (or in the README.txt file in the install directory).</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Si su instalación fue exitosa, trate de iniciarla siguiendo las instrucciones que se muestran al final del proceso de instalación (o en el archivo README.txt que está en el directorio de instalación). </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Startup problems are uncommon, but do occasionally happen.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Los problemas de arranque no son comunes pero de vez en cuando aparecen;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The most common cause is that some other process has already claimed the 8080 port (or one or more of the 8100, 8080 and 8081 ports if you're using ZEO).</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>la causa más común es que otros procesos ya están usando el puerto 8080 (o uno o más de los puertos 8100, 8080 y 8081 si está usando ZEO).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You may wish to stop or kill the competing process if it's an old Zope/Plone installation.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Si es así, puede detener o eliminar ese proceso en el caso de que sea una instalación vieja de Zope/Plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If not, you may reassign the ports used by your Plone installation by editing the buildout.cfg file and running bin/buildout to reassign ports.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Si no también puede reasignar los puertos usados por su instalación de Plone al editar el archivo buildout.cfg y ejecutar bin/buildout para reasignar los puertos.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If the start is successful, test your installation by opening a web browser and navigating to http://localhost:8080.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Si su arranque es exitoso, compruebe su instalación abriendo un navegador web y navegando a //localhost:8080.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>(If you're testing on another machine, substitute your server host name for <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>localhost<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.)</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>(Si esta haciendo la prueba en otra computadora, substituya el nombre (ip o url) de su servidor host por <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>localhost<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You should see a Zope welcome message.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Se debería mostrar un mensaje de bienvenida de Zope.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>A test Plone site should be available at http://localhost:8080/Plone, and the Zope Management Interface at http://localhost:8080/manage.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Un sitio de prueba debería estar disponible en http://localhost:8080/Plone, y la Interfaz de Administración de Zope (Zope Management Interface -ZMI) en http://localhost:8080/manage</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If Zope appears to be running, but you cannot connect, check to see if a firewall may be in place and blocking the connection.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Si aparentemente Zope está ejecutándose, pero no puede conectarse, compruebe si tal vez un cortafuegos (firewall) está emplazado y bloqueando la conexión.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Creating New Instances</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Creando nuevas instancias.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The Unified Installer may be used to create additional Zope/Plone instances.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>El instalador Unificado puede usarse para crear instancias adicionales de Zope/Plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Once you have used the Unified Installer to build a complete Plone install, you may wish to create additional working instances to run other sites (or sets of sites).</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Una vez que ha usado el instalador Unificado para realizar completamente una instalación de Plone, quizás usted quiera crear instancias de trabajo adicionales para ejecutar otros sitios (o conjunto de sitios).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The Unified Installer makes it possible to set up new instances that will use the Python and Zope code base of your main install.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>El instalador Unificado hace posible establecer nuevas instancias que usarán el código base de Python y Zope de la instalación principal.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>To install a new instance, first decide whether it will be a root or normal-user install.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Para instalar una nueva instancia, primero decida si quiere una instalación root o de usuario normal.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You may use the code base of a root-level install for a new root-level instance, or a non-root install for a new non-root instance.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Usted puede usar el código base de instalaciones con nivel root para una nueva instancia con nivel root, o una instalación no-root para una instancia no-root.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Also, the new instance may be a ZEO or stand-alone install, independent of the choice made for the main installation.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Además la nueva instancia que puede ser una instalación ZEO o autónoma, es independiente a la elección que haya hecho para la instalación principal.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The Commands</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Los Comandos</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Change into the directory containing the install.sh file of your unpacked Universal Installer.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Ubíquese en el directorio que contiene el archivo install.sh de su instalador Unificado desempaquetado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Precede the following commands by <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>sudo<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> or by using <bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>su -<bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept> to switch to root</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Preceda los siguientes comandos con<bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>sudo<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> o <bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>su -<bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept> para cambiar al usuario root.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>For a ZEO cluster instance:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Para una instancia de clúster de ZEO:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>For a stand-alone Zope instance:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Para una instancia autónoma de Zope. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i='0' x='0'>&lt;s0&gt;</bpt>new_instance_name<ept i='0'>&lt;/s0&gt;</ept> should be a simple directory name -- not a full pathname.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg><bpt i='0' x='0'>&lt;s0&gt;</bpt>nuevo_nombre_instancia<ept i='0'>&lt;/s0&gt;</ept> debería ser un nombre de directorio simple - y no un nombre de ruta completo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The new directory will be created as a new subdirectory of your full installation and will share its Python and buildout cache.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>El nuevo directorio se creará como un nuevo subdirectorio de la instalación completa y compartirá su respectivo Python y el caché de buildout.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Setting New Ports</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Definiendo nuevos Puertos</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Your new instance isn't ready to run yet, because it's set to use the default ports and will conflict with the previous installation.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>La nueva instancia aún no está lista para ejecutarse, ya que está configurada para usar los puertos por defecto y entrará en conflicto con la instalación previa.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Fortunately, that's easy to fix.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Afortunadamente esto es fácil arreglar.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Change into the directory containing your new instance and open buildout.cfg with your favorite text editor.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Vaya al directorio que contiene su nueva instancia y abra buildout.cfg con su editor de texto favorito.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If this is a standalone instance, you'll need to set a new port in just one spot:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Si esta es una instancia autónoma, solo necesitará definir un puerto nuevo en un lugar solamente:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>There's a little more work for a ZEO instance.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Para la instancia ZEO se requiere un poco más de trabajo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You'll need to change two http-address entries (one for each client) and the port for the ZEO server, which is set in the line:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Usted necesitará cambiar dos entradas de http-address (una para cada cliente) y el puerto para el servidor de ZEO, el cual se define en la línea:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Change only the port number (8100); leave the IP address alone.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Solo cambie el numero de puerto (8100); y no modifique la dirección IP.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Build It</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Construyalo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Save your changes and run buildout to update all the parts of the installation:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Guarde sus cambios y ejecute buildout para actualizar todas las partes de la instalación:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If this is a root install, preface the command with <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>sudo<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> or use su to change to root.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Si esta es una instalación root, anteponga el comando<bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>sudo<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> o use &quot;su -&quot; para cambiar al usuario root.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You're now ready to run your new instance.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Ahora ya está listo para correr la nueva instancia.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Command-Line Options</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Opciones de líneas de Comando</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Some less commonly used Unified Installer options that may still be useful to you.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Algunas opciones poco frecuentes del instalador Unificado, pero de igual manera siguen siendo útiles para usted.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You may add the following options to your install.sh command line to more finely control your installation:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Puede agregar la siguientes opciones a su línea de comando install.sh para un control más refinado de su instalación:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Use to specify top-level path for installs.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Úsela para especificar rutas de nivel superior para las instalaciones.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Plone instances and Python will be built inside this directory.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Las instancias de Plone y Python se construirán dentro de este directorio.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>In a root install, sets the effective user for running the instance.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>En una instalación root, define el usuario efectivo para ejecutar la instancia.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Default is 'plone'.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Por defecto es el usuario &quot;plone&quot;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Ignored for non-root installs.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Ignorado para las instalaciones no-root.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If you have an already built Python that's adequate to run Zope/Plone, you may specify it here.<it pos='begin' x='0'>&lt;br0&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Si usted ya tiene una construcción Python adecuada para ejecutar Zope/Plone, lo puede especificar aquí.<it pos='begin' x='0'>&lt;br0&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i='1' x='1'>&lt;a1&gt;</bpt><bpt i='2' x='2'>&lt;s2&gt;</bpt>virtualenv<ept i='2'>&lt;/s2&gt;</ept><ept i='1'>&lt;/a1&gt;</ept> will be used to create an isolated Python environment for the installation.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg><bpt i='1' x='1'>&lt;a1&gt;</bpt><bpt i='2' x='2'>&lt;s2&gt;</bpt>virtualenv<ept i='2'>&lt;/s2&gt;</ept><ept i='1'>&lt;/a1&gt;</ept> se usará para crear un entorno aislado de Python para la instalación.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Your system's site library will not be touched.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>La librería del sistema de su sitio no se tocará.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Python 2.4 is required for Plone 3.x, Python 2.6 for Plone 4.<it pos='begin' x='3'>&lt;br3&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Se requiere Python 2.4 para Plone 3.x, y Python 2.6 para Plone 4.<it pos='begin' x='3'>&lt;br3&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Your Python must meet the needs of Plone, and the installer will test it for zlib, libssl and xml support before building for it.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Su Python debe satisfacer las necesidades de Plone, y el instalador pondrá a prueba el soporte para las librerías zlib, libssl y xml antes de construir para ellas.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If not specified, a random password will be generated.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Si no se especifica, una contraseña aleatoria será generada.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>SSL (usually OpenSSL) development libraries are needed to build a Python that will support SSL and TLS.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Las librerías de desarrollo SSL (generalmente OpenSSL) se necesitan al construir Python para que soporten SSL (protocolo de capa de conexión segura) y TLS (protocolo para seguridad de la capa de transporte). </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Without it, Plone will be unable to use TLS in SMTP.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Sin ellas Plone no podrá utilizar TLS en SMTP (Protocolo Simple de Transferencia de Correo).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The Unified Installer will ordinarily stop if it can't find the SSL headers and libraries.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>El instalador Unificado habitualmente se detendrá si no puede encontrar el encabezado SSL y sus librerías.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Use this option to tell the installer that you know what you're doing, and wish to proceed without SSL.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Use esta opción para participarle al instalador que usted sabe lo que está haciendo y que desea continuar sin las SSL.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>lxml, a Python wrapper for libxml2 and libxslt, is not required for Plone 4.1.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>lxml, un wrapper (empaquetador) de Python para libxml2 y libxslt, no es requerido para Plone 4.1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>But it is needed by some popular addons like plone.app.theming.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Pero se necesita por algunos programas populares adicionales como plone.app.theming.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Unless you specify this flag, the installer will try to build lxml with static libxml2 and libxslt libraries.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>A menos que usted especifique esta opción, el instalador tratará de construir lxml con las librerías estáticas libxml2 y libxslt.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This may not work on all platforms.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Puede que esto no funcione en todas las plataformas.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Skip running bin/buildout.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Saltar la ejecución de bin/buildout.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You should know what you're doing.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Usted debería saber que está haciendo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The main use for this option is if you want to use the Unified Installer to put all the pieces together, then plug in your own buildout.cfg.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>El uso principal para esta opción se refiere a cuando usted desea que el instalador Unificado junte todas las piezas, para luego activar su propio buildout.cfg.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The Unified Installer will try and figure out whether or not you have the libz, libjpeg and readline libraries on your system.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>El instalador Unificado averiguará si usted tiene o no, las librerías libz, libjpeg y readline en su sistema.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If you do, great; if not, the installer will try to build them in the lib/ subdirectory of your installation target and link to them directly.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Si las tiene: genial. Si no las tiene, el instalador tratará de construirlas en el subdirectorio lib/ del destino de su instalador y hacer un enlace directamente a ellas. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This may not be what you want.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>En el caso de que esto no sea lo que quiere,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If not, use the following command-line options to tune the behavior.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>use las siguientes opciones de líneas de comando para ajustar este comportamiento.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>to have this program determine whether or not you need the library installed.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Tener este programa determina si necesita o no la librería instalada.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If needed, will be installed to $PLONE_HOME.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Si es necesaria, será instalada en $PLONE_HOME.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This is the default behavior.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Esta es el comportamiento por defecto.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>to force install to $PLONE_HOME (or $LOCAL_HOME) for static link -- even if a system copy of the library is available.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>para forzar la instalación en $PLONE_HOME (o $LOCAL_HOME) para enlaces estáticos, incluso si una copia en el sistema de la librería está disponible.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>to force no installation of the library.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>para no forzar la instalación de la librería.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Ubuntu / Debian Package Installation</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Paquetes de instalación Ubuntu / Debian</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>How to install required packages on Debian/Ubuntu style systems.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>¿Cómo instalar los paquetes requeridos en los estilos de sistemas Debian/Ubuntu?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Before installing you may install the needed system packages by running:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Antes de comenzar el proceso debería instalar los paquetes del sistema requeridos para la ejecución:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>It's also very desirable to use system packages for common libraries, rather than to have the installer use its own:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>En vez de permitir al instalador usar su propios paquetes, es muy conveniente usar los paquetes del sistema para librerías comunes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>And, if you want to enable Word and PDF document indexing:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Y si usted quiere habilitar la anexión de documentos de Word y PDF:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Platform Notes</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Notas de Plataformas</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>User-contributed notes on using the Unified Installer on particular platforms</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Notas de contribución de usuarios que usan el instalador Unificado en plataformas particulares</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Install on Solaris 10 (x86)</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Instalando en Solaris 10 (x86)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Posted by Michael Bobzin at Feb 15, 2008 03:12 PM</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Publicado por Michael Bobzin el 15 de Febrero de 2008 03:12 PM</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Hi,<it pos='begin' x='0'>&lt;br0&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Hola,<it pos='begin' x='0'>&lt;br0&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>for getting the installation done on Solaris 10 (x86) I had to <it pos='begin' x='2'>&lt;br2&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>para completar la instalación en Solaris 10 (x86) tengo que  <it pos='begin' x='2'>&lt;br2&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>change some lines in install.sh</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>cambiar algunas líneas en install.sh</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>nstalling on Solaris 10 (SPARC)</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Instalando en Solaris 10 (SPARC)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Posted by Joni Barnoff at Apr 05, 2008 07:31 PM</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Publicado por Joni Barnoff el 5 de abril de 2008 07:31 PM</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This is needed to include libssl in python build</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Esto es necesario para incluir libssl en la construcción de Python. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Installing on Solaris 10 (SPARC)</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Instalando en Solaris 10 (SPARC)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Posted by Jim Leek at Mar 20, 2009 04:21 PM</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Publicado por Jim Leek el 20 de Marzo de 2009 04:21 PM</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The main issues on Solaris are due to the fact that the installer script (install.sh) cannot always get the correct paths for the correct versions of software on Solaris.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Los inconvenientes principales en Solaris se deben al hecho de que el script del instalador (install.sh) no siempre puede obtener las rutas correctas para la versión correcta del software en Solaris.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>It also has problems finding the correct libraries in the Solaris environment.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>También tiene problemas para encontrar las librerías correctas en el entorno de Solaris.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>To add to this install.sh uses the basic Bourne shell (#!/bin/sh), which means that some of the commands which are part of the Linux Bourne shell and which are not present in the Solaris Bourne shell just do not work.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Para agregar a este install.sh se usa el shell básico Bourne (#!/bin/sh), lo que significa que algunos de los comandos que son parte del shell Bourne de Linux y que no están presentes en el shell Bourne de Solaris simplemente no funcionan. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Notably the -e (exists) switch is not present in the Solaris Bourne shell:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Cabe destacar que el interruptor e-(existe) no está presente en el shell Bourne de Solaris:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>In order to solve this do the following:<it pos='begin' x='0'>&lt;br0&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Para resolver esto haga lo siguiente:<it pos='begin' x='0'>&lt;br0&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The locations of all dependencies need to be located on Solaris:<it pos='begin' x='2'>&lt;br2&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Se necesita que las locaciones de todas las dependencias se ubiquen en Solaris: <it pos='begin' x='2'>&lt;br2&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg> (a) gcc - /usr/local/bin/gcc (gcc-3.4.6 installed from www.sunfreeware.com - default on solaris 10 is /opt/sfw/bin/gcc)<it pos='begin' x='3'>&lt;br3&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg> (a) gcc - /usr/local/bin/gcc (gcc-3.4.6 proveniente de www.sunfreeware.com - por defecto en solaris 10 es /opt/sfw/bin/gcc)<it pos='begin' x='3'>&lt;br3&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg> (b) g++ - /usr/local/bin/g++ (Installed with gcc-3.4.6 - default on solaris 10 = /opt/sfw/bin/g++)<it pos='begin' x='4'>&lt;br4&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg> (b) g++ - /usr/local/bin/g++ (Instalado con gcc-3.4.6 - por defecto en solaris 10 = /opt/sfw/bin/g++)<it pos='begin' x='4'>&lt;br4&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>In addition install.sh uses the <bpt i='10' x='10'>&lt;s10&gt;</bpt>&quot;<ept i='10'>&lt;/s10&gt;</ept>whoami<bpt i='11' x='11'>&lt;s11&gt;</bpt>&quot;<ept i='11'>&lt;/s11&gt;</ept> shell command, which on Solaris is in:<it pos='begin' x='12'>&lt;br12&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Además install.sh usa el comando shell <bpt i='10' x='10'>&lt;s10&gt;</bpt>&quot;<ept i='10'>&lt;/s10&gt;</ept>whoami<bpt i='11' x='11'>&lt;s11&gt;</bpt>&quot;<ept i='11'>&lt;/s11&gt;</ept> , el cual en Solaris se encuentra en:<it pos='begin' x='12'>&lt;br12&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Ensure the above PATHs are all in the system path:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Garantice que todas las Rutas anteriores se encuentren en la ruta del sistema:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>(If /usr/ccs/bin is not added, the Python compile will fail with <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>gmake: ar: Command not found<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.)<it pos='begin' x='2'>&lt;br2&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>(Si /usr/ccs/bin no es agregado, la compilación de Python fallará con <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>gmake: ar: Command not found<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.)<it pos='begin' x='2'>&lt;br2&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>As the -e switch is not present in the Solaris Bourne shell, install.sh and all other scripts must be changed to bash: #!/usr/bin/bash<it pos='begin' x='4'>&lt;br4&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Debido a que el interruptor -e no está presente en el shell Bourne de Solaris, install.sh, y todos los otros scripts, este se debe cambiar a bash: #!/usr/bin/bash<it pos='begin' x='4'>&lt;br4&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>install.sh uses the <bpt i='6' x='6'>&lt;s6&gt;</bpt>&quot;<ept i='6'>&lt;/s6&gt;</ept>which<bpt i='7' x='7'>&lt;s7&gt;</bpt>&quot;<ept i='7'>&lt;/s7&gt;</ept> shell command to locate the software it needs for the build.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>install.sh utiliza el comando shell <bpt i='6' x='6'>&lt;s6&gt;</bpt>&quot;<ept i='6'>&lt;/s6&gt;</ept>which<bpt i='7' x='7'>&lt;s7&gt;</bpt>&quot;<ept i='7'>&lt;/s7&gt;</ept> para localizar el software que necesita para la construcción.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>To ensure the correct versions of the software were used (rather than any Solaris defaults), install.sh was modified to explicitly set the location of each piece of software:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Para garantizar que las versiones correctas del software fueron utilizadas (en lugar de las predeterminadas de Solaris), install.sh fue modificado explicitamente para definir las locaciones de cada pieza del software:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>During the Python build, both the <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>libssl<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> and <bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>readline<bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept> libraries are needed.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Durante la construcción se necesitan ambas librerías: <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>libssl<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> y <bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>readline<bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept>.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Add them to the system library path:</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Agréguelas a la ruta de la librería del sistema.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>For more info see:<it pos='begin' x='0'>&lt;br0&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Para más información:<it pos='begin' x='0'>&lt;br0&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Posted by Coopertino at Sep 09, 2008 02:03 PM</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Publicado por Coopertino el 9 de Septiembre de 2008 02:03 PM</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The install went smoothly, after the following 2 mods :</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>La instalación se ejecutó sin problemas, después de estas dos modificaciones:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>intall.sh line 1</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>intall.sh línea 1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>install.sh line 81</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>install.sh línea 81</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Installing on Windows</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Instalando en Windows</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>How to get Plone up and running on Windows, not for serious development</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>¿Cómo preparar y ejecutar Plone en Windows?; no para desarrollo considerable.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The binary installer for Windows is the option to choose if you want to try out Plone on Windows or host a site but not serious development.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>El instalador binario para Windows es la opción a escoger si quiere probar Plone en Windows o para ser el host de un sitio, pero no para desarrollo considerable.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Should you want to do serious development, check <bpt i='0' x='0'>&lt;a0&gt;</bpt>this document<ept i='0'>&lt;/a0&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Si quiere elaborar un desarrollo considerable, revise <bpt i='0' x='0'>&lt;a0&gt;</bpt>este documento<ept i='0'>&lt;/a0&gt;</ept>.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Otherwise, continue reading these instructions, taken from the <bpt i='0' x='0'>&lt;a0&gt;</bpt>Catapult Solutions<ept i='0'>&lt;/a0&gt;</ept> site.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>De lo contrario, continué leyendo estas instrucciones tomadas del sitio <bpt i='0' x='0'>&lt;a0&gt;</bpt>Catapult Solutions<ept i='0'>&lt;/a0&gt;</ept>.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i='0' x='0'>&lt;s0&gt;</bpt>Downloading and Installing <ept i='0'>&lt;/s0&gt;</ept><bpt i='1' x='1'>&lt;s1&gt;</bpt>Plone<ept i='1'>&lt;/s1&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg><bpt i='0' x='0'>&lt;s0&gt;</bpt>Descargue e instale <ept i='0'>&lt;/s0&gt;</ept><bpt i='1' x='1'>&lt;s1&gt;</bpt>Plone<ept i='1'>&lt;/s1&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Download the installer from this page on plone.org: <bpt i='0' x='0'>&lt;a0&gt;</bpt>http://plone.org/products/plone<ept i='0'>&lt;/a0&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Descargue el instalador de esta página contenida en plone.org: <bpt i='0' x='0'>&lt;a0&gt;</bpt>http://plone.org/products/plone<ept i='0'>&lt;/a0&gt;</ept>.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Save it in a place you can remember, such as your desktop.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Guárdelo en un sitio que pueda recordar, tal como su Escritorio.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>After the download is completed, double-click on the installer file to run it.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Después que la descarga haya finalizado, haga doble clic en archivo del instalador para ejecutarlo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Go through the installation wizard.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Encamínese por el asistente de instalación. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Never install Plone in the same folder of a previous installation, always use a new one.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Nunca instale Plone en la misma carpeta que usó para instalar una versión vieja, siempre use una nueva.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Write down the installation location, such as <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>C:\Program Files\Plone<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Escriba o copie la locación de la instalación, tal como esta <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>C:\Program Files\Plone<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You'll need this later.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Usted necesitará esto más adelante.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Write down the Username and Password you enter in the wizard.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Escriba el nombre de usuario y contraseña que ingrese en el asistente.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You'll need this later too.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Ya que también necesitará esto después.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Wait while the installer Extracts files and sets up your Plone instance.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Aguarde mientras el instalador Extrae los archivos y crea la instancia de Plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i='0' x='0'>&lt;s0&gt;</bpt>Starting/stopping <ept i='0'>&lt;/s0&gt;</ept><bpt i='1' x='1'>&lt;s1&gt;</bpt>Plone<ept i='1'>&lt;/s1&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg><bpt i='0' x='0'>&lt;s0&gt;</bpt>Iniciando/Deteniendo <ept i='0'>&lt;/s0&gt;</ept><bpt i='1' x='1'>&lt;s1&gt;</bpt>Plone<ept i='1'>&lt;/s1&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Using the Controller</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Usando el Controlador</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You can access the Plone Windows Controller from the Start button â Programs â Plone.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Usted puede acceder al Controlador de Plone para Windows, mediante el botón de Inicio &gt; Todos los programas &gt; Plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You can use the controller to start/stop the Plone server (Zope) and check its status.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Con el controlador puede start/stop (iniciar/detener) el servidor (Zope) de Plone y revisar el estado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Using the command line</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Usando la línea de comando.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>After the installer is finished, open a Command Prompt window (usually in Start &gt; All Programs &gt; Accessories).</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Después de que el instalador haya finalizado proceda a abrir una ventana de Símbolo de sistema (generalmente Inicio &gt; Todos los programas &gt; Accesorios).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Move into your Plone installation directory, which you wrote down earlier.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Vaya al directorio de instalación de Plone, aquel que escribió anteriormente.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Example: cd <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>\Program Files\Plone<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Ejemplo: cd <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>\Program Files\Plone<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>To start your Plone instance for the first time, issue this command: <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>bin\instance.exe fg<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Para iniciar la instancia de Plone por primera vez, introduzca el siguiente comando: <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>bin\instance.exe fg<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This will start Plone in debug mode.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Esto iniciará Plone en modo de depuración.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>It will display the port number that Plone is running on, which is 8080 by default.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>A su vez mostrará el número de puerto por el cual Plone se está ejecutando; por defecto es el puerto 8080.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You will know your Plone instance has finished starting and is ready when you see the message <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>INFO Zope Ready to handle requests<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> in the terminal.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Usted sabrá que la instancia de Plone ha terminado la iniciación y está listo cuando se muestre el siguiente mensaje en la terminal <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>INFO Zope Ready to handle requests<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> (Información Zope preparado para manejar solicitudes). </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>To stop Plone, just use a CTRL-C in you Command Prompt window.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Para detener Plone, simplemente use  CTRL-C en su ventana de Símbolo de sistema.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i='0' x='0'>&lt;s0&gt;</bpt>Starting <ept i='0'>&lt;/s0&gt;</ept><bpt i='1' x='1'>&lt;s1&gt;</bpt>Plone <ept i='1'>&lt;/s1&gt;</ept><bpt i='2' x='2'>&lt;s2&gt;</bpt>as <ept i='2'>&lt;/s2&gt;</ept><bpt i='3' x='3'>&lt;s3&gt;</bpt>a <ept i='3'>&lt;/s3&gt;</ept><bpt i='4' x='4'>&lt;s4&gt;</bpt>service<ept i='4'>&lt;/s4&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg><bpt i='0' x='0'>&lt;s0&gt;</bpt>Iniciar <ept i='0'>&lt;/s0&gt;</ept><bpt i='1' x='1'>&lt;s1&gt;</bpt>Plone <ept i='1'>&lt;/s1&gt;</ept><bpt i='2' x='2'>&lt;s2&gt;</bpt>como <ept i='2'>&lt;/s2&gt;</ept><bpt i='3' x='3'>&lt;s3&gt;</bpt>un <ept i='3'>&lt;/s3&gt;</ept><bpt i='4' x='4'>&lt;s4&gt;</bpt>servicio<ept i='4'>&lt;/s4&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If you'd like Plone to start as a service when you start your computer you'll need to CD into your Plone install directory, then issue the following command in your Command Prompt window: <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>bin\instance install<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Si quisiera que Plone se inicie como un servicio al momento de iniciar su computadora necesitará efectuar un CD al directorio de su instalación, luego ingrese el siguiente comando en la ventana de Símbolo de sistema: <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>bin\instance install<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This will install a new service that will show up in your Services Management Console.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Esta acción instalará un nuevo servicio que a su vez se mostrará en la Consola de Administración de Servicios.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>It will be listed as: <bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>Zope instance at C:\Program Files\Plone\parts\instance.exe<bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept> if you installed to <bpt i='4' x='4'>&lt;s4&gt;</bpt>&quot;<ept i='4'>&lt;/s4&gt;</ept>C:\Program Files\Plone<bpt i='5' x='5'>&lt;s5&gt;</bpt>&quot;<ept i='5'>&lt;/s5&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Estará listada como: <bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>Zope instance at C:\Program Files\Plone\parts\instance.exe<bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept>, por supuesto si hizo la instalación en <bpt i='4' x='4'>&lt;s4&gt;</bpt>&quot;<ept i='4'>&lt;/s4&gt;</ept>C:\Program Files\Plone<bpt i='5' x='5'>&lt;s5&gt;</bpt>&quot;<ept i='5'>&lt;/s5&gt;</ept>.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>After the service is installed you can start Plone immediately by issuing the following command in your Command Prompt window: <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>bin\instance.exe start<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>, or use the Plone Controller (see above).</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Luego de que el servicio ha sido instalado inmediatamente puede iniciar Plone escribiendo el siguiente comando en su venta de Símbolo de sistema: <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>bin\instance.exe start<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>, o utilice el Controlador de Plone (visto anteriormente).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If you'd like to remove the service later, just CD into your Plone install directory, then issue this command in your Command Prompt window: <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>bin\instance.exe remove<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>En el caso de que quiera remover este servicio, use el comando CD al directorio de su instalación y luego ingrese lo siguiente: <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>bin\instance.exe remove<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i='0' x='0'>&lt;s0&gt;</bpt>Accessing <ept i='0'>&lt;/s0&gt;</ept><bpt i='1' x='1'>&lt;s1&gt;</bpt>Plone<ept i='1'>&lt;/s1&gt;</ept></seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg><bpt i='0' x='0'>&lt;s0&gt;</bpt>Accediendo a <ept i='0'>&lt;/s0&gt;</ept><bpt i='1' x='1'>&lt;s1&gt;</bpt>Plone<ept i='1'>&lt;/s1&gt;</ept></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You may need to tell your firewall to open TCP Port 8080 before you can access Plone's web interface.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Quizás tenga que transmitirle a su Firewall (cortafuegos) que abra el puerto 8080, antes de que pueda acceder a la interfaz web de Plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Open a browser window and browse to http://localhost:8080/.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Abra un navegador web y vaya a http://localhost:8080/.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Click on the button with the text <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>Create a new Plone site<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> on it.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Haga clic en el botón que contiene el texto <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>Create a new Plone site<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> (Crear un nuevo sitio Plone)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You'll be asked for the username and password that you wrote down earlier.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Se le pedirá que introduzca el nombre de usuario y contraseña: aquellos que escribió anteriormente.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Give your site an Id, like <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>Plone<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>, and a Title, like <bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>My Plone Site<bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Otórguele a su sitio una identificación como <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>Plone<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>, y un título como <bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>Mi sitio Plone<bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept>.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>You can also select the site language and some additional products for installing.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Además puede seleccionar el idioma del sitio y algunos productos adicionales para su instalación.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Then click on the <bpt i='4' x='4'>&lt;s4&gt;</bpt>&quot;<ept i='4'>&lt;/s4&gt;</ept>Add Plone Site<bpt i='5' x='5'>&lt;s5&gt;</bpt>&quot;<ept i='5'>&lt;/s5&gt;</ept> button near the bottom of the page.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Luego haga clic en el botón <bpt i='4' x='4'>&lt;s4&gt;</bpt>&quot;<ept i='4'>&lt;/s4&gt;</ept>Add Plone Site<bpt i='5' x='5'>&lt;s5&gt;</bpt>&quot;<ept i='5'>&lt;/s5&gt;</ept> (Agregar nuevo sitio Plone) cerca del final de la página.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>It will take a few seconds to create your Plone site<it pos='begin' x='6'>&lt;br6&gt;</it></seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Tomará unos segundos crear su sitio Plone<it pos='begin' x='6'>&lt;br6&gt;</it></seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>After your site is created you can access it with this URL: <bpt i='8' x='8'>&lt;e8&gt;</bpt>http://localhost:8080/Plone<ept i='8'>&lt;/e8&gt;</ept>, where <bpt i='9' x='9'>&lt;s9&gt;</bpt>&quot;<ept i='9'>&lt;/s9&gt;</ept>Plone<bpt i='10' x='10'>&lt;s10&gt;</bpt>&quot;<ept i='10'>&lt;/s10&gt;</ept> is the Id you gave to your site.</seg>
+      </tuv>
+      <tuv xml:lang="ES-VE">
+        <seg>Después de que su sitio se haya creado puede acceder a él mediante esta URL: <bpt i='8' x='8'>&lt;e8&gt;</bpt>http://localhost:8080/Plone<ept i='8'>&lt;/e8&gt;</ept>, donde <bpt i='9' x='9'>&lt;s9&gt;</bpt>&quot;<ept i='9'>&lt;/s9&gt;</ept>Plone<bpt i='10' x='10'>&lt;s10&gt;</bpt>&quot;<ept i='10'>&lt;/s10&gt;</ept> es la identificación de su sitio.</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

@@ -1,0 +1,27 @@
+Estadísticas del proyecto
+
+Total:
+	Segmentos	609
+	Palabras	5536
+	Caracteres (sin espacios)	29842
+	Caracteres (con espacios)	34499
+Únicos pendientes:
+	Segmentos	253
+	Palabras	935
+	Caracteres (sin espacios)	6892
+	Caracteres (con espacios)	7371
+Únicos:
+	Segmentos	580
+	Palabras	5456
+	Caracteres (sin espacios)	29264
+	Caracteres (con espacios)	33904
+Únicos pendientes:
+	Segmentos	225
+	Palabras	871
+	Caracteres (sin espacios)	6388
+	Caracteres (con espacios)	6865
+
+Estadísticas por archivo:
+
+Nombre de archivo	Palabras en total	Palabras pendientes	Caracteres en total (sin espacios)	Caracteres pendientes (sin espacios)	Caracteres en total (con espacios)	Caracteres pendientes (con espacios)
+installing-plone.html	5536	935	29842	6892	34499	7371
