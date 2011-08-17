@@ -241,7 +241,7 @@
         <seg>To initiate the installation type &quot;./install.sh method&quot; where method is either &quot;standalone&quot; or &quot;zeo&quot;.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Para comenzar la instalación escriba &quot;./install.sh metho&quot; donde method es &quot;standalone&quot; (autónoma) o &quot;zeo&quot;.</seg>
+        <seg>Para comenzar la instalación escriba &quot;./install.sh method&quot; donde method es &quot;standalone&quot; (autónoma) o &quot;zeo&quot;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -257,7 +257,7 @@
         <seg>A complete list of command-line options can be found here.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Una lista completa de opciones de líneas de comando la puede encontrar aquí.</seg>
+        <seg>una lista completa de opciones de líneas de comando la puede encontrar aquí.</seg>
       </tuv>
     </tu>
     <tu>
@@ -361,7 +361,7 @@
         <seg>You can find your site at http://localhost:8080/SiteName, where &quot;SiteName&quot; is the Id of your Plone site.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Usted puede encontrar su sitio en http://localhost:8080/SiteName, donde &quot;SiteName&quot; es el identificador de su sitio Plone.</seg>
+        <seg>Usted puede encontrar su sitio en http://localhost:8080/SiteName, donde &quot;SiteName&quot; es la identificación de su sitio Plone. </seg>
       </tuv>
     </tu>
     <tu>
@@ -601,7 +601,7 @@
         <seg> You can find your site at http://localhost:8080/SiteName, where &quot;SiteName&quot; is the Id of your Plone site.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Usted puede encontrar su sitio en http://localhost:8080/SiteName, donde &quot;SiteName&quot; es el identificador de su sitio Plone.</seg>
+        <seg>Puede encontrar su sitio en http://localhost:8080/SiteName, donde &quot;SiteName&quot; es la identificación de su sitio Plone.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1313,7 +1313,7 @@
         <seg>You may use &quot;zopectl run&quot; to run scripts on one of the clients while others serve the site to the Internet.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Usted puede usar &quot;zopectl run&quot; para ejecutar scripts en alguno de los clientes mientras que otros sirven el sitio a Internet.</seg>
+        <seg>Usted puede usar &quot;zopectl run&quot; para ejecutar scripts en alguno de los clientes mientras que otros sirven el sitio a internet. </seg>
       </tuv>
     </tu>
     <tu>
@@ -1569,7 +1569,7 @@
         <seg>Make note of the password for the &quot;admin&quot; user.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Haga una nota de la contraseña usada para el usuario&quot;admin&quot;.</seg>
+        <seg>Haga una nota de la contraseña usada para el usuario &quot;admin&quot;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1785,7 +1785,7 @@
         <seg>Precede the following commands by &quot;sudo&quot; or by using &quot;su -&quot; to switch to root</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Preceda los siguientes comandos con&quot;sudo&quot; o &quot;su -&quot; para cambiar al usuario root.</seg>
+        <seg>Preceda los siguientes comandos con &quot;sudo&quot; o &quot;su -&quot; para cambiar al usuario root.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1905,7 +1905,7 @@
         <seg>If this is a root install, preface the command with &quot;sudo&quot; or use su to change to root.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Si esta es una instalación root, anteponga el comando&quot;sudo&quot; o use &quot;su -&quot; para cambiar al usuario root.</seg>
+        <seg>Si esta es una instalación root, anteponga el comando &quot;sudo&quot; o use &quot;su -&quot; para cambiar al usuario root.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2713,7 +2713,7 @@
         <seg>You will know your Plone instance has finished starting and is ready when you see the message &quot;INFO Zope Ready to handle requests&quot; in the terminal.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Usted sabrá que la instancia de Plone ha terminado la iniciación y está listo cuando se muestre el siguiente mensaje en la terminal &quot;INFO Zope Ready to handle requests&quot; (Información Zope preparado para manejar solicitudes). </seg>
+        <seg>Usted sabrá que la instancia de Plone ha terminado la iniciación y está listo cuando se muestre el siguiente mensaje en la terminal &quot;INFO Zope Ready to handle requests&quot; (Información Zope preparado para manejar solicitudes).</seg>
       </tuv>
     </tu>
     <tu>
@@ -2753,7 +2753,7 @@
         <seg>It will be listed as: &quot;Zope instance at C:\Program Files\Plone\parts\instance.exe&quot; if you installed to &quot;C:\Program Files\Plone&quot;.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Estará listada como: &quot;Zope instance at C:\Program Files\Plone\parts\instance.exe&quot;, por supuesto si hizo la instalación en &quot;C:\Program Files\Plone&quot;.</seg>
+        <seg>Estará listada como: &quot;Zope instance at C:\Program Files\Plone\parts\instance.exe&quot;, por supuesto si hizo la instalación en  &quot;C:\Program Files\Plone&quot;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2761,7 +2761,7 @@
         <seg>After the service is installed you can start Plone immediately by issuing the following command in your Command Prompt window: &quot;bin\instance.exe start&quot;, or use the Plone Controller (see above).</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Luego de que el servicio ha sido instalado inmediatamente puede iniciar Plone escribiendo el siguiente comando en su venta de Símbolo de sistema: &quot;bin\instance.exe start&quot;, o utilice el Controlador de Plone (visto anteriormente).</seg>
+        <seg>Luego de que el servicio ha sido instalado inmediatamente puede iniciar Plone escribiendo el siguiente comando en su venta de Símbolo de sistema : &quot;bin\instance.exe start&quot;, o utilice el Controlador de Plone (visto anteriormente).</seg>
       </tuv>
     </tu>
     <tu>
@@ -2833,7 +2833,7 @@
         <seg>Then click on the &quot;Add Plone Site&quot; button near the bottom of the page.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Luego haga clic en el botón &quot;Add Plone Site&quot; (Agregar nuevo sitio Plone) cerca del final de la página.</seg>
+        <seg>Luego haga clic en el botón  &quot;Add Plone Site&quot; (Agregar nuevo sitio Plone) cerca del final de la página.</seg>
       </tuv>
     </tu>
     <tu>

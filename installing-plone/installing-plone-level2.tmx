@@ -182,10 +182,10 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>Extract the installer by typing <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>tar xzf InstallerName <bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>, where InstallerName is the name of the Plone Installer you downloaded.</seg>
+        <seg>Extract the installer by typing &quot;tar xzf InstallerName &quot;, where InstallerName is the name of the Plone Installer you downloaded.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Descomprima el instalador escribiendo <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>tar xzf InstallerName <bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>, donde InstallerName es el nombre del instalador de Plone que usted descargó.</seg>
+        <seg>Descomprima el instalador escribiendo &quot;tar xzf InstallerName &quot;, donde InstallerName es el nombre del instalador de Plone que usted descargó.</seg>
       </tuv>
     </tu>
     <tu>
@@ -238,26 +238,26 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>To initiate the installation type <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>./install.sh method<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> where method is either <bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>standalone<bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept> or <bpt i='4' x='4'>&lt;s4&gt;</bpt>&quot;<ept i='4'>&lt;/s4&gt;</ept>zeo<bpt i='5' x='5'>&lt;s5&gt;</bpt>&quot;<ept i='5'>&lt;/s5&gt;</ept>.</seg>
+        <seg>To initiate the installation type &quot;./install.sh method&quot; where method is either &quot;standalone&quot; or &quot;zeo&quot;.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Para comenzar la instalación escriba <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>./install.sh metho<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> donde method es <bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>standalone<bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept> (autónoma) o <bpt i='4' x='4'>&lt;s4&gt;</bpt>&quot;<ept i='4'>&lt;/s4&gt;</ept>zeo<bpt i='5' x='5'>&lt;s5&gt;</bpt>&quot;<ept i='5'>&lt;/s5&gt;</ept>.</seg>
+        <seg>Para comenzar la instalación escriba &quot;./install.sh method&quot; donde method es &quot;standalone&quot; (autónoma) o &quot;zeo&quot;.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>If you would like to install Plone in server mode type <bpt i='6' x='6'>&lt;s6&gt;</bpt>&quot;<ept i='6'>&lt;/s6&gt;</ept><bpt i='7' x='7'>&lt;s7&gt;</bpt>sudo<ept i='7'>&lt;/s7&gt;</ept> ./install.sh method<bpt i='8' x='8'>&lt;s8&gt;</bpt>&quot;<ept i='8'>&lt;/s8&gt;</ept> or run the installation script as root some other way.</seg>
+        <seg>If you would like to install Plone in server mode type &quot;<bpt i='0' x='0'>&lt;s0&gt;</bpt>sudo<ept i='0'>&lt;/s0&gt;</ept> ./install.sh method&quot; or run the installation script as root some other way.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Si desea instalar Plone en modo servidor escriba <bpt i='6' x='6'>&lt;s6&gt;</bpt>&quot;<ept i='6'>&lt;/s6&gt;</ept><bpt i='7' x='7'>&lt;s7&gt;</bpt>sudo<ept i='7'>&lt;/s7&gt;</ept> ./install.sh method<bpt i='8' x='8'>&lt;s8&gt;</bpt>&quot;<ept i='8'>&lt;/s8&gt;</ept> o ejecute el script de instalación como root de alguna otra manera.</seg>
+        <seg>Si desea instalar Plone en modo servidor escriba &quot;<bpt i='0' x='0'>&lt;s0&gt;</bpt>sudo<ept i='0'>&lt;/s0&gt;</ept> ./install.sh method&quot; o ejecute el script de instalación como root de alguna otra manera.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>A complete list of command-line options can be found <bpt i='9' x='9'>&lt;a9&gt;</bpt>here<ept i='9'>&lt;/a9&gt;</ept>.</seg>
+        <seg>A complete list of command-line options can be found <bpt i='1' x='1'>&lt;a1&gt;</bpt>here<ept i='1'>&lt;/a1&gt;</ept>.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Una lista completa de opciones de líneas de comando la puede encontrar <bpt i='9' x='9'>&lt;a9&gt;</bpt>aquí<ept i='9'>&lt;/a9&gt;</ept>.</seg>
+        <seg>una lista completa de opciones de líneas de comando la puede encontrar <bpt i='1' x='1'>&lt;a1&gt;</bpt>aquí<ept i='1'>&lt;/a1&gt;</ept>.</seg>
       </tuv>
     </tu>
     <tu>
@@ -294,10 +294,10 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg><bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>cd<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> to your Plone install directory.</seg>
+        <seg>&quot;cd&quot; to your Plone install directory.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Haga un <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>cd<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> al directorio de su instalación Plone.</seg>
+        <seg>Haga un &quot;cd&quot; al directorio de su instalación Plone.</seg>
       </tuv>
     </tu>
     <tu>
@@ -310,18 +310,18 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>Execute <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>./bin/plonectl start<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.</seg>
+        <seg>Execute &quot;./bin/plonectl start&quot;.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Ejecute <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>./bin/plonectl start<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.</seg>
+        <seg>Ejecute &quot;./bin/plonectl start&quot;.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>(The port Plone uses may be adjusted in buildout.cfg and then running <bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>/bin/buildout<bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept>).</seg>
+        <seg>(The port Plone uses may be adjusted in buildout.cfg and then running &quot;/bin/buildout&quot;).</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>(El puerto que usa Plone se puede ajustar en buildout.cfg para luego ejecutar <bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>/bin/buildout<bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept>).</seg>
+        <seg>(El puerto que usa Plone se puede ajustar en buildout.cfg para luego ejecutar &quot;/bin/buildout&quot;).</seg>
       </tuv>
     </tu>
     <tu>
@@ -342,10 +342,10 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>Click on <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>Create a new Plone site<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> and enter your login information to start using Plone.</seg>
+        <seg>Click on &quot;Create a new Plone site&quot; and enter your login information to start using Plone.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Haga clic en <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>Create a new Plone site<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> (Crear un nuevo sitio Plone) e introduzca su información de inicio de sesión para comenzar a usar Plone.</seg>
+        <seg>Haga clic en &quot;Create a new Plone site&quot; (Crear un nuevo sitio Plone) e introduzca su información de inicio de sesión para comenzar a usar Plone.</seg>
       </tuv>
     </tu>
     <tu>
@@ -358,18 +358,18 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>You can find your site at http://localhost:8080/<bpt i='2' x='2'>&lt;e2&gt;</bpt>SiteName<ept i='2'>&lt;/e2&gt;</ept>, where <bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept>SiteName<bpt i='4' x='4'>&lt;s4&gt;</bpt>&quot;<ept i='4'>&lt;/s4&gt;</ept> is the Id of your Plone site.</seg>
+        <seg>You can find your site at http://localhost:8080/<bpt i='0' x='0'>&lt;e0&gt;</bpt>SiteName<ept i='0'>&lt;/e0&gt;</ept>, where &quot;SiteName&quot; is the Id of your Plone site.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Usted puede encontrar su sitio en http://localhost:8080/<bpt i='2' x='2'>&lt;e2&gt;</bpt>SiteName<ept i='2'>&lt;/e2&gt;</ept>, donde <bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept>SiteName<bpt i='4' x='4'>&lt;s4&gt;</bpt>&quot;<ept i='4'>&lt;/s4&gt;</ept> es el identificador de su sitio Plone.</seg>
+        <seg>Usted puede encontrar su sitio en http://localhost:8080/<bpt i='0' x='0'>&lt;e0&gt;</bpt>SiteName<ept i='0'>&lt;/e0&gt;</ept>, donde &quot;SiteName&quot; es la identificación de su sitio Plone. </seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>To stop the Plone process run <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>./bin/plonectl stop<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.</seg>
+        <seg>To stop the Plone process run &quot;./bin/plonectl stop&quot;.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Para detener el proceso Plone ejecute <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>./bin/plonectl stop<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.</seg>
+        <seg>Para detener el proceso Plone ejecute &quot;./bin/plonectl stop&quot;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -478,10 +478,10 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg> For most people, the default entry should be fine.(Click <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>Next<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> after each step to continue)</seg>
+        <seg> For most people, the default entry should be fine.(Click &quot;Next&quot; after each step to continue)</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>La mayoría de personas están de acuerdo con la ubicación predeterminada. (Haga clic en <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>Next<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> (Siguiente) al finalizar cada paso para continuar)</seg>
+        <seg>La mayoría de personas están de acuerdo con la ubicación predeterminada. (Haga clic en &quot;Next&quot; (Siguiente) al finalizar cada paso para continuar)</seg>
       </tuv>
     </tu>
     <tu>
@@ -510,10 +510,10 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg> Mark the check boxes to show whether you would like to add Plone as a service so that it will automatically run at startup.(Note: This can be changed at any time by running <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>bin\instance.exe remove<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> from your install directory)  or if you would like to run Plone after exiting the installer.</seg>
+        <seg> Mark the check boxes to show whether you would like to add Plone as a service so that it will automatically run at startup.(Note: This can be changed at any time by running &quot;bin\instance.exe remove&quot; from your install directory)  or if you would like to run Plone after exiting the installer.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg> Marque las casillas de confirmación para determinar si usted quiere agregar Plone como un servicio para que se inicie automáticamente con el inicio de Windows. (Nota: esto se puede cambiar en cualquier momento ejecutando <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>bin\instance.exe remove<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> en su directorio de instalación) o si desea ejecutar Plone después de que la instalación haya culminado.</seg>
+        <seg> Marque las casillas de confirmación para determinar si usted quiere agregar Plone como un servicio para que se inicie automáticamente con el inicio de Windows. (Nota: esto se puede cambiar en cualquier momento ejecutando &quot;bin\instance.exe remove&quot; en su directorio de instalación) o si desea ejecutar Plone después de que la instalación haya culminado.</seg>
       </tuv>
     </tu>
     <tu>
@@ -598,10 +598,10 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg> You can find your site at http://localhost:8080/<bpt i='2' x='2'>&lt;e2&gt;</bpt>SiteName<ept i='2'>&lt;/e2&gt;</ept>, where <bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept>SiteName<bpt i='4' x='4'>&lt;s4&gt;</bpt>&quot;<ept i='4'>&lt;/s4&gt;</ept> is the Id of your Plone site.</seg>
+        <seg> You can find your site at http://localhost:8080/<bpt i='0' x='0'>&lt;e0&gt;</bpt>SiteName<ept i='0'>&lt;/e0&gt;</ept>, where &quot;SiteName&quot; is the Id of your Plone site.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Usted puede encontrar su sitio en http://localhost:8080/<bpt i='2' x='2'>&lt;e2&gt;</bpt>SiteName<ept i='2'>&lt;/e2&gt;</ept>, donde <bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept>SiteName<bpt i='4' x='4'>&lt;s4&gt;</bpt>&quot;<ept i='4'>&lt;/s4&gt;</ept> es el identificador de su sitio Plone.</seg>
+        <seg>Puede encontrar su sitio en http://localhost:8080/<bpt i='0' x='0'>&lt;e0&gt;</bpt>SiteName<ept i='0'>&lt;/e0&gt;</ept>, donde &quot;SiteName&quot; es la identificación de su sitio Plone.</seg>
       </tuv>
     </tu>
     <tu>
@@ -710,10 +710,10 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>On the Plone help lists and channel, the suggestion to <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>just use the Unified Installer<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> often draws one of two reactions:</seg>
+        <seg>On the Plone help lists and channel, the suggestion to &quot;just use the Unified Installer&quot; often draws one of two reactions:</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>En las listas de ayuda y canales IRC de Plone, la sugerencia <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>simplemente use el instalador Unificado<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>, generalmente resulta en una de dos reacciones:</seg>
+        <seg>En las listas de ayuda y canales IRC de Plone, la sugerencia &quot;simplemente use el instalador Unificado&quot;, generalmente resulta en una de dos reacciones:</seg>
       </tuv>
     </tu>
     <tu>
@@ -950,10 +950,10 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>Setting a user other than <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>admin<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> and/or setting a password of your choice;</seg>
+        <seg>Setting a user other than &quot;admin&quot; and/or setting a password of your choice;</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Establecer un usuario aparte del <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>admin<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> y/o configurar la contraseña de su elección;</seg>
+        <seg>Establecer un usuario aparte del &quot;admin&quot; y/o configurar la contraseña de su elección;</seg>
       </tuv>
     </tu>
     <tu>
@@ -1102,10 +1102,10 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>Creates a <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>plone<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> user, sets this user as owner of the data files, and configures Zope to run as the effective user <bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>plone<bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept>.</seg>
+        <seg>Creates a &quot;plone&quot; user, sets this user as owner of the data files, and configures Zope to run as the effective user &quot;plone&quot;.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Crea un usuario <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>plone<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> y establece este usuario como propietario de los archivos de datos (Data.fs). Configura Zope para correr como el usuario efectivo <bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>plone<bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept>.</seg>
+        <seg>Crea un usuario &quot;plone&quot; y establece este usuario como propietario de los archivos de datos (Data.fs). Configura Zope para correr como el usuario efectivo &quot;plone&quot;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1166,18 +1166,18 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>It is a generally accepted <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>best practice<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> to run persistent processes (like Zope) as unique users with limited rights.</seg>
+        <seg>It is a generally accepted &quot;best practice&quot; to run persistent processes (like Zope) as unique users with limited rights.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Generalmente esto es aceptado como la <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>mejor practica<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>; ejecutar procesos persistentes (como Zope) por medio de usuarios únicos con permisos limitados.</seg>
+        <seg>Generalmente esto es aceptado como la &quot;mejor practica&quot;; ejecutar procesos persistentes (como Zope) por medio de usuarios únicos con permisos limitados.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>If you install via root, though, be careful not to run <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>sudo bin/buildout<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> except in offline mode since this would immediately run setup downloaded programs.</seg>
+        <seg>If you install via root, though, be careful not to run &quot;sudo bin/buildout&quot; except in offline mode since this would immediately run setup downloaded programs.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>De igual forma al instalar como root, tenga cuidado y no ejecute <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>sudo bin/buildout<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> excepto cuando esté trabajando offline (sin conexión), ya que si no lo hace inmediatamente ejecutara una setup (instalación) de los programas descargados.</seg>
+        <seg>De igual forma al instalar como root, tenga cuidado y no ejecute &quot;sudo bin/buildout&quot; excepto cuando esté trabajando offline (sin conexión), ya que si no lo hace inmediatamente ejecutara una setup (instalación) de los programas descargados.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1310,10 +1310,10 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>You may use <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>zopectl run<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> to run scripts on one of the clients while others serve the site to the Internet.</seg>
+        <seg>You may use &quot;zopectl run&quot; to run scripts on one of the clients while others serve the site to the Internet.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Usted puede usar <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>zopectl run<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> para ejecutar scripts en alguno de los clientes mientras que otros sirven el sitio a Internet.</seg>
+        <seg>Usted puede usar &quot;zopectl run&quot; para ejecutar scripts en alguno de los clientes mientras que otros sirven el sitio a internet. </seg>
       </tuv>
     </tu>
     <tu>
@@ -1342,10 +1342,10 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>You'll also be able to use introspection tools like Clouseau and <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>zopectl debug<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> against a live site.</seg>
+        <seg>You'll also be able to use introspection tools like Clouseau and &quot;zopectl debug&quot; against a live site.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>También podrá usar herramientas de introspección como Clouseau y el comando <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>zopectl debug<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> en contra de un sitio en producción.</seg>
+        <seg>También podrá usar herramientas de introspección como Clouseau y el comando &quot;zopectl debug&quot; en contra de un sitio en producción.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1494,10 +1494,10 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>(<bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>VERSION-<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> will vary with release.)</seg>
+        <seg>(&quot;VERSION-&quot; will vary with release.)</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>(<bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>VERSION-<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> cambiará con cada versión.)</seg>
+        <seg>(&quot;VERSION-&quot; cambiará con cada versión.)</seg>
       </tuv>
     </tu>
     <tu>
@@ -1566,18 +1566,18 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>Make note of the password for the <bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>admin<bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept> user.</seg>
+        <seg>Make note of the password for the &quot;admin&quot; user.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Haga una nota de la contraseña usada para el usuario<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>admin<bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>.</seg>
+        <seg>Haga una nota de la contraseña usada para el usuario &quot;admin&quot;.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>These instructions will also be available in README.txt file, and the pass word in <bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept>adminPassword.txt<bpt i='4' x='4'>&lt;s4&gt;</bpt>&quot;<ept i='4'>&lt;/s4&gt;</ept>, in your new install.</seg>
+        <seg>These instructions will also be available in README.txt file, and the pass word in &quot;adminPassword.txt&quot;, in your new install.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Estas instrucciones también estarán disponibles en el archivo README.txt, y la contraseña en el archivo <bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept>adminPassword.txt<bpt i='4' x='4'>&lt;s4&gt;</bpt>&quot;<ept i='4'>&lt;/s4&gt;</ept> de su nueva instalación.</seg>
+        <seg>Estas instrucciones también estarán disponibles en el archivo README.txt, y la contraseña en el archivo &quot;adminPassword.txt&quot; de su nueva instalación.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1678,10 +1678,10 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>(If you're testing on another machine, substitute your server host name for <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>localhost<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.)</seg>
+        <seg>(If you're testing on another machine, substitute your server host name for &quot;localhost&quot;.)</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>(Si esta haciendo la prueba en otra computadora, substituya el nombre (ip o url) de su servidor host por <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>localhost<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.)</seg>
+        <seg>(Si esta haciendo la prueba en otra computadora, substituya el nombre (ip o url) de su servidor host por &quot;localhost&quot;.)</seg>
       </tuv>
     </tu>
     <tu>
@@ -1782,10 +1782,10 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>Precede the following commands by <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>sudo<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> or by using <bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>su -<bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept> to switch to root</seg>
+        <seg>Precede the following commands by &quot;sudo&quot; or by using &quot;su -&quot; to switch to root</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Preceda los siguientes comandos con<bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>sudo<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> o <bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>su -<bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept> para cambiar al usuario root.</seg>
+        <seg>Preceda los siguientes comandos con &quot;sudo&quot; o &quot;su -&quot; para cambiar al usuario root.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1902,10 +1902,10 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>If this is a root install, preface the command with <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>sudo<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> or use su to change to root.</seg>
+        <seg>If this is a root install, preface the command with &quot;sudo&quot; or use su to change to root.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Si esta es una instalación root, anteponga el comando<bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>sudo<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> o use &quot;su -&quot; para cambiar al usuario root.</seg>
+        <seg>Si esta es una instalación root, anteponga el comando &quot;sudo&quot; o use &quot;su -&quot; para cambiar al usuario root.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2390,10 +2390,10 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>In addition install.sh uses the <bpt i='10' x='10'>&lt;s10&gt;</bpt>&quot;<ept i='10'>&lt;/s10&gt;</ept>whoami<bpt i='11' x='11'>&lt;s11&gt;</bpt>&quot;<ept i='11'>&lt;/s11&gt;</ept> shell command, which on Solaris is in:<it pos='begin' x='12'>&lt;br12&gt;</it></seg>
+        <seg>In addition install.sh uses the &quot;whoami&quot; shell command, which on Solaris is in:<it pos='begin' x='10'>&lt;br10&gt;</it></seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Además install.sh usa el comando shell <bpt i='10' x='10'>&lt;s10&gt;</bpt>&quot;<ept i='10'>&lt;/s10&gt;</ept>whoami<bpt i='11' x='11'>&lt;s11&gt;</bpt>&quot;<ept i='11'>&lt;/s11&gt;</ept> , el cual en Solaris se encuentra en:<it pos='begin' x='12'>&lt;br12&gt;</it></seg>
+        <seg>Además install.sh usa el comando shell &quot;whoami&quot; , el cual en Solaris se encuentra en:<it pos='begin' x='10'>&lt;br10&gt;</it></seg>
       </tuv>
     </tu>
     <tu>
@@ -2406,26 +2406,26 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>(If /usr/ccs/bin is not added, the Python compile will fail with <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>gmake: ar: Command not found<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.)<it pos='begin' x='2'>&lt;br2&gt;</it></seg>
+        <seg>(If /usr/ccs/bin is not added, the Python compile will fail with &quot;gmake: ar: Command not found&quot;.)<it pos='begin' x='0'>&lt;br0&gt;</it></seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>(Si /usr/ccs/bin no es agregado, la compilación de Python fallará con <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>gmake: ar: Command not found<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.)<it pos='begin' x='2'>&lt;br2&gt;</it></seg>
+        <seg>(Si /usr/ccs/bin no es agregado, la compilación de Python fallará con &quot;gmake: ar: Command not found&quot;.)<it pos='begin' x='0'>&lt;br0&gt;</it></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>As the -e switch is not present in the Solaris Bourne shell, install.sh and all other scripts must be changed to bash: #!/usr/bin/bash<it pos='begin' x='4'>&lt;br4&gt;</it></seg>
+        <seg>As the -e switch is not present in the Solaris Bourne shell, install.sh and all other scripts must be changed to bash: #!/usr/bin/bash<it pos='begin' x='2'>&lt;br2&gt;</it></seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Debido a que el interruptor -e no está presente en el shell Bourne de Solaris, install.sh, y todos los otros scripts, este se debe cambiar a bash: #!/usr/bin/bash<it pos='begin' x='4'>&lt;br4&gt;</it></seg>
+        <seg>Debido a que el interruptor -e no está presente en el shell Bourne de Solaris, install.sh, y todos los otros scripts, este se debe cambiar a bash: #!/usr/bin/bash<it pos='begin' x='2'>&lt;br2&gt;</it></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>install.sh uses the <bpt i='6' x='6'>&lt;s6&gt;</bpt>&quot;<ept i='6'>&lt;/s6&gt;</ept>which<bpt i='7' x='7'>&lt;s7&gt;</bpt>&quot;<ept i='7'>&lt;/s7&gt;</ept> shell command to locate the software it needs for the build.</seg>
+        <seg>install.sh uses the &quot;which&quot; shell command to locate the software it needs for the build.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>install.sh utiliza el comando shell <bpt i='6' x='6'>&lt;s6&gt;</bpt>&quot;<ept i='6'>&lt;/s6&gt;</ept>which<bpt i='7' x='7'>&lt;s7&gt;</bpt>&quot;<ept i='7'>&lt;/s7&gt;</ept> para localizar el software que necesita para la construcción.</seg>
+        <seg>install.sh utiliza el comando shell &quot;which&quot; para localizar el software que necesita para la construcción.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2438,10 +2438,10 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>During the Python build, both the <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>libssl<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> and <bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>readline<bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept> libraries are needed.</seg>
+        <seg>During the Python build, both the &quot;libssl&quot; and &quot;readline&quot; libraries are needed.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Durante la construcción se necesitan ambas librerías: <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>libssl<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> y <bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>readline<bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept>.</seg>
+        <seg>Durante la construcción se necesitan ambas librerías: &quot;libssl&quot; y &quot;readline&quot;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2582,10 +2582,10 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>Write down the installation location, such as <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>C:\Program Files\Plone<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.</seg>
+        <seg>Write down the installation location, such as &quot;C:\Program Files\Plone&quot;.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Escriba o copie la locación de la instalación, tal como esta <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>C:\Program Files\Plone<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.</seg>
+        <seg>Escriba o copie la locación de la instalación, tal como esta &quot;C:\Program Files\Plone&quot;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2678,18 +2678,18 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>Example: cd <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>\Program Files\Plone<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.</seg>
+        <seg>Example: cd &quot;\Program Files\Plone&quot;.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Ejemplo: cd <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>\Program Files\Plone<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.</seg>
+        <seg>Ejemplo: cd &quot;\Program Files\Plone&quot;.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>To start your Plone instance for the first time, issue this command: <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>bin\instance.exe fg<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.</seg>
+        <seg>To start your Plone instance for the first time, issue this command: &quot;bin\instance.exe fg&quot;.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Para iniciar la instancia de Plone por primera vez, introduzca el siguiente comando: <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>bin\instance.exe fg<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.</seg>
+        <seg>Para iniciar la instancia de Plone por primera vez, introduzca el siguiente comando: &quot;bin\instance.exe fg&quot;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2710,10 +2710,10 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>You will know your Plone instance has finished starting and is ready when you see the message <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>INFO Zope Ready to handle requests<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> in the terminal.</seg>
+        <seg>You will know your Plone instance has finished starting and is ready when you see the message &quot;INFO Zope Ready to handle requests&quot; in the terminal.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Usted sabrá que la instancia de Plone ha terminado la iniciación y está listo cuando se muestre el siguiente mensaje en la terminal <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>INFO Zope Ready to handle requests<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> (Información Zope preparado para manejar solicitudes). </seg>
+        <seg>Usted sabrá que la instancia de Plone ha terminado la iniciación y está listo cuando se muestre el siguiente mensaje en la terminal &quot;INFO Zope Ready to handle requests&quot; (Información Zope preparado para manejar solicitudes).</seg>
       </tuv>
     </tu>
     <tu>
@@ -2734,10 +2734,10 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>If you'd like Plone to start as a service when you start your computer you'll need to CD into your Plone install directory, then issue the following command in your Command Prompt window: <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>bin\instance install<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.</seg>
+        <seg>If you'd like Plone to start as a service when you start your computer you'll need to CD into your Plone install directory, then issue the following command in your Command Prompt window: &quot;bin\instance install&quot;.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Si quisiera que Plone se inicie como un servicio al momento de iniciar su computadora necesitará efectuar un CD al directorio de su instalación, luego ingrese el siguiente comando en la ventana de Símbolo de sistema: <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>bin\instance install<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.</seg>
+        <seg>Si quisiera que Plone se inicie como un servicio al momento de iniciar su computadora necesitará efectuar un CD al directorio de su instalación, luego ingrese el siguiente comando en la ventana de Símbolo de sistema: &quot;bin\instance install&quot;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2750,26 +2750,26 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>It will be listed as: <bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>Zope instance at C:\Program Files\Plone\parts\instance.exe<bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept> if you installed to <bpt i='4' x='4'>&lt;s4&gt;</bpt>&quot;<ept i='4'>&lt;/s4&gt;</ept>C:\Program Files\Plone<bpt i='5' x='5'>&lt;s5&gt;</bpt>&quot;<ept i='5'>&lt;/s5&gt;</ept>.</seg>
+        <seg>It will be listed as: &quot;Zope instance at C:\Program Files\Plone\parts\instance.exe&quot; if you installed to &quot;C:\Program Files\Plone&quot;.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Estará listada como: <bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>Zope instance at C:\Program Files\Plone\parts\instance.exe<bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept>, por supuesto si hizo la instalación en <bpt i='4' x='4'>&lt;s4&gt;</bpt>&quot;<ept i='4'>&lt;/s4&gt;</ept>C:\Program Files\Plone<bpt i='5' x='5'>&lt;s5&gt;</bpt>&quot;<ept i='5'>&lt;/s5&gt;</ept>.</seg>
+        <seg>Estará listada como: &quot;Zope instance at C:\Program Files\Plone\parts\instance.exe&quot;, por supuesto si hizo la instalación en  &quot;C:\Program Files\Plone&quot;.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>After the service is installed you can start Plone immediately by issuing the following command in your Command Prompt window: <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>bin\instance.exe start<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>, or use the Plone Controller (see above).</seg>
+        <seg>After the service is installed you can start Plone immediately by issuing the following command in your Command Prompt window: &quot;bin\instance.exe start&quot;, or use the Plone Controller (see above).</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Luego de que el servicio ha sido instalado inmediatamente puede iniciar Plone escribiendo el siguiente comando en su venta de Símbolo de sistema: <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>bin\instance.exe start<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>, o utilice el Controlador de Plone (visto anteriormente).</seg>
+        <seg>Luego de que el servicio ha sido instalado inmediatamente puede iniciar Plone escribiendo el siguiente comando en su venta de Símbolo de sistema : &quot;bin\instance.exe start&quot;, o utilice el Controlador de Plone (visto anteriormente).</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>If you'd like to remove the service later, just CD into your Plone install directory, then issue this command in your Command Prompt window: <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>bin\instance.exe remove<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.</seg>
+        <seg>If you'd like to remove the service later, just CD into your Plone install directory, then issue this command in your Command Prompt window: &quot;bin\instance.exe remove&quot;.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>En el caso de que quiera remover este servicio, use el comando CD al directorio de su instalación y luego ingrese lo siguiente: <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>bin\instance.exe remove<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>.</seg>
+        <seg>En el caso de que quiera remover este servicio, use el comando CD al directorio de su instalación y luego ingrese lo siguiente: &quot;bin\instance.exe remove&quot;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2798,10 +2798,10 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>Click on the button with the text <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>Create a new Plone site<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> on it.</seg>
+        <seg>Click on the button with the text &quot;Create a new Plone site&quot; on it.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Haga clic en el botón que contiene el texto <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>Create a new Plone site<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept> (Crear un nuevo sitio Plone)</seg>
+        <seg>Haga clic en el botón que contiene el texto &quot;Create a new Plone site&quot; (Crear un nuevo sitio Plone)</seg>
       </tuv>
     </tu>
     <tu>
@@ -2814,10 +2814,10 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>Give your site an Id, like <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>Plone<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>, and a Title, like <bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>My Plone Site<bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept>.</seg>
+        <seg>Give your site an Id, like &quot;Plone&quot;, and a Title, like &quot;My Plone Site&quot;.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Otórguele a su sitio una identificación como <bpt i='0' x='0'>&lt;s0&gt;</bpt>&quot;<ept i='0'>&lt;/s0&gt;</ept>Plone<bpt i='1' x='1'>&lt;s1&gt;</bpt>&quot;<ept i='1'>&lt;/s1&gt;</ept>, y un título como <bpt i='2' x='2'>&lt;s2&gt;</bpt>&quot;<ept i='2'>&lt;/s2&gt;</ept>Mi sitio Plone<bpt i='3' x='3'>&lt;s3&gt;</bpt>&quot;<ept i='3'>&lt;/s3&gt;</ept>.</seg>
+        <seg>Otórguele a su sitio una identificación como &quot;Plone&quot;, y un título como &quot;Mi sitio Plone&quot;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2830,26 +2830,26 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>Then click on the <bpt i='4' x='4'>&lt;s4&gt;</bpt>&quot;<ept i='4'>&lt;/s4&gt;</ept>Add Plone Site<bpt i='5' x='5'>&lt;s5&gt;</bpt>&quot;<ept i='5'>&lt;/s5&gt;</ept> button near the bottom of the page.</seg>
+        <seg>Then click on the &quot;Add Plone Site&quot; button near the bottom of the page.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Luego haga clic en el botón <bpt i='4' x='4'>&lt;s4&gt;</bpt>&quot;<ept i='4'>&lt;/s4&gt;</ept>Add Plone Site<bpt i='5' x='5'>&lt;s5&gt;</bpt>&quot;<ept i='5'>&lt;/s5&gt;</ept> (Agregar nuevo sitio Plone) cerca del final de la página.</seg>
+        <seg>Luego haga clic en el botón  &quot;Add Plone Site&quot; (Agregar nuevo sitio Plone) cerca del final de la página.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>It will take a few seconds to create your Plone site<it pos='begin' x='6'>&lt;br6&gt;</it></seg>
+        <seg>It will take a few seconds to create your Plone site<it pos='begin' x='0'>&lt;br0&gt;</it></seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Tomará unos segundos crear su sitio Plone<it pos='begin' x='6'>&lt;br6&gt;</it></seg>
+        <seg>Tomará unos segundos crear su sitio Plone<it pos='begin' x='0'>&lt;br0&gt;</it></seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>After your site is created you can access it with this URL: <bpt i='8' x='8'>&lt;e8&gt;</bpt>http://localhost:8080/Plone<ept i='8'>&lt;/e8&gt;</ept>, where <bpt i='9' x='9'>&lt;s9&gt;</bpt>&quot;<ept i='9'>&lt;/s9&gt;</ept>Plone<bpt i='10' x='10'>&lt;s10&gt;</bpt>&quot;<ept i='10'>&lt;/s10&gt;</ept> is the Id you gave to your site.</seg>
+        <seg>After your site is created you can access it with this URL: <bpt i='2' x='2'>&lt;e2&gt;</bpt>http://localhost:8080/Plone<ept i='2'>&lt;/e2&gt;</ept>, where &quot;Plone&quot; is the Id you gave to your site.</seg>
       </tuv>
       <tuv xml:lang="ES-VE">
-        <seg>Después de que su sitio se haya creado puede acceder a él mediante esta URL: <bpt i='8' x='8'>&lt;e8&gt;</bpt>http://localhost:8080/Plone<ept i='8'>&lt;/e8&gt;</ept>, donde <bpt i='9' x='9'>&lt;s9&gt;</bpt>&quot;<ept i='9'>&lt;/s9&gt;</ept>Plone<bpt i='10' x='10'>&lt;s10&gt;</bpt>&quot;<ept i='10'>&lt;/s10&gt;</ept> es la identificación de su sitio.</seg>
+        <seg>Después de que su sitio se haya creado puede acceder a él mediante esta URL: <bpt i='2' x='2'>&lt;e2&gt;</bpt>http://localhost:8080/Plone<ept i='2'>&lt;/e2&gt;</ept>, donde &quot;Plone&quot; es la identificación de su sitio.</seg>
       </tuv>
     </tu>
   </body>

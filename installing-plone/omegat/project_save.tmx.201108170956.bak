@@ -241,7 +241,7 @@
         <seg>To initiate the installation type &quot;./install.sh method&quot; where method is either &quot;standalone&quot; or &quot;zeo&quot;.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Para comenzar la instalación escriba &quot;./install.sh method&quot; donde method es &quot;standalone&quot; (autónoma) o &quot;zeo&quot;.</seg>
+        <seg>Para comenzar la instalación escriba &quot;./install.sh metho&quot; donde method es &quot;standalone&quot; (autónoma) o &quot;zeo&quot;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -249,7 +249,7 @@
         <seg>If you would like to install Plone in server mode type &quot;&lt;s0&gt;sudo&lt;/s0&gt; ./install.sh method&quot; or run the installation script as root some other way.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Si desea instalar Plone en modo servidor escriba &quot;&lt;s0&gt;sudo&lt;/s0&gt; ./install.sh method&quot; o ejecute el script de instalación como root de alguna otra manera.</seg>
+        <seg>Si desea instalar Plone en modo servidor escriba &quot;&lt;so&gt;sudo&lt;/s0&gt; ./install.sh method&quot; o ejecute el script de instalación como root de alguna otra manera.</seg>
       </tuv>
     </tu>
     <tu>

@@ -182,10 +182,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Extract the installer by typing &lt;s0&gt;&quot;&lt;/s0&gt;tar xzf InstallerName &lt;s1&gt;&quot;&lt;/s1&gt;, where InstallerName is the name of the Plone Installer you downloaded.</seg>
+        <seg>Extract the installer by typing &quot;tar xzf InstallerName &quot;, where InstallerName is the name of the Plone Installer you downloaded.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Descomprima el instalador escribiendo &lt;s0&gt;&quot;&lt;/s0&gt;tar xzf InstallerName &lt;s1&gt;&quot;&lt;/s1&gt;, donde InstallerName es el nombre del instalador de Plone que usted descargó.</seg>
+        <seg>Descomprima el instalador escribiendo &quot;tar xzf InstallerName &quot;, donde InstallerName es el nombre del instalador de Plone que usted descargó.</seg>
       </tuv>
     </tu>
     <tu>
@@ -238,26 +238,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>To initiate the installation type &lt;s0&gt;&quot;&lt;/s0&gt;./install.sh method&lt;s1&gt;&quot;&lt;/s1&gt; where method is either &lt;s2&gt;&quot;&lt;/s2&gt;standalone&lt;s3&gt;&quot;&lt;/s3&gt; or &lt;s4&gt;&quot;&lt;/s4&gt;zeo&lt;s5&gt;&quot;&lt;/s5&gt;.</seg>
+        <seg>To initiate the installation type &quot;./install.sh method&quot; where method is either &quot;standalone&quot; or &quot;zeo&quot;.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Para comenzar la instalación escriba &lt;s0&gt;&quot;&lt;/s0&gt;./install.sh metho&lt;s1&gt;&quot;&lt;/s1&gt; donde method es &lt;s2&gt;&quot;&lt;/s2&gt;standalone&lt;s3&gt;&quot;&lt;/s3&gt; (autónoma) o &lt;s4&gt;&quot;&lt;/s4&gt;zeo&lt;s5&gt;&quot;&lt;/s5&gt;.</seg>
+        <seg>Para comenzar la instalación escriba &quot;./install.sh method&quot; donde method es &quot;standalone&quot; (autónoma) o &quot;zeo&quot;.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>If you would like to install Plone in server mode type &lt;s6&gt;&quot;&lt;/s6&gt;&lt;s7&gt;sudo&lt;/s7&gt; ./install.sh method&lt;s8&gt;&quot;&lt;/s8&gt; or run the installation script as root some other way.</seg>
+        <seg>If you would like to install Plone in server mode type &quot;&lt;s0&gt;sudo&lt;/s0&gt; ./install.sh method&quot; or run the installation script as root some other way.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Si desea instalar Plone en modo servidor escriba &lt;s6&gt;&quot;&lt;/s6&gt;&lt;s7&gt;sudo&lt;/s7&gt; ./install.sh method&lt;s8&gt;&quot;&lt;/s8&gt; o ejecute el script de instalación como root de alguna otra manera.</seg>
+        <seg>Si desea instalar Plone en modo servidor escriba &quot;&lt;s0&gt;sudo&lt;/s0&gt; ./install.sh method&quot; o ejecute el script de instalación como root de alguna otra manera.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>A complete list of command-line options can be found &lt;a9&gt;here&lt;/a9&gt;.</seg>
+        <seg>A complete list of command-line options can be found &lt;a1&gt;here&lt;/a1&gt;.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Una lista completa de opciones de líneas de comando la puede encontrar &lt;a9&gt;aquí&lt;/a9&gt;.</seg>
+        <seg>una lista completa de opciones de líneas de comando la puede encontrar &lt;a1&gt;aquí&lt;/a1&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -294,10 +294,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>&lt;s0&gt;&quot;&lt;/s0&gt;cd&lt;s1&gt;&quot;&lt;/s1&gt; to your Plone install directory.</seg>
+        <seg>&quot;cd&quot; to your Plone install directory.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Haga un &lt;s0&gt;&quot;&lt;/s0&gt;cd&lt;s1&gt;&quot;&lt;/s1&gt; al directorio de su instalación Plone.</seg>
+        <seg>Haga un &quot;cd&quot; al directorio de su instalación Plone.</seg>
       </tuv>
     </tu>
     <tu>
@@ -310,18 +310,18 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Execute &lt;s0&gt;&quot;&lt;/s0&gt;./bin/plonectl start&lt;s1&gt;&quot;&lt;/s1&gt;.</seg>
+        <seg>Execute &quot;./bin/plonectl start&quot;.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Ejecute &lt;s0&gt;&quot;&lt;/s0&gt;./bin/plonectl start&lt;s1&gt;&quot;&lt;/s1&gt;.</seg>
+        <seg>Ejecute &quot;./bin/plonectl start&quot;.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>(The port Plone uses may be adjusted in buildout.cfg and then running &lt;s2&gt;&quot;&lt;/s2&gt;/bin/buildout&lt;s3&gt;&quot;&lt;/s3&gt;).</seg>
+        <seg>(The port Plone uses may be adjusted in buildout.cfg and then running &quot;/bin/buildout&quot;).</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>(El puerto que usa Plone se puede ajustar en buildout.cfg para luego ejecutar &lt;s2&gt;&quot;&lt;/s2&gt;/bin/buildout&lt;s3&gt;&quot;&lt;/s3&gt;).</seg>
+        <seg>(El puerto que usa Plone se puede ajustar en buildout.cfg para luego ejecutar &quot;/bin/buildout&quot;).</seg>
       </tuv>
     </tu>
     <tu>
@@ -342,10 +342,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Click on &lt;s0&gt;&quot;&lt;/s0&gt;Create a new Plone site&lt;s1&gt;&quot;&lt;/s1&gt; and enter your login information to start using Plone.</seg>
+        <seg>Click on &quot;Create a new Plone site&quot; and enter your login information to start using Plone.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Haga clic en &lt;s0&gt;&quot;&lt;/s0&gt;Create a new Plone site&lt;s1&gt;&quot;&lt;/s1&gt; (Crear un nuevo sitio Plone) e introduzca su información de inicio de sesión para comenzar a usar Plone.</seg>
+        <seg>Haga clic en &quot;Create a new Plone site&quot; (Crear un nuevo sitio Plone) e introduzca su información de inicio de sesión para comenzar a usar Plone.</seg>
       </tuv>
     </tu>
     <tu>
@@ -358,18 +358,18 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>You can find your site at http://localhost:8080/&lt;e2&gt;SiteName&lt;/e2&gt;, where &lt;s3&gt;&quot;&lt;/s3&gt;SiteName&lt;s4&gt;&quot;&lt;/s4&gt; is the Id of your Plone site.</seg>
+        <seg>You can find your site at http://localhost:8080/&lt;e0&gt;SiteName&lt;/e0&gt;, where &quot;SiteName&quot; is the Id of your Plone site.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Usted puede encontrar su sitio en http://localhost:8080/&lt;e2&gt;SiteName&lt;/e2&gt;, donde &lt;s3&gt;&quot;&lt;/s3&gt;SiteName&lt;s4&gt;&quot;&lt;/s4&gt; es el identificador de su sitio Plone.</seg>
+        <seg>Usted puede encontrar su sitio en http://localhost:8080/&lt;e0&gt;SiteName&lt;/e0&gt;, donde &quot;SiteName&quot; es la identificación de su sitio Plone. </seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>To stop the Plone process run &lt;s0&gt;&quot;&lt;/s0&gt;./bin/plonectl stop&lt;s1&gt;&quot;&lt;/s1&gt;.</seg>
+        <seg>To stop the Plone process run &quot;./bin/plonectl stop&quot;.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Para detener el proceso Plone ejecute &lt;s0&gt;&quot;&lt;/s0&gt;./bin/plonectl stop&lt;s1&gt;&quot;&lt;/s1&gt;.</seg>
+        <seg>Para detener el proceso Plone ejecute &quot;./bin/plonectl stop&quot;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -478,10 +478,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg> For most people, the default entry should be fine.(Click &lt;s0&gt;&quot;&lt;/s0&gt;Next&lt;s1&gt;&quot;&lt;/s1&gt; after each step to continue)</seg>
+        <seg> For most people, the default entry should be fine.(Click &quot;Next&quot; after each step to continue)</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>La mayoría de personas están de acuerdo con la ubicación predeterminada. (Haga clic en &lt;s0&gt;&quot;&lt;/s0&gt;Next&lt;s1&gt;&quot;&lt;/s1&gt; (Siguiente) al finalizar cada paso para continuar)</seg>
+        <seg>La mayoría de personas están de acuerdo con la ubicación predeterminada. (Haga clic en &quot;Next&quot; (Siguiente) al finalizar cada paso para continuar)</seg>
       </tuv>
     </tu>
     <tu>
@@ -510,10 +510,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg> Mark the check boxes to show whether you would like to add Plone as a service so that it will automatically run at startup.(Note: This can be changed at any time by running &lt;s0&gt;&quot;&lt;/s0&gt;bin\instance.exe remove&lt;s1&gt;&quot;&lt;/s1&gt; from your install directory)  or if you would like to run Plone after exiting the installer.</seg>
+        <seg> Mark the check boxes to show whether you would like to add Plone as a service so that it will automatically run at startup.(Note: This can be changed at any time by running &quot;bin\instance.exe remove&quot; from your install directory)  or if you would like to run Plone after exiting the installer.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg> Marque las casillas de confirmación para determinar si usted quiere agregar Plone como un servicio para que se inicie automáticamente con el inicio de Windows. (Nota: esto se puede cambiar en cualquier momento ejecutando &lt;s0&gt;&quot;&lt;/s0&gt;bin\instance.exe remove&lt;s1&gt;&quot;&lt;/s1&gt; en su directorio de instalación) o si desea ejecutar Plone después de que la instalación haya culminado.</seg>
+        <seg> Marque las casillas de confirmación para determinar si usted quiere agregar Plone como un servicio para que se inicie automáticamente con el inicio de Windows. (Nota: esto se puede cambiar en cualquier momento ejecutando &quot;bin\instance.exe remove&quot; en su directorio de instalación) o si desea ejecutar Plone después de que la instalación haya culminado.</seg>
       </tuv>
     </tu>
     <tu>
@@ -598,10 +598,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg> You can find your site at http://localhost:8080/&lt;e2&gt;SiteName&lt;/e2&gt;, where &lt;s3&gt;&quot;&lt;/s3&gt;SiteName&lt;s4&gt;&quot;&lt;/s4&gt; is the Id of your Plone site.</seg>
+        <seg> You can find your site at http://localhost:8080/&lt;e0&gt;SiteName&lt;/e0&gt;, where &quot;SiteName&quot; is the Id of your Plone site.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Usted puede encontrar su sitio en http://localhost:8080/&lt;e2&gt;SiteName&lt;/e2&gt;, donde &lt;s3&gt;&quot;&lt;/s3&gt;SiteName&lt;s4&gt;&quot;&lt;/s4&gt; es el identificador de su sitio Plone.</seg>
+        <seg>Puede encontrar su sitio en http://localhost:8080/&lt;e0&gt;SiteName&lt;/e0&gt;, donde &quot;SiteName&quot; es la identificación de su sitio Plone.</seg>
       </tuv>
     </tu>
     <tu>
@@ -710,10 +710,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>On the Plone help lists and channel, the suggestion to &lt;s0&gt;&quot;&lt;/s0&gt;just use the Unified Installer&lt;s1&gt;&quot;&lt;/s1&gt; often draws one of two reactions:</seg>
+        <seg>On the Plone help lists and channel, the suggestion to &quot;just use the Unified Installer&quot; often draws one of two reactions:</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>En las listas de ayuda y canales IRC de Plone, la sugerencia &lt;s0&gt;&quot;&lt;/s0&gt;simplemente use el instalador Unificado&lt;s1&gt;&quot;&lt;/s1&gt;, generalmente resulta en una de dos reacciones:</seg>
+        <seg>En las listas de ayuda y canales IRC de Plone, la sugerencia &quot;simplemente use el instalador Unificado&quot;, generalmente resulta en una de dos reacciones:</seg>
       </tuv>
     </tu>
     <tu>
@@ -950,10 +950,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Setting a user other than &lt;s0&gt;&quot;&lt;/s0&gt;admin&lt;s1&gt;&quot;&lt;/s1&gt; and/or setting a password of your choice;</seg>
+        <seg>Setting a user other than &quot;admin&quot; and/or setting a password of your choice;</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Establecer un usuario aparte del &lt;s0&gt;&quot;&lt;/s0&gt;admin&lt;s1&gt;&quot;&lt;/s1&gt; y/o configurar la contraseña de su elección;</seg>
+        <seg>Establecer un usuario aparte del &quot;admin&quot; y/o configurar la contraseña de su elección;</seg>
       </tuv>
     </tu>
     <tu>
@@ -1102,10 +1102,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Creates a &lt;s0&gt;&quot;&lt;/s0&gt;plone&lt;s1&gt;&quot;&lt;/s1&gt; user, sets this user as owner of the data files, and configures Zope to run as the effective user &lt;s2&gt;&quot;&lt;/s2&gt;plone&lt;s3&gt;&quot;&lt;/s3&gt;.</seg>
+        <seg>Creates a &quot;plone&quot; user, sets this user as owner of the data files, and configures Zope to run as the effective user &quot;plone&quot;.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Crea un usuario &lt;s0&gt;&quot;&lt;/s0&gt;plone&lt;s1&gt;&quot;&lt;/s1&gt; y establece este usuario como propietario de los archivos de datos (Data.fs). Configura Zope para correr como el usuario efectivo &lt;s2&gt;&quot;&lt;/s2&gt;plone&lt;s3&gt;&quot;&lt;/s3&gt;.</seg>
+        <seg>Crea un usuario &quot;plone&quot; y establece este usuario como propietario de los archivos de datos (Data.fs). Configura Zope para correr como el usuario efectivo &quot;plone&quot;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1166,18 +1166,18 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>It is a generally accepted &lt;s0&gt;&quot;&lt;/s0&gt;best practice&lt;s1&gt;&quot;&lt;/s1&gt; to run persistent processes (like Zope) as unique users with limited rights.</seg>
+        <seg>It is a generally accepted &quot;best practice&quot; to run persistent processes (like Zope) as unique users with limited rights.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Generalmente esto es aceptado como la &lt;s0&gt;&quot;&lt;/s0&gt;mejor practica&lt;s1&gt;&quot;&lt;/s1&gt;; ejecutar procesos persistentes (como Zope) por medio de usuarios únicos con permisos limitados.</seg>
+        <seg>Generalmente esto es aceptado como la &quot;mejor practica&quot;; ejecutar procesos persistentes (como Zope) por medio de usuarios únicos con permisos limitados.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>If you install via root, though, be careful not to run &lt;s0&gt;&quot;&lt;/s0&gt;sudo bin/buildout&lt;s1&gt;&quot;&lt;/s1&gt; except in offline mode since this would immediately run setup downloaded programs.</seg>
+        <seg>If you install via root, though, be careful not to run &quot;sudo bin/buildout&quot; except in offline mode since this would immediately run setup downloaded programs.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>De igual forma al instalar como root, tenga cuidado y no ejecute &lt;s0&gt;&quot;&lt;/s0&gt;sudo bin/buildout&lt;s1&gt;&quot;&lt;/s1&gt; excepto cuando esté trabajando offline (sin conexión), ya que si no lo hace inmediatamente ejecutara una setup (instalación) de los programas descargados.</seg>
+        <seg>De igual forma al instalar como root, tenga cuidado y no ejecute &quot;sudo bin/buildout&quot; excepto cuando esté trabajando offline (sin conexión), ya que si no lo hace inmediatamente ejecutara una setup (instalación) de los programas descargados.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1310,10 +1310,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>You may use &lt;s0&gt;&quot;&lt;/s0&gt;zopectl run&lt;s1&gt;&quot;&lt;/s1&gt; to run scripts on one of the clients while others serve the site to the Internet.</seg>
+        <seg>You may use &quot;zopectl run&quot; to run scripts on one of the clients while others serve the site to the Internet.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Usted puede usar &lt;s0&gt;&quot;&lt;/s0&gt;zopectl run&lt;s1&gt;&quot;&lt;/s1&gt; para ejecutar scripts en alguno de los clientes mientras que otros sirven el sitio a Internet.</seg>
+        <seg>Usted puede usar &quot;zopectl run&quot; para ejecutar scripts en alguno de los clientes mientras que otros sirven el sitio a internet. </seg>
       </tuv>
     </tu>
     <tu>
@@ -1342,10 +1342,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>You'll also be able to use introspection tools like Clouseau and &lt;s0&gt;&quot;&lt;/s0&gt;zopectl debug&lt;s1&gt;&quot;&lt;/s1&gt; against a live site.</seg>
+        <seg>You'll also be able to use introspection tools like Clouseau and &quot;zopectl debug&quot; against a live site.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>También podrá usar herramientas de introspección como Clouseau y el comando &lt;s0&gt;&quot;&lt;/s0&gt;zopectl debug&lt;s1&gt;&quot;&lt;/s1&gt; en contra de un sitio en producción.</seg>
+        <seg>También podrá usar herramientas de introspección como Clouseau y el comando &quot;zopectl debug&quot; en contra de un sitio en producción.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1494,10 +1494,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>(&lt;s0&gt;&quot;&lt;/s0&gt;VERSION-&lt;s1&gt;&quot;&lt;/s1&gt; will vary with release.)</seg>
+        <seg>(&quot;VERSION-&quot; will vary with release.)</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>(&lt;s0&gt;&quot;&lt;/s0&gt;VERSION-&lt;s1&gt;&quot;&lt;/s1&gt; cambiará con cada versión.)</seg>
+        <seg>(&quot;VERSION-&quot; cambiará con cada versión.)</seg>
       </tuv>
     </tu>
     <tu>
@@ -1566,18 +1566,18 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Make note of the password for the &lt;s1&gt;&quot;&lt;/s1&gt;admin&lt;s2&gt;&quot;&lt;/s2&gt; user.</seg>
+        <seg>Make note of the password for the &quot;admin&quot; user.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Haga una nota de la contraseña usada para el usuario&lt;s1&gt;&quot;&lt;/s1&gt;admin&lt;s2&gt;&quot;&lt;/s2&gt;.</seg>
+        <seg>Haga una nota de la contraseña usada para el usuario &quot;admin&quot;.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>These instructions will also be available in README.txt file, and the pass word in &lt;s3&gt;&quot;&lt;/s3&gt;adminPassword.txt&lt;s4&gt;&quot;&lt;/s4&gt;, in your new install.</seg>
+        <seg>These instructions will also be available in README.txt file, and the pass word in &quot;adminPassword.txt&quot;, in your new install.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Estas instrucciones también estarán disponibles en el archivo README.txt, y la contraseña en el archivo &lt;s3&gt;&quot;&lt;/s3&gt;adminPassword.txt&lt;s4&gt;&quot;&lt;/s4&gt; de su nueva instalación.</seg>
+        <seg>Estas instrucciones también estarán disponibles en el archivo README.txt, y la contraseña en el archivo &quot;adminPassword.txt&quot; de su nueva instalación.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1678,10 +1678,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>(If you're testing on another machine, substitute your server host name for &lt;s0&gt;&quot;&lt;/s0&gt;localhost&lt;s1&gt;&quot;&lt;/s1&gt;.)</seg>
+        <seg>(If you're testing on another machine, substitute your server host name for &quot;localhost&quot;.)</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>(Si esta haciendo la prueba en otra computadora, substituya el nombre (ip o url) de su servidor host por &lt;s0&gt;&quot;&lt;/s0&gt;localhost&lt;s1&gt;&quot;&lt;/s1&gt;.)</seg>
+        <seg>(Si esta haciendo la prueba en otra computadora, substituya el nombre (ip o url) de su servidor host por &quot;localhost&quot;.)</seg>
       </tuv>
     </tu>
     <tu>
@@ -1782,10 +1782,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Precede the following commands by &lt;s0&gt;&quot;&lt;/s0&gt;sudo&lt;s1&gt;&quot;&lt;/s1&gt; or by using &lt;s2&gt;&quot;&lt;/s2&gt;su -&lt;s3&gt;&quot;&lt;/s3&gt; to switch to root</seg>
+        <seg>Precede the following commands by &quot;sudo&quot; or by using &quot;su -&quot; to switch to root</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Preceda los siguientes comandos con&lt;s0&gt;&quot;&lt;/s0&gt;sudo&lt;s1&gt;&quot;&lt;/s1&gt; o &lt;s2&gt;&quot;&lt;/s2&gt;su -&lt;s3&gt;&quot;&lt;/s3&gt; para cambiar al usuario root.</seg>
+        <seg>Preceda los siguientes comandos con &quot;sudo&quot; o &quot;su -&quot; para cambiar al usuario root.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1902,10 +1902,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>If this is a root install, preface the command with &lt;s0&gt;&quot;&lt;/s0&gt;sudo&lt;s1&gt;&quot;&lt;/s1&gt; or use su to change to root.</seg>
+        <seg>If this is a root install, preface the command with &quot;sudo&quot; or use su to change to root.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Si esta es una instalación root, anteponga el comando&lt;s0&gt;&quot;&lt;/s0&gt;sudo&lt;s1&gt;&quot;&lt;/s1&gt; o use &quot;su -&quot; para cambiar al usuario root.</seg>
+        <seg>Si esta es una instalación root, anteponga el comando &quot;sudo&quot; o use &quot;su -&quot; para cambiar al usuario root.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2390,10 +2390,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>In addition install.sh uses the &lt;s10&gt;&quot;&lt;/s10&gt;whoami&lt;s11&gt;&quot;&lt;/s11&gt; shell command, which on Solaris is in:&lt;br12&gt;</seg>
+        <seg>In addition install.sh uses the &quot;whoami&quot; shell command, which on Solaris is in:&lt;br10&gt;</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Además install.sh usa el comando shell &lt;s10&gt;&quot;&lt;/s10&gt;whoami&lt;s11&gt;&quot;&lt;/s11&gt; , el cual en Solaris se encuentra en:&lt;br12&gt;</seg>
+        <seg>Además install.sh usa el comando shell &quot;whoami&quot; , el cual en Solaris se encuentra en:&lt;br10&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -2406,26 +2406,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>(If /usr/ccs/bin is not added, the Python compile will fail with &lt;s0&gt;&quot;&lt;/s0&gt;gmake: ar: Command not found&lt;s1&gt;&quot;&lt;/s1&gt;.)&lt;br2&gt;</seg>
+        <seg>(If /usr/ccs/bin is not added, the Python compile will fail with &quot;gmake: ar: Command not found&quot;.)&lt;br0&gt;</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>(Si /usr/ccs/bin no es agregado, la compilación de Python fallará con &lt;s0&gt;&quot;&lt;/s0&gt;gmake: ar: Command not found&lt;s1&gt;&quot;&lt;/s1&gt;.)&lt;br2&gt;</seg>
+        <seg>(Si /usr/ccs/bin no es agregado, la compilación de Python fallará con &quot;gmake: ar: Command not found&quot;.)&lt;br0&gt;</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>As the -e switch is not present in the Solaris Bourne shell, install.sh and all other scripts must be changed to bash: #!/usr/bin/bash&lt;br4&gt;</seg>
+        <seg>As the -e switch is not present in the Solaris Bourne shell, install.sh and all other scripts must be changed to bash: #!/usr/bin/bash&lt;br2&gt;</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Debido a que el interruptor -e no está presente en el shell Bourne de Solaris, install.sh, y todos los otros scripts, este se debe cambiar a bash: #!/usr/bin/bash&lt;br4&gt;</seg>
+        <seg>Debido a que el interruptor -e no está presente en el shell Bourne de Solaris, install.sh, y todos los otros scripts, este se debe cambiar a bash: #!/usr/bin/bash&lt;br2&gt;</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>install.sh uses the &lt;s6&gt;&quot;&lt;/s6&gt;which&lt;s7&gt;&quot;&lt;/s7&gt; shell command to locate the software it needs for the build.</seg>
+        <seg>install.sh uses the &quot;which&quot; shell command to locate the software it needs for the build.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>install.sh utiliza el comando shell &lt;s6&gt;&quot;&lt;/s6&gt;which&lt;s7&gt;&quot;&lt;/s7&gt; para localizar el software que necesita para la construcción.</seg>
+        <seg>install.sh utiliza el comando shell &quot;which&quot; para localizar el software que necesita para la construcción.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2438,10 +2438,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>During the Python build, both the &lt;s0&gt;&quot;&lt;/s0&gt;libssl&lt;s1&gt;&quot;&lt;/s1&gt; and &lt;s2&gt;&quot;&lt;/s2&gt;readline&lt;s3&gt;&quot;&lt;/s3&gt; libraries are needed.</seg>
+        <seg>During the Python build, both the &quot;libssl&quot; and &quot;readline&quot; libraries are needed.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Durante la construcción se necesitan ambas librerías: &lt;s0&gt;&quot;&lt;/s0&gt;libssl&lt;s1&gt;&quot;&lt;/s1&gt; y &lt;s2&gt;&quot;&lt;/s2&gt;readline&lt;s3&gt;&quot;&lt;/s3&gt;.</seg>
+        <seg>Durante la construcción se necesitan ambas librerías: &quot;libssl&quot; y &quot;readline&quot;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2582,10 +2582,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Write down the installation location, such as &lt;s0&gt;&quot;&lt;/s0&gt;C:\Program Files\Plone&lt;s1&gt;&quot;&lt;/s1&gt;.</seg>
+        <seg>Write down the installation location, such as &quot;C:\Program Files\Plone&quot;.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Escriba o copie la locación de la instalación, tal como esta &lt;s0&gt;&quot;&lt;/s0&gt;C:\Program Files\Plone&lt;s1&gt;&quot;&lt;/s1&gt;.</seg>
+        <seg>Escriba o copie la locación de la instalación, tal como esta &quot;C:\Program Files\Plone&quot;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2678,18 +2678,18 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Example: cd &lt;s0&gt;&quot;&lt;/s0&gt;\Program Files\Plone&lt;s1&gt;&quot;&lt;/s1&gt;.</seg>
+        <seg>Example: cd &quot;\Program Files\Plone&quot;.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Ejemplo: cd &lt;s0&gt;&quot;&lt;/s0&gt;\Program Files\Plone&lt;s1&gt;&quot;&lt;/s1&gt;.</seg>
+        <seg>Ejemplo: cd &quot;\Program Files\Plone&quot;.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>To start your Plone instance for the first time, issue this command: &lt;s0&gt;&quot;&lt;/s0&gt;bin\instance.exe fg&lt;s1&gt;&quot;&lt;/s1&gt;.</seg>
+        <seg>To start your Plone instance for the first time, issue this command: &quot;bin\instance.exe fg&quot;.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Para iniciar la instancia de Plone por primera vez, introduzca el siguiente comando: &lt;s0&gt;&quot;&lt;/s0&gt;bin\instance.exe fg&lt;s1&gt;&quot;&lt;/s1&gt;.</seg>
+        <seg>Para iniciar la instancia de Plone por primera vez, introduzca el siguiente comando: &quot;bin\instance.exe fg&quot;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2710,10 +2710,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>You will know your Plone instance has finished starting and is ready when you see the message &lt;s0&gt;&quot;&lt;/s0&gt;INFO Zope Ready to handle requests&lt;s1&gt;&quot;&lt;/s1&gt; in the terminal.</seg>
+        <seg>You will know your Plone instance has finished starting and is ready when you see the message &quot;INFO Zope Ready to handle requests&quot; in the terminal.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Usted sabrá que la instancia de Plone ha terminado la iniciación y está listo cuando se muestre el siguiente mensaje en la terminal &lt;s0&gt;&quot;&lt;/s0&gt;INFO Zope Ready to handle requests&lt;s1&gt;&quot;&lt;/s1&gt; (Información Zope preparado para manejar solicitudes). </seg>
+        <seg>Usted sabrá que la instancia de Plone ha terminado la iniciación y está listo cuando se muestre el siguiente mensaje en la terminal &quot;INFO Zope Ready to handle requests&quot; (Información Zope preparado para manejar solicitudes).</seg>
       </tuv>
     </tu>
     <tu>
@@ -2734,10 +2734,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>If you'd like Plone to start as a service when you start your computer you'll need to CD into your Plone install directory, then issue the following command in your Command Prompt window: &lt;s0&gt;&quot;&lt;/s0&gt;bin\instance install&lt;s1&gt;&quot;&lt;/s1&gt;.</seg>
+        <seg>If you'd like Plone to start as a service when you start your computer you'll need to CD into your Plone install directory, then issue the following command in your Command Prompt window: &quot;bin\instance install&quot;.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Si quisiera que Plone se inicie como un servicio al momento de iniciar su computadora necesitará efectuar un CD al directorio de su instalación, luego ingrese el siguiente comando en la ventana de Símbolo de sistema: &lt;s0&gt;&quot;&lt;/s0&gt;bin\instance install&lt;s1&gt;&quot;&lt;/s1&gt;.</seg>
+        <seg>Si quisiera que Plone se inicie como un servicio al momento de iniciar su computadora necesitará efectuar un CD al directorio de su instalación, luego ingrese el siguiente comando en la ventana de Símbolo de sistema: &quot;bin\instance install&quot;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2750,26 +2750,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>It will be listed as: &lt;s2&gt;&quot;&lt;/s2&gt;Zope instance at C:\Program Files\Plone\parts\instance.exe&lt;s3&gt;&quot;&lt;/s3&gt; if you installed to &lt;s4&gt;&quot;&lt;/s4&gt;C:\Program Files\Plone&lt;s5&gt;&quot;&lt;/s5&gt;.</seg>
+        <seg>It will be listed as: &quot;Zope instance at C:\Program Files\Plone\parts\instance.exe&quot; if you installed to &quot;C:\Program Files\Plone&quot;.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Estará listada como: &lt;s2&gt;&quot;&lt;/s2&gt;Zope instance at C:\Program Files\Plone\parts\instance.exe&lt;s3&gt;&quot;&lt;/s3&gt;, por supuesto si hizo la instalación en &lt;s4&gt;&quot;&lt;/s4&gt;C:\Program Files\Plone&lt;s5&gt;&quot;&lt;/s5&gt;.</seg>
+        <seg>Estará listada como: &quot;Zope instance at C:\Program Files\Plone\parts\instance.exe&quot;, por supuesto si hizo la instalación en  &quot;C:\Program Files\Plone&quot;.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>After the service is installed you can start Plone immediately by issuing the following command in your Command Prompt window: &lt;s0&gt;&quot;&lt;/s0&gt;bin\instance.exe start&lt;s1&gt;&quot;&lt;/s1&gt;, or use the Plone Controller (see above).</seg>
+        <seg>After the service is installed you can start Plone immediately by issuing the following command in your Command Prompt window: &quot;bin\instance.exe start&quot;, or use the Plone Controller (see above).</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Luego de que el servicio ha sido instalado inmediatamente puede iniciar Plone escribiendo el siguiente comando en su venta de Símbolo de sistema: &lt;s0&gt;&quot;&lt;/s0&gt;bin\instance.exe start&lt;s1&gt;&quot;&lt;/s1&gt;, o utilice el Controlador de Plone (visto anteriormente).</seg>
+        <seg>Luego de que el servicio ha sido instalado inmediatamente puede iniciar Plone escribiendo el siguiente comando en su venta de Símbolo de sistema : &quot;bin\instance.exe start&quot;, o utilice el Controlador de Plone (visto anteriormente).</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>If you'd like to remove the service later, just CD into your Plone install directory, then issue this command in your Command Prompt window: &lt;s0&gt;&quot;&lt;/s0&gt;bin\instance.exe remove&lt;s1&gt;&quot;&lt;/s1&gt;.</seg>
+        <seg>If you'd like to remove the service later, just CD into your Plone install directory, then issue this command in your Command Prompt window: &quot;bin\instance.exe remove&quot;.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>En el caso de que quiera remover este servicio, use el comando CD al directorio de su instalación y luego ingrese lo siguiente: &lt;s0&gt;&quot;&lt;/s0&gt;bin\instance.exe remove&lt;s1&gt;&quot;&lt;/s1&gt;.</seg>
+        <seg>En el caso de que quiera remover este servicio, use el comando CD al directorio de su instalación y luego ingrese lo siguiente: &quot;bin\instance.exe remove&quot;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2798,10 +2798,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Click on the button with the text &lt;s0&gt;&quot;&lt;/s0&gt;Create a new Plone site&lt;s1&gt;&quot;&lt;/s1&gt; on it.</seg>
+        <seg>Click on the button with the text &quot;Create a new Plone site&quot; on it.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Haga clic en el botón que contiene el texto &lt;s0&gt;&quot;&lt;/s0&gt;Create a new Plone site&lt;s1&gt;&quot;&lt;/s1&gt; (Crear un nuevo sitio Plone)</seg>
+        <seg>Haga clic en el botón que contiene el texto &quot;Create a new Plone site&quot; (Crear un nuevo sitio Plone)</seg>
       </tuv>
     </tu>
     <tu>
@@ -2814,10 +2814,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Give your site an Id, like &lt;s0&gt;&quot;&lt;/s0&gt;Plone&lt;s1&gt;&quot;&lt;/s1&gt;, and a Title, like &lt;s2&gt;&quot;&lt;/s2&gt;My Plone Site&lt;s3&gt;&quot;&lt;/s3&gt;.</seg>
+        <seg>Give your site an Id, like &quot;Plone&quot;, and a Title, like &quot;My Plone Site&quot;.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Otórguele a su sitio una identificación como &lt;s0&gt;&quot;&lt;/s0&gt;Plone&lt;s1&gt;&quot;&lt;/s1&gt;, y un título como &lt;s2&gt;&quot;&lt;/s2&gt;Mi sitio Plone&lt;s3&gt;&quot;&lt;/s3&gt;.</seg>
+        <seg>Otórguele a su sitio una identificación como &quot;Plone&quot;, y un título como &quot;Mi sitio Plone&quot;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2830,26 +2830,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Then click on the &lt;s4&gt;&quot;&lt;/s4&gt;Add Plone Site&lt;s5&gt;&quot;&lt;/s5&gt; button near the bottom of the page.</seg>
+        <seg>Then click on the &quot;Add Plone Site&quot; button near the bottom of the page.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Luego haga clic en el botón &lt;s4&gt;&quot;&lt;/s4&gt;Add Plone Site&lt;s5&gt;&quot;&lt;/s5&gt; (Agregar nuevo sitio Plone) cerca del final de la página.</seg>
+        <seg>Luego haga clic en el botón  &quot;Add Plone Site&quot; (Agregar nuevo sitio Plone) cerca del final de la página.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>It will take a few seconds to create your Plone site&lt;br6&gt;</seg>
+        <seg>It will take a few seconds to create your Plone site&lt;br0&gt;</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Tomará unos segundos crear su sitio Plone&lt;br6&gt;</seg>
+        <seg>Tomará unos segundos crear su sitio Plone&lt;br0&gt;</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>After your site is created you can access it with this URL: &lt;e8&gt;http://localhost:8080/Plone&lt;/e8&gt;, where &lt;s9&gt;&quot;&lt;/s9&gt;Plone&lt;s10&gt;&quot;&lt;/s10&gt; is the Id you gave to your site.</seg>
+        <seg>After your site is created you can access it with this URL: &lt;e2&gt;http://localhost:8080/Plone&lt;/e2&gt;, where &quot;Plone&quot; is the Id you gave to your site.</seg>
       </tuv>
       <tuv lang="ES-VE">
-        <seg>Después de que su sitio se haya creado puede acceder a él mediante esta URL: &lt;e8&gt;http://localhost:8080/Plone&lt;/e8&gt;, donde &lt;s9&gt;&quot;&lt;/s9&gt;Plone&lt;s10&gt;&quot;&lt;/s10&gt; es la identificación de su sitio.</seg>
+        <seg>Después de que su sitio se haya creado puede acceder a él mediante esta URL: &lt;e2&gt;http://localhost:8080/Plone&lt;/e2&gt;, donde &quot;Plone&quot; es la identificación de su sitio.</seg>
       </tuv>
     </tu>
   </body>

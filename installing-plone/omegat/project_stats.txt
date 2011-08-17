@@ -11,12 +11,12 @@ Total:
 	Caracteres (sin espacios)	6892
 	Caracteres (con espacios)	7371
 Únicos:
-	Segmentos	580
+	Segmentos	578
 	Palabras	5456
 	Caracteres (sin espacios)	29264
 	Caracteres (con espacios)	33904
 Únicos pendientes:
-	Segmentos	225
+	Segmentos	223
 	Palabras	871
 	Caracteres (sin espacios)	6388
 	Caracteres (con espacios)	6865
