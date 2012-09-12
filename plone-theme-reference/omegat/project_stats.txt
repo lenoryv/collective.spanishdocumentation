@@ -1,0 +1,27 @@
+Estadísticas del proyecto
+
+Total:
+	Segmentos	7001
+	Palabras	57632
+	Caracteres (sin espacios)	352797
+	Caracteres (con espacios)	399767
+Únicos pendientes:
+	Segmentos	3073
+	Palabras	12881
+	Caracteres (sin espacios)	124134
+	Caracteres (con espacios)	131085
+Únicos:
+	Segmentos	4716
+	Palabras	47525
+	Caracteres (sin espacios)	277749
+	Caracteres (con espacios)	319337
+Únicos pendientes:
+	Segmentos	1794
+	Palabras	8499
+	Caracteres (sin espacios)	83142
+	Caracteres (con espacios)	88984
+
+Estadísticas por archivo:
+
+Nombre de archivo	Palabras en total	Palabras pendientes	Caracteres en total (sin espacios)	Caracteres pendientes (sin espacios)	Caracteres en total (con espacios)	Caracteres pendientes (con espacios)
+plone-theme-references.html	57632	12881	352797	124134	399767	131085
