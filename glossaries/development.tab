@@ -1,8 +1,62 @@
 ZODB	Zope Object Database	Base de datos de objetos Zope
 
+scripting languages	lenguajes scripting	lenguaje de programación
+
+CSS	hojas de estilo en cascada (Cascading Style Sheets)	Plone utiliza regularmente esta función para separar contenido de presentación
+
+theming	tematizar, tematización
+
+ZMI	Zope Management Interface
+
+UI	Interfaz de usuario	User Interface
+
+bookmarklet	marcador	en lugar de apuntar a una dirección URL, hace referencia a una pequeña porción de código JavaScript
+
+DOM	Modelo de Objetos del Documento	Document Object Model
+
+strings	cadena de caracteres	secuencia ordenada de longitud arbitraria (aunque finita) de elementos que pertenecen a un cierto alfabeto. En general, una cadena de caracteres es una sucesión de caracteres (letras, números u otros signos o símbolos).
+
+Firebug	firebug	extensión de Firefox
+
+Integrated Development Environments	Entorno de Desarrollo Integrado	es un programa informático compuesto por un conjunto de herramientas de programación.
+
+IDE	Integrated Development Environments	Entorno de Desarrollo Integrado
+
+PEAK	Python Enterprise Application Kit, PEAK	Kit de Aplicación de Empresa de Python
+
+metadata	metadatos
+
+backported	backported	Un Backport es la acción de hacer modificaciones o crear un parche a un software con una versión más antigua que la existente.
+
+ZCML	Zope Configuration Markup Language.	Lenguaje de Marcado de Configuración Zope
+
+TAL	 es un lenguaje elegante de plantillas
+
+METAl	Macro Expansion Template Attributes Language	Lenguaje de expansión macro para atributos de plantillas
+
+WYSIWYG	What you see is what you get
+
+DTML	Document Template Markup Language	Lenguaje de Marcado de Documento de Plantilla
+
+Sidebar	Barra lateral
+
+ZPT	Zope Page Templates	Páginas de Plantillas Zope
+
+TODO	code marker in source code	marcadaor que se utliza para hacer notas, rezaltar cambios, etc
+
 API	Interfaz de programación de aplicaciones	Application programming interface
 
+FIVE	es un producto de Zope 2 que le permite integrar tecnologías de Zope 3 en Zope 2
 
+DTD	Definición de tipo de documento	Document Type Definition
+
+PiL	Python Imaging Library	librería para imágenes en Python
+
+KUPU	Kupu is the user-friendly graphical HTML editor	editor HTML gráfico amigable al usuario
+
+AJAX	conjunto de funcionalidades que hacen que las páginas se comporten más como aplicaciones
+
+breadcrumb	Hilo de Ariadna 	técnica de navegación usada para desarrollar la interfaz gráfica de usuario. Tiene como objetivo que el usuario guarde una ruta de su ubicación dentro de programas o documentos.
 
 
 
