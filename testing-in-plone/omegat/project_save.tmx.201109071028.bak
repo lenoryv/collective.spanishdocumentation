@@ -1,0 +1,1205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx11.dtd">
+<tmx version="1.1">
+  <header
+    creationtool="OmegaT"
+    creationtoolversion="2.0.5_4"
+    segtype="sentence"
+    o-tmf="OmegaT TMX"
+    adminlang="EN-US"
+    srclang="EN-US"
+    datatype="plaintext"
+  >
+  </header>
+  <body>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Testing in Plone</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Pruebas en Plone</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This tutorial will explain how to write safer, better code that makes you look more professional.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>En este tutorial se explica cómo escribir código mejor y más seguro para darle un aspecto más profesional.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>That's right - it's time to write tests, for everything you do.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Así es, es hora de escribir pruebas, para todo lo que haga.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Don't worry, it's not boring or complicated, you just need to learn how.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>No se preocupe, no es aburrido ni complicado, sólo tiene que aprender cómo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Introduction</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Introducción</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>What is this thing called testing anyway?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>¿Qué eso llamado pruebas?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&quot;I know I should write tests, but ...</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>&quot;Yo se que tengo que escribir pruebas. pero...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>... they take time to write</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>...estas toman tiempo en escribirse</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>I’m a good developer</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>soy un buen desarrollador</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>... my customer / the community does the testing&quot;</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>... mi cliente/la comunidad hace las pruebas &quot;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Sound familiar?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>¿Le suena familiar?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No matter how good you think you are, you will make mistakes.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>No importa lo bueno que usted cree que es, siempre cometerá errores.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Your code will contain bugs and someone will come after you demanding an explanation.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Su código tendrá errores y alguien va a venir después a exigirle una explicación.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Without some methodical way of testing, you are guaranteeing your code with nothing more than guesswork and arrogance.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Sin alguna forma metódica de pruebas, usted estará garantizando su código con nada más que conjeturas y arrogancia.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Clicking around the Plone interface for a few minutes before you ship your code off to the customer or user is simply not enough.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Pasear un poco por la interfaz de Plone durante algunos minutos antes de enviar el código al cliente o usuario simplemente no es suficiente.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Testing is an art, it needs to be built into your development cycle from the very beginning - it is not something you do only after all the other work is finished, it is something you do continuously.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Hacer pruebas es un arte, tiene que estar integrado en su ciclo de desarrollo desde el principio. No es algo que se hace sólo después de que haya hecho todo el trabajo, es algo que tiene que hacer de forma continua.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unfortunately, testing often evokes emotions of dread in developers.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Desgraciadamente hacer pruebas a menudo evoca emociones de temor en los desarrolladores.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It's slow, it's boring, it's not what they signed up to do.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Es lento, es aburrido, no es lo que acordaron hacer.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>But the art of testing has evolved beyond that - there is considerable elegance and fun to be found in well-conceived test strategies.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Pero el arte de hacer pruebas ha evolucionado más allá de eso. Existe una considerable elegancia y diversión en el ambiente de buenas estrategias planteadas para hacer pruebas.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This tutorial aims to give you the tools you need to write tests and testable software in Plone.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Este tutorial apunta a darle las herramientas necesarias para escribir pruebas y software comprobable en Plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you are writing software for Plone core itself, don't even think about commiting any bug fix or feature without test coverage.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si está escribiendo software para el núcleo (core) de Plone como tal, ni siquiera piense en cometer cualquier corrección de error o característica sin cobertura de pruebas.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you are writing an add-on product or doing a customisation, holding yourself to the same high standards that the Plone core team do will give you better confidence in your software and will likely save you considerable pain down the road.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si usted está escribiendo un producto complementario o alguna personalización; manteniendo los mismos altos estándares que el equipo core de Plone le dará una mejor confianza en su software y probablemente le ahorrará dolor considerable a lo largo del camino.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Examples</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Ejemplos</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This tutorial contains several examples of the various types of tests.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Este tutorial contiene varios ejemplos de los distintos tipos de pruebas.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>They are available in the &lt;a0&gt;example.tests&lt;/a0&gt; package, which you can install as a develop egg in a Plone 3 buildout.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Estas están disponibles en el paquete &lt;a0&gt;example.tests&lt;/a0&gt;, el cual puede instalar como un huevo de desarrollo en su buildout de Plone 3.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The examples of running tests use the standard commands for buildouts, since this is the only way that works reliably on Windows (that is, plain &lt;s1&gt;zopectl test&lt;/s1&gt; will not work on Windows).</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Los ejemplos de pruebas de funcionamiento utilizan los comandos estándar para buildouts, ya que esta es la única forma que funcione de forma fiable en Windows (es decir &lt;s1&gt;zopectl test&lt;/s1&gt; no funcionará en Windows).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Managing projects with zc.buildout</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Administrando proyectos con zc.buildout</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Take a look at the &lt;a0&gt;buildout tutorial&lt;/a0&gt; for more information.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Revise el &lt;a0&gt;tutorial de buildoutl&lt;/a0&gt; para más información.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A brief example</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Un breve ejemplo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Just so that you know what we're talking about</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Sólo para que obtenga una idea de lo que estamos hablando.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Try to find the bug in the following piece of code:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Trate de encontrar el error en el siguiente fragmente de código:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Found it yet?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>¿Ya lo encontró?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Did you have to spend more than a few seconds thinking about it?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>¿tuvo que pasar más de unos segundos pensando en el error? </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Any developer could have written that code and not seen the problem.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Cualquier desarrollador podría haber escrito ese código y no haber visto el problema.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Furthermore, the bug is an edge case that you may not have tested using manual/through-the-web testing.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Además, el error es un caso extremo que pudo no haber probado al hacer pruebas manual/a-través-de-la-Web.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Let us write a test (actually, a doc/unit test) for this code.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Escribamos una prueba (realmente una prueba doc/unit) para este código:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Don't worry too much about how this is set up and executed just yet.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>No se preocupe demasiado acerca de cómo esto está configurado y ejecutado por el momento.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As it happens, the last test would fail.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Durante el proceso, la última prueba fallará.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It would print &lt;s0&gt;You are not an employee currently.&lt;/s0&gt;, unless we fixed the code:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Mostrará &lt;s0&gt;You are not an employee currently. (Actualmente usted no es un empleado)&lt;/s0&gt;, a menos que arreglemos el código:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The moral of the story?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>¿Cuál es la moraleja de la historia?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>you rarely catch problems like these with manual testing</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>raramente se da cuenta de errores como este haciendo pruebas manualmente</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>put the time you waste catching silly bugs and typos into writing tests</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>pase el tiempo, que gasta en capturar errores tontos y errores de escritura, mejor escribiendo pruebas</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>with decent test coverage, you end up saving lots of time when you refactor</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>con una decente cobertura de pruebas, usted termina ahorrándose grandes cantidades de tiempo cuando refactoriza</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Types of tests</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Tipos de pruebas</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Some terminology you should be familiar with</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Un poco de terminología con la cual debería estar familiarizado</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Broadly speaking, there are four main types of tests:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>En términos generales, hay cuatro tipos principales de pruebas:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unit tests</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Pruebas unitarias</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These are written from the programmer's perspective.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Estas son escritas desde la perspectiva del programador.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A unit test should test a single method or function in isolation, to ensure that it behaves correctly.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Una prueba unitaria debe probar un sólo método o función en aislamiento, para asegurar que funciona correctamente.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, testing that a given calculation is performed correctly given a variety of input is a good unit test for that one method.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Por ejemplo, probar que un cálculo determinado se realiza correctamente dado una variedad de entrada es una buena prueba unitaria para ese método.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Integration tests</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Pruebas de integración</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Whereas unit tests try to remove or abstract away as many dependencies as possible to ensure that they are truly only concerned with the method under test, integration tests exercise the integration points between a method or component and the other components it relies on.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Mientras que las pruebas unitarias tratan de eliminar o abstraer tantas dependencias como sea posible para asegurarse de que realmente sólo se preocupen por el método a probar, las pruebas de integración ejercitan los puntos de integración entre un método o componente y los demás componentes en los que este se basa.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, testing that a method performs some calculation and then correctly stores the result in the ZODB is an integration test in that it tests the integration between that component and the ZODB.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Por ejemplo, probar que un método realiza un cálculo y luego almacena correctamente el resultado en la ZODB (Base de datos de objetos Zope) es una prueba de integración, ya que prueba la integración entre el componente y la ZODB.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Functional tests</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Pruebas de funcionamiento</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A functional test is typically demonstrating a use case, exercising a &quot;vertical&quot; of functionality.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Una prueba de funcionamiento suele demostrar un caso de uso, realizando una &quot;vertical&quot; de la funcionalidad.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, testing that filling in a form and clicking &quot;Save&quot; then makes the resulting object available for future use, is a functional test for the use case of using that form to create content objects.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Por ejemplo, probar que luego del llenado de un formulario y hacer clic en &quot;Guardar&quot; haga que el objeto resultante esté disponible para su uso futuro, es una prueba de funcionamiento para el caso de uso de la utilización de ese formulario para crear objetos de contenido.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>System tests</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Pruebas de sistema</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These are written from the user's perspective, and treat the system as a black box.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Estas son escritas desde la perspectiva del usuario, y tratan el sistema como una caja negra.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A system test may be simulating a user interacting with the system according to expected usage patterns.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Una prueba de sistema puede probar el caso de un usuario interactuando con el sistema de acuerdo con los patrones de uso esperados. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>By their nature, they are typically less systematic than the other types of tests.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Por su naturaleza, generalmente son menos sistemáticas que los otros tipos de pruebas.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Furthermore, functional tests may be &lt;s0&gt;white box&lt;/s0&gt;, in which case they can make assertions about things like the underlying data storage (but only if this is specified clearly; implementation details should never affect functional tests).</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Adicionalmente, las pruebas de funcionamiento pueden ser &lt;s0&gt;caja blanca&lt;/s0&gt;, en cuyo caso pueden hacer afirmaciones sobre cosas como el almacenamiento de datos subyacentes (pero sólo si se especifica claramente; los detalles de implementación no deben afectar a las pruebas de funcionamiento).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Such tests are also called &lt;s1&gt;functional integration tests&lt;/s1&gt; (you can see where the lines start to blur, but don't worry too much about the naming).</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Estas pruebas también se denominan &lt;s1&gt;pruebas de integración funcional&lt;/s1&gt; (puede ver que los limites comienzan a borrarse, pero no se preocupe demasiado por los nombres).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Alternatively, functional tests can be &lt;s2&gt;black box&lt;/s2&gt; in which case they only perceive the system from the point of view of an actor (usually the end user) and make assertions only on what is presented in the (user) interface to that actor.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Alternativamente, las pruebas de funcionamiento pueden ser &lt;s2&gt;caja negra&lt;/s2&gt;, en cuyo caso solo perciben el sistema desde el punto de vista de un actor (usualmente el usuario final) y hace afirmaciones basadas sólo en lo que es presentado en la interfaz de usuario para ese actor.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Such tests, also known as &lt;s3&gt;acceptance tests&lt;/s3&gt; would not make assumptions about the underlying architecture at all.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Estas pruebas denominadas también &lt;s3&gt;pruebas de aceptación&lt;/s3&gt; no harán suposiciones sobre la arquitectura subyacente en absoluto.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Tests and documentation</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Pruebas y documentación</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In a post to the Zope 3 mailing list, Jim Fulton explains the importance of tests and documentation, and how they go hand-in-hand:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>En un mensaje a la lista de correos Zope 3, Jim Fulton explica la importancia de las pruebas y documentación, y la forma en que van mano a mano:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>One of the important things about this is that most doctests&lt;br0&gt;</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Una cosa importante acerca de esto es que la mayoría de doctests&lt;br0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>   should be written as documentation.  When you write new software&lt;br1&gt;</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>   debería escribirse como documentación. Cuando escribe nuevos componentes&lt;br1&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>   components and you need to write tests for the main functionality&lt;br2&gt;</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>   de software y necesita escribir pruebas para funcionalidad principal&lt;br2&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>   of your software you need to:&lt;br3&gt;</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>   de su software usted necesita:&lt;br3&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>   - Get your head into the mode of writing documentation.&lt;br5&gt;</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>   - Ponga su mente en modo para escribir documentación&lt;br5&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>     This is very very very important.&lt;br6&gt;</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>     Esto es extremadamente importante.&lt;br6&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>   - You need to document how to use the software.  Include examples,&lt;br8&gt;</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>   - Usted necesita documentar cómo usar el software.   Incluir ejemplos,&lt;br8&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We will learn more about doctests, and how they are used for unit testing and functional testing later.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Más tarde aprenderemos más sobre doctests y como se usan para pruebas unitarias y funcionamiento.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The important thing to note is that good tests often serve as documentation describing how your component is supposed to be used.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Lo importante a destacar es que las buenas pruebas a menudo sirven como documentación describiendo cómo su componente se supone es utilizado. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Thinking about the story they tell is just as important as thinking about the number of input and output states they cover.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Pensar en la historia que cuentan es tan importante como pensar en el número de estados de entrada y salida que cubren.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Telling stories with doctests</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Contando historias con doctests</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Doctests bring code and test closer together, and makes it easier to describe what a test does, and why.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Los Doctests ponen el código y prueba junto, y hace más fácil describir que hace una prueba, y por qué.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>By their nature, tests should exercise an API and demonstrate how it is used.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Por su naturaleza, la pruebas deberían ejercitar un API (Interfaz de programación de aplicaciones) y demostrar cómo se usa.  </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Thus, for other developers trying to understand how a module or library should be used, tests can be the best form of documentation.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Por lo tanto, para otros desarrolladores tratando de entender cómo un módulo o biblioteca debería ser utilizado, las pruebas pueden ser la mejor forma de documentación.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Python supports the notion of &lt;s0&gt;doctests&lt;/s0&gt;, otherwise known as &lt;s1&gt;executable documentation&lt;/s1&gt;.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Python soporta la noción de &lt;s0&gt;doctests&lt;/s0&gt;, también conocida como &lt;s1&gt;documentación ejecutable&lt;/s1&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Doctests look like Python interpreter sessions.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Los Doctests se asemejan a sesiones de Python interpreter.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>They contain plain text (normally in reStructedText, which can be rendered to HTML or PDF easily) as well as &lt;s0&gt;examples&lt;/s0&gt;.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Ellos contienen texto plano (normalmente en reStructedText, el cual puede ser renderizado a HTML o PDF fácilmente) así como &lt;s0&gt;ejemplos&lt;/s0&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The idea is to show something that could have been typed in an interpreter session and what the expected outcome should be.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>La idea es mostrar algo que podría haber sido escrito en una sesión interpreter (de intérprete) y lo que el resultado esperado debería ser.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the Zope 3 world, doctests are extremely prevalent and are used for most unit and integration testing.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>En el mundo de Zope 3, los doctests son muy frecuentes y se utilizan para la mayoría de pruebas unitarias e de integración.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Doctests come in two main flavours: You can write a simple text file, such as a &lt;s0&gt;README.txt&lt;/s0&gt;, that explains your code along with verifiable examples, or you can add doctests for a given method or class into the docstring of that method or class.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Los doctests vienen principalmente en dos sabores: puede escribir un simple archivo como &lt;s0&gt;README.txt&lt;/s0&gt;, explicando su código junto a ejemplos verificables, o puede agregar doctests para un método o clase determinado dentro de la docstring (cadena de documentación) de ese método o clase.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The full-file approach - sometimes known as &lt;s0&gt;documentation-driven development&lt;/s0&gt; - is the most common.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El enfoque de archivo-completo, también conocido como &lt;s0&gt;desarrollo dirigido por documentación (documentation-driven development)&lt;/s0&gt; es el más común.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This type of test is very well suited for explaining how an API should be used and ensuring that it works as expected at the same time.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Este tipo de prueba es muy apropiado para explicar cómo una API se debe utilizar y al mismo tiempo asegurar que funciona como se espera.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, note that these are not technically proper unit tests, because there is no guarantee of isolation between the steps of the &quot;script&quot; that the doctest describes.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Sin embargo, note que estas técnicamente no son pruebas unitarias como tal, porque no hay ninguna garantía de aislamiento entre los steps del &quot;script&quot; que doctest describa.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The docstring version uses the same basic syntax, but each docstring is executed as its own test fixture, guaranteeing full isolation between tests.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>La versión de cadena de documentación utiliza la misma sintaxis básica, pero cada una se ejecuta como su propia prueba fixture, garantizando el aislamiento total entre las pruebas.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here is a trivial example of a doctest.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Aquí hay un ejemplo trivial de un doctest.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We will learn how to set up such a test shortly.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Aprenderemos cómo configurar tal prueba en breve.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Interfaces are defined using Python class statements::</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Las interfaces se definen mediante sentencias de clases Python::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...        &quot;&quot;&quot;bar blah blah&quot;&quot;&quot; 
+
+In the example above, we've created an interface::</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>...        &quot;&quot;&quot;bar blah blah&quot;&quot;&quot; 
+
+En el ejemplo anterior, hemos creado una interfaz::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;class 'zope.interface.interface.InterfaceClass'&gt; 
+
+We can ask for the interface's documentation::</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>&lt;class 'zope.interface.interface.InterfaceClass'&gt; 
+
+Podemos pedir la documentación de la interfaz::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>'Foo blah blah'
+
+We could create an arbitrary object - this will of course not provide 
+the interface.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>'Foo blah blah'
+
+Se podría crear un objeto arbitrario; por supuesto esto no proporcionará la interfaz.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Each time the doctest runner encounters a line starting with &lt;s0&gt;&gt;&gt;&gt;&lt;/s0&gt;, the prompt of the Python interpreter (i.e. what you get by running &lt;s1&gt;python&lt;/s1&gt; without any arguments in a terminal), it will execute that line of code.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Cada vez que el runner de doctest se ejecuta y encuentra un línea que comienza con &lt;s0&gt;&gt;&gt;&gt;&lt;/s0&gt;, el indicador (línea de comandos) del Python interpreter (esto es, lo que obtiene al ejecutar &lt;s1&gt;python&lt;/s1&gt; sin argumentos en una terminal), ejecutará entonces esa línea de código.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If that statement is then immediately followed by a line with the same level of indentation as the &lt;s2&gt;&gt;&gt;&gt;&lt;/s2&gt; that is not a blank line and does not start with &lt;s3&gt;&gt;&gt;&gt;,&lt;/s3&gt; this is taken to be the expected output of the statement.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si esa sentencia es inmediatamente seguida por una línea con el mismo nivel de sangría que &lt;s2&gt;&gt;&gt;&gt;&lt;/s2&gt; que no es una línea en blanco y no comienza con &lt;s3&gt;&gt;&gt;&gt;,&lt;/s3&gt; esto se toma como el resultado esperado de la sentencia.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The test runner will compare the output it got by executing the Python statement with the output specified in the doctest, and flag up an error if they don't match.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El runner de prueba comparará la salida que obtuvo mediante la ejecución de la sentencia de Python con la salida especificada en el doctest, e identificará un error si no coinciden.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that &lt;e0&gt;not&lt;/e0&gt; writing an output value is equivalent to stating that the method has no output.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Note que &lt;e0&gt;no&lt;/e0&gt; escribir un valor de salida es equivalente a afirmar que el método no posee salida.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Thus, this is a failure:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Por lo tanto, se trata de una falla:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The reference to &lt;s0&gt;foo&lt;/s0&gt; on its own will print the value of foo.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>La referencia a &lt;s0&gt;foo&lt;/s0&gt; por sí misma imprimirá el valor de foo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The correct DocTest would read:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El doctest correcto sería el siguiente:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Notice also the ... (ellipsis) element in the expected otuput.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Note también el elemento ... (puntos suspensivos) en la salida esperada.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These mean &quot;any number of characters&quot; (anologus to a &lt;s0&gt;.*&lt;/s0&gt; statement in a regular expression, if you are familiar with those).</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Estos significan &quot;cualquier número de caracteres&quot; (análogo a una sentencia &lt;s0&gt;.*&lt;/s0&gt; en una expresión regular, si usted está familiarizado con ellas).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>They are usually convenient shorthand, but they can sometimes be necessary.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Usualmente es taquigrafía convenida, pero en ocasiones es necesaria. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Por ejemplo:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here, the &lt;s0&gt;...&lt;/s0&gt; in the expected output replaces a hexadecimal memory address (&lt;s1&gt;0x0x4523a0&lt;/s1&gt; on the author's computer at the time of writing), which cannot be predicted in advance.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Aquí los &lt;s0&gt;...&lt;/s0&gt; en la salida esperada remplaza una dirección de memoria hexadecimal (&lt;s1&gt;0x0x4523a0&lt;/s1&gt; en la computadora del autor al momento de escribir), lo cual no se puede predecir de antemano.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When writing doctests in particular (but also when writing regular unit tests), you need to be careful about values you cannot predict, such as auto-generated ids based on the current time or a random number.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Cuando se escriben doctests en particular (pero también cuando se escriben pruebas unitarias regulares), usted necesita tener cuidado con los valores no puede predecir, como las identificaciones auto-generadas basadas en la hora actual o un número al azar.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The ellipsis operator can help you work around those.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El operador ellipsis (de puntos suspensivos) le puede ayudar a trabajar con esos.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Do not confuse the ellipsis operator in the expected output with the syntax of using &lt;s0&gt;...&lt;/s0&gt; underneath a &lt;s1&gt;&gt;&gt;&gt;&lt;/s1&gt; line.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>No confunda el operador ellipsis en la salida esperada con la sintaxis de usar &lt;s0&gt;...&lt;/s0&gt; debajo de una línea &lt;s1&gt;&gt;&gt;&gt;&lt;/s1&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is the standard Python interpreter syntax used to designate statments that run over multiple lines, normally as the result of indentation.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Esta es la sintaxis estándar de Python interpreter usada para designar sentencias que se ejecuten sobre líneas múltiples, normalmente como el resultado de sangría. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can, for example, write:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Usted puede por ejemplo escribir:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>if that is necessary in your test.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>si es necesario en su prueba.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Doctest tips and tricks</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Consejos y trucos para doctest</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As with all testing, you will get better at doctests over time.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Así como lo es para el tema de pruebas, igualmente mejorará en el asunto de doctests con la practica.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Below are a few tips that may help you get started.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>A continuación se presentan algunos consejos que pueden ayudarle a empezar.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Read the documentation</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Lea la documentación</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>doctests have been in Python for a long time.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>los doctests han estado en Python desde hace mucho tiempo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;a0&gt;doctest module&lt;/a0&gt; comes with more documentation on how they work.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El &lt;a0&gt;modulo de doctest&lt;/a0&gt; viene con más documentación sobre cómo funcionan.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A test is just a bunch of python statements!</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>¡una prueba es sólo un montón de sentencias Python!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Never forget this.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Nunca olvide eso.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can, for example, reference helper methods in your own product, for example, imagine you have a method in &lt;s0&gt;Products.MyProduct.tests.utils&lt;/s0&gt; that has a method &lt;s1&gt;setUpSite()&lt;/s1&gt; to pre-populate your site with a few directories and users.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Usted puede, por ejemplo, hacer referencia a métodos de ayuda (helper methods) en su propio producto, por ejemplo imagine que usted tiene un método en &lt;s0&gt;Products.MyProduct.tests.utils&lt;/s0&gt; que a su vez tiene un método &lt;s1&gt;setUpSite()&lt;/s1&gt; para llenar previamente su sitio con unos cuantos directorios y usuarios.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Your doctest could contain:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Su doctest podría contener:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The test suite can perform additional initialisation</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El conjunto de pruebas puede llevar a cabo inicialización adicional</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A test suite can have &lt;s0&gt;setUp()&lt;/s0&gt; and/or &lt;s1&gt;tearDown()&lt;/s1&gt; handlers that perform additional set-up or clean-up.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Un conjunto de pruebas puede tener controladores &lt;s0&gt;setUp()&lt;/s0&gt; y/o &lt;s1&gt;tearDown()&lt;/s1&gt; que realicen acciones adicionales de configuración o limpieza. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We will see further examples of this later.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Veremos ejemplos de esto más adelante.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PDB is still your friend</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>PDB sigue siendo su amigo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can put the standard &lt;s0&gt;import pdb; pdb.set_trace()&lt;/s0&gt; on a line in doctest.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Usted puede colocar &lt;s0&gt;import pdb; pdb.set_trace()&lt;/s0&gt; en una línea en doctest.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unfortunately, you can't step through a doctest line by line, but you can print variables and examine the state of the test fixture.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Lamentablemente, no se puede ir línea por línea a través de un doctest, pero puede imprimir variables y examinar el estado de la prueba fixture.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can catch exceptions</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Usted puede capturar las excepciones</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you need to debug a doctest that is throwing an exception, this statement is often useful:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si necesita depurar un doctest que está arrojando una excepción, esta sentencia es a menudo útil:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Running tests</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Ejecutando pruebas</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is not much good writing a test or relying on someone else's tests if you don't know how to run them.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>No sirve de mucho escribir una prueba o confiar en las pruebas de otra persona si no sabe cómo ejecutarlas.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The easiest way to run tests in Zope is to use &lt;s0&gt;zopectl&lt;/s0&gt; or the equivalent control script.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>La forma más fácil de ejecutar pruebas en Zope es el uso de &lt;s0&gt;zopectl&lt;/s0&gt; o el script de control equivalente.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This would run all tests in the &lt;s0&gt;Products.RichDocument&lt;/s0&gt; module.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Este ejecutará todas las pruebas en el módulo &lt;s0&gt;Products.RichDocument&lt;/s0&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you are using a &lt;a1&gt;buildout&lt;/a1&gt; with an instance control script called &lt;s2&gt;instance&lt;/s2&gt;, this would be:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si usted está usando &lt;a1&gt;buildout&lt;/a1&gt; con un script de control de instancia llamado &lt;s2&gt;instance&lt;/s2&gt;, esto sería:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Using buildout is probably a good idea - see &lt;a0&gt;the buildout tutorial&lt;/a0&gt; - not at least because this is the only way that works reliably on Windows.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Usar buildout es probablemente una buena idea (vea &lt;a0&gt;el tutorial de buildout&lt;/a0&gt;) para empezar porque es la única forma que funcione de forma fiable en Windows.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We will use this syntax from now on.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Usaremos esta sintaxis de ahora en adelante.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To execute a single test or a set of tests matched by regular expression, you can use:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Para ejecutar una sola prueba o un conjunto de pruebas acompañada de expresiones regulares, puede utilizar:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This would run tests in files like &lt;s0&gt;test_setup.py&lt;/s0&gt;.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Esto puede ejecutar pruebas en archivos como &lt;s0&gt;test_setup.py&lt;/s0&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To run all doctests in &lt;s1&gt;README.txt&lt;/s1&gt; (presuming there was a test suite for this file) you would write:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Para ejecutar todos los doctests en &lt;s1&gt;README.txt&lt;/s1&gt; (asumiendo que hay un conjunto de pruebas para este archivo) tendría que escribir:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The new test runner also includes a few debugging options.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El nuevo runner de pruebas también incluye algunas opciones para depuración.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This will stop execution at the first failing test and drop into a PDB post-mortem.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Esto detendrá la ejecución en la primera prueba fallida y lo situará dentro de un PDB post-mortem.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To see the other options that are available, run:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Para ver las otras opciones que están disponibles, ejecute:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When the tests you think are relevant all pass, it's time to run all tests and make sure nothing else broke.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Cuando las pruebas que considere relevante pasaron, es el momento de ejecutar todas las pruebas y asegurarse de que nada más está dañado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(No, we don't care that you are writing your code in a totally different python module than what those other tests are supposed to test, and that they were all fine and good and all you changed was a docstring.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>(No, no nos importa si usted está escribiendo su código en un módulo de Python totalmente distinto a aquellas otras pruebas se supone que prueben, y que todos están bien, y lo único que cambió fue una docstring (cadena de documentación).</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

@@ -1,0 +1,1801 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8"><title>Testing in Plone — Plone CMS: Open Source Content Management</title><!-- base href="http://plone.org/documentation/kb/testing/" --><link rel="alternate" type="application/rss+xml" href="http://feeds.plone.org/plonenews" title="Plone News"><link rel="alternate" type="application/rss+xml" href="http://feeds.plone.org/plonereleases" title="Plone Releases"><link rel="alternate" type="application/rss+xml" href="http://feeds.plone.org/ploneevents" title="Upcoming Plone Events"><link rel="alternate" type="application/rss+xml" href="http://feeds.plone.org/ploneaddons" title="Latest Plone &amp; Add-on Releases"><link rel="alternate" type="application/rss+xml" href="http://feeds.plone.org/plonetraining" title="Upcoming Plone Training"><link rel="alternate" type="application/rss+xml" href="http://feeds.plone.org/ploneblogs" title="Plone Blogs"><link rel="alternate" type="application/rss+xml" href="http://feeds.plone.org/plone-security" title="Plone Security Advisories"><!--[if IE]><style type="text/css" media="all">@import url(/ie.css);</style><![endif]--><!--[if lte IE 6]><script src="/ie6warn.js" type="text/javascript"></script><![endif]--><script src="testing-in-plone_archivos/ga.js" type="text/javascript"></script><script type="text/javascript" src="testing-in-plone_archivos/jquery-cachekey7059.js"></script><script type="text/javascript" src="testing-in-plone_archivos/popupforms-cachekey4563.js"></script><script type="text/javascript" src="testing-in-plone_archivos/resourcecioppino.js"></script><style type="text/css">@import url(http://plone.org/portal_css/Sunburst%20Theme/print-cachekey3245.css);</style><style type="text/css">@import url(http://plone.org/portal_css/Sunburst%20Theme/newplone-cachekey7635.css);</style><style type="text/css" media="screen">@import url(http://plone.org/portal_css/Sunburst%20Theme/resourceplone.app.jquerytools.overlays-cachekey5924.css);</style><style type="text/css" media="screen">@import url(http://plone.org/portal_css/Sunburst%20Theme/resourceProducts.PloneSoftwareCenter.stylesheetspsc-cachekey4912.css);</style><style type="text/css" media="all">@import url(http://plone.org/portal_css/Sunburst%20Theme/psc-cachekey1695.css);</style><style type="text/css">@import url(http://plone.org/portal_css/Sunburst%20Theme/resourcecioppino.twothumbs.stylesheetstwothumbs-cachekey0775.css);</style><link rel="kinetic-stylesheet" type="text/css" href="http://plone.org/portal_kss/Sunburst%20Theme/resourcetinymce.ksstinymce-cachekey4684.kss"><link rel="kinetic-stylesheet" type="text/css" href="http://plone.org/portal_kss/Sunburst%20Theme/at-cachekey2728.kss"></head><body class="template-tutorial-all-pages portaltype-helpcentertutorial section-documentation"><div id="outer-wrapper"><div id="inner-wrapper"><div id="nav"><a id="portal-logo" title="Home" accesskey="1" href="http://plone.org/">
+    <img src="testing-in-plone_archivos/logo.png" alt="" title="" height="56" width="215"></a><form id="search" name="searchform" action="http://plone.org/search"><input value="Search this site…" id="search-site" name="SearchableText" title="Search this site…" accesskey="4" class="inputLabel inputLabelActive" size="15" type="text"></form><div id="nav-bar"><div id="user"><a id="login-link" href="http://plone.org/login">Log in</a><a id="user-id" href="http://plone.org/@@personal-preferences"><span id="username"></span></a><div id="login-popup"><span class="loginText">Login to Plone.org</span><form id="login-slide-form" action="https://plone.org/login_form" method="post"><div class="form"><input id="came-from-input" value="" name="came_from" type="hidden"><input name="form.submitted" value="1" type="hidden"><label for="__ac_name">username</label><input id="__ac_name" name="__ac_name" size="15" type="text"><label for="__ac_password">password</label><input id="__ac_password" value="" name="__ac_password" size="15" type="password"><br><a href="http://plone.org/mail_password_form?userid=">Forgot password?</a></div><input value="Let me in!" name="submit" class="context" type="submit"></form><span class="createText"><a href="http://plone.org/@@register">Click here</a> to create an account</span></div></div><ul id="main-nav" class="navigation"><li id="portaltab-index_html" class="plain"><a href="http://plone.org/" title="">Home</a></li><li id="portaltab-products" class="plain"><a href="http://plone.org/products" title="Plone releases and available add-on products for Plone. Make sure you have Plone installed before downloading the add-ons — and make sure you are using add-ons that have been certified for use with your particular version.">Download &amp; Extend</a></li><li id="portaltab-documentation" class="selected"><a href="http://plone.org/documentation" title="The primary source for Plone documentation.">Documentation</a></li><li id="portaltab-contribute" class="plain"><a href="http://plone.org/contribute" title="Contains all developer-related material.">Get Involved</a></li><li id="portaltab-foundation" class="plain"><a href="http://plone.org/foundation" title="The Plone Foundation exists to further the development, marketing, and legal affairs of Plone and the Plone community.">Plone Foundation</a></li><li id="portaltab-support" class="plain"><a href="http://plone.org/support" title="Support and contact details for the Plone project.">Support</a></li><li id="portaltab-providers" class="plain"><a href="http://plone.org/providers" title="">Providers</a></li></ul></div><ul id="sub-nav" class="navigation"><li>
+            <a href="http://plone.org/documentation/manual" class="selected" title="Manuals are larger works of documentation describing particular technologies or concepts in a detailed, structured manner.">Manuals</a>
+        </li>
+        <li>
+            <a href="http://plone.org/documentation/kb" title="Community-contributed tutorials and how-tos.">Knowledge Base</a>
+        </li>
+        <li>
+            <a href="http://plone.org/documentation/faq" title="Frequently Asked Questions.">FAQs</a>
+        </li>
+        <li>
+            <a href="http://plone.org/documentation/error" title="Error reference section.">Error Reference</a>
+        </li>
+        <li>
+            <a href="http://plone.org/documentation/link" title="Links section.">Links</a>
+        </li>
+        <li>
+            <a href="http://plone.org/documentation/glossary" title="Glossary of terms for Plone.">Glossary</a>
+        </li>
+    </ul></div><div id="edit-bar"><div id="action-menu"></div><div id="edit-menu"></div></div><div id="content-wrapper"><div class="grid-row"><div class="grid-cell position-leftmost width-two-thirds"><div id="viewlet-above-content"></div><div id="content">
+            <div>
+
+                <h1>
+                Testing in Plone
+                </h1>
+
+                <p class="discreet visualNoPrint">
+                    <a href="http://plone.org/documentation/kb/testing">« Return to page index</a>
+                </p>
+
+                <p class="documentDescription">This
+tutorial will explain how to write safer, better code that makes you
+look more professional. That's right - it's time to write tests, for
+everything you do. Don't worry, it's not boring or complicated, you
+just need to learn how.</p>
+
+                
+                    
+                        <h1>
+                            Introduction
+                        </h1>
+
+                        <p class="documentDescription">What is this thing called testing anyway?</p>
+
+                        <div id="bodyContent">
+                            
+
+<p>"I know I should write tests, but ...</p>
+
+<ul><li>... they take time to write </li><li>... I’m a good developer </li><li>... my customer / the community does the testing"</li></ul><p>Sound
+familiar? No matter how good you think you are, you will make mistakes.
+Your code will contain bugs and someone will come after you demanding
+an explanation. Without some methodical way of testing, you are
+guaranteeing your code with nothing more than guesswork and arrogance.
+Clicking around the Plone interface for a few minutes before you ship
+your code off to the customer or user is simply not enough.</p>
+
+<p>Testing is an art, it needs to be built into your development cycle
+from the very beginning - it is not something you do only after all the
+other work is finished, it is something you do continuously.
+Unfortunately, testing often evokes emotions of dread in developers.
+It's slow, it's boring, it's not what they signed up to do. But the art
+of testing has evolved beyond that - there is considerable elegance and
+fun to be found in well-conceived test strategies.</p>
+
+<p>This tutorial aims to give you the tools you need to write tests and
+testable software in Plone. If you are writing software for Plone core
+itself, don't even think about commiting any bug fix or feature without
+test coverage. If you are writing an add-on product or doing a
+customisation, holding yourself to the same high standards that the
+Plone core team do will give you better confidence in your software and
+will likely save you considerable pain down the road.</p>
+
+<h2>Examples<br></h2>
+
+<p>
+
+This tutorial contains several examples of the various types of tests. They are available in the <a href="http://dev.plone.org/collective/browser/examples/example.tests/trunk">example.tests</a>
+package, which you can install as a develop egg in a Plone 3 buildout.
+The examples of running tests use the standard commands for buildouts,
+since this is the only way that works reliably on Windows (that is,
+plain <span class="visualHighlight">zopectl test</span> will not work on Windows).</p>
+
+<p>Take a look at the <a title="Managing projects with zc.buildout" href="http://plone.org/documentation/kb/buildout">buildout tutorial</a> for more information.</p>
+
+
+                        </div>
+                    
+                
+                
+                    
+                        <h1>
+                            A brief example
+                        </h1>
+
+                        <p class="documentDescription">Just so that you know what we're talking about</p>
+
+                        <div id="bodyContent">
+                            
+
+<p>Try to find the bug in the following piece of code:</p>
+
+<pre>class Employee(object): 
+&nbsp;&nbsp;&nbsp; def __init__(self, name, position, employee_no=None): 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; self.name = name 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; self.position = position 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; self.employee_no = employee_no 
+
+salaries = {0: 12000, 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1: 4000, 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2: 8000, 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3: 4000}
+
+def print_salary(employee): 
+&nbsp;&nbsp;&nbsp; if employee.employee_no: 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; salary = salaries.get(employee.employee_no, 0) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print "You make EUR %s." % salary 
+&nbsp;&nbsp;&nbsp; else: 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print "You're not an employee currently."
+</pre>
+
+<p>Found it yet? Did you have to spend more than a few seconds thinking
+about it? Any developer could have written that code and not seen the
+problem. Furthermore, the bug is an edge case that you may not have
+tested using manual/through-the-web testing.</p>
+
+<p>Let us write a test (actually, a doc/unit test) for this code. Don't
+worry too much about how this is set up and executed just yet.</p>
+
+<pre>Employee w/o an employee number is ignored: 
+
+&nbsp; &gt;&gt;&gt; print_salary(Employee('Adam', 'Developer')) 
+&nbsp; You're not an employee currently 
+
+Employee w/o a known employee number earns nothing: 
+
+&nbsp; &gt;&gt;&gt; print_salary(Employee('Berta', 'Designer', 100)) 
+&nbsp; You make EUR 0. 
+
+Employee w/ a valid employee number is found properly: 
+
+&nbsp; &gt;&gt;&gt; print_salary(Employee('Chris', 'CTO', 2)) 
+&nbsp; You make EUR 8000.
+&nbsp;
+Zero is a valid employee number: 
+
+&nbsp; &gt;&gt;&gt; print_salary(Employee('Devon', 'CEO', 0)) 
+&nbsp; You make EUR 12000
+</pre>
+
+<p>As it happens, the last test would fail. It would print <span class="visualHighlight">You are not an employee currently.</span>, unless we fixed the code:</p>
+
+<pre>class Employee(object): 
+&nbsp;&nbsp;&nbsp; def __init__(self, name, position, employee_no=None): 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; self.name = name 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; self.position = position 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; self.employee_no = employee_no 
+
+salaries = {0: 12000, 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1: 4000, 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2: 8000, 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3: 4000} 
+
+def print_salary(employee): 
+&nbsp;&nbsp;&nbsp; if employee.employee_no is not None: 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; salary = salaries.get(employee.employee_no, 0) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print "You make EUR %s." % salary 
+&nbsp;&nbsp;&nbsp; else: 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print "You're not an employee currently."
+</pre>
+
+<p>The moral of the story?</p>
+
+<ul><li>you rarely catch problems like these with manual testing </li><li>put the time you waste catching silly bugs and typos into writing tests </li><li>with decent test coverage, you end up saving lots of time when you refactor</li></ul></div>
+                    
+                
+                
+                    
+                        <h1>
+                            Types of tests
+                        </h1>
+
+                        <p class="documentDescription">Some terminology you should be familiar with</p>
+
+                        <div id="bodyContent">
+                            
+
+<p>Broadly speaking, there are four main types of tests:</p>
+
+<dl><dt>Unit tests </dt><dd>These are written from the programmer's perspective. A unit test should
+
+test a single method or function in isolation, to ensure that it
+
+behaves correctly. For example, testing that a given calculation is
+
+performed correctly given a variety of input is a good unit test for
+
+that one method. </dd><dt>Integration tests</dt><dd>Whereas unit tests try to remove or abstract away as many dependencies
+
+as possible to ensure that they are truly only concerned with the
+
+method under test, integration tests exercise the integration points
+
+between a method or component and the other components it relies on.
+
+For example, testing that a method performs some calculation and then
+
+correctly stores the result in the ZODB is an integration test in that
+
+it tests the integration between that component and the ZODB. </dd><dt>Functional tests </dt><dd>A
+functional test is typically demonstrating a use case, exercising a
+"vertical" of functionality. For example, testing that filling in a
+form and clicking "Save" then makes the resulting object available for
+future use, is a functional test for the use case of using that form to
+create content objects.&nbsp;</dd><dt></dt><dt>System tests</dt><dd>These are written from the user's perspective, and treat the system as
+
+a black box. A system test may be simulating a user interacting with
+
+the system according to expected usage patterns. By their nature, they
+
+are typically less systematic than the other types of tests.&nbsp;</dd></dl><p>Furthermore, functional tests may be <strong>white box</strong>,
+in which case they can make assertions about things like the underlying
+data storage (but only if this is specified clearly; implementation
+details should never affect functional tests). Such tests are also
+called <strong>functional integration tests</strong> (you can see where the lines start to blur, but don't worry too much about the naming). Alternatively, functional tests can be <strong>black box</strong>
+in which case they only perceive the system from the point of view of
+an actor (usually the end user) and make assertions only on what is
+presented in the (user) interface to that actor. Such tests, also known
+as <strong>acceptance tests</strong> would not make assumptions about the underlying architecture at all.</p>
+
+<h2>Tests and documentation</h2>
+
+<p>In a post to the Zope 3 mailing list, Jim Fulton explains the
+importance of tests and documentation, and how they go hand-in-hand:</p>
+
+<blockquote>&nbsp;&nbsp; One of the important things about this is that most doctests<br>&nbsp;&nbsp; should be written as documentation.&nbsp; When you write new software<br>&nbsp;&nbsp; components and you need to write tests for the main functionality<br>&nbsp;&nbsp; of your software you need to:<br><br>&nbsp;&nbsp; - Get your head into the mode of writing documentation.<br>&nbsp;&nbsp;&nbsp;&nbsp; This is very very very important.<br><br>&nbsp;&nbsp; - You need to document how to use the software.&nbsp; Include examples,<br>&nbsp;&nbsp;&nbsp;&nbsp; which are tests<br></blockquote>
+
+<p>We will learn more about doctests, and how they are used for unit
+testing and functional testing later. The important thing to note is
+that good tests often serve as documentation describing how your
+component is supposed to be used. Thinking about the story they tell is
+just as important as thinking about the number of input and output
+states they cover.</p>
+
+
+                        </div>
+                    
+                
+                
+                    
+                        <h1>
+                            Telling stories with doctests
+                        </h1>
+
+                        <p class="documentDescription">Doctests bring code and test closer together, and makes it easier to describe what a test does, and why.</p>
+
+                        <div id="bodyContent">
+                            
+
+<p>By their nature, tests should exercise an API and demonstrate how it
+is used. Thus, for other developers trying to understand how a module
+or library should be used, tests can be the best form of documentation.
+Python supports the notion of <strong>doctests</strong>, otherwise known as <strong>executable documentation</strong>.</p>
+
+<p>Doctests look like Python interpreter sessions. They contain plain
+text (normally in reStructedText, which can be rendered to HTML or PDF
+easily) as well as <strong>examples</strong>. The idea is to show
+something that could have been typed in an interpreter session and what
+the expected outcome should be. In the Zope 3 world, doctests are
+extremely prevalent and are used for most unit and integration testing.</p>
+
+<p>Doctests come in two main flavours: You can write a simple text file, such as a <span class="visualHighlight">README.txt</span>,
+
+that explains your code along with verifiable examples, or you can add
+
+doctests for a given method or class into the docstring of that method
+
+or class.</p>
+
+<p>The full-file approach - sometimes known as <strong>documentation-driven development</strong>
+- is the most common. This type of test is very well suited for
+explaining how an API should be used and ensuring that it works as
+expected at the same time. However, note that these are
+not technically proper unit tests, because there is no guarantee of
+isolation between the steps of the "script" that the doctest describes.
+The docstring version uses the same basic syntax, but each docstring is
+executed as its own test fixture, guaranteeing full isolation between
+tests.</p>
+
+<p>Here is a trivial example of a doctest. We will learn how to set up such a test shortly.</p>
+
+<pre>Interfaces are defined using Python class statements:: 
+
+  &gt;&gt;&gt; import zope.interface 
+  &gt;&gt;&gt; class IFoo(zope.interface.Interface): 
+  ...    """Foo blah blah""" 
+  ... 
+  ...    x = zope.interface.Attribute("""X blah blah""") 
+  ... 
+  ...    def bar(q, r=None): 
+  ...        """bar blah blah""" 
+
+In the example above, we've created an interface:: 
+
+  &gt;&gt;&gt; type(IFoo) 
+  &lt;class 'zope.interface.interface.InterfaceClass'&gt; 
+
+We can ask for the interface's documentation:: 
+
+  &gt;&gt;&gt; IFoo.__doc__ 
+  'Foo blah blah'
+
+We could create an arbitrary object - this will of course not provide 
+the interface.
+
+  &gt;&gt;&gt; o = object()
+  &gt;&gt;&gt; o # doctest: +ELLIPSIS
+  &lt;object at ....&gt;
+  &gt;&gt;&gt; IFoo.providedBy(o)
+  False
+  &gt;&gt;&gt; o.bar() # doctest: +ELLIPSIS
+  Traceback (most recent call last):
+  ...
+  AttributeError: 'object' object has no attribute 'bar'
+
+</pre>
+
+<p>Each time the doctest runner encounters a line starting with <span class="visualHighlight">&gt;&gt;&gt;</span>, the prompt of the Python interpreter (i.e. what you get by running <span class="visualHighlight">python</span>
+without any arguments in a terminal), it will execute that line of
+code. If that statement is then immediately followed by a line with the
+same level of indentation as the <span class="visualHighlight">&gt;&gt;&gt;</span> that is not a blank line and does not start with <span class="visualHighlight">&gt;&gt;&gt;,</span>
+this is taken to be the expected output of the statement. The test
+runner will compare the output it got by executing the Python statement
+with the output specified in the doctest, and flag up an error if they
+don't match.</p>
+
+<p>Note that <em>not</em> writing an output value is equivalent to stating that the method has no output. Thus, this is a failure:</p>
+
+<pre>    &gt;&gt;&gt; foo = 'hello'
+    &gt;&gt;&gt; foo
+    &gt;&gt;&gt; # do something else
+</pre>
+
+<p>The reference to <span class="visualHighlight">foo</span> on its own will print the value of foo. The correct DocTest would read:</p>
+
+<pre>    &gt;&gt;&gt; foo = 'hello'
+    &gt;&gt;&gt; foo
+    'hello'
+    &gt;&gt;&gt; # do something else
+</pre>
+
+<p>Notice also the ... (ellipsis) element in the expected otuput. These mean "any number of characters" (anologus to a <span class="visualHighlight">.*</span>
+statement in a regular expression, if you are familiar with those).
+They are usually convenient shorthand, but they can sometimes be
+necessary. For example:</p>
+
+<pre>  &gt;&gt;&gt; class Foo:
+  ...     pass
+  &gt;&gt;&gt; Foo()
+  &lt;__main__.Foo instance at ...&gt;
+</pre>
+
+<p>Here, the <span class="visualHighlight">...</span> in the expected output replaces a hexadecimal memory address (<span class="visualHighlight">0x0x4523a0</span>
+on the author's computer at the time of writing), which cannot be
+predicted in advance. When writing doctests in particular (but also
+when writing regular unit tests), you need to be careful about values
+you cannot predict, such as auto-generated ids based on the current
+time or a random number. The ellipsis operator can help you work around
+those.</p>
+
+<p>Do not confuse the ellipsis operator in the expected output with the syntax of using <span class="visualHighlight">...</span> underneath a <span class="visualHighlight">&gt;&gt;&gt;</span>
+line. This is the standard Python interpreter syntax used to designate
+statments that run over multiple lines, normally as the result of
+indentation. You can, for example, write:</p>
+
+<pre>  &gt;&gt;&gt; if a == b:
+  ...     foo = bar
+</pre>
+
+<p>&nbsp;if that is necessary in your test.</p>
+
+<h2>Doctest tips and tricks</h2>
+
+<p>As with all testing, you will get better at doctests over time. Below are a few tips that may help you get started.</p>
+
+<dl><dt>Read the documentation</dt>
+
+<dd>doctests have been in Python for a long time. The <a href="http://docs.python.org/lib/module-doctest.html">doctest module</a> comes with more documentation on how they work.</dd>
+
+<dt>A test is just a bunch of python statements!</dt>
+
+<dd>Never forget this. You can, for example, reference helper methods
+in your own product, for example, imagine you have a method in <span class="visualHighlight">Products.MyProduct.tests.utils</span> that has a method <span class="visualHighlight">setUpSite()</span> to pre-populate your site with a few directories and users. Your doctest could contain:
+
+<pre>  &gt;&gt;&gt; from Products.MyProduct.tests.utils import setUpSite
+  &gt;&gt;&gt; setUpSite()
+</pre>
+
+</dd>
+
+<dt>The test suite can perform additional initialisation</dt>
+
+<dd>A test suite can have <span class="visualHighlight">setUp()</span> and/or <span class="visualHighlight">tearDown()</span> handlers that perform additional set-up or clean-up. We will see further examples of this later.&nbsp; </dd>
+
+<dt>PDB is still your friend</dt>
+
+<dd>You can put the standard <span class="visualHighlight">import pdb; pdb.set_trace()</span>
+on a line in doctest. Unfortunately, you can't step through a doctest
+line by line, but you can print variables and examine the state of the
+test fixture.</dd>
+
+<dt>You can catch exceptions</dt>
+
+<dd>If you need to debug a doctest that is throwing an exception, this statement is often useful:
+
+<pre>  &gt;&gt;&gt; try:
+  ...     someOperation()
+  ... except:
+  ...     import pdb; pdb.set_trace()
+  &gt;&gt;&gt; # continue as normal
+</pre>
+
+</dd></dl></div>
+                    
+                
+                
+                    
+                        <h1>
+                            Running tests
+                        </h1>
+
+                        <p class="documentDescription">It is not much good writing a test or relying on someone else's tests if you don't know how to run them.</p>
+
+                        <div id="bodyContent">
+                            The easiest way to run tests in Zope is to use <span class="visualHighlight">zopectl</span> or the equivalent control script.
+
+<pre>  ./bin/zopectl test -s Products.RichDocument
+</pre>
+
+<p>This would run all tests in the <span class="visualHighlight">Products.RichDocument</span> module. If you are using a <a title="Managing projects with zc.buildout" href="http://plone.org/documentation/kb/buildout">buildout</a> with an instance control script called <span class="visualHighlight">instance</span>, this would be:</p>
+
+<pre>  ./bin/instance test -s Products.RichDocument</pre>
+
+<p>Using buildout is probably a good idea - see <a title="Managing projects with zc.buildout" href="http://plone.org/documentation/kb/buildout">the buildout tutorial</a> - not at least because this is the only way that works reliably on Windows. We will use this syntax from now on.</p>
+
+<p>To execute a single test or a set of tests matched by regular expression, you can use:</p>
+
+<pre>  ./bin/instance test -s Products.RichDocument -t setup
+</pre>
+
+<p>This would run tests in files like <span class="visualHighlight">test_setup.py</span>. To run all doctests in <span class="visualHighlight">README.txt</span> (presuming there was a test suite for this file) you would write:</p>
+
+<pre>  ./bin/instance test -s Products.RichDocument -t README.txt</pre>
+
+<p>The new test runner also includes a few debugging options. For example:</p>
+
+<pre>  ./bin/instance test -m Products.RichDocument -D
+</pre>
+
+<p>This will stop execution at the first failing test and drop into a PDB post-mortem.</p>
+
+<p>To see the other options that are available, run:</p>
+
+<pre>  ./bin/instance test --help
+</pre>
+
+<p>When the tests you think are relevant all pass, it's time to run all
+tests and make sure nothing else broke. (No, we don't care that you are
+writing your code in a totally different python module than what those
+other tests are supposed to test, and that they were all fine and good
+and all you changed was a docstring. Run the tests when you think
+you're done.)</p>
+
+<p>When tests finish running, you will see a report like:</p>
+
+<pre>    ...
+    Ran 18 tests in 6.463s
+
+    OK
+</pre>
+
+<p>(it may look slightly different, depending on which test runner you are using)</p>
+
+<p>Rehearse a satisfied sigh as you read the line "OK", as opposed to
+seeing a count of failed tests. With time, this will be the little
+notifier that lets you go to bed, see your friends again or generally
+get back to real life with an <span class="visualHighlight">svn commit</span>.</p>
+
+<p>If you're not so lucky, you may see:</p>
+
+<pre>    Ran 18 tests in 7.009s
+
+    FAILED (failures=1, errors=1)
+</pre>
+
+<p>(again, the output may look slightly different depending on your test runner, but the same information should always be there)</p>
+
+<p>This means that there were 1 python error and 1 failed test during test execution.</p>
+
+<p>A python error means that some of your test code, or some code that
+was called by a test, raised an exception. This is bad, and you should
+fix it right away.</p>
+
+<p>A failed test means that your test was trying to assert something
+that turned out not to be true. This could be OK. It could mean you
+haven't written the code the test is testing yet (well done, you wrote
+the test first!), or that you don't yet know why it's failing.
+Sometimes you may be radically refactoring or rewriting parts of your
+code, and the tests will keep on failing until you're done.
+Incidentally, this is part of the reason why unit tests are so good -
+you can do that kind of stuff.</p>
+
+<p>It's sometimes (not always - don't try this on Plone core unless
+you've been told it's OK by the release manager) acceptable to go to
+bed and check in a failing test if you are not in a position to know
+how to fix it. At least other developers will be aware of the problem
+and may be able to fix it.</p>
+
+
+                        </div>
+                    
+                
+                
+                    
+                        <h1>
+                            Writing unit tests
+                        </h1>
+
+                        <p class="documentDescription">Now
+that you understand the principle of tests and how to run them, it's
+time to write some. We will start with simple unit tests using doctest
+syntax.</p>
+
+                        <div id="bodyContent">
+                            
+
+<p>We will start by showing how to create a simple unit test with
+doctest syntax. There is nothing Zope- or Plone-specific about this
+test. This type of test is ideal for methods and classes that perform
+some kind of well-defined operation on primitives or simple objects.
+The doctest syntax is well-suited for explaining the inputs and
+outputs. Since the tests are relatively few and/or descriptive, keeping
+the tests, documentation and code close together makes sense.</p>
+
+<p>Tests are usually found in a <span class="visualHighlight">tests/</span> sub-package. In the <span class="visualHighlight">example.tests</span> package, we have created a file called <span class="visualHighlight">tests/test_simple_doctest.py</span>. This sets up a test suite to run doctests in the doc strings in the module <span class="visualHighlight">example.tests.context</span>. Let's look at the test setup first:</p>
+
+<pre>"""This is the setup for a doctest where the actual test examples are held in 
+docstrings in a module.
+
+Here, we are not using anything Zope-specific at all. We could of course 
+use the Zope 3 Component Architecture in the setup if we wanted. For that,
+take a look at test_zope3_doctest.py.
+
+However, we *do* use the zope.testing package, which provides improved
+version of Python's standard DocTestSuite, DocFileSuite and so on. If you
+don't want this dependency, just use doctest.DocTestSuite.
+"""
+
+import unittest
+import zope.testing
+
+import example.tests.context
+
+def setUp(test):
+    """We can use this to set up anything that needs to be available for
+    each test. It is run before each test, i.e. for each docstring that
+    contains doctests.
+    
+    Look at the Python unittest and doctest module documentation to learn 
+    more about how to prepare state and pass it into various tests.
+    """
+    
+def tearDown(test):
+    """This is the companion to setUp - it can be used to clean up the 
+    test environment after each test.
+    """
+    
+def test_suite():
+    return unittest.TestSuite((
+    
+        # Here, we tell the test runner to execute the tests in the given
+        # module. The setUp and tearDown methods can be used to perform
+        # test-specific setup and tear-down.
+    
+        zope.testing.doctest.DocTestSuite(example.tests.context,
+                     setUp=setUp,          # setUp and tearDown are optional!
+                     tearDown=tearDown),
+        ))
+</pre>
+
+<p>There are a lot of comments here, and we show how to use <span class="visualHighlight">setUp()</span> and <span class="visualHighlight">tearDown()</span> methods for additional initialisation and clean-up, if necessary. The test runner will call the <span class="visualHighlight">test_suite()</span> method and expect a <span class="visualHighlight">TestSuite</span> object back. If desired, we could have put multiple test suites referring to multiple modules into the <span class="visualHighlight">TestSuite</span> that is being returned.</p>
+
+<p>Here is the actual code under test, in <span class="visualHighlight">context.py</span>:</p>
+
+<pre>from zope.interface import implements
+from example.tests.interfaces import IContext
+
+class Context(object):
+    """An object used for testing. We will register an adapter from this
+    interface to IUpperCaser in the test setup.
+    
+    Here's how you use it. First, import the class.
+    
+        &gt;&gt;&gt; from example.tests.context import Context
+        
+    Then in-stan-ti-ate it (with me so far?):
+    
+        &gt;&gt;&gt; my_context = Context()
+
+    Okay, here's the tricky bit ... now we need to set the title:
+    
+        &gt;&gt;&gt; my_context.title = u"Some string!"
+        
+    Phew ... did that work?
+    
+        &gt;&gt;&gt; my_context.title
+        u'Some string!'
+        
+    Yeah!
+    """
+    
+    implements(IContext)
+    
+    def __init__(self, title=u""):
+        self.title = title
+</pre>
+
+<p>Here is how we may run the tests from a buildout:</p>
+
+<pre>./bin/instance test -s example.tests -t context
+Running unit tests:
+  Running:
+....
+  Ran 4 tests with 0 failures and 0 errors in 0.071 seconds.
+</pre>
+
+
+                        </div>
+                    
+                
+                
+                    
+                        <h1>
+                            Testing a Zope 3 component with a separate doctest file
+                        </h1>
+
+                        <p class="documentDescription">Sometimes, we may need to perform additional set-up for our tests to run properly.</p>
+
+                        <div id="bodyContent">
+                            
+
+<p>In the previous example, we wrote a doctest in a docstring. As tests
+become more complex or require more involved configuration, it is
+usually better to separate the actual test into a text file. Sometimes,
+this can be the <span class="visualHighlight">README.txt</span> file of a package. This is the approach favoured by Zope 3 components.</p>
+
+<p>In this example, we will register an adapter that is used in a
+doctest. This doctest also serves to illustrate how this particular
+adapter should be used.&nbsp; This style of test is great when the
+emphasis is on the documentation as well as the test. Note that we do
+not load the package's ZCML in its entirely. Instead, we register the
+required components explicitly. This means that we retain control over
+what is executed in the test. We use the <span class="visualHighlight">zope.component.testing.tearDown</span> method to ensure that our test environment is properly cleaned up.</p>
+
+<p>In the <span class="visualHighlight">example.tests</span> package, we have the following test setup in <span class="visualHighlight">tests/test_zope3_doctest.py</span>:</p>
+
+<pre>"""This is the setup for a doctest that tests a Zope 3 component.
+
+There is really nothing too different from a "plain Python" test. We are not
+parsing ZCML, for example. However, we use some of the helpers from Zope 3
+to ensure that the Component Architecture is properly set up and torn down.
+"""
+
+import unittest
+
+import zope.testing
+import zope.component
+
+def setUp(test):
+    """This method is used to set up the test environment. We pass it to the
+    DocFileSuite initialiser. We also pass a tear-down, but in this case,
+    we use the tear-down from zope.component.testing, which takes care of
+    cleaning up Component Architecture registrations.
+    """
+    
+    # Register the adapter. See zope.component.interfaces for more
+
+    from example.tests.context import UpperCaser
+    zope.component.provideAdapter(UpperCaser)
+
+def test_suite():
+    return unittest.TestSuite((
+    
+        # Here, we tell the test runner to execute the tests in the given
+        # file. The setUp and tearDown methods employed make use of the Zope 3
+        # Component Architecture, but really there is nothing Zope-specific
+        # about this. If you want to test "plain-Python" this way, the setup
+        # is the same.
+    
+        zope.testing.doctest.DocFileSuite('tests/zope3.txt',
+                     package='example.tests',
+                     setUp=setUp,
+                     tearDown=zope.component.testing.tearDown),
+        ))
+</pre>
+
+<p>Notice how we use a custom <span class="visualHighlight">setUp()</span> method to register the custom adapter, and then reference <span class="visualHighlight">zope.component.testing.tearDown</span> for the tear-down method.</p>
+
+<p>This refers to the file <span class="visualHighlight">zope3.txt</span>, which looks like this:</p>
+
+<pre>==========================
+A Zope 3 component doctest
+==========================
+
+This is the type of test found most commonly in Zope 3. We have a custom
+setup method (in test_zope3_doctest.py) which registers the components we
+need for the test. We can then use those here. ZCML is not processed directly,
+nor do we have a full Zope 2/Plone environment available. This makes the test
+more isolated (and faster!). Often, we may choose to use mock implementations
+of certain components in order to make the test properly isolated.
+
+Of course, we should still tell a story with this documentation.
+
+Let's say we had one of our really exciting context objects:
+
+    &gt;&gt;&gt; from example.tests.context import Context
+    &gt;&gt;&gt; context = Context()
+    &gt;&gt;&gt; context.title = u"Some puny title"
+
+Of course, that's nice, but what if we wanted to make a bit more of an impact?
+We can use our handy upper-caser adapter!
+
+    &gt;&gt;&gt; from example.tests.interfaces import IUpperCaser
+    &gt;&gt;&gt; shout = IUpperCaser(context)
+    &gt;&gt;&gt; shout.title
+    u'SOME PUNY TITLE'
+    
+Wow!
+</pre>
+
+<p>To run just this test, we may do:</p>
+
+<pre>  ./bin/instance test -s example.tests -t zope3.txt
+  Running unit tests:
+    Running:
+  ..
+    Ran 2 tests with 0 failures and 0 errors in 0.010 seconds.
+</pre>
+
+
+                        </div>
+                    
+                
+                
+                    
+                        <h1>
+                            Writing a PloneTestCase unit/integration test
+                        </h1>
+
+                        <p class="documentDescription">Sometimes, we need access to a full-blown Plone instance in order to effectively write tests</p>
+
+                        <div id="bodyContent">
+                            
+
+<p><span class="visualHighlight">PloneTestCase</span>, which in turn uses <span class="visualHighlight">ZopeTestCase</span>,
+is used to set up a full Zope environment, including a Plone instance,
+for testing. This type of test is very convenient and often necessary
+because content types, tools and other parts of Plone have hard
+dependencies on various underlying Zope, CMF and Plone components. It
+is generally better to write simpler tests, however, both because they
+provide better isolation (thus testing the component more directly and
+under better controlled circumstances) and because they execute faster.</p>
+
+<p>PloneTestCase-tests are often referred to as "unit tests", but in truth they are <em>integration</em>
+tests, since they depend on a "live" Zope instance and thus test the
+integration between your code and the underlying framework. We can use
+the PloneTestCase setup to run doctests, as we will see in the next
+section.</p>
+
+<p>Here, however, we will demonstrate how to use <span class="visualHighlight">unittest.TestCase</span> classes, where each test is a method on a class (with a name beginning with <span class="visualHighlight">test</span>)
+This type of test is not as good for documentation, but can be very
+useful for systematically executing many variations on the same test.
+Some developers also find this type of test easier to debug, since it
+is plain Python code which can be stepped through using the debugger.</p>
+
+<p>In the <span class="visualHighlight">example.tests</span> package, we have <span class="visualHighlight">tests/base.py</span>. This does not contain any tests, but performs the necessary configuration to set up the test fixture:</p>
+
+<pre>"""Test setup for integration and functional tests.
+
+When we import PloneTestCase and then call setupPloneSite(), all of Plone's
+products are loaded, and a Plone site will be created. This happens at module
+level, which makes it faster to run each test, but slows down test runner
+startup.
+"""
+
+from Products.Five import zcml
+from Products.Five import fiveconfigure
+
+from Testing import ZopeTestCase as ztc
+
+from Products.PloneTestCase import PloneTestCase as ptc
+from Products.PloneTestCase.layer import onsetup
+
+#
+# When ZopeTestCase configures Zope, it will *not* auto-load products in 
+# Products/. Instead, we have to use a statement such as:
+# 
+#   ztc.installProduct('SimpleAttachment')
+# 
+# This does *not* apply to products in eggs and Python packages (i.e. not in
+# the Products.*) namespace. For that, see below.
+# 
+# All of Plone's products are already set up by PloneTestCase.
+# 
+
+@onsetup
+def setup_product():
+    """Set up the package and its dependencies.
+    
+    The @onsetup decorator causes the execution of this body to be deferred
+    until the setup of the Plone site testing layer. We could have created our
+    own layer, but this is the easiest way for Plone integration tests.
+    """
+    
+    # Load the ZCML configuration for the example.tests package.
+    # This can of course use &lt;include /&gt; to include other packages.
+    
+    fiveconfigure.debug_mode = True
+    import example.tests
+    zcml.load_config('configure.zcml', example.tests)
+    fiveconfigure.debug_mode = False
+    
+    # We need to tell the testing framework that these products
+    # should be available. This can't happen until after we have loaded
+    # the ZCML. Thus, we do it here. Note the use of installPackage() instead
+    # of installProduct().
+    # 
+    # This is *only* necessary for packages outside the Products.* namespace
+    # which are also declared as Zope 2 products, using 
+    # &lt;five:registerPackage /&gt; in ZCML.
+    
+    # We may also need to load dependencies, e.g.:
+    # 
+    #   ztc.installPackage('borg.localrole')
+    # 
+    
+    ztc.installPackage('example.tests')
+    
+# The order here is important: We first call the (deferred) function which
+# installs the products we need for this product. Then, we let PloneTestCase 
+# set up this product on installation.
+
+setup_product()
+ptc.setupPloneSite(products=['example.tests'])
+
+class ExampleTestCase(ptc.PloneTestCase):
+    """We use this base class for all the tests in this package. If necessary,
+    we can put common utility or setup code in here. This applies to unit 
+    test cases.
+    """
+
+class ExampleFunctionalTestCase(ptc.FunctionalTestCase):
+    """We use this class for functional integration tests that use doctest
+    syntax. Again, we can put basic common utility or setup code in here.
+    """
+</pre>
+
+<p>Notice how we can explicitly install third party products (and
+egg-based packages which use product semantics) and then tell
+PloneTestCase to quick-install these into the test fixture site. The
+test runner will <em>not</em> automatically load all products in the <span class="visualHighlight">Products.*</span> namespace, nor will it execute ZCML for packages outside <span class="visualHighlight">Products.*</span> automatically.</p>
+
+<p>The test class which uses this environment is found in <span class="visualHighlight">tests/test_integration_unit.py</span>:</p>
+
+<pre>"""This is an integration "unit" test. It uses PloneTestCase, but does not
+use doctest syntax.
+
+You will find lots of examples of this type of test in CMFPlone/tests, for 
+example.
+"""
+
+import unittest
+from example.tests.tests.base import ExampleTestCase
+
+from Products.CMFCore.utils import getToolByName
+
+class TestSetup(ExampleTestCase):
+    """The name of the class should be meaningful. This may be a class that
+    tests the installation of a particular product.
+    """
+    
+    def afterSetUp(self):
+        """This method is called before each single test. It can be used to
+        set up common state. Setup that is specific to a particular test 
+        should be done in that test method.
+        """
+        self.workflow = getToolByName(self.portal, 'portal_workflow')
+        
+    def beforeTearDown(self):
+        """This method is called after each single test. It can be used for
+        cleanup, if you need it. Note that the test framework will roll back
+        the Zope transaction at the end of each test, so tests are generally
+        independent of one another. However, if you are modifying external
+        resources (say a database) or globals (such as registering a new
+        adapter in the Component Architecture during a test), you may want to
+        tear things down here.
+        """
+    
+    def test_portal_title(self):
+        
+        # This is a simple test. The method needs to start with the name
+        # 'test'. 
+
+        # Look at the Python unittest documentation to learn more about hte
+        # kinds of assertion methods which are available.
+
+        # PloneTestCase has some methods and attributes to help with Plone.
+        # Look at the PloneTestCase documentation, but briefly:
+        # 
+        #   - self.portal is the portal root
+        #   - self.folder is the current user's folder
+        #   - self.logout() "logs out" so that the user is Anonymous
+        #   - self.setRoles(['Manager', 'Member']) adjusts the roles of the current user
+        
+        self.assertEquals("Plone site", self.portal.getProperty('title'))
+
+    def test_able_to_add_document(self):
+        new_id = self.folder.invokeFactory('Document', 'my-page')
+        self.assertEquals('my-page', new_id)
+        
+    # Keep adding methods here, or break it into multiple classes or
+    # multiple files as appropriate. Having tests in multiple files makes
+    # it possible to run tests from just one package:
+    #
+    #   ./bin/instance test -s example.tests -t test_integration_unit
+
+
+def test_suite():
+    """This sets up a test suite that actually runs the tests in the class
+    above
+    """
+    suite = unittest.TestSuite()
+    suite.addTest(unittest.makeSuite(TestSetup))
+    return suite
+</pre>
+
+<p>Here, we have a test suite with one test class - we could have added more classes if necessary. The <span class="visualHighlight">afterSetUp()</span> and <span class="visualHighlight">beforeTearDown()</span>
+methods - if present - are called immediately before and after each
+test. After a test is run, the transaction is rolled back, causing
+tests to run in isolation. You only really need explicit teardown if
+your tests make permantent changes that are not covered by the ZODB
+transaction machinery.</p>
+
+<p>You are free to add whatever helper methods you wish to your unit test class, but any method with a name starting with <span class="visualHighlight">test</span> will be executed as a test. Tests are usually written to be as concise (not to be confused with "obfuscated") as possible.</p>
+
+<p>Notice the calls to methods like <span class="visualHighlight">self.assertEqual()</span> or <span class="visualHighlight">self.failUnless()</span>.
+These are the assertion methods that do the actual testing. If any of
+these fail, that test is counted as a failure and you'll get an ugly F
+in your test output.</p>
+
+<p>To run the test, we would do:</p>
+
+<pre>  ./bin/instance test -s example.tests -t test_integration_unit
+    Running:
+  ..
+    Ran 2 tests with 0 failures and 0 errors in 0.178 seconds.
+</pre>
+
+<p>There is actually more output than this, as PloneTestCase installs a number of products and processes ZCML.</p>
+
+<h2>Rules of thumb<br></h2>
+
+<p>There are some basic rules of thumb for writing unit tests with PloneTestCase you should be aware of:</p>
+
+<ul><li>Write test first, don't put it off, and don't be lazy (did we say this enough already?)</li><li>Write one test (i.e. one method) for each thing you want to test</li><li>Keep related tests together (i.e. in the same test case class)</li><li>Be
+pragmatic. If you want to test every combination of inputs and outputs
+you will probably go blue in the face, and the additional tests are
+unlikely to be of much value. Similarly, if a method is complicated,
+don't just test the basic case. This comes with experience, but in
+general, you should test common cases, edge cases and preferably cases
+in which the method or component is expected to fail (i.e. test that it
+fails as expected - you still shouldn't get any F's in your test
+output!).</li><li>Keep tests simple. Don't try to be clever, don't
+over-generalise. When a test fails, you need to easily determine
+whether it is because the test itself is wrong, or the thing it is
+testing has a bug.<br></li></ul><h2>Assertion and utility methods in the unit testing framework</h2>
+
+<p>There are quite a few assertion methods, most of which do basically
+the same thing - check if something is True or False. Having a variety
+of names allows you to make your tests read the way you want. The list
+of assertion methods can be found in the Python documentation for <span class="visualHighlight">unittest.TestCase</span>. The most common ones are:</p>
+
+<dl><dt>failUnless(expr)</dt><dd>Ensure expr is true&nbsp;</dd><dt>assertEqual(expr1, expr2)&nbsp;</dt><dd>Ensure expr1 is equal to expr2&nbsp;</dd><dt>assertRaises(exception, callable, ...)&nbsp;</dt><dd>Make
+sure exception is raised by the callable. Note that callable here
+should be the name of a method or callable object, not an actual call,
+so you write e.g. <span class="visualHighlight">self.assertRaises(AttributeError, myObject.myMethod, someParameter)</span>. Note lack of () after <span class="visualHighlight">myMethod</span>.
+If you included it, you'd get the exception raised in your test method,
+which is probably not what you want. Instead, the statement above will
+cause the unit testing framework to call <span class="visualHighlight">myMethod(someParameter)</span> (you can pass along any parameters you want after the calalble) and check for an <span class="visualHighlight">AttributeError</span>.<br></dd><dt>fail()&nbsp;</dt><dd>Simply
+fail. This is useful if a test has not yet been completed, or in an if
+statement inside a test where you know the test has failed.&nbsp;</dd></dl><p>In addition to the unit testing framework assertion methods,
+
+ZopeTestCase and PloneTestCase include some helper methods and
+
+variables to help you interact with Zope. It's instructive to read the
+
+source code for these two products, but briefly, the key variables you
+
+can use in unit tests are:</p>
+
+<dl><dt>self.portal&nbsp;</dt><dd>The Plone portal the test is executing in&nbsp;</dd><dt>self.folder&nbsp;</dt><dd>The member folder of the member you are executing as&nbsp;</dd></dl><p>And the key methods are:</p>
+
+<dl><dt>self.logout()&nbsp;</dt><dd>Log out, i.e. become anonymous&nbsp;</dd><dt>self.login()&nbsp;</dt><dd>Log in again. Pass a username to log in as a different user.&nbsp;</dd><dt>self.setRoles(roles)&nbsp;</dt><dd>Pass in a list of roles you want to have. For example, self.setRoles(('Manager',)) lets you be manager for a while. How nice.</dd><dt>self.setPermissions(permissions)</dt><dd>Similarly, grant a number of permissions to the current user in <span class="visualHighlight">self.folder</span>.&nbsp;</dd><dt>self.setGroups(groups)&nbsp;</dt><dd>Set which groups the test user is in.&nbsp;<br></dd></dl><h2>Tips &amp; Tricks<br></h2>
+
+<p>Good unit testing comes with experience. It's always useful to read
+the unit tests of code with which you are fairly familiar, to see how
+other people unit test. We'll cover a few hints here to get you
+thinking about how you approach your own tests:</p>
+
+<ul><li>Don't be timid! Python, being a dynamic scripting language,
+lets you do all kinds of crazy things. You can rip a function right out
+from the Plone core and replace it with your own implementation in
+afterSetUp() or a test if that serves your testing purposes.</li><li>Similarly, replacing things like the <span class="visualHighlight">MailHost</span> with dummy implementations may be the only way to test certain features. Look at <span class="visualHighlight">CMFPlone/tests/dummy.py</span> for some examples of dummy objects.</li><li>Use
+tests to try things out. They are a safe environment. If you need to
+try something a bit out of the ordinary, writing them in a test is
+often the easiest way of seeing how something works.</li><li>During
+debugging, you can insert print statements in tests to get traces in
+your terminal when you execute the tests. Don't check in code with
+printing tests, though. :)</li><li>Similarly, the python debugger is very valuable inside tests. Putting <span class="visualHighlight">import pdb; pdb.set_trace()</span>
+inside your test methods lets you step through testing code and step
+into the code it calls. If you're not familiar with the python
+debugger, your life is incomplete. <a class="external-link" href="http://plone.org/documentation/how-to/using-pdb/">More about using pdb with Plone</a>.<br></li></ul></div>
+                    
+                
+                
+                    
+                        <h1>
+                            Integration doctests using PloneTestCase
+                        </h1>
+
+                        <p class="documentDescription">The PloneTestCase integration test setup can also be used in doctests</p>
+
+                        <div id="bodyContent">
+                            
+
+<p>The choice of test case classes over doctest is purely one of
+syntactic preference. We can use the test setup from the previous
+section (in <span class="visualHighlight">base.py</span>) in a doctest
+as well. This type of test is more useful for documenting the
+integration of your code with Zope/Plone in a narrative fashion.</p>
+
+<p>There is no change to <span class="visualHighlight">tests/base.py</span> for this type of setup. However, we must be careful to use a test class that derives from <span class="visualHighlight">FunctionalTestCase</span>, since this performs the initialisation necessary for doctests. The test setup is found in  <span class="visualHighlight">tests/test_integration_doctest.py</span>:</p>
+
+<pre>"""This is an integration doctest test. It uses PloneTestCase and doctest
+syntax.
+"""
+
+import unittest
+import doctest
+
+from zope.testing import doctestunit
+from Testing import ZopeTestCase as ztc
+
+from example.tests.tests import base
+
+def test_suite():
+    """This sets up a test suite that actually runs the tests in the class
+    above
+    """
+    return unittest.TestSuite([
+
+        # Here, we create a test suite passing the name of a file relative 
+        # to the package home, the name of the package, and the test base 
+        # class to use. Here, the base class is a full PloneTestCase, which
+        # means that we get a full Plone site set up.
+
+        # The actual test is in integration.txt
+
+        ztc.ZopeDocFileSuite(
+            'tests/integration.txt', package='example.tests',
+            test_class=base.ExampleFunctionalTestCase,
+            optionflags=doctest.REPORT_ONLY_FIRST_FAILURE | 
+                        doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS),
+            
+        # We could add more doctest files here as well, by copying the file
+        # block above.
+
+        ])
+</pre>
+
+<p>Here, we set <span class="visualHighlight">ExampleFunctionalTestCase</span> from <span class="visualHighlight">base.py</span> as the <span class="visualHighlight">test_class</span>, which means that <span class="visualHighlight">self</span> in the doctest will be the same as <span class="visualHighlight">self</span> in the test class we saw in the previous section. In particular, we can access variables such as <span class="visualHighlight">self.portal</span> and <span class="visualHighlight">self.folder</span>.
+We also set some common doctest option flags - reporting only the first
+failure (to avoid overly long error output when an example early on in
+the doctest fails), normalising whitespace (so that we can use newlines
+freely) and allowing the ellipsis operator everywhere (as opposed to
+having to turn it on each time we want to use it). Look at the <span class="visualHighlight">doctest</span> module documentation for more information.</p>
+
+<p>The test itself, in <span class="visualHighlight">tests/integration.txt</span>, is written much like the other doctests we have seen:</p>
+
+<pre>======================
+An integration doctest
+======================
+
+This test is an integration test that uses PloneTestCase. Here, 'self' is
+the test class, so we can use 'self.folder', 'self.portal' and so on. The
+setup is done in teststest_integration_doctest.py
+
+Being a doctest, we can tell a story here. 
+
+For example, let's say a user had a dying wish: to add a news item. We'll do
+that using the standard Plone API.
+
+    &gt;&gt;&gt; self.folder.invokeFactory('News Item', 'news-item')
+    'news-item'
+    
+That's great, but really, he wanted to add it to the portal root:
+    
+    &gt;&gt;&gt; self.portal.invokeFactory('News Item', 'news-item')
+    Traceback (most recent call last):
+    ...
+    Unauthorized: Cannot create News Item
+
+Whoops! Too bad! 
+
+At least we got to demonstrate the ellipsis operator, which
+matches arbitrary text. We enabled this in test_integration_doctest.py. It
+is also possible to enable (or disable) this flag on a single statement.
+See the Python doctest documentation for more information.
+</pre>
+
+<p>To run this test on its own, we would do:</p>
+
+<pre>  ./bin/instance test -s example.tests -t integration.txt
+    Running:
+  ..
+    Ran 2 tests with 0 failures and 0 errors in 0.384 seconds.
+</pre>
+
+<p>Again, we have cut out some of the output from PloneTestCase.</p>
+
+
+                        </div>
+                    
+                
+                
+                    
+                        <h1>
+                            Functional and system tests with zope.testbrowser
+                        </h1>
+
+                        <p class="documentDescription">Whilst
+unit tests and doctests verify the correctness of individual methods
+and modules, functional tests test portions of the application as a
+whole, often from the point of view of the user, and typically aligned
+with use cases. System tests, in comparison, test the entire
+application as a black box.</p>
+
+                        <div id="bodyContent">
+                            
+
+<p>No developer likes to click around the browser to check if that
+button that was only supposed to show up in some cases really did show
+up. Unfortunately, these are also the types of problems that most often
+suffer from regressions, because templates are difficult (and slow) to
+test.</p>
+
+<p>Zope 3 has an elegant library called <span class="visualHighlight">zope.testbrowser</span>
+which lets you write doctests that behave like a real web browser
+(almost... it cannot yet handle JavaScript, which means that testing
+dynamic UIs that depend on JavaScript is not possible, although <a href="http://www.openqa.org/selenium/">Selenium </a>may
+be a viable alternative here). You can open URLs, click links, fill in
+form fields and test the HTTP headers, URLs and page contents that are
+returned from Plone. In fact, you could test any website, not just Zope
+or Plone ones.</p>
+
+<p>Functional tests are no replacement for unit tests. They test a
+slice of functionality, typically as the user sees it. Thus, they may
+not systematically include every aspect of the application. For
+example, a functional test may check whether a "Delete" button is
+present, and even that it works as expected, but should not be used to
+exhaustively test whether the delete operation works in every possible
+edge case. Where they excel, however, is in testing things like which
+options appear to which users depending on roles and permissions, or
+simply to exercise all the various templates used in a given product to
+make sure they don't break.</p>
+
+<p>Here is an example from the <span class="visualHighlight">example.tests</span> package. The test setup is in <span class="visualHighlight">tests/test_functional_doctest.py</span>:</p>
+
+<pre>"""This is a a functional doctest test. It uses PloneTestCase and doctest
+syntax. In the test itself, we use zope.testbrowser to test end-to-end
+functionality, including the UI.
+
+One important thing to note: zope.testbrowser is not JavaScript aware! For
+that, you need a real browser. Look at zope.testbrowser.real and Selenium
+if you require "real" browser testing.
+"""
+
+import unittest
+import doctest
+
+
+from Testing import ZopeTestCase as ztc
+
+from example.tests.tests import base
+
+def test_suite():
+    """This sets up a test suite that actually runs the tests in the class
+    above
+    """
+    return unittest.TestSuite([
+
+        # Here, we create a test suite passing the name of a file relative 
+        # to the package home, the name of the package, and the test base 
+        # class to use. Here, the base class is a full PloneTestCase, which
+        # means that we get a full Plone site set up.
+
+        # The actual test is in functional.txt
+
+        ztc.ZopeDocFileSuite(
+            'tests/functional.txt', package='example.tests',
+            test_class=base.ExampleFunctionalTestCase,
+            optionflags=doctest.REPORT_ONLY_FIRST_FAILURE | 
+                        doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS),
+            
+        # We could add more doctest files here as well, by copying the file
+        # block above.
+
+        ])
+</pre>
+
+<p>This code is actually identical to the test setup for the
+integration doctest in the previous section. The differences are found
+in the actual test itself, which uses <span class="visualHighlight">Products.Five.testbrowser.Browser</span>, a Zope 2 compatability wrapper around <span class="visualHighlight">zope.testbrowser.Browser</span>:</p>
+
+<pre>====================
+A functional doctest
+====================
+
+This is a full-blown functional test. The emphasis here is on testing what
+the user may input and see, and the system is largely tested as a black box.
+We use PloneTestCase to set up this test as well, so we have a full Plone site
+to play with. We *can* inspect the state of the portal, e.g. using 
+self.portal and self.folder, but it is often frowned upon since you are not
+treating the system as a black box. Also, if you, for example, log in or set
+roles using calls like self.setRoles(), these are not reflected in the test
+browser, which runs as a separate session.
+
+Being a doctest, we can tell a story here. 
+
+First, we must perform some setup. We use the testbrowser that is shipped
+with Five, as this provides proper Zope 2 integration. Most of the 
+documentation, though, is in the underlying zope.testbrower package.
+
+    &gt;&gt;&gt; from Products.Five.testbrowser import Browser
+    &gt;&gt;&gt; browser = Browser()
+    &gt;&gt;&gt; portal_url = self.portal.absolute_url()
+
+The following is useful when writing and debugging testbrowser tests. It lets
+us see all error messages in the error_log.
+
+    &gt;&gt;&gt; self.portal.error_log._ignored_exceptions = ()
+
+With that in place, we can go to the portal front page and log in. We will
+do this using the default user from PloneTestCase:
+
+    &gt;&gt;&gt; from Products.PloneTestCase.setup import portal_owner, default_password
+
+    &gt;&gt;&gt; browser.open(portal_url)
+
+We have the login portlet, so let's use that.
+
+    &gt;&gt;&gt; browser.getControl(name='__ac_name').value = portal_owner
+    &gt;&gt;&gt; browser.getControl(name='__ac_password').value = default_password
+    &gt;&gt;&gt; browser.getControl(name='submit').click()
+
+Here, we set the value of the fields on the login form and then simulate a
+submit click.
+
+We then test that we are still on the portal front page:
+
+    &gt;&gt;&gt; browser.url == portal_url
+    True
+    
+And we ensure that we get the friendly logged-in message:
+
+    &gt;&gt;&gt; "You are now logged in" in browser.contents
+    True
+
+To learn more, look at the zope.testbrowser documentation and interfaces.
+There are also a few examples of testbrowser tests in Plone itself.
+</pre>
+
+<p>All the action happens with the <span class="visualHighlight">browser</span>
+object. This simulates a web browser (though as stated above, one that
+does not support JavaScript), and has a pleasant API for finding form
+controls and links and clicking on them. The variables <span class="visualHighlight">browser.url</span> and <span class="visualHighlight">browser.contents</span>
+represent what would've been in the URL bar and the rendered view of
+the page, respectively, and can be examined like any other variable.</p>
+
+<p><span class="visualHighlight">zope.testbrowser</span> has pretty comprehensive documentation in its <a href="http://svn.zope.org/zope.testbrowser/trunk/src/zope/testbrowser/README.txt?view=auto">README.txt</a> file - which is, of course, a runnable doctest. In brief, the most important methods of the <a href="http://svn.zope.org/zope.testbrowser/trunk/src/zope/testbrowser/interfaces.py?view=auto">IBrowser interface</a> (and thus the <span class="visualHighlight">Browser</span> class) are:</p>
+
+<dl><dt>open(url)</dt>
+
+<dd>Open a given URL.</dd>
+
+<dt>reload()</dt>
+
+<dd>Reload the current page, much as the Refresh button in your browser would do.</dd>
+
+<dt>goBack(count=1)</dt>
+
+<dd>Simulate pressing the Back button <span class="visualHighlight">count</span> times.</dd>
+
+<dt>getLink(text=None, url=None, id=None)</dt>
+
+<dd>Get an ILink (which you can then call <span class="visualHighlight">click()</span> on), either by the text inside the &lt;a&gt; tags, by the URL in the <span class="visualHighlight">href</span> attribute, or the <span class="visualHighlight">id</span> of the link.</dd>
+
+<dt>getControl(label=None, name=None, index=None)</dt>
+
+<dd>Get an <span class="visualHighlight">IControl</span>, representing a form control, by label (either the value of a submit button or the contents of an associated <span class="visualHighlight">&lt;label&gt;</span> tag) or form name. The index argument is used to disambiguate if there is more than one control (e.g. <span class="visualHighlight">index=0</span> gets the first one). Again, you can call <span class="visualHighlight">click()</span> on the control object to simulate clicking on it.</dd></dl><p>The
+IBrowser interface also provides some properties that can be used to
+examine the state of the current page. The most important ones are:</p>
+
+<dl><dt>url</dt>
+
+<dd>The full URL to the current page.</dd>
+
+<dt>contents</dt>
+
+<dd>The full contents of the current page, as a string (usually containing HTML tags)</dd>
+
+<dt>headers</dt>
+
+<dd>A dict of HTTP headers</dd></dl><p>Please refer to the <a href="http://svn.zope.org/zope.testbrowser/trunk/src/zope/testbrowser/interfaces.py?view=auto">interfaces</a> and the <a href="http://svn.zope.org/zope.testbrowser/trunk/src/zope/testbrowser/README.txt?view=auto">README file</a> for details on the other methods and attributes, the interfaces for various types of links and controls, and further examples.</p>
+
+<h2>Debugging functional tests</h2>
+
+<p> Sometimes you will get errors from Zope resulting from some command
+executed using the testbrowser. In this case, it can sometimes be
+difficult to know what the underlying cause is. Two debugging aids
+exist to make this a bit easier.</p>
+
+<p>First of all, make sure you see all errors in full by setting:</p>
+
+<pre>    &gt;&gt;&gt; browser.handleErrors = False
+</pre>
+
+<p>If <span class="visualHighlight">handleErrors</span> is True (the default) you will get errors like <span class="visualHighlight">HTTPError: HTTP Error 404: Not Found</span> or <span class="visualHighlight">HTTPError: HTTP Error 500: Internal Server Error</span>. Those are probably not very useful to you. Setting <span class="visualHighlight">handleErrors</span> to False will show the full exceptions Zope (or possibly the HTML rendering of the error page, depending on the type of error).</p>
+
+<p>Secondly, if you are using PloneTestCase, you can use Plone's error log. At the top of the example, we do:</p>
+
+<pre>    &gt;&gt;&gt; self.portal.error_log._ignored_exceptions = ()
+</pre>
+
+<p>This means that errors such as NotFound and Unauthorized will be
+shown in the error log. It may also be useful to enable Verbose
+Security in <span class="visualHighlight">zope.conf</span> (see the comments in that file for details). Now, when a line appears that is throwing an error you can't debug, you can do:</p>
+
+<pre>    &gt;&gt;&gt; try:
+    ...     browser.getControl('Save').click()
+    ... except:
+    ...     print self.portal.error_log.getLogEntries()[0]['tb_text']
+    ...     import pdb; pdb.set_trace()
+    &gt;&gt;&gt; # continue as normal
+</pre>
+
+<p>This will print the most recent entry in the error log, and set a PDB break point.</p>
+
+<h3>Using a real browser to render the results of your tests</h3>
+
+<p>Sometimes you would like to see the output of <code>browser.contents</code>
+in a browser to easily debug what's happening in your functional tests.
+To do so, place a PDB break point in your tests as described above (<code>import pdb; pdb.set_trace()</code>) and type the following when you get to the PDB prompt while running the tests:</p>
+
+<pre>&gt;&gt;&gt; from Testing.ZopeTestCase.utils import startZServer
+&gt;&gt;&gt; startZServer()
+</pre>
+
+<p>This will print a tuple like</p>
+
+<pre>('127.0.0.1', 55143)</pre>
+
+<p>containing an IP address and port where you can access the same test
+site that the testbrowser is working with, in a real browser.</p>
+
+<h2>Functional tests vs. system tests</h2>
+
+<p> A system test is one which treats the entire system as a black box,
+interacting with it as a user would. A functional test is more focused
+on a single "vertical" of functionality, typically linked to a
+particular use case.</p>
+
+<p>For a functional test, it <em>may</em> be acceptable to examine the internal state of the portal (using <span class="visualHighlight">self.portal</span> and the <span class="visualHighlight">PloneTestCase.FunctionalTestCase</span>
+class to build a test suite) to provide assertions. A system test, by
+contrast, makes no such assumptions. Ideally, you should be able to
+point a <span class="visualHighlight">zope.testbrowser</span> test at a remote site running a fresh installation of your system, and have the tests pass.</p>
+
+<p>Beyond that, the tools used to write a system test are the same. It
+is only the approach to testing that changes. Whether you need one, or
+the other, or both, will depend on the level of rigour you need in your
+tests, and how your system is constructed. In general, though, true
+system tests are more rare than functional (integration) tests and unit
+tests.</p>
+
+
+                        </div>
+                    
+                
+                
+                    
+                        <h1>
+                            Using zope.testrecorder to record functional tests
+                        </h1>
+
+                        <p class="documentDescription">The
+zope.testrecorder product brings us full-circle: functional tests are
+recorded from within the browser, and saved to a runnable test.</p>
+
+                        <div id="bodyContent">
+                            
+
+<p>Functional tests using <span class="visualHighlight">zope.testbrowser</span>
+save us from clicking around the browser to regression test UI, but
+writing them could still be easier. With complex templates, it can
+sometimes be difficult to find out what actual links and form fields
+the testbrowser test should be looking for, and what text to use in
+assertions.</p>
+
+<p>This is where <span class="visualHighlight">zope.testrecorder</span>
+comes in. The theory is that you click around the UI only once, and
+then render the history of what you did to a runnable testbrowser test.
+<span class="visualHighlight">zope.testrecorder</span> can even create <a href="http://plone.org/documentation/kb/testing/zope.org/Members/tseaver/Zelenium">Selenium</a>
+tests - an alternative form of functional tests which runs in the
+browser (i.e. it automates your browser right before your eyes) and
+thus supports JavaScript, but which cannot be run as part of an
+automated test run without a browser.</p>
+
+<p>Installing <span class="visualHighlight">zope.testrecorder</span> is simple. First, check it out from Zope's subversion repository:</p>
+
+<pre>    svn co svn://svn.zope.org/repos/main/zope.testrecorder/trunk zope.testrecorder
+</pre>
+
+<p>&nbsp;</p>
+
+<p>See <span class="visualHighlight">INSTALL.txt</span> for further instructions, but the easiest way to install it in a Zope 2 instance is just to put it in your <span class="visualHighlight">Products</span> directory: Copy <span class="visualHighlight">zope.testrecorder/src/zope/testrecorder</span> as a product into <span class="visualHighlight">Products/testrecorder</span> and restart Zope. Then, go to the ZMI and add a <span class="visualHighlight">Test Recorder</span> object in the root of your Zope instance. Call it e.g. <span class="visualHighlight">test-recorder</span>.</p>
+
+<p>Presuming you run Zope on localhost:8080, you should now be able to go to <span class="visualHighlight">http://localhost:8080/test-recorder/index.html</span>. You should see a page something like this:</p>
+
+<p><img src="testing-in-plone_archivos/blank-testrecorder.png" alt="Screenshot of blank test recorder"></p>
+
+<p><strong>NOTE:</strong> Like most things, <span class="visualHighlight">zope.testrecorder</span> seems to work better in Firefox than in other browsers.</p>
+
+<p>Now, enter the address of your Plone site (or indeed any web site), e.g. <span class="visualHighlight">http://localhost:8080/Plone</span>
+and click Go. You can perform any number of operations, e.g. logging in
+and clicking around the UI. If you wish to add a comment to your test
+run, as you would add free text inside a doctest, click the <span class="visualHighlight">Add comment</span>
+button. If you wish to verify that some text appears on the page,
+highlight that text, shift-click on it, and select "Check text appears
+on page":</p>
+
+<p><img src="testing-in-plone_archivos/verify-testrecorder.png" alt="Screenshot of text verification"></p>
+
+<p>When you are done, click <span class="visualHighlight">Stop recording</span>. You can then choose to render the test as a <span class="visualHighlight">Python doctest</span> and you will get something like:</p>
+
+<pre>  Create the browser object we'll be using.
+
+      &gt;&gt;&gt; from zope.testbrowser import Browser
+      &gt;&gt;&gt; browser = Browser()
+      &gt;&gt;&gt; browser.open('http://localhost/test')
+
+  A test comment.
+
+      &gt;&gt;&gt; 'start writing' in browser.contents
+      True
+</pre>
+
+<p>&nbsp;</p>
+
+<p>You can then paste this into a doctest file, and perform any
+post-processing or make any changes that may be necessary to make the
+test more generally valid.</p>
+
+<h2>Tips for using zope.testrecorder</h2>
+
+<dl><dt> Plan, plan, plan</dt>
+
+<dd>It's best if you have a rough script in front of you before you
+start recording tests, or you may get lost afterwards. Make good use of
+the <span class="visualHighlight">Add comment</span> button to state what you are testing before you test it, so that the final doctest will make sense.</dd>
+
+<dt> Careful where you click</dt>
+
+<dd>Some parts of the Plone UI are more ephemeral than others. It may not be a good idea to rely on links in the <span class="visualHighlight">Recent</span>
+portlet, for example. Think about what operations will provide the most
+general and valid test. It will save you time in the long run.</dd>
+
+<dt> Set up your site beforehand</dt>
+
+<dd>Recall from the section on <span class="visualHighlight">zope.testbrowser</span>
+that we set up users and basic site structure with calls to the Python
+APIs instead of using testbrowser to manipulate the "site setup"
+screents. When using <span class="visualHighlight">zope.testrecorder</span>
+you may want to set up the same users with the same user names and
+passwords, and the same site structure before you start recording to
+test. Otherwise, you may need to change some of the values of the test.</dd>
+
+<dt> Check the doctest</dt>
+
+<dd><span class="visualHighlight">zope.testrecorder</span> is a
+time-saving tool. Sometimes, it may end up referring to parts of the
+page that can't be guaranteed to be consistent (such as randomly
+generated ids of content objects), and sometimes you may have gone on a
+detour and ended up with a test that contains irrelevant or duplicate
+sections. Always fix up your test (and run it!) afterwards, to make
+sure that the test remains valid for the future - otherwise, you will
+end up clicking around the UI in anger again before you know it.
+</dd></dl></div>
+                    
+                
+                
+                    
+                        <h1>
+                            Determining the Code Coverage of your Test Suite
+                        </h1>
+
+                        <p class="documentDescription">Explanation for how to use the Zope test runner's built in code coverage features to prove the quality of your test suite. </p>
+
+                        <div id="bodyContent">
+                            
+
+<p>The better your test suite's coverage, the lower the likelihood that
+some modification to your code will break another piece of
+functionality in some unanticipated way.&nbsp; But, how do you <strong>know the quality</strong> of your test coverage?&nbsp; Zope's test runner comes with several features to help you do just that.</p>
+
+<p>&nbsp;</p>
+
+<p>But first, let's say you've written some code with a Python conditional like the following:</p>
+
+<pre>if value % 2 == 0:
+    print "This is an even number"
+else:
+    # we need to do some more complex
+    # computation to handle odd numbers
+    _someComplexCodeDealingWithOddNumbers(value)
+</pre>
+
+<p>The comments and function call in the else clause are symbolic of
+some advanced coding that's required to handle all odd numbers.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>Now, as you've no doubt learned while reading this tutorial, testing
+is important.&nbsp; But what if for one reason or another, all the test
+cases you've come up with during testing amount to even numbers when
+you get to the aforementioned block of code. If this were the case,
+you'd have a big risk of unanticipated code breakage to the way that
+you handle odd numbers.&nbsp; This is something that you'd ideally
+cover in your test suite.</p>
+
+<p>&nbsp;</p>
+
+<h3>Discovering the untested sections of your code<br></h3>
+
+<p>You've learned how to run your test suite in this tutorial.&nbsp; Zope's test runner accepts an optional parameter called <span class="visualHighlight">--coverage</span>.&nbsp;
+When passed a path to a directory, Zope will generate some high-level
+output and produce a coverage file for each of the Python modules in
+your product or package.&nbsp;</p>
+
+<p>In full, running your test suite with the coverage option enabled looks like:</p>
+
+<pre>./bin/instance test -s Products.productname --coverage=$HOME/coverage
+</pre>
+
+<p><br><strong>Note</strong>: Running your tests with the coverage
+option enabled takes significantly longer (as in ~10 times or more)
+than without, so this is something to be done occasionally to gauge
+your work, rather than each time you run your tests.</p>
+
+<p><br>At the end of running your test suite, you'll get some immediate
+output like the following, which includes lines of code and your
+coverage percentage:</p>
+
+<pre>lines&nbsp;&nbsp; cov%&nbsp;&nbsp; module&nbsp;&nbsp; (path)
+&nbsp; 104&nbsp;&nbsp; 100%&nbsp;&nbsp; $INSTANCE_HOME.parts.salesforce-integration-products.salesforcepfgadapter.Extensions.Install
+               ($INSTANCE_HOME/parts/salesforce-integration-products/salesforcepfgadapter/Extensions/Install.py)
+&nbsp;&nbsp; 39&nbsp;&nbsp;&nbsp; 41%&nbsp;&nbsp; $INSTANCE_HOME.parts.salesforce-integration-products.salesforcepfgadapter.__init__&nbsp;&nbsp; 
+               ($INSTANCE_HOME/parts/salesforce-integration-products/salesforcepfgadapter/__init__.py)
+&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp; 100%&nbsp;&nbsp; $INSTANCE_HOME.parts.salesforce-integration-products.salesforcepfgadapter.content.__init__&nbsp;&nbsp; 
+               ($INSTANCE_HOME/parts/salesforce-integration-products/salesforcepfgadapter/content/__init__.py)
+&nbsp; 168&nbsp;&nbsp;&nbsp; 91%&nbsp;&nbsp; $INSTANCE_HOME.parts.salesforce-integration-products.salesforcepfgadapter.content.salesforcepfgadapter&nbsp;&nbsp; 
+               ($INSTANCE_HOME/parts/salesforce-integration-products/salesforcepfgadapter/content/salesforcepfgadapter.py)
+&nbsp;&nbsp; 21&nbsp;&nbsp; 100%&nbsp;&nbsp; $INSTANCE_HOME.parts.salesforce-integration-products.salesforcepfgadapter.migrations.migrateUpTo10rc1&nbsp;&nbsp; 
+               ($INSTANCE_HOME/parts/salesforce-integration-products/salesforcepfgadapter/migrations/migrateUpTo10rc1.py)</pre>
+
+<p>&nbsp;If all you're looking for is a quick status report, this should suffice.</p>
+
+<p>&nbsp;</p>
+
+<p>However, if you want to dig deeper, head to the directory you listed in the <span class="visualHighlight">--coverage</span> option.&nbsp; <strong>Note:</strong> The files may be preceded with dots, thus requiring an <span class="visualHighlight">ls -a</span> in order to reach the coverage files.</p>
+
+<p>&nbsp;</p>
+
+<p>A sample file may look like the following:</p>
+
+<pre>&nbsp;&nbsp;&nbsp; 1:&nbsp;&nbsp;&nbsp;&nbsp; def initializeArchetype(self, **kwargs):
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; """Initialize Private instance variables
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; """
+&nbsp;&nbsp; 15:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FormActionAdapter.initializeArchetype(self, **kwargs)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp; 15:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; self._fieldsForSFObjectType = {}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; 1:&nbsp;&nbsp;&nbsp;&nbsp; security.declareProtected(View, 'onSuccess')
+&nbsp;&nbsp;&nbsp; 1:&nbsp;&nbsp;&nbsp;&nbsp; def onSuccess(self, fields, REQUEST=None):
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; """ The essential method of a PloneFormGen Adapter 
+"""
+&gt;&gt;&gt;&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; logger.debug('Calling onSuccess()')
+&gt;&gt;&gt;&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sObject = self._buildSObjectFromForm(fields, REQUEST)
+&gt;&gt;&gt;&gt;&gt;&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if len(sObject.keys()) &gt; 1:
+
+</pre>
+
+<p>It's really just your file with some meaningful data proceeding each line.&nbsp; Anything with a <span class="visualHighlight">1:</span>
+signifies that your code was at least touched during the running of the
+test suite.&nbsp; The higher the number, the more often your code was
+touched.&nbsp; Perhaps this is intentional and signifies really good
+coverage in other cases, it's may be either unavoidable or could even
+signify that the high level of coverage wouldn't actually be
+required.&nbsp; The <span class="visualHighlight">&gt;&gt;&gt;&gt;&gt;&gt;</span>
+means that you've missed a line and you should consider coming up with
+a test scenario or more that will touch the line of code in
+question.&nbsp; The number of untested lines divided by total lines
+gives you your coverage percentage.</p>
+
+<p>&nbsp;</p>
+
+<h3>If what you really want is eye-candy</h3>
+If you want pretty graphs to provide for you boss to include in a
+report or to make a client feel better about the quality of code they
+are receiving, <span class="visualHighlight">z3c.coverage</span> takes the contents of the output files
+
+and creates pretty summaries.&nbsp; Get z3c.coverage from subversion via the following:
+
+<pre>svn co&nbsp; svn://svn.zope.org/repos/main/z3c.coverage/trunk z3c.coverage</pre>
+
+<p>Create a directory within your previously created coverage
+directory.&nbsp; We call it reports.&nbsp; Run the coveragereport.py
+module with the source being you coverage output and the destination,
+your newly created reports directory.&nbsp; See the following:</p>
+
+<pre>mkdir $HOME/coverage/reports
+python z3c.coverage/src/z3c/coverage/coveragereport.py $HOME/coverage $HOME/coverage/reports</pre>
+
+<p>You should now be able to open <span class="visualHighlight">$HOME/coverage/reports/all.html</span> within your browser for a pretty output like the one below.</p>
+
+<p>&nbsp;</p>
+
+<img class="image-inline" src="testing-in-plone_archivos/coverage.png" alt="z3c.coverage test coverage screenshot"><p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>With this information available, you can start to make conclusions
+about how you may work your way towards better coverage of your product.</p>
+
+
+                        </div>
+                    
+                
+                
+                    
+                        <h1>
+                            Testing examples
+                        </h1>
+
+                        <p class="documentDescription">Here, we list a few packages and projects that demonstrate good test coverage</p>
+
+                        <div id="bodyContent">
+                            
+
+<p>Testing is best learned by example. It can be very instructive to
+read through the tests written by other developers and learn what they
+test, what they don't test and how they write their tests.</p>
+
+<ul><li><a href="http://dev.plone.org/collective/browser/examples/example.tests/trunk">example.tests</a>,
+which we have already mentioned, contains an example of each of the
+different types of tests covered in this tutorial. The test setup code
+is well-commented, with the intention that this package should provide
+good boilerplate for developers setting up a new project.</li><li><a class="external-link" href="http://dev.plone.org/plone/browser/Plone/trunk/Products/CMFPlone/tests">Plone itself</a>
+has more than 1,600 tests at the time of writing. Most of these are
+integration tests using unit-test syntax with PloneTestCase.</li><li><a href="http://dev.plone.org/collective/browser/RichDocument/trunk/tests/testSetup.py">RichDocument</a> has a basic <span class="visualHighlight">test_setup.py</span>
+integration test. This is a good example of the kind of testing you may
+want to do to ensure that your package installs cleanly.</li><li><a href="http://dev.plone.org/collective/browser/borg/components/borg.project/trunk">borg.project</a> contains a <a href="http://dev.plone.org/collective/browser/borg/components/borg.project/trunk/borg/project/README.txt">README.txt</a> file with an integration doctest demonstrating how it is used. It has only a single test module, <a href="http://dev.plone.org/collective/browser/borg/components/borg.project/trunk/borg/project/tests.py">tests.py</a>, which performs the same setup as <span class="visualHighlight">base.py</span> and <span class="visualHighlight">test_integration_doctest.py</span> from <span class="visualHighlight">example.tests</span>.</li><li>Many of the tests in the <a href="http://dev.plone.org/plone/browser/plone.app.controlpanel/trunk/plone/app/controlpanel/tests">plone.app.controlpanel</a> package use basic test-browser functional tests to verify that the Plone control panels work as expected.<br></li></ul><p>Feel free edit or comment on this page if you have more examples to add!</p>
+
+
+                        </div>
+                    
+                
+            </div>
+        </div><div id="viewlet-below-content">
+</div></div><!-- End cell --><div class="grid-cell position-two-thirds width-third"><div id="sidebar"><div id="portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f706c6f6e652e6f72672f646f63756d656e746174696f6e2f6b620a6b6e6f776c656467652d62617365" class="portletWrapper kssattr-portlethash-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f706c6f6e652e6f72672f646f63756d656e746174696f6e2f6b620a6b6e6f776c656467652d62617365">
+<dl class="portlet portletStaticText portlet-static-knowledge-base"><dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <span>
+           Knowledge Base
+        </span>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="portletItem odd">
+        <p>The
+Knowledge Base is a place for free-form, community-mantained
+documentation. If you want to contribute, ask for collective access <a class="external-link" href="http://dev.plone.org/collective/">here</a>.</p>
+        
+            <span class="portletBottomLeft"></span>
+            <span class="portletBottomRight"></span>
+        
+    </dd>
+    
+    
+
+</dl></div><div id="portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e74656e745f747970650a48656c7043656e7465725475746f7269616c0a706f72746c65745f7068635f61626f7574" class="portletWrapper kssattr-portlethash-706c6f6e652e6c656674636f6c756d6e0a636f6e74656e745f747970650a48656c7043656e7465725475746f7269616c0a706f72746c65745f7068635f61626f7574">
+
+
+  
+    <div>
+
+<dl class="portlet"><dt class="portletHeader">
+		About
+	</dt>
+
+	<dd class="portletItem">
+
+    
+
+    <div id="phcMetadata">
+      	<p><strong>Use with</strong>:
+      	Plone 3<br><strong>Relevant for</strong>:
+      	  Developers
+        
+      	</p>
+
+        
+
+            <img src="testing-in-plone_archivos/optilude.jpeg" alt="" class="portraitPhoto" style="margin: 0pt 1em 0.5em 0pt; float: left;" height="100" width="75"><p>This document was contributed by
+               <a href="http://plone.org/author/optilude">Martin Aspeli</a>,
+               and last modified
+               943
+               days ago.
+            </p>
+            
+        
+    </div>	
+
+    <p></p>
+	
+    <p>
+    <img src="testing-in-plone_archivos/speakplone_sm.png" alt="" style="float: left;" height="28" width="80">
+      Visit our 
+      <a href="http://plone.org/support/chat">chat rooms</a> or 
+      <a href="http://plone.org/support/forums">support forums</a> 
+      if you have more specific questions.
+    </p>
+
+    <p>You can also learn how to design, build, and deploy a website in Plone 
+    through one of the numerous 
+    <a href="http://plone.org/events/training">Plone training sessions</a> around the world.
+    </p>
+
+    <p>Report errors, omissions, etc., to the documentation by emailing <a href="mailto:plone-docs@lists.sourceforge.net">plone-docs@lists.sourceforge.net</a></p>
+
+  </dd>
+
+</dl></div>
+  
+
+  
+
+</div></div></div></div><!-- End row --><div class="grid-row"><div class="grid-cell position-leftmost width-full"><div id="footer-portlets"></div></div></div><!-- End footer portlets row --></div><div style="clear: both;">&nbsp;</div></div><!-- end inner-wrapper --><div id="push"></div></div><!-- end outer-wrapper --><div id="footer-wrapper"><div id="footer-gradient"></div><div id="footer"><a id="footer-logo" href="http://plone.org/" title="Plone CMS, the open source content management system"></a><p>The Plone<sup>®</sup> CMS/WCM is © 2000–2010 the Plone Foundation and friends. Site hosted by <a href="http://www.sixfeetup.com/" style="color: white;">Six Feet Up</a>.</p><p>Plone<sup>®</sup> and the Plone logo are registered trademarks of the Plone Foundation. You’re looking good today.</p><div id="sitemap"><!-- <dl>
+				<dt><a href="">Plone for…</a></dt>
+				<dd><a href="">Small/Medium Business </a></dd>
+				<dd><a href="">Enterprise            </a></dd>
+				<dd><a href="">Non-profits           </a></dd>
+				<dd><a href="">Government            </a></dd>
+				<dd><a href="">Education             </a></dd>
+				<dd><a href="">Science               </a></dd>
+				<dd><a href="">Media &amp; Publishing</a></dd>
+			</dl> --><dl><dt><a href="http://plone.org/products">Downloads</a></dt><dd><a href="http://plone.org/download">Get Plone</a></dd><dd><a href="http://plone.org/products?getCategories=themes">Themes</a></dd><dd><a href="http://plone.org/products?getCategories=dev">Development tools</a></dd><dd><a href="http://plone.org/products?getCategories=auth">Authentication</a></dd><dd><a href="http://plone.org/products">…and more.</a></dd></dl><dl><dt><a href="http://plone.org/documentation">Documentation</a></dt><dd><a href="http://plone.org/documentation/faq/">FAQs</a></dd><dd><a href="http://plone.org/documentation/movies/">Tutorial videos</a></dd><dd><a href="http://plone.org/documentation/manual">Manuals</a></dd><dd><a href="http://plone.org/documentation/books">Books</a></dd><!-- <dd><a href="">Knowledge Base</a></dd> --><dd><a href="http://plone.org/documentation/error">Error Reference</a></dd><!-- <dd><a href="">Module documentation</a></dd> --><dd><a href="http://plone.net/sites">Sites using Plone</a></dd></dl><dl><dt><a href="http://dev.plone.org/plone">Developers</a></dt><dd><a href="http://dev.plone.org/plone/roadmap">Roadmap</a></dd><dd><a href="http://dev.plone.org/plone">Report bugs in Plone</a></dd><dd><a href="http://dev.plone.org/plone.org">Report website issues</a></dd><dd><a href="http://dev.plone.org/plone/timeline">Latest changes</a></dd><dd><a href="http://dev.plone.org/plone/browser">Browse source</a></dd><dd><a href="http://dev.plone.org/plone">Contribute to Plone</a></dd><dd><a href="http://planet.plone.org/">Community blogs</a></dd></dl><dl><dt><a href="http://plone.org/foundation">Plone Foundation</a></dt><dd><a href="http://plone.org/foundation/foundation-donations">Donate</a></dd><dd><a href="http://plone.org/foundation/donors">Sponsors</a></dd><dd><a href="http://plone.org/foundation/meetings/minutes">Meeting minutes</a></dd><dd><a href="http://plone.org/team/FoundationBoard">Current board</a></dd><dd><a href="http://plone.org/foundation/members">Foundation members</a></dd><dd><a href="http://plone.org/foundation/membership">Apply for membership</a></dd><dd><a href="http://plone.org/foundation#contact">Contact</a></dd></dl><dl><dt><a href="http://plone.org/support">Support</a></dt><dd><a href="http://plone.net/providers">Commercial services</a></dd><dd><a href="http://plone.org/support/chat">Chat room</a></dd><dd><a href="http://plone.org/support/forums">Forums</a></dd><dd><a href="http://plone.org/support/for">Sector-specific forums</a></dd><dd><a href="http://plone.org/support/region">Region-specific forums</a></dd><dd><a href="http://plone.org/support/local-user-groups">Local user groups</a></dd><dd><a href="http://plone.org/events/training">Training</a></dd></dl></div></div></div><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1907133-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script></body></html>

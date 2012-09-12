@@ -1,0 +1,27 @@
+Estadísticas del proyecto
+
+Total:
+	Segmentos	1052
+	Palabras	10616
+	Caracteres (sin espacios)	58439
+	Caracteres (con espacios)	68139
+Únicos pendientes:
+	Segmentos	424
+	Palabras	1755
+	Caracteres (sin espacios)	14913
+	Caracteres (con espacios)	16302
+Únicos:
+	Segmentos	964
+	Palabras	10358
+	Caracteres (sin espacios)	56610
+	Caracteres (con espacios)	66156
+Únicos pendientes:
+	Segmentos	353
+	Palabras	1623
+	Caracteres (sin espacios)	13672
+	Caracteres (con espacios)	15023
+
+Estadísticas por archivo:
+
+Nombre de archivo	Palabras en total	Palabras pendientes	Caracteres en total (sin espacios)	Caracteres pendientes (sin espacios)	Caracteres en total (con espacios)	Caracteres pendientes (con espacios)
+testing-in-plone.html	10616	1755	58439	14913	68139	16302
