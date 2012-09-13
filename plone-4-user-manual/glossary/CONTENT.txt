@@ -1,0 +1,4 @@
+This folder holds glossaries files that are used in OmegaT project into Glossary window.
+
+Put here your glossaries to use, into 'glossary' directory from the branch called 'cat' 
+in 'collective.spanishdocumentation' git repository.

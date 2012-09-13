@@ -1,0 +1,29 @@
+Estadísticas del proyecto
+
+Total:
+	Segmentos	2403
+	Palabras	26371
+	Caracteres (sin espacios)	137363
+	Caracteres (con espacios)	160058
+Únicos pendientes:
+	Segmentos	941
+	Palabras	3925
+	Caracteres (sin espacios)	31057
+	Caracteres (con espacios)	32617
+Únicos:
+	Segmentos	1975
+	Palabras	24504
+	Caracteres (sin espacios)	125179
+	Caracteres (con espacios)	146704
+Únicos pendientes:
+	Segmentos	588
+	Palabras	2501
+	Caracteres (sin espacios)	21139
+	Caracteres (con espacios)	21899
+
+Estadísticas por archivo:
+
+Nombre de archivo	Palabras en total	Palabras pendientes	Caracteres en total (sin espacios)	Caracteres pendientes (sin espacios)	Caracteres en total (con espacios)	Caracteres pendientes (con espacios)
+plone-4-user-manual.html	24532	2117	125406	19232	146893	19611
+plone-4-user-manual_archivos/additemmenufolder.html	906	894	5829	5784	6417	6362
+plone-4-user-manual_archivos/advancedstatepanel.html	933	914	6128	6041	6748	6644
