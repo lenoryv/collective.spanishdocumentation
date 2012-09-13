@@ -1,0 +1,4567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx11.dtd">
+<tmx version="1.1">
+  <header
+    creationtool="OmegaT"
+    creationtoolversion="2.3.0_1"
+    segtype="sentence"
+    o-tmf="OmegaT TMX"
+    adminlang="EN-US"
+    srclang="EN-US"
+    datatype="plaintext"
+  >
+  </header>
+  <body>
+    <tu>
+      <tuv lang="EN-US">
+        <seg># my modified packages</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg># mi paquetes modificados</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg># others</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg># otros</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&amp;tldr; Technically, we want to see it completed for the release to which it’s assigned.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>&amp;tldr; Técnicamente, nosotros queremos ver eso completado para la publicación a la cual fue asignada.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(ef978a happens to be the last commit in the feature branch's history before
+it was branched off of 4.1.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>(ef978a pasa a ser la ultima revisión en el histórico de la branch característica antes
+de que sea bifurcaba de la versión 4.1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* **Patches** Historically we encouraged people to submit patches to the ticket collector.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* **Patches** Históricamente nosotros animamos a las personas para entregar patches al colector del ticket.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* *Community-edited* documents.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T140153Z" changeid="macagua">
+        <seg>* Documentos *editado colectivamente en comunidad*.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* *Curated* documents.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Documentos *mantenidos*.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* *How do I know when my package got made?*</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* *¿Cómo puedo saber si se tomo mis cambios en mi paquete?*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* A brief description of the package's purpose</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Una breve descripción del propósito del paquete</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* After your form has been signed and received, fill out a trac ticket for core access at https://dev.plone.org/newticket.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Después de que su forma ha sido firmada y recibida, usted registre un ticket en el sistema trac para acceso de núcleo de Plone en https://dev.plone.org/newticket.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Answer any questions the PLIP implementor has, technically and otherwise</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T161604Z" changeid="macagua">
+        <seg>* Responda a las preguntas formuladas por el implementador tiene sobre el PLIP, técnica y de cualquier otra</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Any concerns, issues still remaining</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T181204Z" changeid="macagua">
+        <seg>* Cualquier inquietud, las incidencias aún permanecen</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Any new code must:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Cualquier nuevo código fuente debería:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Any new packages must be in a branch in the plone namespace in github.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Cualquiera de los nuevos paquetes debe estar en una branch bajo el namespace plone en github.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Any weird buildout things</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T181242Z" changeid="macagua">
+        <seg>* Cualquier cosas buildout extrañas</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Are all test cases for the modules(s) and for Plone passing?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿Todos sus casos de prueba para los módulos y para Plone se ejecutan sin ningún problema?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Are there any bugs?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿Hay algún error?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Are there any deprecated or old style ME/TAL lines of code such as using DateTime?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿Hay alguna líneas de código con estilo obsoleto o viejo ME/TAL como el uso de DateTime?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Are there any new permissions and do they work properly?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿Hay permisos nuevos y ellos trabajan correctamente?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Are there any performance considerations?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿Hay alguna consideraciones de rendimiento?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Are they importing deprecated modules?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿Están importando módulos obsoletos?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Ask and (especially) answer questions on stack overflow and :doc:`IRC &lt;culture&gt;` with a focus on getting to know the active developers a bit.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Preguntar y (especialmente) responder a preguntas acerca del stack desbordamiento y :doc:`IRC &lt;culture&gt;` with a focus on getting to know the active developers a bit.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Assist with finding additional help when needed to complete the implementation in a timely matter</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T132006Z" changeid="macagua">
+        <seg>* Asistir en la búsqueda de ayuda adicional cuando sea necesario para completar la implementación en un tiempo oportuno</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Attend a conference/symposium or participate in a sprint/tuneup.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Atender un simposio/conferencia o participar en un sprint/tuneup</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Avoid tal:on-error, since this swallows exceptions</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Evitar tal:on-error, desde estas excepciones swallows</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Be :doc:`Properly Documented &lt;documentation&gt;`</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Estar :doc:`documentado apropiadamente &lt;documentation&gt;`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Be tested (XXX: link here?)</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Tiene que estar probado (XXX: link here?)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Common gotchas</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Común gotchas</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Compatibility information (what versions of Plone does it work with?)</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Información de compatibilidad (qué versiones de Plone trabaja con que?)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Did you add your changed packages to checkouts.cfg?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿Usted añadió sus paquetes cambiados al archivo checkouts.cfg?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Did you fix the original bug?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿Usted corrigió el fallo original?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Did you remove any extra code and lingering pdbs?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿Usted removió lineas extras de código y PDB persistentes?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Did you update CHANGES.rst in each packages you touched?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿Usted actualizo el archivo CHANGES.rst en cada paquete que usted modifico?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Did you write a test case for that bug?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿Usted escribió un caso de prueba para su fallo?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Do error and status messages make sense?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿No mensajes de error y los mensajes de estado tiene sentido?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Do fields handle whacky data?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿Los campos a manejar data estrafalarias?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Do not acquire anything unless absolutely necessary, especially tools.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T184948Z" changeid="macagua">
+        <seg>* No adquirir nada menos que sea absolutamente necesario, especialmente herramientas.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Do not put too much logic in ZPT (use Views instead!)</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T190037Z" changeid="macagua">
+        <seg>* No coloque mucho de la lógica en las Plantillas de pagina Zope - ZPT (use Views en este caso!)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Do not use tabs in Python code!</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T173702Z" changeid="macagua">
+        <seg>* ¡No utiliza tabuladores en código de Python!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Does everything flow nicely for novice and advanced users?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿Todo se comporta bien para principiantes y usuarios avanzados?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Does the Javascript work in all currently supported browsers?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿El Javascript funciona en todos los navegadores soportados actualmente?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Does the PLIP actually do what the implementors proposed?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿Este PLIP realmente hace lo que los implementadores propusieron?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Does the PLIP use views appropriately and avoiding too much logic?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿La vista de usuario del PLIP adecuadamente y evitando demasiada lógica?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Does the code adhere to PEP8 standards (more or less)?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿El código fuente se adhiere al estándar PEP8 (más o menos)?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Does the javascript meet our set of javascript standards?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿El javascript conocer a nuestro conjunto de normas javascript?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Does the work proposed belong in Plone now, in the future?</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T180751Z" changeid="macagua">
+        <seg>* ¿El trabajo propuesto en Plone deber estar ahora, en el futuro?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Does this PLIP need a usability review?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿Hace este PLIP necesidad una revisión de usabilidad?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Don't use hasattr() - this swallows exceptions, use getattr(foo, 'bar', None) instead.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T173444Z" changeid="macagua">
+        <seg>* No use hasattr() - esto son swallows exceptions, por favor, en este caso use getattr(foo, 'bar', None).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Encourage the PLIP author by constantly giving feedback and encouragement</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T132317Z" changeid="macagua">
+        <seg>* Fomentar el autor PLIP por su constantemente retroalimentación y estímulo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* End users who use Plone for content editing but don't manage the site.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Los usuarios finales quiénes utilizan Plone para editar contenido pero no administran el sitio.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Get your feet wet by contributing to the collective.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Puede iniciarse en la contribuciones en el repositorio de collective.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Have clear code</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Tener el código fuente limpio</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* How to use them (in English—not doctests!)</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T173501Z" changeid="macagua">
+        <seg>* Documentos ¿Cómo usar? (¡doctests que no esten en Inglés!)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* How will novice end users respond to the change?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿Cómo los usuarios finales novatos responden al cambio?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* If you are on Mac OSX, you will need to install XCode.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Si usted esta usando un Mac OSX, necesitara instalar XCode.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Indent properly, even in HTML.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T185514Z" changeid="macagua">
+        <seg>* Indentar apropiadamente, incluso en HTML.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Information about architecture</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Información aproximadamente de la arquitectura</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Installation information (How do I get it working?)</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Información de instalación (Cómo consigo que funcione?)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Integrators who need to extend the functionality of the package in code.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Los integradores quiénes necesitan extender la funcionalidad del paquete desde el código fuente.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Is the PLIP consistent with the rest of Plone?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿El PLIP es compatible con el resto de Plone?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Is the change itself properly documented?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿Este cambio en si mismo esta correctamente documentado?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Is the code properly documented?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿Esta el código fuente adecuadamente documentado?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Is the corresponding documentation for the end user, be it developer or plone user, sufficient?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿Hay suficiente documentación disponible correspondiente para el usuario final, ya sea programador o usuario plone?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Is the implementation usable?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿Es usable la implementación?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Is the rendered html standards compliant?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿Es compatible con lo que dicta el estándar html?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Is there any code in a loop that could potentially be a performance issue?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿Hay algún código fuente en un bucle que podría ser un problema de rendimiento?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Is this PLIP more appropriate as a qualified add-on?</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T180822Z" changeid="macagua">
+        <seg>* ¿Es esta PLIP más apropiado a ser calificado como un add-on?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Is this PLIP too risky?</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T180841Z" changeid="macagua">
+        <seg>* ¿Es esta PLIP demasiado arriesgada?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Is this code maintainable?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿Es este código fuente mantenible?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Is this idea well baked and expressed clearly?</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T180419Z" changeid="macagua">
+        <seg>* ¿Esta idea esta bien cocinada y se expresa con claridad?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Is validation up to snuff and sensical?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Es validación y cuestión de puro sentido?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Is your code consistent with our :doc:`style`?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿Su código consiste con nuestro :doc:`style`?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Keep the implementor aware of timelines and push to get things done on time</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Cuidar que el implementador logre la lineas de tiempo y coloque las cosas listas a tiempo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Links to issue trackers, mailing lists, and other ways to get help.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Enlaces para reportar errores, listas de correo, y otras maneras de conseguir ayuda.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Links to other sources of documentation</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Enlaces a otras fuentes de documentación</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Most importantly, the PLIP reviewers must be able run buildout and everything should &quot;just work&quot; (tm).</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Lo mas importante, los revisores PLIP debe estar disponible a ejecutarse con buildout y cada cosa debería &quot;solo trabajar&quot; (tm).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Never use a bare except.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T185603Z" changeid="macagua">
+        <seg>* Nunca usar una excepción bare.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Never, ever put any HTML in Python code and return it as a string</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T185854Z" changeid="macagua">
+        <seg>* Nunca, coloque ningún código HTML dentro del código Python y lo retorne como una cadena</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Only commit directly to the development branch if you're confident your code won't break anything badly and the changes are small and fairly trivial.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Solamente generar una revisión directamente a la branch de desarrollo si usted esta seguro que su código no causa ninguna falla y los cambios son pequeños y triviales.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Please try to make one change per commit.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Por favor, trate de hacer un cambio por cada revisión.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Remember to add i18n tags in ZPTs and Python code</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Recuerde agregar etiquetas i18n en ZPTs y código Python</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Sign and snail mail the contributor agreement at  http://plone.org/foundation/contributors-agreement/agreement.pdf/at_download/file.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T135032Z" changeid="macagua">
+        <seg>* Firme y envié un correo con el contributor agreement en http://plone.org/foundation/contributors-agreement/agreement.pdf/at_download/file.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Site administrators who install and configure the package.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Los administradores del sitio quiénes instalan y configurar el paquete.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Sysadmins who need to maintain the server running the software.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Los administradores de sistemas quiénes necesitan mantener que el servidor ejecute el software.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* URLs pointing to all documentation created/updated</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Las direcciones URLs que apuntan a toda la documentación creada/actualizada</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* User the current idioms of development</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T172557Z" changeid="macagua">
+        <seg>* Usa los idiomas actuales de desarrollo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* We have a few angels that follow the changes and each commit to see what happens to their favourite CMS!</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* Nosotros tenemos un grupo de ángeles que siguen los cambios y cada revisión aplicada para ver que ha sucedido de nuevo en el código fuente de nuestro favorito CMS!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* Were there any errors running buildout?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿Hubo allí algunos errores al ejecutar el buildout?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* What is size and status of the work needed to be done?</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T180200Z" changeid="macagua">
+        <seg>* ¿Cual es el tamaño y estatus del trabajo necesitado para culminarlo?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* What the features are</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* ¿Qué características poseen?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* XXX: What else?</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T181326Z" changeid="macagua">
+        <seg>* XXX: ¿Algo mas?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* `Be tested &lt;http://collective-docs.plone.org/en/latest/testing_and_debugging/index.html&gt;`_</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T143155Z" changeid="macagua">
+        <seg>* `Estar probado &lt;http://collective-docs.plone.org/en/latest/testing_and_debugging/index.html&gt;`_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* `Collective Plone developer documentation &lt;http://collective-docs.readthedocs.org/en/latest/index.html&gt;`_.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* `Documentación para el programador en Plone Collective &lt;http://collective-docs.readthedocs.org/en/latest/index.html&gt;`_.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* `Developer Manual &lt;http://plone.org/documentation/manual/developer-manual&gt;`_</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* `Manual de Desarrollo &lt;http://plone.org/documentation/manual/developer-manual&gt;`_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* `GCC &lt;http://gcc.gnu.org/&gt;`_ in order to compile ZODB, Zope and lxml.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* `GCC &lt;http://gcc.gnu.org/&gt;`_ para compilar ZODB, Zope y lxml.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* `Installing Plone &lt;http://plone.org/documentation/manual/installing-plone&gt;`_</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* `Instalando Plone &lt;http://plone.org/documentation/manual/installing-plone&gt;`_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* `Knowledgebase on plone.org &lt;http://plone.org/documentation/kb&gt;`_.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* `Base de conocimiento en plone.org &lt;http://plone.org/documentation/kb&gt;`_.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* `Plone Oriented Shpinx Documentation &lt;http://collective-docs.plone.org/en/latest/introduction/writing.html&gt;`_</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* `Documentación Shpinx orientada a Plone &lt;http://collective-docs.plone.org/en/latest/introduction/writing.html&gt;`_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* `Sphinx reST Primer &lt;http://sphinx.pocoo.org/rest.html&gt;`_</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* `Manual básico Sphinx reST &lt;http://sphinx.pocoo.org/rest.html&gt;`_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* `Theme Reference &lt;http://plone.org/documentation/manual/theme-reference&gt;`_</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* `Referencia de Temas &lt;http://plone.org/documentation/manual/theme-reference&gt;`_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* `User Manual &lt;http://plone.org/documentation/manual/plone-4-user-manual&gt;`_</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* `Manual de Usuario &lt;http://plone.org/documentation/manual/plone-4-user-manual&gt;`_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* `VirtualEnv &lt;http://www.virtualenv.org/en/latest/index.html&gt;`_ in the proper python environment.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* `VirtualEnv &lt;http://www.virtualenv.org/en/latest/index.html&gt;`_  en el apropiado entorno python.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* `libxml2 and libxslt &lt;http://xmlsoft.org/XSLT/downloads.html&gt;`_, including development headers.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* `libxml2 y libxslt &lt;http://xmlsoft.org/XSLT/downloads.html&gt;`_, incluyendo los encabezados de desarrollo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* are implementing a non-trivial change</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* están llevando a cabo un cambio no trivial</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* are just getting started,</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* usted se esta iniciando,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* are not sure about your changes</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* usted no esta seguro acerca de sus cambios</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>* want feedback/code review</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>* quiere revisión de comentario/código</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>**Note** This example is just about as terrible as they come.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>**Nota** Este ejemplo es casi tan terrible como el que viene.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>*Most importantly*, if you didn't do it earlier, edit checkouts.cfg in the buildout directory and add your changes package to the auto-checkout list.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>*Lo más importante*, si no lo hizo antes, edite el checkouts.cfg en el directorio de buildout y agregar el paquete al cual le hizo sus cambios a la lista de auto-checkout.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>*Note*: Branching or forking is your choice.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>*Nota*: Hacer Branch o fork es su elección.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>*Note*: Tests take a long time to run.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>*Nota*: Las pruebas toman un tiempo en ejecutarse.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>*Note*: you still need to update checkouts.cfg in the correct branches of buildout.coredev!</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>*Nota*: todavía necesitas actualizar el archivo *checkouts.cfg* en las branches correctas de proyecto buildout.coredev!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=====
+Legally, you can NOT contribute code unless you have signed the :doc:`contributor agreement &lt;agreement&gt;`.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T173211Z" changeid="macagua">
+        <seg>=========
+Legalmente, NO puedes contribuir código a no ser que usted allá firmado el :doc:`acuerdo de acuerdo &lt;agreement&gt;`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>=======================
+Plone Developer Culture
+=======================</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>==============================
+Cultura de desarrollo en Plone
+==============================</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&gt; ../plone42devpy/bin/python bootstrap.py # (where &quot;python&quot; is your python 2.6 binary).</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>&gt; ../plone42devpy/bin/python bootstrap.py # (donde &quot;python&quot; es su binario python 2.6).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&gt; cd ~/buildouts # or wherever you want to put things</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>&gt; cd ~/buildouts # o donde tu quieras colocar sus cosas</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A PLIP is a PLone Improvement Proposal.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Del ingles, PLIP significa PLone Improvement Proposal, el cual es una propuesta de mejora a Plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A PLIP is just a ticket with a special template.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Un PLIP es un ticket con una plantilla especial.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A bug or minor change does normally not need to go through a review process - a PLIP does.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Un fallo o cambio menor normalmente no necesita ir a través del proceso de revisión - que hace un PLIP.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A champion should:</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T131415Z" changeid="macagua">
+        <seg>Un defensor debería:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A changelog looks something like::</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T140112Z" changeid="macagua">
+        <seg>Un changelog se parece a algo así::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A common way to start contributing is to participate in a Plone tune-up day.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T135740Z" changeid="macagua">
+        <seg>Una manera común de empezar contribuyendo es para participar en un día de tune-up de Plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A couple housekeeping things before moving on.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Un par de cosas hay que hacer antes de continuar.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A couple quick reminders:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Un par de recordatorios rápidos:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A good PLIP is sufficiently clear for a knowlegable Plone user to be able to understand the proposed changes, and sufficiently detailed for the release manager and other developers to understand the full impact the proposal would have on the codebase.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Un buen PLIP es suficientemente claro para un usuario conocedor de Plone disponible a entender la propuesta de cambios, y suficientemente detallada para el release manager y otros desarrolladores entender el completo impacto de la propuesta puede tener el código base.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A new ticket template will reload and you should plan to fill in all of the fields.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Un nueva plantilla de ticket se cargara y usted debería planear llenarla en todas sus secciones y campos.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>API documentation)</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>documentación de API)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>After all other PLIPS are merged, a release is cut.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Después de que todos los otros PLIPS son fusionado, una publicación se corta.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>After checking it out with mr.developer, create your own branch with::</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Después de comprobarlo con mr.developer, cree su propia branch con::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>After the PLIP has been accepted by the framework team and the release manager, you will be asked to merge your work into the main development line.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T181523Z" changeid="macagua">
+        <seg>Después de que el PLIP ha sido aceptado por el equipo de framework y el release manager, se le pedirá que fusionar su trabajo dentro de la línea de desarrollo principal.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>After the PLIP is accepted, the Framework Team will try to judge complexity and time to completion and assign it to a milestone.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Después que la PLIP es aceptada, el equipo del Framework tratara de juzgar la complejidad y el tiempo para completar y asignar este en un hito.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>After the migration to github, the community decided to maintain this spirit.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Después de que la migración de los repositorios svn al servicio github, la comunidad decidió mantener este espíritu.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>After the module level tests run with your change, please make sure other modules aren't affected by the change by running the full suite::</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Después de las pruebas de nivel de módulo se ejecutan con su cambio realizado, por favor asegúrese de que los otros módulos no se ven afectados por su cambio realizado, para esto ejecute todas as pruebas con el siguiente comando::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>After your plip is written, solicit feedback on your idea on the plone-developers mailing list.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Después que su plip es escrita, solicite un comentario de sus ideas en la lista de correo plone-developers.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>All about PLIPS
+---------------
+What is a PLIP?</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T173950Z" changeid="macagua">
+        <seg>Todo sobre los PLIPS
+--------------------
+¿Qué es un PLIP?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>All communication with you occurs on the PLIP ticket itself so please keep your eyes and inbox open for changes.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T175537Z" changeid="macagua">
+        <seg>Toda la comunicación con usted ocurrirá en ticket PLIP ticket en si mismo por favor, este pendiente a su bandeja de entrada de su correo electrónico por cada cambios aplicado al ticket.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Altternatively, we can manage checkouts from the command line, by using mr.developer's ``bin/develop`` command to get the latest source.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Alternativamente, nosotros podemos administrar los checkouts desde la línea de comando, usando el comando de mr.developer ``bin/develop`` para conseguir la fuente de paquetes más reciente.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An API reference provides information about the package's public API (that is, the code that the package exposes for use from external code.) It is meant for random access to remind the reader of how a particular class or method works, rather than for reading in its entirety.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Una referencia de API proporciona información sobre la API pública del paquete (eso es, el código que el paquete expone para uso de código externo.)  Eso significa para el acceso aleatorio a recordar el lector de cómo una clase particular o un método trabajo, más que para leer enteramente.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>And then cherry-pick the commit (you can get the SHA hash from git log).</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Y entonces con el comando git cherry-pick y el número de revisión (usted puede obtener el número SHA hash desde el git log).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Anyone may `contribute &lt;http://collective-docs.readthedocs.org/en/latest/introduction/developermanual.html&gt;`_.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Cualquiera tal ves puede `contribuir &lt;http://collective-docs.readthedocs.org/en/latest/introduction/developermanual.html&gt;`_.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Anyone who has signed a Plone core contributor agreement can work on a PLIP.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Cualquiera quién ha firmado el Plone core contributor agreement puede trabajar en un PLIP.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Anyone with a plone.org account is free to edit.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Cualquiera con una cuenta en plone.org es libre de editarlo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Anything like 'except: pass' will likely be reverted instantly</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T185615Z" changeid="macagua">
+        <seg>Cualquier cosa como 'except: pass' es probable que sea revertido instantáneamente</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Are ids and classes used appropriately?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>¿Los ids y class CSS utilizado son apropiados?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Are there incomplete variations?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>¿Hay variaciones incompletas?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Are they properly internationalized?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>¿Son correctas las internacionalizaciones?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As a community, Plone maintains several types of documentation:</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T140215Z" changeid="macagua">
+        <seg>Como una comunidad, Plone mantienen muchos tipos de documentación:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>At the base of your buildout, open checkouts.cfg and add your package if it's not already there::</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>En la base de su buildout, abra el archivo checkouts.cfg y añada su paquete si no es ya allí::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>At the time of writing this document,
+there are branches for 4.1, 4.2, and master, which is the implied 4.3.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Al momento de escribir este documento,
+habían tres branches para 4.1, 4.2, y master, el cual es implícitamente 4.3.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>At the very least, your package should include the following forms of documentation:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Al menos, su paquete tendría que incluir las siguientes formas de documentación</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>At this point, the feature branch's history has been updated, but it hasn't actually
+been merged to 4.2 yet.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T140708Z" changeid="macagua">
+        <seg>Al llegar a este punto, la historia de la branch característica ha sido actualizada, pero no ha sido de hecho 
+fusionada con la versión 4.2 aún.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Branches and Forks and Direct Commits - Oh My!</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Branches y Forks y Hacer revisiones directamente - ¡Por Dios!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Bugs
+----</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Errores
+-------</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Buildout Issues
+---------------</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Incidencias Buildout
+--------------------</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Buildout can be frustrating for those unfamiliar with parsing through autistic robot language.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T191521Z" changeid="macagua">
+        <seg>Buildout puede ser muy frustrante para aquellos no familiarizados con el análisis a través del lenguaje robot autista.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Buildout has simply noticed that the version of buildout required by the bootstrap.py file you are trying to run does not match the version of buildout in your python library.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T192531Z" changeid="macagua">
+        <seg>Buildout simplemente se ha dado cuenta de que la versión de buildout requerida por el archivo bootstrap.py que usted está intentando ejecutar no coincide con la versión de buildout en la biblioteca de python.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Can I get involved other ways at first?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>¿Puedo yo involucrarme de otras formas primero?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Checking out Packages for Fixing
+--------------------------------
+Most packages are not in src/ by default, so you can user mr.developer to get the latest and make sure you are always up to date.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Comprobando Paquetes para corregir
+----------------------------------
+La mayoría de paquetes no están en el directorio src/ por defecto, así usted que puedes usar mr.developer para conseguir la versión mas reciente y asegurarse que usted siempre tiene la versión mas actualizada.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Code Review
+-----------</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Revisión de Código
+------------------</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Committing and Pull Requests
+----------------------------
+Phew!</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Generando una revisión y haciendo Pull Requests
+-----------------------------------------------
+¡Uf!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Committing to Products.CMFPlone
+-------------------------------
+If you are working a bug fix on Products.CMFPlone,
+there are a couple other things to take notice of.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Generando revisiones al paquete Products.CMFPlone
+-------------------------------------------------
+Si usted esta trabajando un corregir un fallo en el paquete Products.CMFPlone,
+hay un par de otras cosas que debe tomar en cuenta.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Concrete Rules
+--------------</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T185451Z" changeid="macagua">
+        <seg>Reglas específicas
+------------------</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Contributing to Plone Core
+==========================</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Contribuyendo al núcleo de Plone
+================================</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Create a buildout configuration file for your plip in the 'plips' folder.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Cree una archivo configuración buildout para su plip en la carpeta llamada 'plips'.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Creating a New PLIP Branch
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+..</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T162851Z" changeid="macagua">
+        <seg>Creando una nueva Creating Branch PLIP
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Currently, this is just someone else who thinks your PLIP is a good idea, a +1.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T165857Z" changeid="macagua">
+        <seg>En la actualidad, sólo alguien más que piensa que su PLIP es una buena idea, un +1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Dependencies
+------------
+* `Git &lt;http://help.github.com/mac-set-up-git/&gt;`_
+* `Subversion &lt;http://subversion.apache.org/&gt;`_
+* `Python &lt;http://python.org/&gt;`_ 2.6 or 2.7 including development headers.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Dependencias
+------------
+* `Git &lt;http://help.github.com/mac-set-up-git/&gt;`_
+* `Subversion &lt;http://subversion.apache.org/&gt;`_
+* `Python &lt;http://python.org/&gt;`_ 2.6 or 2.7  incluyendo encabezados de desarrollo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Despite the occasional grouch here and there, most plone devs will go out of their way to get you on the right path.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T170536Z" changeid="macagua">
+        <seg>A pesar del mal humor ocasional aquí y allá, la mayoría de los desarrolladores de Plone se salen de su camino para ayudarle a que usted consiga la ruta correcta.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Developer addresses concerns in feedback and resubmits if necessary.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El desarrollador direcciona lo concerniente en al comentario y presenta de nuevo si es necesario.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Developer implements PLIP (code, tests, documentation)
+#.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El desarrollador implementa el PLIP (código, tests, documentación)
+#.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Did the migration(s) work?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>¿Hizo el trabajo de migración?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Do one of those, say two hail marys, and re-run bootstrap.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T201315Z" changeid="macagua">
+        <seg>De una de esas, digamos dos Ave Marías, con tres padres nuestros y ejecute de nuevo bootstrap.py.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Documentation Issues
+--------------------</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Incidencias de la documentación
+-------------------------------</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Documentation of Plone
+----------------------</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Documentación de Plone
+----------------------</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Documenting a package
+---------------------</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Documentando un paquete
+-----------------------</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Does their role assignment make sense?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>¿Esas asignaciones de roles hacen con sentido?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Don't forget to rerun buildout!</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T172830Z" changeid="macagua">
+        <seg>¡No olvide volver a ejecutar buildout!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Don't worry about getting it perfect or asking for help; this way you get to know us and we improve our code together as a community.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>No se preocupe por hacerlo perfecto o pedir ayuda, de esta manera usted se llega a hacernos saber a nosotros como mejorar nuestro código juntos como una comunidad.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Don’t let the wording freak you out: signing the agreement is easy and you will get access almost immediately.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>No deje que la redacción le asuste: la firma del acuerdo es fácil y usted tendrá acceso casi inmediato.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Download an IRC client and jump on to #plone-framework (and/or #plone - both on freenode).</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T170241Z" changeid="macagua">
+        <seg>Descargue un software de cliente IRC y entre dentro de la sala IRC #plone-framework (y / o en la sala #plone - ambos en el servidor freenode).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>During the merge phase you must be prepared to help out with all the features and bugs that arise.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T181915Z" changeid="macagua">
+        <seg>Durante la fase de fusión debe estar preparado para ayudar con todas las características y fallos que puedan surgir.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Either way it's your call.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>De cualquier forma, es tu decisión.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Errors Running bootstrap.py
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+You may not even get to running buildout and then you will already have an error.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T202214Z" changeid="macagua">
+        <seg>Errores ejecutando bootstrap.py
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Ni siquiera se puede llegar a correr buildout y entonces ya tendrá un error.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Evaluating PLIPs
+^^^^^^^^^^^^^^^^
+After you submit your PLIP, the Framework Team will meet within a couple weeks and let you know if the PLIP is accepted.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T175507Z" changeid="macagua">
+        <seg>Evaluando PLIPs
+^^^^^^^^^^^^^^^
+Después de presentar su PLIP, el equipo Framework tendrá un par de semanas para conocer y le harán de conocimiento si el PLIP es aceptado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Everything about this process would be the same except you need to work on a branch.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Todo acerca de este proceso sería el mismo, excepto que necesita para trabajar en una branch.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Everything else should be self explanatory.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T145447Z" changeid="macagua">
+        <seg>Todo lo demás debe explicarse por sí mismo en el ticket de su PLIP.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Example PLIP Reviews
+^^^^^^^^^^^^^^^^^^^^</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Ejemplos de revisiones de PLIP
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Expectations
+------------
+A good PLIP review takes about 4 hours so please plan accordingly.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T165022Z" changeid="macagua">
+        <seg>Expectativas
+------------
+Una buena revisión del PLIP toma aproximadamente 4 horas así que por favor haga planes en consecuencia.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Fear not!</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T191744Z" changeid="macagua">
+        <seg>¡No tema!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>File Conventions
+----------------
+In Zope 2, file names used to be MixedCase.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T185255Z" changeid="macagua">
+        <seg>Convenciones de Archivo
+-----------------------
+En Zope 2, los nombres de archivos que solía ser así MixedCase.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Filenames should be short and descriptive.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T185348Z" changeid="macagua">
+        <seg>Los nombres de archivos debe ser ordenados y descriptivos.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Finalizing Tickets
+------------------
+If you are working from a ticket, please don't forget to go back to the ticket and add a link to the changeset.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Finalizando Tickets
+-------------------
+Si usted esta trabajando de un ticket asignado, por favor no olvide en volver a actualizar el ticket y agregar un enlace a sus revisión de cambios.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Finishing Up
+^^^^^^^^^^^^
+Before marking your PLIP as ready for review, please add a file to give a set of instructions to the PLIP reviewer.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T162918Z" changeid="macagua">
+        <seg>Finalizando
+^^^^^^^^^^^
+Antes de hacer que su PLIP este listo para revisar, por favor añada un archivo dando un conjunto de instrucciones al revisor PLIP.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>First and foremost, 
+you'll see that there are several branches.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Primero y mas importante, 
+puede ver que este paquete tiene varias branches.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>First check out the branch::</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Primero cambie a la branch::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>First, please edit CHANGES.rst (or CHANGES.txt) in each pakage you have modified and add a summary of the change.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Primero, por favor edite el archivo CHANGES.rst (o CHANGES.txt) en cada archivo que usted modifico y agregue un resumen de sus cambios en base al formato que usa este archivo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>First, please join the `plone-developers &lt;https://lists.sourceforge.net/lists/listinfo/Plone-developers&gt;`_ list and at minimum lurk around.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T170148Z" changeid="macagua">
+        <seg>En primer lugar, por favor, únase a la lista de correo de desarrolladores de Plone `plone-developers &lt;https://lists.sourceforge.net/lists/listinfo/Plone-developers&gt;`_ y, como mínimo, estar al acecho alrededor de esta lista.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>First, you can force buildout to run with the version you already have installed by invoking the version tag.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T192708Z" changeid="macagua">
+        <seg>En primer lugar, puede hacer que se ejecute buildout con la versión que ya se han instalado mediante la invocación de la etiqueta de versión.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For Plone core packages, this includes ``LICENSE.txt`` and ``LICENSE.GPL``.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Para paquetes del núcleo Plone, esto incluye ``LICENSE.txt`` Y ``LICENSE.GPL`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, if the issue is in plone.app.caching and plone.caching::</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Por ejemplo, si la incidencia es en los paquetes plone.app.caching y plone.caching::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, if there is control panel configuration, does the new form fit in with the rest of the panels?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Por ejemplo, si hay configuración de panel del control, hacer esta forma nueva funciona en con el resto de los panel de control.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, instead of using 'context.plone_utils', use::</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Por ejemplo, en vez de utilizar g 'context.plone_utils', use::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For more information on buildout, please see the `collective developer manual documentation on buildout &lt;http://collective-docs.plone.org/en/latest/tutorials/buildout/index.html&gt;`_.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Para mas información sobre buildout, por favor ver la `documentación sobre buildout en el manual de desarrollador collective &lt;http://collective-docs.plone.org/en/latest/tutorials/buildout/index.html&gt;`_.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For more information on writing PLIPS, please :doc:`go here &lt;plips&gt;`.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Para más información en la escritura de PLIPS, por favor :doc:`valla aqui &lt;plips&gt;`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For more information, please see  http://plone.org/tuneup.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Para más información, por favor ver http://plone.org/tuneup.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For questions about why the agreement is required, please see  http://plone.org/foundation/contributors-agreement.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Para preguntas acerca de por qué el acuerdo está requerido, por favor ver http://plone.org/foundation/contributors-agreement.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For some more tips on working with mr.developer, please :doc:`read more here &lt;mrdeveloper&gt;`.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Para algunos más consejos en la forma de trabajo con mr.developer, por favor :doc:`lea mas aquí &lt;mrdeveloper&gt;`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Framework Team reviews plip and givea feedback
+#.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El equipo del Framework revisa el plip y ofrece un comentario
+#.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>From then on you can just do::</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>A partir de entonces sólo se puede hacer::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>From time to time you can check if some old cruft has accumulated:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>De vez en cuando puedes comprobar si alguna cosas pendiente:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Functionality Review
+--------------------
+There are several things that could be addressed in a PLIP review depending on the nature of the PLIP itself.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Revisión de funcionalidad
+-------------------------
+Hay varias cosas que podría ser dirigido en una revisión PLIP que depende de la naturaleza del PLIP.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>General Rules
+^^^^^^^^^^^^^</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T162821Z" changeid="macagua">
+        <seg>Reglas Generales
+^^^^^^^^^^^^^^^^</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Give it a descriptive name, starting with the plip number;
+'plip-1234-widget-frobbing.cfg' for example.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Dar un nombre descriptivo, iniciando con el numero de plip; 
+por ejemplo 'plip-1234-widget-frobbing.cfg'.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>HOWEVER, there are a few situations where a branch is appropriate.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>NO OBSTANTE, hay unas cuantas situaciones donde una hacer un nuevo branch es apropiado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Hang in there!</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T173613Z" changeid="macagua">
+        <seg>¡Aguante ahí!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Has the implementor addressed them if so?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>¿El implementador de este PLIP se dirigió a ellos si es así?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Have a beer and head over to the `Jenkins control panel &lt;https://jenkins.plone.org/&gt;`_.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Ten una cerveza y tu mirada sobre el `panel de control Jenkins &lt;https://jenkins.plone.org/&gt;`_.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Historically the code is all camel case, but many new libraries are in the PEP8 convention.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T184129Z" changeid="macagua">
+        <seg>Históricamente, el código es todo camel case, pero muchas nuevas bibliotecas se encuentran en la convención PEP8.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Hooray!</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T233545Z" changeid="macagua">
+        <seg>¡Hurra!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>How To Commit Fixes to Plone Core
+=================================
+This document assumes you want to fix a bug and will detail the full process.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T165525Z" changeid="macagua">
+        <seg>Como presentar corrección de fallos al núcleo de Plone
+======================================================
+Este documento supone que usted quiere corregir un fallo y detallará el proceso completo para hacerlo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>How about a last minute checklist:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Verifique su lista de actividades hechas en los últimos minutos:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>How about strings in date fields or nulls in required?</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T173902Z" changeid="macagua">
+        <seg>¿Cómo son las cadenas en los campos de fecha o los campos nulos son requeridos?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>How to Submit a PLIP
+--------------------
+Whether you want to update the default theme or rip out a piece of architecture, everyone should go through the PLIP process.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T164953Z" changeid="macagua">
+        <seg>Como presentar a PLIP
+--------------------
+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>How to Update these Docs
+========================</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Cómo actualizar estas documentaciones
+=====================================</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, chances are the bug is in multiple branches.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Sin embargo, si la corrección del fallo es en múltiples branches.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>I personally know that versions 1.4.4, 1.5.1, and 1.5.2 all work this way.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T192918Z" changeid="macagua">
+        <seg>Yo conozco personalmente que las versiones 1.4.4, 1.5.1, 1.5.2 y todo funciona de esta manera.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>I prefer branching, and I'm writing the docs so this uses the branch method.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Yo prefiero hacer branch, y yo estoy escribiendo la documentación en esto usando el método de branch.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>I'm betting on the latter.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T175410Z" changeid="macagua">
+        <seg>Estoy apostando a este último.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If a change was related to a bug in the issue tracker, the changelog entry should include a link to that issue.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si un cambio sucedió relacionado a un error en el sistema de ticket, en la entrada changelog tendría que incluir un enlace a aquel asunto.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If all went as planned the next Plone release will carry on with your PLIP in it.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T182108Z" changeid="macagua">
+        <seg>Si todo ha ido según lo previsto en el próximo lanzamiento de Plone contendrá su PLIP en ella.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the PLIP is not accepted, please don't be sad!</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si el PLIP no es aceptado, por favor, se sienta mal!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the bug is really bad, consider pinging the release manager and asking him to make a release pronto.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si el fallo es realmente mala, considere en contactar al release manager y he invitarle a hacer un pronto lanzamiento.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the codebase is written with docstrings, API documentation can be automatically generated using Sphinx.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si el código base está escrito con docstrings, la documentación de la API puede ser automáticamente generada utilizando Sphinx.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the fix is only for one version,
+make sure to get that branch and party on.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si la corrección es solamente para una versión,
+asegúrese de obtener la branch y aplicar sus cambios allí.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If this prints any lines with a question mark in front, you can cleanup by:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si esto imprime alguna líneas con un signo de interrogación delante, usted puede limpiarlo con:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you answered YES to all of these questions, you are ready to push your changes!</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si usted respondió SI a todas estas preguntas, usted esta listo para presentar sus cambios!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you are at a sprint, you will likely just hand this paper to the sprint</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si usted esta en un sprint, probablemente solo debe entregar este papel al sprint</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you are fixing three bugs, make three commits.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si usted esta corrigiendo tres fallas, haga tres revisiones.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you are going to be contributing back to Plone, we ask a couple things.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si usted va a contribuir algo a Plone, pedimos un par de cosas.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you are in a timezone when things are not very active, please post to the plone-developers mailing list or grab a beer and wait for people to wake up.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T170440Z" changeid="macagua">
+        <seg>Tenga en cuenta que usted esta en una zona horaria y cuándo necesita hacer preguntas en el canal IRC y las cosas no están muy activas, por favor, escribir un mensaje a la lista de correo plone-developers o tome una cerveza y relájese, espere a que la gente se despierte.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you are not familiar with `PEP 8 &lt;http://www.python.org/dev/peps/pep-0008&gt;`_ - the python style guide, please take a moment to read and get up to date.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T185701Z" changeid="macagua">
+        <seg>Si no estas familiarizado con `PEP 8 &lt;http://www.python.org/dev/peps/pep-0008&gt;`_ - la guía de estilo de la python, por favor, tome un momento para leer y ponerse al día.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you are not logged in, you will not be able to select a component so make sure you are logged in.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T135637Z" changeid="macagua">
+        <seg>Si usted no esta iniciado en su sesión de usuario, no será capaz de seleccionar un componente.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you aren't sure where to start or just want more direction, feel free to get on IRC, mailing lists, Twitter, etc... and ask for help.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si no eres seguro por dónde para empezar o justo querer más dirección, siente libre de usar el IRC, las listas de correo, Twitter, etc... Y pedir ayuda.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you branch, it helps us because we *know* that you have committer rights.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si usted hace un branch, nos ayudo porque nosotros *sabemos* que tienes permisos para aplicar revisiones a este branch.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you commit something REALLY sketchy, they will politely contact you, most likely after immediately reverting changes.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si su revisión tiene algo REALMENTE sketchy, ellos le contactaran políticamente a usted, lo mas común que suceda es que inmediatamente revierten los cambios aplicados con sus revisiones.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you do not have access, please attach your review to the PLIP ticket itself.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si no tienes acceso, por favor adjuntar su revisión al ticket PLIP en si mismo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you do this, your ``README.rst`` must link off site to the documentation.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si tú hace esto, su ``README.rst`` debe que enlazar fuera sitio a la documentación.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you don't start with a test case, save yourself potential problems and validate the bug before getting too deep into the issue!</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T173148Z" changeid="macagua">
+        <seg>¡Si usted no comienza con un caso de prueba, se ahorrará problemas potenciales y validar el fallo antes de llegar demasiado profundo en la incidencia!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you find this is the case and your PLIP is anything more than trivial, maybe some more vetting should be done.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T175238Z" changeid="macagua">
+        <seg>Si usted busca esto es el caso y su PLIP no tiene más nada que un cambio trivial, quizás con algo más investigación debería estar listo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you have ideas on new interactions or UI your ideas are more than welcome.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si usted tiene ideas sobre nuevas formas de interactuar o de la interfaz de usuario sus ideas son mas que bienvenidas.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you have several python installs and want to switch which python is tied to your buildout, simply rerun bootstrap.py with the new python (and then rerun buildout).</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T212321Z" changeid="macagua">
+        <seg>Si tiene varias instalaciones Python y quiere cambiar a cual Python está asociando a su buildout, sólo tiene que volver a ejecutar bootstrap.py con el nuevo python (y vuelva a ejecutar el buildout).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you have signed the contributor agreement, you can commit directly to the branch (for plone this would be the version branch, for most other packages this would be master).</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si usted ha firmado el contributor agreement, puedes cometer directamente a la branch (para plone esto sería la versión del branch ej. la branch 4.1, para más otros paquetes esto sería el branch llamado master).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you haven't written it already, this is a good time to write a test case for the bug you are fixing and make sure everything is running as it should.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si usted no lo ha escrito ya, este es un buen momento para escribir un caso de prueba para la falla que usted está reparando y asegúrese de que todo está funcionando como debería.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you need help at any point in this process, please contact a member of the framework team personally or ask for help on the FWT mailing list XXX: link here.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si usted necesita ayuda en algun punto de este proceso, por favor, contacte a un miembro del equipo del framework personalmente o pida ayuda enla lista de correo FWT XXX: link here.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you need help at any point in this process, please contact a member of the framework team personally or ask for help on the `FWT mailing list &lt;https://lists.plone.org/mailman/listinfo/plone-framework-team&gt;`_.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T133131Z" changeid="macagua">
+        <seg>Si usted necesita ayuda en algun punto de este proceso, por favor, contacte a un miembro del equipo del framework personalmente o pida ayuda en la `lista de correo FWT &lt;https://lists.plone.org/mailman/listinfo/plone-framework-team&gt;`_.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you need help or guidance, please reach out to them as soon as possible to activate help mode.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T153203Z" changeid="macagua">
+        <seg>Si usted necesitas ayuda o asesoría, por favor, contacte a ellos lo mas pronto sea posible para activar el modo ayuda.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you run into issues in this process, please see the doc :doc:`issues`.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si se encuentra con problemas en este proceso, consulte la documentación :doc:`issues`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you think this PLIP needs a usability review, please change the state to &quot;please review&quot; and add a note in the comments.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si usted piensa que este PLIP necesita una revisión de usabilidad, por favor, cambiar el estado a &quot;please review&quot; y agregue una nota a estos comentarios.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you want immediate feedback, jump into IRC with the pull request link and ask for a review.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si usted quieres retroalimentación inmediata, valla a la sala IRC con el enlace de pull request y pedida una revisión.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you want to contribute fixes, please just sign the agreement and go through the standard github pull request  process described until you feel comfortable to bypass review.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si usted quiere contribuir a corregir, por favor firmar el acuerdo y pasar por el proceso de pull request estándar de github descrito hasta que se sienta cómodo para pasar revisión.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you want to feel the process and how it works, help us review PLIPs as the implementations finish up.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T161245Z" changeid="macagua">
+        <seg>Si quieres sentir el proceso y cómo funciona, nos ayudan a revisar los PLIPs terminar las implementaciones. Si usted quiere sentir el proceso y cómo funciona, ayúdenos a revisar los PLIPs para terminar las implementaciones.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you want to make large changes cleaning up whitespace or renaming variables, it is especially important to do so in a separate commit for this reason.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si usted quiere hacer muchos cambios sobre limpiar espacios en blanco o renombrar variables, es especialmente importante hacer una revisión separada por esta razón.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si usted:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If your PLIP is accepted and we haven’t seen activity in over a year, we will probably ask you to restart the whole process.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si su PLIP es aceptada y nosotros no vemos actividad en mas de un año, nosotros probablemente le preguntaremos para iniciar de nuevo el proceso.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If your bug is in more than one release (e.g. 4.1 and 4.2), please checkout both branches and add to the checkouts.cfg.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si su fallo esta en mas de una publicación (ej. 4.1 y 4.2), por favor, aplicar sus cambios en ambas branches y añadir al archivo checkouts.cfg.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If your change is minor then a ticket in the tracker will be sufficient, added as an enhancement.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T174453Z" changeid="macagua">
+        <seg>Si el cambio es menor entonces un ticket en el sistema de seguimiento debe ser suficiente, añadido como una mejora.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If your fix involved multiple commits, cherry-picking them one by one can get tedious.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si su corrección involucra múltiples revisiones, cherry-picking entonces uno a uno puede resultar tedioso.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If your fix only involved a single commit,
+you can use git's ``cherry-pick`` command to apply the same commit
+to a different branch.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Su su corrección involucra una simple revisión de cambios,
+usted puede usar el comando git ``cherry-pick`` para aplicar la misma revisión
+a un branch diferente.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If your project is moderately complex, you may want to set up your documentation with multiple pages.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si su proyecto es moderadamente complejo, puedes querer instalar su documentación con páginas múltiples.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Implementing PLIPS
+==================</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Implementando PLIPS
+===================</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Implementing Your PLIP
+----------------------
+You can start the development at any time - but if you are going to modify Plone itself, you might want to wait to see if your idea is approved first to save yourself some work if it isn't.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Implementando su PLIP
+----------------------
+Usted puede iniciar el desarrollo en cualquier momento - pero si usted yendo a modificar el Plone en si mismo, usted podría querer esperar para ver si sus ideas son aprobadas primero para salvarse algún trabajo que no sea necesario.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Improvements to the curated documents can be discussed on the `plone-docs mailing list &lt;https://lists.sourceforge.net/lists/listinfo/plone-docs&gt;`_.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Las mejoras a los documentos mantenidos pueden ser discutidos en la lista de correo `plone-docs &lt;https://lists.sourceforge.net/lists/listinfo/plone-docs&gt;`_.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In Python, and thus in Plone going forward, we prefer all-lowercase filenames.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T185154Z" changeid="macagua">
+        <seg>En Python, y así en Plone yendo de frente, preferimos todos los nombres de archivos en minúsculas.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In both methods, mr.developer will download the source from github (or otherwise) and put the package in the src directory.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>En ambos métodos, mr.developer descargará la fuente de github (o de donde se definió) y poner el paquete en el directorio src.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In file plips/plip-1234-widget-frobbing.cfg...::</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>En el archivo plips/plip-1234-widget-frobbing.cfg...::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In general, anything that changes the API of Plone in the backend or UI on the front end should be filed as a PLIP.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>En general, cualquier cosa que cambia el API de Plone en el backend o la UI en la portada tendría que ser archivado como PLIP.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In general, we don’t want to track a PLIP for more than a year.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>En general, nosotros no queremos seguir un PLIP por mas de un año.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In rare circumstances, a PLIP will be rejected.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>En raras circunstancias, un PLIP sera rechazado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In reality this rarely happens.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>En realidad esto rara ves sucede.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In that scenario, you first merge the feature branch to the 4.1 branch::</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>En ese escenario, primero fusiones la branch característica a la branch 4.1::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the case of the error above, all you need to do is delete the egg the system currently has.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T195532Z" changeid="macagua">
+        <seg>En el caso de que el error anterior, todo lo que necesita para eliminar del paquete egg que tiene actualmente en ell sistema.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the case of the error pasted above, that would be::</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T192845Z" changeid="macagua">
+        <seg>En el caso de que el error pegado encima, que sería::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the end, checkouts.cfg must be configured either way so you might as well start there.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Al final, checkouts.cfg tiene que ser configurado cualquier manera así que también podrías empezar allí.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the error above, your system has buildout 1.5.1 installed and the bootstrap.py file wants to run with 1.5.2.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T192551Z" changeid="macagua">
+        <seg>En el error anterior, el sistema dispone de buildout 1.5.1 instalado y el archivo bootstrap.py quiere correr con 1.5.2.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the near future, we will start asking that the seconder is either a coding partner, or someone who is willing and able to finish the PLIP should something happen to the implementor.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T172355Z" changeid="macagua">
+        <seg>En el futuro cercano, vamos a empezar a preguntar al secunde que es un socio de la codificación, o alguien que esté dispuesto y sea capaz de terminar el PLIP si algo le ocurriera al implementador.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this case it's simplest to include it in an extended ``README.rst``.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>En este caso es más sencillo de incluir él un extendido ``README.rst``</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this case things are easiest if you did your fix in a separate feature branch.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>En este caso las cosas son más fáciles si usted hizo su corrección en una branch con una característica separada.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this vetting process, you want to make sure that the change won’t adversely affect other people on accident.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T144909Z" changeid="macagua">
+        <seg>En este proceso de evaluación, usted quiere asegurarse de que el cambio no afectará negativamente a otras personas en un accidente.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Information about the open source license used for the package should be placed within the ``docs`` directory.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Información sobre la licencia del código abierto utilizada para el paquete tendría que ser colocado dentro del directorio ``docs``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Instead of running the buildout with the default buildout file, you will run the config specific to that plip::</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>En vez de correr el buildout con el archivo predeterminado buildout, usted lo ejecutara el archivo especifico de configuración del plip::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Introduction
+============
+This documentation describes the process for developing Plone.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Introducción
+============
+Esta documentación describes el proceso para el desarrollo en Plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Is it a PLIP or a bugfix?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>¿Es un PLIP o una corrección de fallo?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Is it already an add-on and well established?</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T180330Z" changeid="macagua">
+        <seg>¿Esta listo un add-on y esta bien establecido?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Is it performant?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>¿Es eficaz?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Is it too restrictive or not restrictive enough?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>¿Es demasiado restrictiva o no es lo suficiente restrictivo?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Is there any workflow that feels odd?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>¿Hay algún flujo de trabajo que se ofrece una experiencia extraña?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It also lets the reporter know that you care.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Eso también le permite al reportero saber que usted preocupa.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It can be a little daunting at first to find out which packages are causing the bug in question, but just ask on irc if you need some help.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Puede ser un poco intimidante al principio para averiguar qué paquetes están causando el fallo en cuestión, pero sólo pregunte en el IRC si necesitas algo de ayuda.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It includes topics like:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Este incluye temas como los siguientes:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is a change to a Plone package that would affect everyone.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Eso es cuando un cambio a un paquete Plone que afectaría todo el mundo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is often the case that there are competing implementations and we want to see it vetted as an add on before “blessing” a preferred implementation.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T183357Z" changeid="macagua">
+        <seg>A menudo, es el caso que hay implementaciones compitiendo y nosotros queremos ver eso evaluado como un añadido antes de recibir la &quot;bendición&quot; la implementación preferida.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is primarily a technical resource for setting up your core developer buildout, fixing bugs, and writing plips.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T134851Z" changeid="macagua">
+        <seg>Esto es principalmente un recurso técnico para instalar su buildout del core developer, corregir fallos, y escribir plips.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is very rare that the “Risks” section will be empty or none.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Es muy rara ves que la sección de “Risks” estará vacío o nula.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It runs every half an hour and takes a while to run so checking back in an hour is a safe bet.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Se ejecuta cada media hora y tarda un rato para ejecutar la comprobación en una hora es una apuesta segura.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It should be formatted using `reStructuredText (reST) &lt;http://docutils.sourceforge.net/rst.html&gt;`_ in order to get formatted properly by those systems.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Este tendrá que ser formateado utilizando `reStructuredText (reST) &lt;http://docutils.sourceforge.net/rst.html&gt;`_ para conseguir el formato apropiado por aquellos sistemas.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It should look something
+like this:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Esto debería lucir algo 
+así como lo siguiente:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It will be included on the PyPI page for your egg, and on the front page of its github repository.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Este será incluido en la página PyPI en su paquete Egg, y en la página de su repositorio github.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>I’m still nervous.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Yo aun estoy nervioso.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Jenkins
+-------
+You STILL aren't done!</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T173539Z" changeid="macagua">
+        <seg>Jenkins
+-------
+¡Usted TODAVÍA no está listo!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Just because a PLIP isn’t accepted in core doesn’t mean it’s a bad idea.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Solo por que un PLIP no ha sido aceptado en núcleo no significa que sea una mala idea.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Just sending in a contributors agreement does not guarantee you access to the repository, but once you send it in we will always have it on file for when you are ready to contribute.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T170726Z" changeid="macagua">
+        <seg>El enviar el acuerdo de contribuciones (contributors agreement) no garantiza que se otorguen acceso al repositorio, pero una vez que lo envía siempre lo tenemos en el archivo para cuando usted está listo para contribuir.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Keep in mind that champions are in passive mode by default.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T163125Z" changeid="macagua">
+        <seg>Ten en mente que los defensores están en modo pasivo por defecto.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Let's do that now::</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T140722Z" changeid="macagua">
+        <seg>Hacerlo ahora así::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Let's say the bug starts in 4.1.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Por ejemplo el fallo inicia en la versión 4.1.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Let's take this one for example::</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T202314Z" changeid="macagua">
+        <seg>Déjeme darle un ejemplo de esto::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Licenses</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Licencias</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Make sure to install this into the proper python environment.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Debe asegurarse instalar esto dentro de su apropiado entorno python.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Make sure to let us know you intend to review the PLIP by joining the Framework Team mailing list (XXX:link) and sending a quick email.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Asegurese de decirnos como usted intenta revisar el PLIP uniendose a la lista de correo del equipo de Framework (XXX:link) y enviar un correo rapidamente.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Make sure to let us know you intend to review the PLIP by joining the `Framework Team mailing list &lt;https://lists.plone.org/mailman/listinfo/plone-framework-team&gt;`_ and sending a quick email.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T161906Z" changeid="macagua">
+        <seg>Asegúrese de decirnos como usted intenta revisar el PLIP uniéndose a la `lista de correo del equipo de Framework &lt;https://lists.plone.org/mailman/listinfo/plone-framework-team&gt;`_ y enviar un correo rápidamente.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Make sure to rerun buildout if you were in a different branch earlier to get the correct versions of packages, otherwise you will get some weird behavior!</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T173811Z" changeid="macagua">
+        <seg>¡Asegúrese de volver a ejecutar buildout si estuviera en una branch diferente antes para obtener las versiones correctas de los paquetes, de lo contrario obtendrá un comportamiento extraño!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Make sure you are logged in and please specify &quot;core&quot; not collective on the trac ticket, your github username, and select the CoreAccess component.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T135319Z" changeid="macagua">
+        <seg>Asegúrese de que este registrado e iniciado en su sesión de usuario y por favor especifique &quot;core&quot; y no collective en su ticket en el sistema trac, su nombre de usuario github, y selecciones el componente CoreAccess.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Make sure your egg is above that line or your egg probably won't get made very quickly.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Asegúrese que su paquete egg este por encima de esa línea o su paquete egg probablemente no se hizo muy rápidamente.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Merging the PLIP in is not the hardest part, but you must think about it when you develop.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T181602Z" changeid="macagua">
+        <seg>La fusión de la PLIP no es la parte más difícil, pero hay que pensar en ello cuando se desarrolla.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Modifying checkouts.cfg also triggers the buildbot, jenkins, to pull in the egg and run all the tests against the changes you just made.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Modifique el archivo checkouts.cfg también ejecute el buildbot, entonces el servicio jenkins, actualizara el paquete egg y ejecutara todas las pruebas contra las pruebas que usted realizo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>More info on IRC can be found at http://plone.org/support/chat.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T170329Z" changeid="macagua">
+        <seg>Mas información sobre el servicio de IRC puede ser encontrada en el siguiente enlace http://plone.org/support/chat.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>More information on switching release branches is below.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Más información en el cambio de ramas de liberación a continuación.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>More on that below.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Más sobre esto a continuación.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Most of our developers work there and you will get the best advice there.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>La mayoría de nuestros desarrolladores trabajan allí y obtendrá el mejor consejo desde allí.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Naming Conventions
+------------------
+Above all else, be consistent with any code your are modifying!</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T185038Z" changeid="macagua">
+        <seg>Convenciones de nombre
+----------------------
+¡Por encima de todo, ser coherente con cualquier código que usted está modificando!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Navigate to this branch in the github UI and on the top right there will be a button that says &quot;Pull Request&quot;.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Vaya a esta branch de la interfaz de usuario github y en la parte superior derecha habrá un botón que dice &quot;Pull Request&quot;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No matter how you approach it, you should ALWAYS run test cases for both the module and plone.org before commiting any changes.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Ningún asunto cómo  te lo acercas, usted tiene que SIEMPRE probar la ejecución de los test cases para ambos el módulo y plone.org antes de que generar una revisión con cualquiera de cambios.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Not that you would ever skip running all tests of course...</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>No sea que alguna vez volvería a sáltate ejecutar todas las pruebas, por supuesto...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that there is a section seperator called &quot;# Test Fixes Only&quot;.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Tenga en cuenta que hay una separador de sección llamada &quot;# Test Fixes Only&quot;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Nothing is too big nor small.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Nada es demasiado grande ni pequeño.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Once that is done pulling down eggs, You can start your new instance with::</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Una vez que se hace ejecutado el buildout, usted puede comenzar su nueva instancia Zope con el siguiente comando::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Once you [think you] know which package(s) you want, we need to pull the source.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Una vez que [cree] saben cuál es el paquete(s) que desea, tenemos que obtener de la fuente del mismo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Once you become a master of bugfixes, you may just let jenkins do this part for you.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Una ves se allá convertido en el maestro de corrección de fallas, usted tal ves le deje al servicio de jenkins hacer esta tarea por usted.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Once you have familiarized yourself with the community and you are excited to contribute to the core:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Una vez te se allá familiarizado usted mismo con la comunidad y usted está entusiasmado para contribuir al núcleo:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Once you have finished, please update your PLIP ticket to indicate that it is ready for review.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Una ves que allá finalizado, por favor, actualice su ticket indicar que esta listo para ser revisado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>One other thing of note is that running bootstrap effectively ties that python executable and all of its libraries to your buildout.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T212333Z" changeid="macagua">
+        <seg>Otra cosa de la nota es que está ejecutando bootstrap efectivamente asocia al ejecutable python y todas sus bibliotecas a su buildout.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Others may be able to point out risks or even offer up better or existing solutions.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T134344Z" changeid="macagua">
+        <seg>Otros pueden ser capaces de señalar puntos de riegos o incluso ofrecer una mejor o soluciones existentes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Otherwise, please create a pull request (more on that below).</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>De lo contrario, por favor, haga un fork del repositorio aplicando sus revisiones allí y luego haga un pull request (mas abajo se explica como).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PLIP is approved for inclusion into core for a given release
+#.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>PLIP es aprobada para incluirse dentro de núcleo para ser dado en una publicación
+#.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PLIP is approved for merge.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El PLIP es aprobada para fusionarse.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PLIP is submitted for review by developer
+#.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>PLIP es presentado para ser revisado por un desarrollador
+#.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PLIPs are not just for code monkeys.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Las PLIPs no solamente son código fuente monkeys.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>PLIPs go through a different process than bug fixes because of their broad reaching effect.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Las PLIPs van por un proceso diferente que la corrección de fallos debido a su ancho logrando efecto.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Please also prioritize the ticket.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Por favor, también priorizar el ticket.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Please check jenkins to make sure your changes haven't borked things.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Por favor, compruebe que el servicio jenkins se asegure que sus cambios no hallan roto cosas.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Please don't check in anything that doesn't!</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T173347Z" changeid="macagua">
+        <seg>¡Por favor, no verifique nada adicional!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Please make sure to validate all warnings and errors before committing to make sure the documents remain valid.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Por favor asegúrese en validar todos los avisos y los errores antes de generar una revisión para estar seguro que los documentos queden válido.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Please note a few things.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Por favor, note un par de cosas.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Please report bugs/issues in Trac as you would for any Plone bug.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Por favor, reporte fallos/incidencias en el sistema de ticket Trac como si se tratara de cualquier fallo Plone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Please use the template provided (XXX: put the template here?</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T175204Z" changeid="macagua">
+        <seg>Por favor, use la plantilla proveída (XXX: put the template here?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Plone's source code is hosted in a git repository at  https://github.com/plone, but only members of the developer team have commit-rights.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El código de fuente de Plone es hospedado en un repositorio git en https://github.com/plone, solo para los miembros del equipo de desarrollado que tienen derecho de hacer revisiones.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Proceed as normal.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Proceda como de costumbre.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Process Overview
+----------------
+#.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T162735Z" changeid="macagua">
+        <seg>Información general del proceso
+-------------------------------
+#.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Pull the 4.1 branch and fix and commit there with tests.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Obtenga la branch 4.1 y aplicar sus cambios allí con varias revisiones por cada cambio con sus respectivos tests.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Python, like any programming language, can be written in a number of styles.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Python, como cualquier lenguaje de programación, puede ser escrito en un número de estilos.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>READ: this is how your fix becomes an egg!</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>LEER: esto es como su corrección viene en un paquete egg!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Reference (a.k.a.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Referencia (a.k.a. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Reference the PLIP in the bug, assign to its implementor, and add a tag for the PLIP in the form of plip-xxx.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Haga referencia al PLIP en el fallo, asigne a su implementador, y añadir una etiqueta para el PLIP en forma de plip-xxx.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Remember your audience - to get support for your proposal, people will have to be able to read it!</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T133955Z" changeid="macagua">
+        <seg>Recuerde su audiencia - que le puede dar apoyo a su propuesta, las personas tendrán que ser capaces de leerla!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Reviewing PLIPs
+===============</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Revisando PLIPs
+===============</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>STOP!</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T172859Z" changeid="macagua">
+        <seg>¡DETENTE!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Second, please ask for help setting up your environment in IRC.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T170203Z" changeid="macagua">
+        <seg>Segundo, por favor, pida ayuda para configurar su entorno en el canal IRC.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See
+http://pypi.python.org/pypi/mr.developer for more information or run
+'bin/develop help' for a list of available commands.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Ver 
+http://pypi.python.org/pypi/mr.developer para mayor información o ejecutar 
+el comando 'bin/develop help' para un lista de comando disponibles.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See http://plone.org/documentation/manual/developer-manual/client-side-functionality-javascript/javascript-standards/referencemanual-all-pages</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Ver http://plone.org/documentation/manual/developer-manual/client-side-functionality-javascript/javascript-standards/referencemanual-all-pages</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See https://raw.github.com/plone/plone.app.caching/master/CHANGES.rst for a full example.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Ver https://raw.github.com/plone/plone.app.caching/master/CHANGES.rst para un ejemplo completo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Setting up Your Development Environment
+---------------------------------------
+The first step in fixing a bug is getting this buildout running.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T163846Z" changeid="macagua">
+        <seg>Instalando su Entorno de Desarrollo
+-----------------------------------
+El primer paso en corregir un fallo está consiguiendo ejecutar este buildout correctamente.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Setting up the environment
+--------------------------
+Follow the instructions on [wiki:DevelopmentEnvironment setting up a development environment] for &quot;Getting the Code&quot;.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Instalando el entorno
+---------------------
+Seguir las instrucciones en [wiki:DevelopmentEnvironment setting up a development environment] para &quot;Conseguir el Código&quot;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Simple packages with limited functionality can get by with a single page of narrative documentation.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Los paquetes sencillos con funcionalidad limitada pueden ser una página sola de narrativa documentación.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Simply ask on  of the Framework Team members what PLIPs are available for review or check the status of PLIPs at XXX:Link.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Simplemente pregunte a los miembros del equipo de Framework cual PLIPs esta disponible para revisar o verifficar el estatus del PLIPs en XXX:Link.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Simply ask on  of the Framework Team members what PLIPs are available for review or check the status of PLIPs at the `following link &lt;https://dev.plone.org/report/24&gt;`_.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T161205Z" changeid="macagua">
+        <seg>Simplemente pregunte a los miembros del equipo de Framework cual PLIPs esta disponible para revisar o verificar el estatus del PLIPs en el `siguiente enlace &lt;https://dev.plone.org/report/24&gt;`_.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>So you have a bug fix for 4.x.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Entonces usted tiene un corrección de falla para 4.x.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Some excellent examples of a single-page readme are http://pypi.python.org/pypi/plone.outputfilters and https://github.com/plone/plone.app.caching</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Algunos ejemplos excelentes de una página sencilla de archivo readme son http://pypi.python.org/pypi/plone.outputfilters y https://github.com/plone/plone.app.caching</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Sphinx will poop out a file directory that you can put in your browser url to validate.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Sphinx colocara en un directorio que tu puedes consultar en tu navegador web para validar la documentación generada.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Standy for bugs!</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T175058Z" changeid="macagua">
+        <seg>Esperar por los nuevos fallos!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Still with me?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Aun me sigue?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Style Guide
+===========</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Guía de estilos
+===============</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Submit a PLIP (at any time)
+#.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Presentar un PLIP (en cualquier tiempo)
+#.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Submitting a PLIP can be a great learning process and we encourage people of all backgrounds to submit.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>La presentación de un PLIP puede ser un gran proceso de aprendizaje y animamos a la gente de todos los orígenes a presentar.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Submitting the agreement is easy (and will soon be easier) and if you want quick access and are familiar with the community, go into :doc:`irc &lt;culture&gt;` and ask one of the repo admins to give you access with a scanned copy of the agreement.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Enviando el acuerdo de contribución es fácil (y pronto será más fácil) y si quieres acceso rápido y es familiar con comunidad, ir dentro :doc:`irc &lt;culture&gt;` y preguntar por los administradores del repositorio para dar acceso con una versión digitalizada del acuerdo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Summary: As soon as you get it done.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Resumen: Tan pronto usted lo finalice.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Switching Branches
+^^^^^^^^^^^^^^^^^^
+If your bug is specific to one branch or you think it should be backported, you can easily switch branches.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T163821Z" changeid="macagua">
+        <seg>Cambiar Branches
+^^^^^^^^^^^^^^^^
+Si su fallo es especifico en una branch o usted piensa que debería hacer backport, usted puede cambiar fácilmente las branches.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Table of Awesome
+----------------
+..</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Tabla de contenidos
+----------------
+..</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Tada!</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T201334Z" changeid="macagua">
+        <seg>¡Tada!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Take the plone.app.caching example.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Tome de ejemplo el paquete plone.app.caching.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Testing Locally
+---------------
+In an ideal world, you would write a test case for your issue before actually trying to fix it.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Probando localmente
+-------------------
+En un mundo ideal, usted debería escribir un caso de prueba para su incidencia antes de tratar de corregirlo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Thank you in advance!</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T173556Z" changeid="macagua">
+        <seg>¡Gracias de antemano!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>That or I got lazy when writing these docs.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T145733Z" changeid="macagua">
+        <seg>Si le dio pereza escribir estas PLIP tan documentado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>That way, it is easier to see what was done when, and easier to roll back any changes if necessary.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>De esta forma, es fácil ver que fue cambiado y donde se realizo el cambio, además es mas fácil hacer un roll back de cualquier cambio si es necesario.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The Framework Team is happy to help you at any point in the process.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El equipo del Framework estará encantado de ayudarle en cualquier momento del proceso.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The Framework Team will assign 2-3 people to review your PLIP.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El equipo del Framework asignara 2 a 3 personas para revisar su PLIP.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The PLIP will not be merged until all blockers and critical bugs are fixed.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El PLIP no será fusionado hasta que todo los fallos bloqueadores y críticos están corregido.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The Plone 4.x Framework Team reviews all PLIPs to be sure that it’s in the best interest of the broader community to be implemented and that it is of high quality.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El equipo del framework Plone 4.x revisa todas las PLIPs para ser seguro que es en el mejor interés de la comunidad para ser implementada y que es de calidad alta.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The basics
+~~~~~~~~~~</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Lo básico
+~~~~~~~~~</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The best way to do this is to add Sphinx to your project and host your docs on readthedocs.org so that it rebuilds the documentation whenever you push to github.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>La manera mejor de hacer este es para añadir Sphinx a su proyecto y hospedar su documentos en readthedocs.org de modo que reconstruye la documentación siempre que aplica un cambio en github.com</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The changelog is a record of all the changes made to the package and who made them, with the most recent changes at the top.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El changelog o registro de cambios es un registro de todos los cambios que hizo al paquete y quién les hicieron, con los cambios más recientes en la parte superior.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The code base is very complicated and everyone is vested in the right thing happening.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El código base es muy complicado y todo el mundo se confiere al acontecimiento lo correcto.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The default username/password for a dev instance is admin/admin.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El usuario y contraseña por defecto para una instancia Zope de desarrollo es admin/admin.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The first time you get a branch, you must do::</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>La primera ves usted tiene que obtener una branch, usted debe hacer::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The former is obviously much easier to read, less redundant and generally more aesthetically pleasing.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>A la primera es, obviamente, mucho más fácil de leer, menos redundante y por lo general estéticamente más agradable.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The framework team is eager to reduce it’s own workload and will re-classify it for you.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T161326Z" changeid="macagua">
+        <seg>El equipo del framework es ansioso al reducir es propia carga de trabajo y clasificarla de nuevo por usted.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The key point here is that each change needs documentation so other users can see what it is.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El punto clave acá es que cada cambio necesita documentación para que otros usuarios puedan ver que cambios hay de nuevo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The line with a * by it will indicate which branch you are currently working on.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>La línea con un * por él indicará qué rama actualmente estás trabajando.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The mailing list is exploding with debate over what is better so we'll leave the excersize of deciding what to do with the user.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T184644Z" changeid="macagua">
+        <seg>La lista de correo es la explosión de debates sobre que es lo mejor, así que nosotros vamos a dejar el ejercicio de decidir qué hacer con el usuario de esta lista.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The manual (a.k.a.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El manual (a.k.a.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The manual goes into further depth for people who want to know all about how to use the package.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El manual va a una profundidad más lejana para personas que quieren saber todo acerca de cómo para utilizar el paquete.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The manual should consider various audiences who may need different types of information:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El manual debería considerar varias audiencias quiénes pueden necesitar tipos diferentes de información</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The merge may cause problems with other PLIP's coming in.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T181833Z" changeid="macagua">
+        <seg>La fusión puede causar problemas con otros PLIPs que vienen en camino.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The most common workflow to get all the latest updates is:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El mas común flujo de trabajo para obtener todas la ultimas actualizaciones es:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The other option is to delete your current egg and force the upgrade.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T192947Z" changeid="macagua">
+        <seg>La otra opción es eliminar el paquete egg actual y forzar la actualización.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The people in #plone-framework have been using plone for a very long time and are happy to help you get going and make the right decisions.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T170315Z" changeid="macagua">
+        <seg>La gente en la sala IRC #plone-framework tienen mucho tiempo usando Plone y por eso estarán muy felices en ayudarle a ir por la dirección correcta y hacerle tomar las decisiones mas adecuadas.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The problem with swallowed exceptions is not just poor error reporting.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T173655Z" changeid="macagua">
+        <seg>El problema con las swallowed exceptions,no es sólo el informe de errores pobre.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The readme is the first entry point for most people to your package.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El archivo README es el primer punto de partida para la mayoría de personas a su paquete.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The reviewers are informal and very nice so don't worry - they are there to help!</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Los revisores son informales y muy agradables, así que no se preocupe - que están ahí para ayudar!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The seconder field is REQUIRED.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>El campo seconder es REQUERIDO.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Then rerun buildout to get the source packages::</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Entonces ejecutar de nuevo buildout para conseguir los paquetes de sus repositorios fuente::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Then you return to the feature branch and make a branch for `rebasing` it onto the 4.2 branch::</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>A continuación, regrese a la branch característica y haga una branch para `establecerlo` dentro de la branch 4.2::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Then, follow the simple instructions for :doc:`reviewing a PLIP &lt;plipreview&gt;`.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T132604Z" changeid="macagua">
+        <seg>Entonces, siga las simples instrucciones para :doc:`revisar un PLIP &lt;plipreview&gt;`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Then, follow the simple instructions for reviewing a PLIP (XXX:link).</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Entonces, siga las simples instrucciones para revisar un PLIP (XXX:link).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are many people and companies who rely on Plone on a day-to-day basis so we have to introduce some level of code quality control.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T170641Z" changeid="macagua">
+        <seg>Hay muchas personas y compañías quiénes confían en Plone diariamente, por tanto nosotros tenemos que introducir algún nivel de control en la calidad del código fuente.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are people who look once a week or more for pending pull requests and will confirm whether or not its a good fix and give you feedback where necessary.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Hay personas que se ven una vez a la semana o más para revisar las solicitudes pull requests y confirmaran si es o no es una buena corrección y le dará una retroalimentación cuando sea necesario.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are plenty of opportunities to meet the community and start contributing through various coding sessions, either in person or on the web.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Hay abundancia de oportunidades de conocer la comunidad y comenzar a contribuir a través de varias sesiones de codificación, ya sea en persona o en la web.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There is no official people assigned to this so if you are especially nervous, jump into #plone and ask for a quick eyeball on your changes.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Hay personas no oficiales asignadas a esto si usted esta especialmente nervioso, entre en el canal IRC en freenode.net y pregunte por alguien que pueda ver sus cambios.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There may be conflicts; if so, resolve them and then follow the directions
+git gives you to complete the cherry-pick.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Tal ves allá conflictos; entonces, resolverlos y seguir las instrucciones 
+que la herramienta git le da a usted para completar el cherry-pick.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These are open for contributions by anyone.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Estos son abiertos para contribuciones por cualquier que lo deseo hacer.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These are the criterias by which the framework team will review your review bundle:</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T180057Z" changeid="macagua">
+        <seg>Estos son los criterios por del equipo framework que va a revisar en su revisión del paquete:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These documents are currently stored with the coredev buildout in github in /docs.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Estos documentos actualmente son almacenados con el directorio /docs del buildout de coredev en github.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These errors are almost always a quick fix and a little bit of understanding goes a long ways.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T191836Z" changeid="macagua">
+        <seg>Estos errores son casi siempre tienen una solución rápida y un con poco de comprensión le lleva a un largo camino.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These should all run without error.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T163826Z" changeid="macagua">
+        <seg>Estos deberían ejecutarse todo sin fallos.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These tickets often rotted in place and technically, in order for us to accept your patch you must sign the contributors agreement.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Estos tickets a menudo podridas en su lugar y técnicamente, para que nosotros aceptemos su parche debe firmar el acuerdo de los contribuyentes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>They always do...
+* `Python Imaging Library (PIL) &lt;http://www.pythonware.com/products/pil/&gt;`_.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Ellos siempre hacen...
+* `Python Imaging Library (PIL) &lt;http://www.pythonware.com/products/pil/&gt;`_.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>They are there to push you through completion as well as answer any questions and provide guidance.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T141855Z" changeid="macagua">
+        <seg>Ellos están ahí para animar hasta su culminación, así que responde a cualquier pregunta y proporcionar orientación necesaria.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>They will follow the guildelines listed at :doc:`plipreview`.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Ellos seguirá las lineas guías definidas en :doc:`plipreview`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>They will get you going as fast as possible!</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T173254Z" changeid="macagua">
+        <seg>¡Ellos lo harán lo mas rápido como sea posible!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Things to think about when reviewing:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Las cosas para pensar aproximadamente cuándo este revisando:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Think about how an import would read::</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T185350Z" changeid="macagua">
+        <seg>Piensa acerca de como un import podría leerse::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This buildout uses mr.developer to manage package development.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Esta configuración buildout usa mr.developer para administrar los paquetes de desarrollo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This can also mask ConflictErrors, which indicate that something has gone wrong at the ZODB level!</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T173950Z" changeid="macagua">
+        <seg>Sino que esto también puede ocultar errores de conflicto (ConflictErrors), que indican que algo ha ido mal en el nivel de la ZODB!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This can be in the form of an issue tracker entry, or a PLIP in the case of a bigger change.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Esto puede ser en el formulario de un registro de en el sistema de incidencia, o un PLIP en el caso de que es un cambio mayor.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This change note will be collated for the next Plone release and is important for integrators and developers.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Esta nota de cambio será cotejada para la próxima versión de Plone y es importante para los integradores y desarrolladores.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This file should be called plip_&lt;number&gt;_notes.txt.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T181013Z" changeid="macagua">
+        <seg>Este debería ser llamado plip_&lt;number&gt;_notes.txt.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This file will define the
+branches/trunks you're working with in your PLIP.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Es archivo sera definido en el 
+branches/trunks que usted esta trabajando con su PLIP.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This has the advantage that you can instantly see if you refer to a module / file or a class::</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Esto tiene la ventaja de que usted puede ver inmediatamente si se refiere a un módulo / archivo o una clase::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is a limited set of documentation that is intended to be carefully managed and regularly updated.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Esto es un conjunto limitado de documentación que está pretendido para ser cuidadosamente dirigido y regularmente actualizado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is by no means an exhaustive list, but a place to start.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Esto es de ninguna manera una lista exhaustiva, pero un sitio para empezar.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is maintained separately from the git commit history to give a chance for more user-friendly messages and to and record when releases were made.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T140358Z" changeid="macagua">
+        <seg>Esto está mantenido por separado del historial de revisión del git para dar una posibilidad de mensajes mas amigables al usuario al registrar cuándo las liberaciones estuvieran listas.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is usually the result of the developer not responding to feedback or dropping out of the process.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T164749Z" changeid="macagua">
+        <seg>Esto es usualmente a que el resultado del trabajo hecho por el desarrollador no responde al comentario o abandono del proceso.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This just tells the release manager that any eggs below this line have tests that are updated, but no code changes.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Este dice al administrador de la versión que los paquetes Egg por debajo de esta línea tienen pruebas que están actualizadas, pero no hay cambios en el código.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This leads to a wealth of information that is of more widely ranging quality.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Esto dirige a una riqueza de información que es de más ampliamente variando calidad.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This lets the release manager know that the package has been updated so that when the next release of Plone is cut a new egg will be released and Plone will need to pin to the next version of that package.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Esto le permite al administrador de la versión saber que paquete ha sido actualizado para que cuando sea la próxima versión de Plone tendrá que fijar a la próxima versión del paquete al momento de generar un nuevo paquete Egg.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This lets you deal with resolving conflicts before you
+actually merge it to the 4.2 release branch.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Este le permite a usted resolver conflictos antes de que usted
+lo fusione a la branch release 4.2.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This may go back and forth a few times until both the FWT and developer are happy with the result.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T142801Z" changeid="macagua">
+        <seg>Esto puede ir y venir varias veces hasta que tanto el FWT y el desarrollador está satisfecho con el resultado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This means that we can NOT accept pull requests from you unless this is done, so please don't put the code reviewers at risk and do it anyways.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Esto significa que NO podemos aceptar peticiones de mejoras de usted a no ser que allá hecho esto, por favor, ponga código fuente para ser revisado de ninguna forma.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This offers both copyright protection and ensures that the Plone Foundation is able to exercise some control over the codebase, ensuring it is not appropriated for someone's unethical purposes.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Esto ofrece protección de derechos de autor y se asegura de que la Fundación Plone es capaz de ejercer un cierto control sobre el código base, asegurándose de que no es apropiado para fines poco éticos de alguien.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This should include (but is not limited to):</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Este debe incluir (pero no es limitado a solo eso):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This should set up a local 4.1 branch tracking the one on github.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Esto debería crear una branch local de 4,1 rastrear el uno en github.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This tells your [Plone] bootstrap.py file to play nicely with the version that you already have installed.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T192808Z" changeid="macagua">
+        <seg>Esto le dice a su archivo bootstrap.py [Plone] para ejecutar muy bien con la versión que ya se ha instalado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This way the implementor can find help if he needs it.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>De este modo el implementor puede encontrar ayuda si lo necesita.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This will get you the latest coredev configuration, checkout and update all
+packages via Subversion in src and run buildout to configure the whole thing.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Esto te conseguirá la versión mas reciente de la configuración coredev, compruebe y actualice todos los paquetes vía Subversion en el directorio src y ejecute buildout para configurar el asunto.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This will make a remote branch in github.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Esto hará un branch remoto en el servicio github.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This will remove packages from src/ which are no longer needed, as they have
+been replaced by proper egg releases of these packages.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Esto sacará los paquetes del directorio src/ los cuáles ya no son necesarios, cuando estos han sido reemplazados por una apropiada liberación en formato Egg de estos paquetes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This will run for a long time if it is your first pull (~20 mins).</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Esto se ejecutará durante mucho tiempo, si es su primera ejecución de buildout (~ 20 minutos).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This will turn your request into a pull request on the main branch.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Este le permitirá hacer una solicitud dentro de un pull request en la branch principal.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To add Sphinx to your package...</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Para añadir Sphinx a su paquete...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To check your changes locally, rerun buildout and then::</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Para generar sus cambios localmente, inicie de nuevo el buildout y entonces::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To fix, you have a couple options.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T192634Z" changeid="macagua">
+        <seg>Para solucionarlo, hay un par de opciones.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To get started, `open a new ticket &lt;https://dev.plone.org/newticket&gt;`_ and select &quot;PLIP&quot; as the ticket type.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Para iniciar, `abra un nuevo ticket &lt;https://dev.plone.org/newticket&gt;`_ y seleccione &quot;PLIP&quot; como el tipo de ticket.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To run a test for the specific module you are modifying::</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Para correr una prueba para el módulo específico ejecute el siguiente comando::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To see what branch you are currently on, just do::</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Para ver qué branch que se encuentra actualmente, acaba de hacer::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To set up a plone 4.2 development environment::</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Para instalar un entorno de desarrollo plone 4.2::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To update them, please checkout the coredev buildout and update there.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Para actualizarles, por favor, hacer un checkout desde el buildout coredev y actualizar allá.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Today, tomorrow, any time!</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T173630Z" changeid="macagua">
+        <seg>¡Hoy, mañana, en cualquier momento!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Troubleshooting
+===============</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Troubleshooting: solucionar problemas
+=====================================</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Tune-ups are filled with a good mix of newbies and experienced devs alike.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T171420Z" changeid="macagua">
+        <seg>Los Tune-ups está llenado con una buena mezcla de programadores recién iniciados y experimentados igualmente.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Updating CHANGES.rst and checkouts.cfg
+--------------------------------------
+Once all the tests are running locally on your machine, you are ALMOST ready to commit the changes.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Actualizar el archivo CHANGES.rst y checkouts.cfg
+-------------------------------------------------
+Una ves todo las pruebas se ejecuten localmente en si maquina, usted debe estar CASI listo para generar una revisión de sus cambios.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Usability Issues
+----------------</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Incidentes de usabilidad
+------------------------</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Use spaces as indenting, 4 spaces for each level.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Use espacios como indentado, a 4 espacios para cada nivel.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Use the same naming convention when branching existing packages, and you
+should always be branching packages when working on PLIPs.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T181005Z" changeid="macagua">
+        <seg>Utilice la misma convención de nombre cuando haga un branch existente a paquetes existentes, y siempre usted 
+debería siempre hacer branch paquetes cuando esta trabajando en las PLIPs.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Using Sphinx
+~~~~~~~~~~~~</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Utilizando Sphinx
+~~~~~~~~~~~~~~~~~</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Version Support Policy
+----------------------
+If you are triaging or fixing bugs, keep in mind that Plone has a `version support policy &lt;http://plone.org/support/version-support-policy&gt;`_.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T163804Z" changeid="macagua">
+        <seg>Política sobre soporte a la Versión
+-----------------------------------
+Si usted está tratando de corregir fallos, tenga en cuenta que Plone tiene una `política sobre soporte a la versión &lt;http://plone.org/support/version-support-policy&gt;`_.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We are in the home stretch.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Estamos en la recta final.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We do ask that before requesting core access you familiarize yourself a little with the community since they will help you get ramped up:</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T171314Z" changeid="macagua">
+        <seg>Nosotros pedimos que antes de solicitar el acceso de escritura al core de Plone, usted debe familiarizarse un poco con la comunidad, ya que le ayudará a acelerar su iniciación:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We don't &quot;require&quot; `PEP8 &lt;http://www.python.org/dev/peps/pep-0008/&gt;`_, but most people use it and it's good for you.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120908T141059Z" changeid="macagua">
+        <seg>Nosotros no &quot;requerimos&quot; `PEP8 &lt;http://www.python.org/dev/peps/pep-0008/&gt;`_, pero mucha gente lo usa y eso es bueno para usted.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We don't have integration with github yet so it's a nice way to track changes.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Actualmente no tenemos una integración de nuestro sistema de ticket con el servicio github pero es una forma agradable de seguir sus cambios.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We don't require it but we as a community really, really appreciate it.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T183914Z" changeid="macagua">
+        <seg>Nosotros no requerimos, pero nosotros, como comunidad realmente, realmente lo apreciamos.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We encourage most PLIPs to go through the add on process at first if at all possible to make sure the majority of the comunity uses it.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T175940Z" changeid="macagua">
+        <seg>Animamos a que la mayoría de los PLIPs pasen que se coloquen al principio del proceso si es posible para asegurarse de que la mayoría de la comunidad lo use.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We know that things get busy and new problems make PLIPs more complicated and we will push it to the next release.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T142158Z" changeid="macagua">
+        <seg>Nosotros sabemos que todos tenemos ocupaciones que nos ponen muy ocupados y además de nuevos problemas hacen a los PLIPs más complicado si es así entonces los vamos a mover hacia la siguiente versión.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We need a better one.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Necesitamos una mejor.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We recommend fixing the bug on the latest branch and then backporting as necessary.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T163813Z" changeid="macagua">
+        <seg>Le recomendamos corregir un fallo en la branch más reciente y entonces backporting tan como sea necesario.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We recommend the latter but will describe both.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Nosotros recomendamos el último pero describirá ambos.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We recommend using branches off of the github.com/plone repo and will detail that below.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T172449Z" changeid="macagua">
+        <seg>Nosotros recomendamos usar branches en el repositorio github.com/plone y se detallará abajo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We will even help you pair up with implementors if needed.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T130940Z" changeid="macagua">
+        <seg>Incluso te ayudaremos a la par con los implementores si necesario.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We will send the PLIP back to you if it is not filled in.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Nosotros enviaremos el PLIP de regreso a usted si ese campo no es llenado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We're the first to admit that Zope and Plone are not the finest examples of stylistic integrity, but that doesn't stop us from trying!</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T183752Z" changeid="macagua">
+        <seg>¡Somos los primeros en admitir que Zope y Plone no son los mejores ejemplos de la integridad estilística, pero eso no nos impide intentarlo!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Welcome to the Plone community!</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T172745Z" changeid="macagua">
+        <seg>¡Sea bienvenido a la comunidad Plone!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>What is a PLIP champion?</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T131354Z" changeid="macagua">
+        <seg>¿Qué es un defensor PLIP?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When Mr. Developer is Unhappy
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+mr.developer is never unhappy, except when it is.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T233743Z" changeid="macagua">
+        <seg>Cuando Mr. Developer no es feliz
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+mr.developer nunca es feliz, excepto cuando es.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When can I submit a PLIP?</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T162156Z" changeid="macagua">
+        <seg>¿Cuándo yo puedo presentar un PLIP?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When in doubt, please ask.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Cuando tenga dudas, por favor, pregunte.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When in doubt, submit it as a PLIP.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>En caso de duda, se presentará como una PLIP.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When is the PLIP due?</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T162151Z" changeid="macagua">
+        <seg>¿Cuándo el PLIP es debido?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When the PLIP is accepted, a Framework Team member will “champion” your PLIP and be dedicated to seeing it completed.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T131300Z" changeid="macagua">
+        <seg>Cuando el PLIP es aceptado, un miembro del equipo del Framework &quot;defenderá&quot; su PLIP y a ser encargado de llevar a cabo esta mejorar hasta que este completada.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When writing a PLIP, be as specific and to-the-point as you can.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Cuando escribe una PLIP, de se lo mas especifico que pueda al punto a tratar.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When you are done, if you have access to core please commit the review to the plips folder and reference the PLIP in your commit message.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Cuando haya terminado, si usted tiene acceso al núcleo por favor comprometerse con la revisión de los plips y hacer referencia a la PLIP en el mensaje de confirmación.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When you are happy with the feedback, :ref:`submit a PLIP &lt;how_submit_plip&gt;`.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T134245Z" changeid="macagua">
+        <seg>Cuándo este feliz con el comentario, :ref:`presente un PLIP &lt;how_submit_plip&gt;`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When you are happy with the feedback, submit a PLIP.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120908T224912Z" changeid="macagua">
+        <seg>Cuándo este feliz con el comentario, presente un PLIP.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When you are ready to push your fix, push to a remote branch with::</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Cuándo usted este a punto para hacer push de la corrección de su fallo, debe hacer un push a una branch remota con el siguiente comando::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When you rerun bootstrap, it will look for the buildout of the egg, note that there isn't one, and then go fetch a new egg in the version that it wants for you.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T195939Z" changeid="macagua">
+        <seg>Al volver a ejecutar el archivo bootstrap.py, este buscará para el paquete egg para el buildout, ya que no hay uno, y luego ir a buscar el paquete egg con la nueva versión que se quiere para su construcción buildout.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When you submit your PLIP and it is approved, 1 Framework Team member who is especially excited about seeing the PLIP completed will be assigned to your PLIP as a champion.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T132918Z" changeid="macagua">
+        <seg>Cuando usted presenta su PLIP y esta es aprobada, Un miembro del equipo de Framework que este especialmente animado a ver hecho realidad el PLIP sera asignado a su PLIP como un defensor.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>While there is no official mentoring process, there are plenty of people willing to act in that role and guide you through the steps of getting involved in the community.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Si bien no existe un proceso oficial de tutoría, hay un montón de personas dispuestas a actuar en ese rol y le guiará por los pasos de involucrarse en la comunidad.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Who can submit PLIPs?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>¿Quiénes pueden presentar PLIPs?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Writing documentation
+=====================</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Escribiendo documentación</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can also check the CHANGES.txt of every plone release for a comprehensive list of all changes and validate that yours is present.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Usted también puede descargar el CHANGES.txt de cada liberación de Plone para ver una lista comprensible de todos los cambios y validar que su contribuciones estén presente.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can begin working immediately, and we encourage submitting fast and furious.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T161946Z" changeid="macagua">
+        <seg>Usted puede iniciar rápidamente su trabajo, y nosotros animamos a presentarlo 'rápido y furioso'.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can do this through the app store or several other soul-selling methods.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Usted puede hacer este a través de la app store o muchos otros métodos que venden.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can follow the project on github and watch its timeline.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Usted puede seguir el proyecto en github y mirar la linea del tiempo de cambios.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can get the source of the package with mr.developer and the checkout command, or you can go directly to editing checkouts.cfg.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Usted puede conseguir la fuente del paquete con mr.developer y la orden checkout, o puedes ir directamente a editar checkouts.cfg.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can ignore this advice to start, but have faith, you'll come back to it later.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Usted puede ignorar este consejo para empezar, pero tenga fe, volverás a él más tarde.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can look at git log to find this.)</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Usted puede mirar el histórico de su repositorio git para encontrar este.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can repeat this process with as many or as few packages as you need.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Usted puede repetir este proceso con tan muchos o cuando pocos paquetes cuando necesite.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You do not have to be the most amazing coder in the entire world to submit a PLIP.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Usted no tiene que ser el más increíble programador en el mundo entero para poder presentar una PLIP.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You don't have to develop there, but it must be there when submitted.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Así usted no tenga el desarrollo allí, pero ese debe estar allí cuando este presentado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You don't have to list every line of code that needs to be changed, but you should also give an indication that you have some idea that how the change can be feasibly implemented.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120909T134156Z" changeid="macagua">
+        <seg>Usted no tiene que listar cada línea de código que necesidades de ser cambiadas, pero usted también debe dar una indicación que usted tenga sobre alguna idea de como el cambio puede ser viablemente implementado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You don’t like my PLIP :( What now?</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>No le gusta mi PLIP :( Y ahora que?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You may even be able to get immediate core access at a conference if you are flexing your mad coding skills and the right people are attending.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Usted puede incluso ser capaz de obtener acceso inmediato en una conferencia si usted está flexionando sus habilidades de codificación locos y la gente adecuada asisten.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You may get the same error above again but now that you know how to fix it, you can spend that time drinking beer instead of smashing your keyboard.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T233530Z" changeid="macagua">
+        <seg>Usted puede obtener el mismo error anterior nuevamente, ahora que sabes cómo solucionarlo, usted puede pasar ese tiempo bebiendo cerveza en vez de aplastar el teclado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You may think the buildout god is angry because it's been MONTHS since you've made a human sacrifice to her but be strong and follow along.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T192151Z" changeid="macagua">
+        <seg>Usted puede pensar que la diosa buildout está enfadada porque han pasado MESES desde que usted hizo un sacrificio humano para ella, pero sea fuerte y siga adelante.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You will likely want to install your own python 2.6 as well since they strip out all the header files which makes compiling some extensions weird.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Usted probablemente querrá instalar su propio python 2.6 entonces necesita fuera todos los archivos encabezados cuál hace compilar algunas extensiones.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You will need to checkout the branch to which the PLIP is assigned.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Usted necesitará a tener una copia al branch del repositorio del cual el PLIP fue asignado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You will quickly see how people work and what kind of things are best suited for group discussion.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Usted pronto vera cómo la gente trabaja y qué tipo de cosas son las más adecuadas para la discusión grupal.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You'll be expected to help out with that feature after it's been released (within reason).</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T182218Z" changeid="macagua">
+        <seg>Se espera contar con su ayuda para dar soporte a esa característica después de haber sido lanzado en Plone (dentro de lo razonable).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You'll have to interact with a large number of people to get it all set up.</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T181657Z" changeid="macagua">
+        <seg>Usted tendrá que interactuar con un gran número de personas para conseguir que todo quede preparado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Plone used to be in an svn repository, so everyone is familiar and accustomed to committing directly to the branches.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Plone uso un repositorio svn, así que todo el mundo es familiar y acostumbrado a hacer revisiones directamente a las branches.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`Github &lt;https://github.com/plone/buildout.coredev/&gt;`_ by default always points to the currently active branch.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>`Github &lt;https://github.com/plone/buildout.coredev/&gt;`_ por defecto siempre apunta a la rama actualmente activa.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>``README.rst`` should include:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>``README.rst`` tendría que incluir:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>compare that to::</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>comparar eso a::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>eg::</seg>
+      </tuv>
+      <tuv lang="ES-VE" changedate="20120910T195540Z" changeid="macagua">
+        <seg>ej::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>narrative documentation)</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>documentación narrativa)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>reST References:</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Referencias reST:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>then you likely want to create a branch of whatever packages you are using and then use the pull request feature of github to get review.</seg>
+      </tuv>
+      <tuv lang="ES-VE">
+        <seg>Entonces probablemente quieres crear una branch de cualquier paquete que está utilizando y entonces use la característica de pull request del servicio github para conseguir revisión.</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>
