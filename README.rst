@@ -154,6 +154,33 @@ Debes cuidar los siguientes aspectos:
 - En sistema Unix/Linux debes tener configurado su **locales** de tu sistema operativo en Castellano, Español (ES), para que OmegaT habilite la comprobación ortográfica.
 
 
+Recursos disponibles
+====================
+
+Existen una serie de recursos disponibles para el proceso de traducción asistidas por computador, a continuación se lista los disponibles hasta el momento: 
+
+Glosarios terminológico
+-----------------------
+
+Existe una serie de glosarios disponibles dentro del directorio ``glossaries`` en la branch ``cat`` dentro del repositorio git ``collective.spanishdocumentation``.
+
+Diccionarios
+------------
+
+Existe una serie de diccionarios disponibles dentro del directorio ``dictionaries`` en la branch ``cat`` dentro del repositorio git ``collective.spanishdocumentation``.
+
+Maquinas de traducción 
+----------------------
+
+Mas comúnmente conocido como traductores, son programas que hace traducciones automáticas, para esto ofrecemos varios sitios Web que seran de utilidad:
+
+* Google Translate - http://translate.google.com
+
+* Wordreference - http://www.wordreference.com
+
+* Urban dictionary http://www.urbandictionary.com/
+
+
 FAQ
 ===
 
