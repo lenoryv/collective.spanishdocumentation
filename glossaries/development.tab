@@ -1,14 +1,18 @@
 ZODB	Zope Object Database	Base de datos de objetos Zope
 
+tarballs	.tar files	archivos .tar
+
+PIL	Python Imaging Library	librería para imágenes en Python
+
 scripting languages	lenguajes scripting	lenguaje de programación
 
 CSS	hojas de estilo en cascada (Cascading Style Sheets)	Plone utiliza regularmente esta función para separar contenido de presentación
 
 theming	tematizar, tematización
 
-ZMI	Zope Management Interface
+ZMI	Zope Management Interface	Interfaz administrativa de Zope
 
-UI	Interfaz de usuario	User Interface
+UI	Interfaz de usuario	Interfaz de usuario
 
 bookmarklet	marcador	en lugar de apuntar a una dirección URL, hace referencia a una pequeña porción de código JavaScript
 
@@ -30,6 +34,10 @@ backported	backported	Un Backport es la acción de hacer modificaciones o crear 
 
 ZCML	Zope Configuration Markup Language.	Lenguaje de Marcado de Configuración Zope
 
+CMF	Content Management Framework	Framework de administración de contenidos
+
+ZCA	Zope Component Architecture	Arquitectura de componente Zope
+
 TAL	 es un lenguaje elegante de plantillas
 
 METAl	Macro Expansion Template Attributes Language	Lenguaje de expansión macro para atributos de plantillas
@@ -40,27 +48,23 @@ DTML	Document Template Markup Language	Lenguaje de Marcado de Documento de Plant
 
 Sidebar	Barra lateral
 
-ZPT	Zope Page Templates	Páginas de Plantillas Zope
+ZPT	Zope Page Templates	Plantillas de página Zope
 
-TODO	code marker in source code	marcadaor que se utliza para hacer notas, rezaltar cambios, etc
+UML	Unified Modeling Language	Lenguaje Unificado de Modelado
 
-API	Interfaz de programación de aplicaciones	Application programming interface
+TODO	code marker in source code	marcador que se utiliza para hacer notas, resaltar cambios, etc
+
+API	Application programming interface	Interfaz de programación de aplicaciones
+
+FTI	Factory type information	información de tipo
 
 FIVE	es un producto de Zope 2 que le permite integrar tecnologías de Zope 3 en Zope 2
 
 DTD	Definición de tipo de documento	Document Type Definition
 
-PiL	Python Imaging Library	librería para imágenes en Python
-
 KUPU	Kupu is the user-friendly graphical HTML editor	editor HTML gráfico amigable al usuario
 
 AJAX	conjunto de funcionalidades que hacen que las páginas se comporten más como aplicaciones
 
-breadcrumb	Hilo de Ariadna 	técnica de navegación usada para desarrollar la interfaz gráfica de usuario. Tiene como objetivo que el usuario guarde una ruta de su ubicación dentro de programas o documentos.
+breadcrumb	migaja de pan 	técnica de navegación usada para desarrollar la interfaz gráfica de usuario. Tiene como objetivo que el usuario guarde una ruta de su ubicación dentro de programas o documentos.
 
-
-
-
-
-****text fixture
-****dummy objects

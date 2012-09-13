@@ -2,11 +2,11 @@ content management system	sistema de gestión de contenidos
 
 content type	tipo de contenido	los tipos de contenidos son los registros que están disponibles para agregar en Plone.
 
-item	elemento	Cualquier tipos de contenidos dentro de plone que pueden ser desde archivos, o carpeta que contienen archivos.
+item	elemento	Cualquier tipos de contenidos dentro de Plone que pueden ser desde archivos, o carpeta que contienen archivos.
 
 Collection	Colección	Las colecciones son usadas para agrupar y mostrar contenido basado en una serie de criterio con el cual están definidos. Las colecciones trabajan como un consulta a una base de datos.
 
-Event	Evento	Un evento es un tipo de contenido como página especial para publicar información acerca de un evento (como una fundraiser, barbecue, etc).
+Event	Evento	Un evento es un tipo de contenido como página especial para publicar información acerca de un evento (como una conferencia, un fiesta de cumpleaños, etc).
 
 File	Archivo	Un archivo en Plone es cualquier archivo binario que usted desea subir con la intención de que ese sea descargado por los visitantes de su sitio. Ejemplos comunes son archivos PDFs, Documentos de Word, y Hojas de Calculo.
 
@@ -14,7 +14,7 @@ Folder	Carpeta	La Carpetas trabaja en Plone mucho más de la función que hacen 
 
 Image	Imagen	El tipo de contenido Imagen es usado para subir archivos de imagen (JPG, GIF, PNG) que usted puede insertarlas dentro de páginas o otro tipos de contenidos de tipo página.
 
-Link	Enlace	También referenciado como el 'Objecto Enlace'; no confundir este con los enlaces que usted crea vía Kupu, el editor página de visual Plone. El tipo de contenido Enlace ofrece ser usado para incluir un enlace a un sitio Web externo en la Navigación otros usos especializados.
+Link	Enlace	También referenciado como el 'Objeto Enlace'; no confundir este con los enlaces que usted crea vía Kupu, el editor página de visual Plone. El tipo de contenido Enlace ofrece ser usado para incluir un enlace a un sitio Web externo en la Navegación otros usos especializados.
 
 News Item	Noticia	Este tipo de contenido es similar al Evento, solamente las Noticias es especialmente para publicar noticias. Usted puede también adjuntar una imagen miniatura a una Noticia, el cual aparecerá en la vista de resumen en la carpeta cerca a el resumen de la Noticia
 
@@ -31,13 +31,13 @@ home	inicio	página de inicio del sitio Plone
 
 plone,Plone	Plone	es un sistema de gestión de contenidos de código abierto basado en Python
 
-renders	muestra	es el procedimiento en el cual se procesa una fuente de datos y se presenta de cierta manera. En los navegadores Web es caracteristco debido a que procesa el HTML y genera la salida del contenido multimedia descrito en ese HTML.
+renders	muestra	es el procedimiento en el cual se procesa una fuente de datos y se presenta de cierta manera. En los navegadores Web es característico debido a que procesa el HTML y genera la salida del contenido multimedia descrito en ese HTML.
 
 dashboard	cuadro de mando	Un usuario de Plone tiene un "cuadro de control" personal en el cual personaliza su interfaz de usuario.
 
 URL	dirección URL	es también conocida como dirección Web.
 
-built-in	integrado/a	sistema o carácteristica que viene integrada a un software
+built-in	integrado/a	sistema o característica que viene integrada a un software
 
 tab	pestaña
 
@@ -45,8 +45,5 @@ metadata	metadatos	datos acerca de datos
 
 free-form	estilo libre	relacionado a campos de texto que no tienen un formato obligatorio
 
-thumbnail view	vista en miniatura	vista o imagenes de pequeño tamaño
-
-
-
+thumbnail view	vista en miniatura	vista o imágenes de pequeño tamaño
 

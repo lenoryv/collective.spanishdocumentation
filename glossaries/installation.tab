@@ -10,35 +10,35 @@ Packages/Ports	Paquetes/Puertos
 
 ESMTP	ESMTP	El servicio ESMTP (por sus siglas en inglés – Enhanced Simple Mail Transfer Protocol), es una definición de extensiones de protocolo para el estándar SMTP.
 
-add-ons	productos adicionales	paquete que extiende adicionalmente alguna funcionalidad por defecto de plone.
+add-ons	productos adicionales	paquete que extiende adicionalmente alguna funcionalidad por defecto de Plone.
 
 UI	interfaz de usuario	user interface
 
 GNU	GNU	El proyecto GNU fue iniciado por Richard Stallman con el objetivo de crear un sistema operativo completamente libre: el sistema GNU.
 
-root	root, usuario root
+root	root	usuario root
 
-sudo	comando sudo
+sudo	sudo Linux command	comando sudo
 
 ID	identificador, identificación
 
 offline	sin conexión	trabajar sin conexión, desconectado
 
-ZEO	Zope Enterprise Objects	es el sistema de carga-equilibrio usado con ZOPE
-
 stand-alone	autónoma
 
-multi-core	multinúcleo	servidores de varios núcleos, procesadores de varios núcleos
-
-slashdotted	efecto slashdot	ocurre cuando un sitio popular hace enlace a un sitio pequeño, cuasandole a este último un aumento en el tráfico (sobrecarga) y por lo tanto demorandolo
-
-TLS	Transport Layer Security	protocolo para seguridad de la capa de transporte
-
-IRC	Internet Relay Chat	chat o protocolo de comunicación basado en tiempo real
-
-headers	encabezados
-
 cluster	clúster
+
+multi-core	multi-núcleo	servidores de varios núcleos, procesadores de varios núcleos
+
+ZEO	Zope Enterprise Objects	es el sistema de carga-equilibrio usado con ZOPE
+
+slashdotted	efecto slashdot	ocurre cuando un sitio popular hace enlace a un sitio pequeño, causándole a este último un aumento en el tráfico (sobrecarga) y por lo tanto demorándolo.
+
+TLS	Transport Layer Security	protocolo para seguridad de la capa de transporte.
+
+IRC	Internet Relay Chat	chat IRC o protocolo de comunicación basado en tiempo real.
+
+headers	headers files	archivo de encabezados, usualmente usado para compilar software
 
 SSL	Secure Sockets Layer	protocolo de capa de conexión segura
 
@@ -47,12 +47,4 @@ SMTP	Simple Mail Transfer Protocol	Protocolo Simple de Transferencia de Correo
 wrapper	wrapper, empaquetador	
 
 shell	shell	se emplea para referirse a programas que proveen una interfaz de usuario para acceder a los servicios del sistema operativo. Estos pueden ser gráficos o de texto simple,
-
-
-
-
-
-
-
-
 
