@@ -1,52 +1,48 @@
-ZODB	Zope Object Database	Base de datos de objetos Zope
+ZODB	Zope Object Database	La base de datos de objetos Zope
 
 tarballs	.tar files	archivos .tar
 
 PIL	Python Imaging Library	librería para imágenes en Python
 
-scripting languages	lenguajes scripting	lenguaje de programación
+scripting languages	lenguajes scripting	lenguaje de programación scripting
 
-CSS	hojas de estilo en cascada (Cascading Style Sheets)	Plone utiliza regularmente esta función para separar contenido de presentación
+CSS	Cascading Style Sheets	hojas de estilo en cascada en Plone las utiliza regularmente esta función para separar contenido de presentación
 
-theming	tematizar, tematización
+theming	tematizar, tematización	técnicas para aplicar apariencias y temas.
 
 ZMI	Zope Management Interface	Interfaz administrativa de Zope
 
-UI	Interfaz de usuario	Interfaz de usuario
+UI	User Interface	Interfaz de usuario
 
-bookmarklet	marcador	en lugar de apuntar a una dirección URL, hace referencia a una pequeña porción de código JavaScript
+bookmarklet	marcador	en lugar de apuntar a una dirección URL, hace referencia a una pequeña porción de código JavaScript.
 
-DOM	Modelo de Objetos del Documento	Document Object Model
+DOM	Document Object Model	Modelo de Objetos del Documento.
 
 strings	cadena de caracteres	secuencia ordenada de longitud arbitraria (aunque finita) de elementos que pertenecen a un cierto alfabeto. En general, una cadena de caracteres es una sucesión de caracteres (letras, números u otros signos o símbolos).
 
-Firebug	firebug	extensión de Firefox
+Firebug	Mozilla extension Firebug	extensión de Firefox
 
-Integrated Development Environments	Entorno de Desarrollo Integrado	es un programa informático compuesto por un conjunto de herramientas de programación.
-
-IDE	Integrated Development Environments	Entorno de Desarrollo Integrado
+IDE	Integrated Development Environments	Entorno de Desarrollo Integrado, es un programa informático compuesto por un conjunto de herramientas de programación.
 
 PEAK	Python Enterprise Application Kit, PEAK	Kit de Aplicación de Empresa de Python
 
-metadata	metadatos
+metadata	metadatos	Dublin Core Metadata
 
-backported	backported	Un Backport es la acción de hacer modificaciones o crear un parche a un software con una versión más antigua que la existente.
+backported	backported	Un backport es la acción de hacer modificaciones o crear un parche a un software con una versión más antigua que la existente.
 
-ZCML	Zope Configuration Markup Language.	Lenguaje de Marcado de Configuración Zope
+ZCML	Zope Configuration Markup Language	Lenguaje de Marcado de Configuración Zope
 
 CMF	Content Management Framework	Framework de administración de contenidos
 
 ZCA	Zope Component Architecture	Arquitectura de componente Zope
 
-TAL	 es un lenguaje elegante de plantillas
+TAL	Template Attribute Language	Lenguaje para atributos de plantillas.
 
 METAl	Macro Expansion Template Attributes Language	Lenguaje de expansión macro para atributos de plantillas
 
-WYSIWYG	What you see is what you get
+WYSIWYG	What you see is what you get	"Lo que ves es lo que obtienes", esta filosofía aplica a los procesadores de texto con formato que permiten escribir un documento viendo directamente el resultado final.
 
 DTML	Document Template Markup Language	Lenguaje de Marcado de Documento de Plantilla
-
-Sidebar	Barra lateral
 
 ZPT	Zope Page Templates	Plantillas de página Zope
 
@@ -56,15 +52,16 @@ TODO	code marker in source code	marcador que se utiliza para hacer notas, resalt
 
 API	Application programming interface	Interfaz de programación de aplicaciones
 
-FTI	Factory type information	información de tipo
+FTI	Factory type information	Fábrica de información de tipo
 
-FIVE	es un producto de Zope 2 que le permite integrar tecnologías de Zope 3 en Zope 2
+FIVE	Product.Five, FIVE	es un producto de Zope 2 que le permite integrar tecnologías de Zope 3 en Zope 2
 
-DTD	Definición de tipo de documento	Document Type Definition
+DTD	Document Type Definition	Definición de tipo de documento
 
 KUPU	Kupu is the user-friendly graphical HTML editor	editor HTML gráfico amigable al usuario
 
-AJAX	conjunto de funcionalidades que hacen que las páginas se comporten más como aplicaciones
+AJAX	Asynchronous JavaScript And XML	JavaScript asíncrono y XML, conjunto de funcionalidades que hacen que las páginas se comporten más como aplicaciones
 
 breadcrumb	migaja de pan 	técnica de navegación usada para desarrollar la interfaz gráfica de usuario. Tiene como objetivo que el usuario guarde una ruta de su ubicación dentro de programas o documentos.
 
+Sidebar	Barra lateral

@@ -1,50 +1,49 @@
-Plone	sistema de gestión de contenidos	inglés: content management system
+CMS	content management system	sistema de gestión de contenidos.
+
+Plone	Plone	software de sistema de gestión de contenidos basado en Python
+
+UI	user interface	interfaz de usuario
 
 BSD	distribución de software Berkeley	Berkeley Software Distribution
 
-gcc	gcc	gcc es software libre y lo distribuye la FSF bajo la licencia GPL.
-
-Unified Installer	instalador Unificado
-
-Packages/Ports	Paquetes/Puertos
-
-ESMTP	ESMTP	El servicio ESMTP (por sus siglas en inglés – Enhanced Simple Mail Transfer Protocol), es una definición de extensiones de protocolo para el estándar SMTP.
-
-add-ons	productos adicionales	paquete que extiende adicionalmente alguna funcionalidad por defecto de Plone.
-
-UI	interfaz de usuario	user interface
-
 GNU	GNU	El proyecto GNU fue iniciado por Richard Stallman con el objetivo de crear un sistema operativo completamente libre: el sistema GNU.
-
-root	root	usuario root
-
-sudo	sudo Linux command	comando sudo
-
-ID	identificador, identificación
-
-offline	sin conexión	trabajar sin conexión, desconectado
-
-stand-alone	autónoma
-
-cluster	clúster
-
-multi-core	multi-núcleo	servidores de varios núcleos, procesadores de varios núcleos
-
-ZEO	Zope Enterprise Objects	es el sistema de carga-equilibrio usado con ZOPE
-
-slashdotted	efecto slashdot	ocurre cuando un sitio popular hace enlace a un sitio pequeño, causándole a este último un aumento en el tráfico (sobrecarga) y por lo tanto demorándolo.
-
-TLS	Transport Layer Security	protocolo para seguridad de la capa de transporte.
 
 IRC	Internet Relay Chat	chat IRC o protocolo de comunicación basado en tiempo real.
 
-headers	headers files	archivo de encabezados, usualmente usado para compilar software
+add-ons	add-ons, productos adicionales	paquete que extiende adicionalmente alguna funcionalidad por defecto de Plone.
+
+gcc	GNU Compiler Collection	es un conjunto de compiladores que se consideran estándar para los sistemas operativos derivados de UNIX.
+
+Packages/Ports	Paquetes/Puertos
+
+root	root	usuario root
+
+sudo	sudo Linux command	comando sudo.
+
+ID	identificador, identificación.
+
+Unified Installer	instalador Unificado	Mecanismo de instalación de Plone.
+
+offline	sin conexión	trabajar sin conexión, desconectado.
+
+stand-alone	autónoma	Modo de instalación de Plone autónoma.
+
+multi-core	multi-núcleo	servidores de varios núcleos, procesadores de varios núcleos.
+
+cluster	clúster	Modo de instalación de Plone en cluster.
+
+ZEO	Zope Enterprise Objects	es el sistema de carga-equilibrio usado con Zope.
+
+TLS	Transport Layer Security	protocolo para seguridad de la capa de transporte.
 
 SSL	Secure Sockets Layer	protocolo de capa de conexión segura
 
+ESMTP	ESMTP	El servicio ESMTP (por sus siglas en inglés – Enhanced Simple Mail Transfer Protocol), es una definición de extensiones de protocolo para el estándar SMTP.
+
 SMTP	Simple Mail Transfer Protocol	Protocolo Simple de Transferencia de Correo
 
-wrapper	wrapper, empaquetador	
+wrapper	wrapper, empaquetador
 
-shell	shell	se emplea para referirse a programas que proveen una interfaz de usuario para acceder a los servicios del sistema operativo. Estos pueden ser gráficos o de texto simple,
+shell	shell	se emplea para referirse a programas que proveen una interfaz de usuario para acceder a los servicios del sistema operativo. Estos pueden ser gráficos o de texto simple.
 
+slashdotted	efecto slashdot	ocurre cuando un sitio popular hace enlace a un sitio pequeño, causándole a este último un aumento en el tráfico (sobrecarga) y por lo tanto demorándolo.

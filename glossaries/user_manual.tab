@@ -1,49 +1,50 @@
-content management system	sistema de gestión de contenidos
+plone,Plone	Plone	es un sistema de gestión de contenidos de código abierto basado en Python
 
-content type	tipo de contenido	los tipos de contenidos son los registros que están disponibles para agregar en Plone.
+content management system	CMS	sistema de gestión de contenidos.
 
-item	elemento	Cualquier tipos de contenidos dentro de Plone que pueden ser desde archivos, o carpeta que contienen archivos.
-
-Collection	Colección	Las colecciones son usadas para agrupar y mostrar contenido basado en una serie de criterio con el cual están definidos. Las colecciones trabajan como un consulta a una base de datos.
-
-Event	Evento	Un evento es un tipo de contenido como página especial para publicar información acerca de un evento (como una conferencia, un fiesta de cumpleaños, etc).
-
-File	Archivo	Un archivo en Plone es cualquier archivo binario que usted desea subir con la intención de que ese sea descargado por los visitantes de su sitio. Ejemplos comunes son archivos PDFs, Documentos de Word, y Hojas de Calculo.
-
-Folder	Carpeta	La Carpetas trabaja en Plone mucho más de la función que hacen las carpetas en su computadora. Usted puede usar carpetas para organizar su contenido, y dar a su sitio web Plone una estructura de navegación.
-
-Image	Imagen	El tipo de contenido Imagen es usado para subir archivos de imagen (JPG, GIF, PNG) que usted puede insertarlas dentro de páginas o otro tipos de contenidos de tipo página.
-
-Link	Enlace	También referenciado como el 'Objeto Enlace'; no confundir este con los enlaces que usted crea vía Kupu, el editor página de visual Plone. El tipo de contenido Enlace ofrece ser usado para incluir un enlace a un sitio Web externo en la Navegación otros usos especializados.
-
-News Item	Noticia	Este tipo de contenido es similar al Evento, solamente las Noticias es especialmente para publicar noticias. Usted puede también adjuntar una imagen miniatura a una Noticia, el cual aparecerá en la vista de resumen en la carpeta cerca a el resumen de la Noticia
-
-Page	Página	Una Página en Plone es uno de los más simples tipos de contenidos disponible.
-
+CMS	content management system	sistema de gestión de contenidos.
 
 Add new...	Agregar elemento	Menú desplegable en cual contiene diversos elementos que permiten agregar tipos de contenidos.
+
+Content type	Tipo de contenido	los tipos de contenidos son los registros que están disponibles para agregar en Plone.
+
+Item	elemento	Cualquier tipos de contenidos dentro de Plone que pueden ser desde archivos, o carpeta que contienen archivos.
+
+Page	Página	Tipo de contenido Página es uno de los más simples tipos de contenidos disponible.
+
+File	Archivo	Tipo de contenido archivo es cualquier archivo binario que usted desea subir con la intención de que ese sea descargado por los visitantes de su sitio. Ejemplos comunes son archivos PDFs, Documentos de Word, y Hojas de Calculo.
+
+Folder	Carpeta	Tipo de contenido Carpeta trabaja mucho más de la función que hacen las carpetas en su computadora. Usted puede usar carpetas para organizar su contenido, y dar a su sitio web Plone una estructura de navegación.
+
+Event	Evento	Tipo de contenido como un tipo Página especial para publicar información acerca de un evento (como una conferencia, un fiesta de cumpleaños, etc).
+
+News Item	Noticia	Tipo de contenido es similar al Evento, especialmente para publicar noticias. Usted puede también adjuntar una imagen miniatura a una Noticia, el cual aparecerá en la vista de resumen en la carpeta cerca a el resumen de la Noticia
+
+Collection	Colección, Topic	Tipo de contenido que se usan para agrupar y mostrar contenido basado en una serie de criterio con el cual están definidos. Las colecciones trabajan como un consulta a una base de datos.
+
+Image	Imagen	Tipo de contenido Imagen es usado para subir archivos de imagen (JPG, GIF, PNG) que usted puede insertarlas dentro de páginas o otro tipos de contenidos de tipo página.
+
+Link	Enlace	Tipo de contenido también referenciado como el 'Objeto Enlace'; no confundir este con los enlaces que usted crea vía Kupu, el editor página de visual Plone. Este ofrece ser usado para incluir un enlace a un sitio Web externo en la Navegación otros usos especializados.
+
+home	inicio	página de inicio del sitio Plone
 
 embedded,embeddeding	incrustado	elemento incrustado dentro una página, ejemplo de esto es el editor por defecto de Plone que se llama Kupu, y que esta incrustado por defecto en lo campos de tipos de contenidos que requieren texto enriquecido.
 
 add-on	producto adicional	paquete que extiende adicionalmente alguna funcionalidad por defecto de plone.
 
-home	inicio	página de inicio del sitio Plone
+renders	muestra, representar	es el procedimiento en el cual se procesa una fuente de datos y se presenta de cierta manera. En los navegadores Web es característico debido a que procesa el HTML y genera la salida del contenido multimedia descrito en ese HTML.
 
-plone,Plone	Plone	es un sistema de gestión de contenidos de código abierto basado en Python
-
-renders	muestra	es el procedimiento en el cual se procesa una fuente de datos y se presenta de cierta manera. En los navegadores Web es característico debido a que procesa el HTML y genera la salida del contenido multimedia descrito en ese HTML.
+tab	pestaña	Pestaña de contenido o estructura de navegación en Plone.
 
 dashboard	cuadro de mando	Un usuario de Plone tiene un "cuadro de control" personal en el cual personaliza su interfaz de usuario.
 
+thumbnail view	vista en miniatura	vista o imágenes de pequeño tamaño.
+
+metadata	metadatos	Dublin Core Metadata
+
 URL	dirección URL	es también conocida como dirección Web.
 
-built-in	integrado/a	sistema o característica que viene integrada a un software
+built-in	integrado/a	sistema o característica que viene integrada a un software.
 
-tab	pestaña
-
-metadata	metadatos	datos acerca de datos
-
-free-form	estilo libre	relacionado a campos de texto que no tienen un formato obligatorio
-
-thumbnail view	vista en miniatura	vista o imágenes de pequeño tamaño
+free-form	estilo libre	relacionado a campos de texto que no tienen un formato obligatorio.
 
