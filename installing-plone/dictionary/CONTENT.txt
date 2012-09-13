@@ -1,0 +1,4 @@
+This folder holds dictionaries files that are used in OmegaT project for spell checking.
+
+Put here your dictionaries to use into 'dictionary' directory from the branch called 'cat' 
+in 'collective.spanishdocumentation' git repository.

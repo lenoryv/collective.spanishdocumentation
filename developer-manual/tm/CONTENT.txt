@@ -1,0 +1,4 @@
+This folder holds translation memories files formatted with TMX.
+
+Put here your TMX files to use, into 'tm' directory from the branch called 'cat' 
+in 'collective.spanishdocumentation' git repository.
