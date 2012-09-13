@@ -1,0 +1,27 @@
+Estadísticas del proyecto
+
+Total:
+	Segmentos	13650
+	Palabras	101347
+	Caracteres (sin espacios)	593389
+	Caracteres (con espacios)	680878
+Únicos pendientes:
+	Segmentos	9524
+	Palabras	48584
+	Caracteres (sin espacios)	318398
+	Caracteres (con espacios)	357104
+Únicos:
+	Segmentos	10906
+	Palabras	96005
+	Caracteres (sin espacios)	555591
+	Caracteres (con espacios)	640090
+Únicos pendientes:
+	Segmentos	7243
+	Palabras	44252
+	Caracteres (sin espacios)	286417
+	Caracteres (con espacios)	322680
+
+Estadísticas por archivo:
+
+Nombre de archivo	Palabras en total	Palabras pendientes	Caracteres en total (sin espacios)	Caracteres pendientes (sin espacios)	Caracteres en total (con espacios)	Caracteres pendientes (con espacios)
+developer-manual.html	101347	48584	593389	318398	680878	357104
