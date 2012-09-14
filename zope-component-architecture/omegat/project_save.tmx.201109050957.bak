@@ -1,0 +1,3377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx11.dtd">
+<tmx version="1.1">
+  <header
+    creationtool="OmegaT"
+    creationtoolversion="2.0.5_4"
+    segtype="sentence"
+    o-tmf="OmegaT TMX"
+    adminlang="EN-US"
+    srclang="EN-US"
+    datatype="plaintext"
+  >
+  </header>
+  <body>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>====================================================
+A Comprehensive Guide to Zope Component Architecture
+====================================================</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>==============================================================
+Una guia comprensiva de la Arquitectura de Componentes de Zope
+==============================================================</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;http://www.lulu.com/content/1561045&gt;`_
+:Online PDF: `http://www.muthukadan.net/docs/zca.pdf</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>&lt;http://www.lulu.com/content/1561045&gt;`_
+:PDF en linea: `http://www.muthukadan.net/docs/zca.pdf</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Copyright (C) 2007,2008 Baiju M &lt;baiju.m.mail AT gmail.com&gt;.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Todos los derechos (C) 2007,2008 Baiju M &lt;baiju.m.mail AT gmail.com&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.2 or
+(at your option) any later version published by the Free Software
+Foundation.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Se permite la copia, distribución y/o modificación de este documento
+bajo los términos de la Licencia de Documentación Libre GNU, Versión
+1.2 o (si lo prefiere) cualquier otra versión posterior publicada por
+la Free Software Foundation.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The source code in this document is subject to the provisions of the
+Zope Public License, Version 2.1 (ZPL).</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>El código fuente en este documento está sujeto a la Licencia
+Pública Zope, Versión 2.1 (ZPL).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>sidebar:: Acknowledgements</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>sidebar:: Agradecimientos</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Many people have helped me to write this book.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Muchas personas me han ayudado a escribir este libro.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The initial draft was</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>EL borrador inicial fue</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>reviewed by my colleague Brad Allen.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>revisado por mi colleague Brad Allen.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When I announced this book</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Cuando yo anuncie este libro</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>through my blog, I got many encouraging comments to proceed with</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>a través de mi blog, I got many encouraging comments to proceed con</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>this work.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>este trabajo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Kent Tenney edited most parts of the book, he also</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Kent Tenney edito la mayor parte del libro, el tambien</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>rewrote the example application.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>escribio de nuevo la aplicación ejemplo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Many others sent me fixes and</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Muchos otros me enviaron correcciones y</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>comments including, Lorenzo Gil Sanchez, Michael Haubenwallner,</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>comentarios including, Lorenzo Gil Sanchez, Michael Haubenwallner,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Nando Quintana, Stephane Klein, Tim Cook, Kamal Gill and Thomas</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Nando Quintana, Stephane Klein, Tim Cook, Kamal Gill y Thomas</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Lorenzo translated this work to Spanish and Stephane</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Lorenzo tradujo este trabajo al Español y Stephane</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>translated it to French.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>tranducii este al Frances.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Thanks to all !</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Gracias a todos !</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Getting started
+---------------</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Primeros pasos
+---------------</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Introduction
+~~~~~~~~~~~~</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Introducción
+~~~~~~~~~~~~</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Developing a large software system is always very complicated.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Desarrollar un sistema software grande es siempre muy complicado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An
+object oriented approach to analysis, design and programming has been
+shown to be well suited for dealing with large systems.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Se
+ha visto que un enfoque orientado a objetos para el análisis, diseño
+y programación funciona bien al tratar con sistemas grandes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Component
+based design, and programming using components are becoming very
+popular these days.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>El diseño
+basado en componentes, y la programación utilizando componentes se
+están haciendo muy populares últimamente.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are many frameworks for supporting
+component based design in different languages, some are even language
+neutral.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Hay muchos marcos de trabajo
+que soportan el diseño basado en componentes en diferentes lenguajes,
+algunos incluso son neutrales con respecto al lenguaje.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Examples of these are Microsoft's COM and Mozilla's XPCOM.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Ejemplos de esto son el COM de Microsoft y el XPCOM de Mozilla.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>**Zope Component Architecture (ZCA)** is a Python framework for
+supporting component based design and programming.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>La **Arquitectura de Componentes de Zope (ZCA)** es un marco de trabajo
+en Python que soporta el diseño y la programación basada en componentes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is very well
+suited to developing large Python software systems.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>La ZCA funciona muy bien al desarrollar sistemas de software grandes en
+Python.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The ZCA is not
+specific to the Zope web application server: it can be used for
+developing any Python application.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>La ZCA no es específica al servidor de aplicaciones Zope, se
+puede utilizar para desarrollar cualquier aplicación Python.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Maybe it should be called the
+`Python Component Architecture`.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Quizás debería llamarse la 
+`Arquitectura de Componentes de Python`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The ZCA is all about using Python objects effectively.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>El objetivo fundamental de la arquitectura de componentes de Zope es
+utilizar objetos Python de forma eficiente</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Components are
+reusable objects with introspectable interfaces.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Los componentes son objetos
+reusables con introspección para sus interfaces.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A component provides
+an interface implemented in a class, or any other callable object.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Un componente provee
+una interfaz implementada en una clase, o cualquier objeto llamable.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It
+doesn't matter how the component is implemented, the important part is
+that it comply with its interface contracts.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>No importa cómo se implemente el componente, lo que importa es
+que cumpla los contratos definidos en su interfaz.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Using ZCA, you can
+spread the complexity of systems over multiple cooperating components.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Utilizando la arquitectura de componentes de Zope puedes distribuir la complejidad
+de sistemas entre varios componentes cooperantes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It helps you to create two basic kinds of components: `adapter` and
+`utility`.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>La arquitectura de
+componentes de Zope te ayuda a crear dos tipos básicos de componentes:
+`adaptador` y `utilidad`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are two core packages related to the ZCA:</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Hay dos paquetes principales relacionados con la arquitectura de
+componentes de Zope:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>- ``zope.interface`` is used to define the interface of a component.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>- ``zope.interface`` utilizado para definir la interfaz de un 
+    componente.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>- ``zope.component`` deals with registration and retrieval of</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>- ``zope.component`` se encarga de registrar y recuperar</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>components.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>componentes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Remember, the ZCA is not about the components themselves, rather it is
+about creating, registering, and retrieving components.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Recuerda, la ZCA no trata sobre los componentes en sí mismo, sino sobre
+la creación, registro y recuperación de los componentes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Remember
+also, an `adapter` is a normal Python class (or a factory in general)
+and `utility` is a normal Python callable object.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Recuerda
+también, un `adaptador` es una clase Python normal (o una fábrica en
+general) y una `utilidad` es un objeto llamable Python normal.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The ZCA framework is developed as part of the Zope 3 project.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>El marco de trabajo de la ZCA se desarrolla como parte del proyecto Zope 3.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As
+noted earlier, it is a pure Python framework, so it can be used in any
+kind of Python application.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>La ZCA, como ya se ha mencionado, es un marco de trabajo
+puramente Python, por tanto se puede utilizar en cualquier tipo de
+aplicación Python.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Currently both Zope 3 and Zope 2 projects
+use this framework extensively.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Actualmente ambos proyectos Zope 3 y Zope 2 utilizan
+este marco de trabajo extensívamente.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are many other projects
+including non-web applications using it [#projects]_.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Hay otros muchos proyectos
+incluyendo aplicaciones no web que utilizan la Arquitectura de
+Componentes de Zope [#projects]_.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A brief history
+~~~~~~~~~~~~~~~</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Una breve historia
+~~~~~~~~~~~~~~~~~~</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The ZCA framework project began in 2001 as part of Zope 3 project.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>El proyecto del marco de trabajo ZCA comenzó en 2001 como parte del
+proyecto Zope 3.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It
+grew out of lessons learned while developing large software systems
+using Zope 2.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Fue tomando forma a partir de las lecciones aprendidas
+al desarrollar sistemas software grandes usando Zope 2.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Jim Fulton was the project leader of this project.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Jim Fulton fue el jefe de proyecto de este proyecto.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Many people contributed to the design and implementation, including
+but not limited to, Stephan Richter, Philipp von Weitershausen, Guido
+van Rossum (*aka.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Mucha gente contribuyó al diseño
+y a la implementación, incluyendo pero sin limitarse a, Stephan
+Richter, Philipp von Weitershausen, Guido van Rossum (también conocido
+como </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Python BDFL*), Tres Seaver, Phillip J Eby and
+Martijn Faassen.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Python BDFL*), Tres Seaver, Phillip J Eby y
+Martijn Faassen.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Initially ZCA defined additional components; `services` and `views`,
+but the developers came to realize that utility can replace `service`
+and multi-adapter can replace `view`.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Inicialmente la ZCA definía componentes adicionales; `servicios` y
+`vistas`, pero los desarrolladores se dieron cuenta de que la utilidad
+podía sustituir `servicio` y el multi-adaptador podía sustituir `view`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now ZCA has a very small number
+of core component types: utilities, adapters, subscribers and
+handlers.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Ahora la ZCA tiene un número muy pequeño de tipos de componentes
+principales: utilidades, adaptadores, subscriptores y manejadores.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In fact, subscribers and handlers are two special types of
+adapters.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>En realidad, subscriptores y manejadores son dos tipos especiales de
+adaptadores.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>During the Zope 3.2 release cycle, Jim Fulton proposed a major
+simplification of ZCA [#proposal]_.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Durante el ciclo de la versión Zope 3.2, Jim Fulton propuso una gran
+simplificación de la ZCA [#proposal]_.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>With this simplification, a new
+single interface (`IComponentRegistry`) for registration of both
+global and local component was created.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Con esta simplificación se creó
+una nueva interfaz única (`IComponentRegistry`) para registrar
+componentes locales y globales.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The ``zope.component`` package had a long list of dependencies, many
+of which were not required for a non Zope 3 application.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>El paquete ``zope.component`` tenía una larga lista de dependencias,
+muchas de las cuales no eran necesarias para una aplicación no Zope 3.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>During PyCon
+2007, Jim Fulton added setuptools' `extras_require` feature to allow
+separating out core ZCA functionality from add-on features [#extras]_.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Durante la PyCon 2007, Jim Fulton añadió la característica
+``extras_require`` de setuptools para permitir la separación de la
+funcionalidad básica de la ZCA de las características adicionales [#extras]_.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now, The ZCA project is an independent project with it's own release
+cycle and Subversion repository.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Hoy el proyecto de la ZCA es un proyecto independiente con su propio
+ciclo de versiones y su repositorio Subversion.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, issues and bugs are still
+tracked as part of Zope 3 project [#bugs]_, and the main zope-dev list
+is used for development discussions [#discussions]_.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Sin embargo, los problemas y los errores aún se controlan como parte del proyecto
+Zope 3 [#bugs]_, y la lista principal zope-dev se utiliza para los
+debates de desarrollo [#discussions]_.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There is also
+another general user list for Zope 3 (`zope3-users`) which can be used
+for any queries about the ZCA [#z3users]_.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Allí tmbien esta otra lista general de usuario para Zope 3 (`zope3-users`) la cual puede ser usada para cualquier consulta acerca del ZCA [#z3users]_.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Installation
+~~~~~~~~~~~~</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Instalación
+~~~~~~~~~~~</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The ``zope.component``, package together with the ``zope.interface``
+package are the core of Zope component architecture.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>El paquete ``zope.component``, junto con el paquete ``zope.interface``
+son el núcleo de la arquitectura de componentes Zope.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>They provide
+facilities for defining, registering and looking up components.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Ofrecen
+facilidades para definir, registrar y buscar componentes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The
+``zope.component`` package and its dependencies are available in egg
+format from the Python Package Index (PyPI) [#pypi]_.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>El paquete
+``zope.component`` y sus dependencias están disponibles en formato
+egg (huevo) desde el Índice de Paquetes Python (PyPI)  [#pypi]_.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can install ``zope.component`` and it's dependencies using
+`easy_install` [#easyinstall]_ ::</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Puedes instalar ``zope.component`` y sus dependencias utilizando
+`easy_install` [#easyinstall]_ ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This command will download ``zope.component`` and its dependencies
+from PyPI and install it in your Python path.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Este comando descargará ``zope.component`` y sus dependencias desde
+PyPI y los instalará en tu ruta Python.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Alternately, you can download ``zope.component`` and its dependencies
+from PyPI and then install them.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Alternativamente, puedes descargar ``zope.component`` y sus
+dependencias desde PyPI y luego instalarlos.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Install packages in the order given
+below.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Instala los paquetes en
+el siguiente orden.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>On Windows, you may need binary packages of ``zope.interface``
+and ``zope.proxy``.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>En Windows, puede que necesitas los paquetes
+binarios de ``zope.interface`` y ``zope.proxy``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To install these packages, after downloading them, you can use
+``easy_install`` command with argument as the eggs.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Para instalar estos paquetes, después de haberlos descargados, puedes
+utilizar el comando ``easy_install`` con los huevos como argumento.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(You may also
+give all these eggs in the same line.)::</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>(También puedes darle todos estos huevos como argumneto en la misma
+linea.)::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can also install these packages after extracting each one
+separately.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Usted tambien puede instalar esos paquetes despues extrayendolos cada uno separadamente.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example::</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Por ejemplo::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These methods will install the ZCA to the `system Python`, in the
+``site-packages`` directory, which can cause problems.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Esos metodos instalarán el ZCA en el `Python de su sistema`, en el directorio ``site-packages``, el cual puede causar problemas.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In a Zope 3
+mailing list post, Jim Fulton recommends against using the system
+Python [#systempython]_.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>En un correo enviado a la lista de Zope 3, Jim Fulton recomendaba en ves de usar el Python del sistema [#systempython]_.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can use ``virtualenv`` and/or
+``zc.buildout`` for playing with any Python packages, also good for
+deployments.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>``virtualenv`` y/o ``zc.buildout`` son herramientas que instalan la
+ZCA en un entorno de trabajo aislado. Esto es una buena práctica
+para experimentar con código y el estar familiarizado con estas
+herramientas será beneficioso para desarrollar e implantar
+aplicaciones.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Experimenting with code
+~~~~~~~~~~~~~~~~~~~~~~~</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Experimentando con código
+~~~~~~~~~~~~~~~~~~~~~~~~~</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are two good packages in Python for setting up isolated working
+environments for developing Python applications.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Hay dos buenos paquetes en Python para definir entornos de trabajos ahislados para desarrollos de aplicaciones Python.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>``virtualenv``
+created by Ian Biking and ``zc.buildout`` created by Jim Fulton are
+these two packages.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>``virtualenv``
+creado por Ian Biking y ``zc.buildout`` creado por Jim Fulton son estos dos paquetes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can also use these packages together.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Usted puede tambien usar esos paquetes juntos.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Using
+these packages you can install ``zope.component`` and other
+dependencies into an isolated working environment.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Usando esos paquetes usted puede instalar ``zope.component`` y otras dependencias dentro de un entorno de trabajo aislado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is a good
+practice for experimenting with any Python code, and familiarity with
+these tools will be beneficial when developing and deploying
+applications.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Es es una buena practica para experimentar con cualquier código Python, y familiarizarse con
+esas herramientas será benefisioso con el desarrollo y implementaciones de aplicaciones.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can install ``virtualenv`` using ``easy_install``::</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Usted puede instalar ``virtualenv`` usando ``easy_install``::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Then create a new environment like this::</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Ahora crea un nuevo entorno así::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>$ virtualenv myve</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>$ virtualenv miev</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This will create a new virtual environment in the ``myve`` directory.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Esto creará un nuevo entorno virtual en el directorio ``miev``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now, from inside the ``myve`` directory, you can install
+``zope.component`` and dependencies using ``easy_install`` inside
+``myve/bin`` directory::</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Ahora, desde dentro del directorio ``miev``, puedes instalar
+``zope.component`` y sus dependencias utilizando el ``easy_install``
+que hay dentro del directorio ``miev/bin``::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>$ cd myve</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>$ cd miev</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now you can import ``zope.interface`` and ``zope.component`` from the
+new ``python`` interpreter inside ``myve/bin`` directory::</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Ahora puedes importar ``zope.interface`` y ``zope.component`` desde
+el nuevo intérprete ``python`` dentro del directorio ``miev/bin``::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This command will give you a Python prompt which you can use to run
+the code in this book.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Este comando ejecutará un intérprete de Python que puedes usar
+para ejecutar el código de este libro.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Using ``zc.buildout`` with ``zc.recipe.egg`` recipe you can create
+Python interpreter with specified Python eggs.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Utilizando ``zc.buildout`` con la receta ``zc.recipe.egg`` se
+puede crear un intérprete de Python con los huevos Python especificados.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>First, install
+``zc.buildout`` using ``easy_install`` command.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Primero instala ``zc.buildout`` usando el comando ``easy_install``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(You may also do it
+inside virtual environment).</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>(Puedes hacerlo también dentro de un entorno virtual).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To create new buildout to experiment
+with Python eggs, first create a directory and initialize it using
+``buildout init`` command::</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Para crear un nuevo buildout para experimentar con huevos Python, primero crea un
+directorio e inicialízalo  usando el comando ``buildout init``::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>$ mkdir mybuildout</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>$ mkdir mibuildout</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>$ cd mybuildout</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>$ cd mibuildout</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now the new ``mybuildout`` directory is a buildout.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Ahora el nuevo directorio ``mibuildout`` es un buildout.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The default
+configuration file for buildout is `buildout.cfg` .</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>El archivo
+de configuración predeterminado de buildout es `buildout.cfg` .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>After
+initializing, it will be having this content::</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Después
+de la inicialización, tendrá el siguiente contenido::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can change it like this::</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Puedes cambiarlo a::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now run ``buildout`` command available inside ``mybuildout/bin``
+directory without any argument.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Ahora ejecuta el comando ``buildout`` disponible dentro del directorio
+``mibuildout/bin`` sin ningún argumento.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This will create a new Python
+interpreter inside ``mybuildout/bin`` directory::</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Esto creará un nuevo intérprete
+Python dentro del directorio ``mibuildout/bin``::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An example
+----------</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Un ejemplo
+----------</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Consider a business application for registering guests staying in a
+hotel.  Python can implement this in a number of ways.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Considera una aplicación de gestión para registrar los huéspedes que se
+hospedan en un hotel. Python puede implementar esto de varias formas
+distintas.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We will start
+with a brief look at a procedural implementation, and then move to a
+basic object oriented approach.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Empezaremos con un mirada breve a un enfoque procedural, y
+después cambiaremos a un enfoque orientado a objetos básico.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As we examine the object oriented
+approach, we will see how we can benefit from the classic design
+patterns, `adapter` and `interface`.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Mientras
+examinamos el enfoque orientado a objetos, veremos como como podemos
+beneficiarnos de los patrones de diseño clásicos, `adaptador` e
+`interface`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This will bring us into the
+world of the Zope Component Architecture.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Esto nos llevará al mundo de la Arquitectura de Componentes
+de Zope.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Procedural approach
+~~~~~~~~~~~~~~~~~~~</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Enfoque procedural
+~~~~~~~~~~~~~~~~~~</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In any business application, data storage is very critical.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>En una aplicación de gestión, el almacenamiento de los datos es muy
+importante.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For
+simplicity, this example use a Python dictionary as the storage.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Por simplicidad, este ejemplo utilizará un diccionario
+Python como almacenamiento.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We
+will generate unique id's for the dictionary, the associated value
+will be a dictionary of details about the booking.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Las claves del diccionario serán
+identificadores únicos para un huesped en particular. Y el valor
+será otro diccionario cuyas claves son los nombres de las propiedades::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&gt;&gt;&gt; bookings_db = {} #key: unique Id, value: details in a dictionary</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>&gt;&gt;&gt; huespedes_db = {} #clave: id único, valor: detalles en un diccionario</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A minimal implementation requires a function which we pass the details
+of the booking, and a supporting function which provides the the
+unique id for the storage dictionary key.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>En un método simplista, una función que acepte detalles como argumentos
+es suficiente para hacer el registro. También necesitas una función
+auxiliar para obtener el próximo identificador de tu almacenamiento de datos.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We can get the unique id like this::</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Esta función auxiliar, para obtener el próximo identificador se puede
+implementar así ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&gt;&gt;&gt; def get_next_id():</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>&gt;&gt;&gt; def proximo_id():</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     db_keys = bookings_db.keys()</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     claves = huespedes_db.keys()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     if db_keys == []:</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     if claves == []:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...         next_id = 1</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...         proximo = 1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...         next_id = max(db_keys) + 1</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...         proximo = max(claves) + 1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     return next_id</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     return proximo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As you can see, the `get_next_id` function implementation is very
+simple.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Como puedes ver, la implementación de la función `proximo_id` es muy
+simple. Bueno, no es la forma ideal, pero es suficiente para explicar
+conceptos.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The function gets a list of keys and checks for an empty
+list.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>La función primero obtiene todas las claves del
+almacenamiento en una lista y comprueba si está vacía o no.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the list is empty this is our first booking, so we return
+`1`.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Si está
+vacía, por tanto ningún elemento esta almacenado, devuelve `1` como
+el próximo identificador.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the list is not empty, we add `1` to the maximum value in the
+list and return it.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Y si la lista no está vacía, el próximo
+identificador se calcula sumando `1` al valor máximo de la lista.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now we will use the above function to create entries in the
+bookings_db dictionary::</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>La función para registrar un huesped puede obtener el próximo
+identificador usando la función `proximo_id`, y luego asignando
+los detalles de un huesped usando un diccionario. Aquí está la función
+para obtener los detalles y almacenar en la base de datos::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&gt;&gt;&gt; def book_room(name, place):</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>&gt;&gt;&gt; def registrar_huesped(nombre, lugar):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     next_id = get_next_id()</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     huesped_id = proximo_id()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     bookings_db[next_id] = {</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     huespedes_db[huesped_id] = {</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     'name': name,</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     'nombre': nombre,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     'room': place</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     'lugar': lugar</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The requirements of a hotel booking management application require
+considering additional data:</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Los requerimientos de una aplicación de administración de huespeds de un hotel que requiere
+considerar datos adicionales:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>- phone numbers</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>- numeros telefonicos</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>- room options</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>- opciones de habitación</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>- payment methods</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>- formas de pago</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>And code to manage the data:</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Y programar la administración de la data de:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>- cancel a reservation</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>- cancelar una reservación</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>- update a reservation</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>- actualizar una reservación</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>- pay for a room</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>- pago para una habitación</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>- persist the data</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>- la persistencia de la data</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>- insure security of the data</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>- insidentes de seguridad de la data</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Were we to continue with the procedural example, we would create many
+functions, passing data back and forth between them.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Aqui termina nuestro enfoque procedural. Sería mucho más fácil añadir 
+añadir funcionalidades necesarias como almacenamiento de datos,
+diseño flexible y código testeable usando objetos.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As requirements
+change and are added, the code becomes harder to maintain and bugs
+become harder to find and fix.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Como los requerimientos anterior son cambiantes y son agregados, la programación procedural viene a ser dura para el mantenimiento y los errors viene a ser dificil de buscar y corregir.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We will end our discussion of the procedural approach here.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Nosotros finalizaremos nuestra discusión del enfoque procedural aquí.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It will be
+much easier to provide data persistence, design flexibility and code
+testability using objects.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>El siguiente enfoque será mucho más facil para proveer persistencia de data, diseño flexible y pruebas de códigos usando objetos.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Object oriented approach
+~~~~~~~~~~~~~~~~~~~~~~~~</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Enfoque orientado a objetos
+~~~~~~~~~~~~~~~~~~~~~~~~~~~</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Lets look at the implementation details of a FrontDesk class::</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>En cualquier caso, aqui tenemos los detalles de 
+implementación (aquí, una clase) del objeto `registrador`::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&gt;&gt;&gt; class FrontDesk(object):</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>&gt;&gt;&gt; class RegistradorHuesped(object):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     def book_room(self, name, place):</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     def registrar(self, nombre, lugar):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...         next_id = get_next_id()</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...         huesped_id = proximo_id()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...         bookings_db[next_id] = {</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...         huespedes_db[huesped_id] = {</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...         'name': name,</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...         'nombre': nombre,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...         'place': place</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...         'lugar': lugar</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this implementation, the `frontdesk` object (an instance of
+`FrontDesk` class) is able to handle the bookings.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>En esta implementación, el objeto `registrador` (una instancia de
+la clase `RegistradorHuesped`) se encarga del registro. Con este
+diseño, un objeto `registrador` en concreto puede realizar numerosos
+registros.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We can
+use it like this::</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Así es como puedes usar la implementación actual::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&gt;&gt;&gt; frontdesk = FrontDesk()</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>&gt;&gt;&gt; registrador = RegistradorHuesped()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&gt;&gt;&gt; frontdesk.book_room(&quot;Jack&quot;, &quot;Bangalore&quot;)</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>&gt;&gt;&gt; registrador.registrar(&quot;Pepito&quot;, &quot;Pérez&quot;)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Any real project will involve changing requirements.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Los cambios de requisitos son inevitables en un proyecto real.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this
+case management has decided that each guest must provide a phone
+number, so we must change the code.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Considera
+este caso, después de algún tiempo, un nuevo requisito se presenta:
+los huespedes también deben dar el número de teléfono para que se les
+admita. Necesitarás cambiar la implementación del objeto registrador
+para ofrecer esto.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We can achieve this requirement by adding one argument to the
+`book_room` method which will be added to the dictionary of values::</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Puedes cumplir este requisito añadiendo un argumento al método
+`registrar` y usar ese argumento en el diccionario de valores. Aquí
+está la nueva implementación para este requisito::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     def book_room(self, name, place, phone):</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     def registrar(self, nombre, lugar, telefono):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...         'place': place,</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...         'lugar': lugar,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...         'phone': phone</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...         'telefono': telefono</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In addition to migrating the data to new schema, we now have to change
+all calls to FrontDesk.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Además de migrar los datos al nuevo esquema, ahora tienes que cambiar
+la forma de usar `RegistradorHuesped` en todos sitios.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If we abstract the details of guest into an
+object and use it for registration, the code changes can be minimized.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Si puedes
+abstraer los detalles de un huesped en un objeto y usarlo en el
+registro, los cambios en el código se pueden minimizar.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We now can make changes to the details of the guest object and the
+calls to FrontDesk won't need to change.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Si sigues este
+diseño, tienes que pasarle el objeto huesped a la función en lugar de
+más argumentos.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now we have::</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>La nueva implementación con el objeto huesped quedaría
+así::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     def book_room(self, guest):</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     def registrar(self, huesped):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...         'name': guest.name,</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...         'nombre': huesped.nombre,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...         'place': guest.place,</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...         'lugar': huesped.lugar,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...         'phone': guest.phone</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...         'telefono': huesped.telefono</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We still will have to change code to respond to changing requirements.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Bien, incluso con esta implementación tienes que cambiar código.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is unavoidable, however, our goal is to minimize those changes,
+thereby increasing maintainability.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>El cambio de código con nuevos requisitos es inevitable, tu objetivo es
+poder minimizar los cambios y hacerlo mantenible.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When coding, it is important to feel free to make changes without</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Cuando programas, es importante setirse con el coraje para hacer cambios sin</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>fear of breaking the application.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>miedo a dañar la aplicación.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The way to get the immediate</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>La forma para obtener una retroalimentación inmediata</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>feedback required is via automated testing.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>es requerido via tests automátizados.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>With well written</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Con la escritura de buenos</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>tests (and good version control) you can make changes large or</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>tests automáticos (y un buen control de versiones) usted puede hacer grandes o</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>small with impunity.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>pequeños cambios con impunidad.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A good source of information about this</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Para más información sobre esta</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>programming philosophy is the book `Extreme Programming Explained`</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg> filosofia de programación puedes leer el libro llamado `Extreme Programming Explained` </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>by Kent Beck.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>de Kent Beck.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>By introducing the guest object, you saved some typing.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>s </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>More
+importantly, the abstraction provided by the guest object made the
+system simpler and more understandable.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Más que eso, la abstracción del objeto invitado ha hecho tu sistema
+mucho más simple y fácil de entender.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As a result, the code is
+easier to restructure and maintain.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Cuanto mejor se entienda mejor
+se puede restructurar y por tanto mejor se mantiene el código.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The adapter pattern
+~~~~~~~~~~~~~~~~~~~</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>El patrón adaptador
+~~~~~~~~~~~~~~~~~~~</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In a real application, the frontdesk object will need to handle
+chores such as cancellations and updates.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Como se ha dicho antes, en una aplicación real, el objeto registrador
+puede tener funcionalidades de cancelación y/o actualización.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the current design, we
+will need to pass the guest object to frontdesk every time we call
+methods such as `cancel_booking` and `update_booking`.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>En el nuevo diseño deberás pasar el objeto huesped a ambos métodos cada ves, para supón que hay dos método más como, `cancelar_registro` y `actualizar_registro`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We can avoid this requirement by implementing FrontDesk such that the</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Puedes solucionar este problema guardando
+el </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>guest object is set as an attribute::</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>objeto huesped como un atributo del objeto registrador::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We can avoid this requirement if we pass the guest object to
+FrontDesk.__init__(), making it an attribute of the instance.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Aquí tenemos la nueva implementación del objeto registrador que
+guarda el objeto huesped en RegistradorHuesped.__init__() como un atributo de la instancia. ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&gt;&gt;&gt; class FrontDeskNG(object):</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>&gt;&gt;&gt; class RegistradorHuespedNG(object):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     def __init__(self, guest):</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     def __init__(self, huesped):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...         self.guest = guest</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...         self.huesped = huesped</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     def book_room(self):</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     def huesped(self):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...         guest = self.guest</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...         huesped= self.huesped</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The solution we have reached is a common design pattern called,</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>La solución a la que has llegado es un patrón de diseño común llamado, </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`Adapter`.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>`Adaptador`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>- changing customer requirements
+- storage requirements (ZODB, RDBM, XML ...)
+- output requirements (HTML, PDF, plain text ...)
+- markup rendering (ReST, Markdown, Textile ...)</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>- Cuando se desarrolla una aplicación para múltiples clientes, y sus
+   requisitos pueden cambiar.
+- Requerimientos de almacenamiento (ZODB, RDBM, XML ...)
+- Diferentes tipos de formatos de salida para datos de texto (HTML, PDF, texto plano...) 
+- Soporte a renderizar múltiples formatos de marcados (ReST, Markdown, Textile...)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&gt;&gt;&gt; class Host(object):</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>&gt;&gt;&gt; class Anfitrion(object):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&gt;&gt;&gt; class IHost(Interface):</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>&gt;&gt;&gt; class IAnfitrion(Interface):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     def goodmorning(guest):</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     def buenosdias(guest):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...         &quot;&quot;&quot;Say good morning to guest&quot;&quot;&quot;</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...         &quot;&quot;&quot;Le dice buenos dias al huesped&quot;&quot;&quot;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Declaring interfaces
+~~~~~~~~~~~~~~~~~~~~</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Declarando interfaces
+~~~~~~~~~~~~~~~~~~~~~</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You have already seen how to declare an interface using
+``zope.interface`` in previous section.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Ya has visto como declarar una interfaz usando ``zope.interface`` en
+la sección anterior.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This section will explain the
+concepts in detail.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>En esta sección se explicarán los conceptos en
+detalle.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Consider this example interface::</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Considera esta interfaz de ejemplo: ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     &quot;&quot;&quot;A host object&quot;&quot;&quot;</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     &quot;&quot;&quot;Un objeto anfitrion&quot;&quot;&quot;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     name = Attribute(&quot;&quot;&quot;Name of host&quot;&quot;&quot;)</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     nombre = Attribute(&quot;&quot;&quot;Nombre del anfitrion&quot;&quot;&quot;)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The interface, ``IHost`` has two attributes, ``name`` and
+``goodmorning``.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>La interfaz, ``IAnfitrion`` tiene dos atributos, ``nombre`` y
+``buenosdias``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Recall that, at least in Python, methods are also
+attributes of classes.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Recuerda que, al menos en Python, los métodos
+también son atributos de clases.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The ``name`` attribute is defined using
+``zope.interface.Attribute`` class.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>El atributo ``nombre`` se define utilizando la clase ``zope.interface.Attribute``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When you add the attribute
+``name`` to the ``IHost`` interface, you don't set an initial value.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Cuando añades el atributo ``nombre`` a la interfaz ``IAnfitrion``, no especificas ningún valor inicial.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The purpose of defining the attribute ``name`` here is merely to
+indicate that any implementation of this interface will feature an
+attribute named ``name``.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>El propósito de definir el atributo ``nombre`` aquí es meramente para indicar que cualquier implementación de esta interfaz tendrá una atributo llamado ``nombre``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this case, you don't even say what type
+of attribute it has to be!.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>En este caso, ¡ni siquiera dices el tipo que el atributo tiene que tener!.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can pass a documentation string as a
+first argument to ``Attribute``.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Puedes pasar una cadena de documentación como primer argumento a
+``Attribute``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The other attribute, ``goodmorning`` is a method defined using a
+function definition.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>El otro atributo, ``buenosdias`` es un método definido usando
+una definición de función.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that `self` is not required in interfaces,
+because `self` is an implementation detail of class.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Nótese que no hace falta ``self`` en las interfaces, porque ``self`` es un detalle de implementación de la clase.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, a
+module can implement this interface.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Por ejemplo, un módulo puede implementar esta interfaz.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If a module implement this
+interface, there will be a ``name`` attribute and ``goodmorning``
+function defined.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Si un módulo implementa esta interfaz, habrá un atributo ``nombre`` y una función ``buenosdias`` definida.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>And the ``goodmorning`` function will accept one
+argument.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Y la función ``buenosdias`` aceptará un argumento.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now you will see how to connect `interface-class-object`.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Ahora verás como conectar `interfaz-clase-objeto`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>So object
+is the real living thing, objects are instances of classes.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Así objeto es la cosa viva y coleante, objetos son instancias de clases.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>And
+interface is the actual definition of the object, so classes are just
+the implementation details.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Y la interfaz es la definición real del objeto, por tanto las clases son sólo detalles de implementación.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is why you should program to an
+interface and not to an implementation.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Es por esto por lo que debes programar contra una interfaz y no contra una implementación.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now you should familiarize two more terms to understand other
+concepts.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Ahora deberías familiarizarte con dos términos más para entender otros conceptos.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>First one is `provide` and the other one is `implement`.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>El primero es `proveer` y el otro es `implementar`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Object provides interfaces and classes implement interfaces.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Los objetos proveen interfaces y las clases implementan interfaces.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In other
+words, objects provide interfaces that their classes implement.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>En otras palabras, objetos proveen las interfaces que sus clases implementan.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In
+the above example ``host`` (object) provides ``IHost`` (interface) and
+``Host`` (class) implement ``IHost`` (interface).</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>En el ejemplo anterior ``anfitrion`` (objeto) provee ``IAnfitrion`` (interfaz) y ``Anfitrion`` (clase) implementa ``IAnfitrion`` (interfaz).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>One object can
+provide more than one interface also one class can implement more than
+one interface.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Un objeto puede proveer más de una interfaz y también una clase puede implementar más de una interfaz.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Objects can also provide interfaces directly, in
+addition to what their classes implement.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Los objetos también pueden proveer interfaces directamente, además
+de lo que sus clases implementen.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Classes are the implementation details of objects.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Las clases son los detalles de implementación de los objetos.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In Python,</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>En Python,</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>classes are callable objects, so why other callable objects can't</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>las clases son objetos llamables, así que por qué
+  otros objetos llamables no pueden </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>implement an interface.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>implementar una interfaz?.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Yes, it is possible.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Sí, es posible.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For any `callable</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Para cualquier `objeto</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>object` you can declare that it produces objects that provide some</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg> llamable` puedes declarar que produce objetos que proveen algunas </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>interfaces by saying that the `callable object` implements the</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>interfaces diciendo que el `objeto llamable` implementa </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>interfaces.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>las interfaces.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The `callable objects` are generally called as</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Generalmente los `objetos llamables` son llamados </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>`factories`.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>`fábricas`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Since functions are callable objects, a function can</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Como las funciones son objetos llamables, una función puede ser</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>be an `implementer` of an interface.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>la `implementadora` de una interfaz.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Implementing interfaces
+~~~~~~~~~~~~~~~~~~~~~~~</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Implementando interfaces
+~~~~~~~~~~~~~~~~~~~~~~~</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To declare a class implements a particular interface, use the function
+``zope.interface.implements`` in the class statement.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Para declarar que una clase implementa una interfaz en particular,
+utiliza la función ``zope.interface.implements`` dentro de la sentencia class.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Consider this example, here ``Host`` implements ``IHost``::</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Considera este ejemplo, aquí ``Anfitrion`` implementa ``IAnfitrion``: ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     implements(IHost)</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     implements(IAnfitrion)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     name = u''</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     nombre = u''</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     def goodmorning(self, guest):</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     def buenosdias(self, huesped):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...         return &quot;Good morning, %s!&quot; % guest</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...         return &quot;¡Buenos dias, %s!&quot; % huesped</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you wonder how ``implements`` function works, refer the blog post</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Si te preguntas como funciona la función ``implements``, consulta
+  el mensaje del blog </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>by James Henstridge</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>de James Henstridge</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(http://blogs.gnome.org/jamesh/2005/09/08/python-class-advisors/) .</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg> (http://blogs.gnome.org/jamesh/2005/09/08/python-class-advisors/) .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In the adapter section, you will see an ``adapts`` function, it is</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>En la sección del adaptador, verás una función ``adapts``, </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>also working similarly.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>que funciona de forma similar.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Since ``Host`` implements ``IHost``, instances of ``Host`` provides
+``IHost``.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Como ``Anfitrion`` implementa ``IAnfitrion``, las instancias de
+``Anfitrion`` proveen ``IAnfitrion``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There are some utility methods to introspect the
+declarations.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Hay unos cuantos métodos de utilidad que introspeccionan las declaraciones.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The declaration can write outside the class also.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>La declaración se puede escribir fuera de la clase también.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If
+you don't write ``interface.implements(IHost)`` in the above example,
+then after defining the class statement, you can write like this::</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Si no escribes
+``interface.implements(IAnfitrion)`` en el ejemplo anterior,
+entonces después de la sentencia class, puedes escribir algo como: ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&gt;&gt;&gt; classImplements(Host, IHost)</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>&gt;&gt;&gt; classImplements(Anfitrion, IAnfitrion)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Example revisited
+~~~~~~~~~~~~~~~~~</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Ejemplo revisado
+~~~~~~~~~~~~~~~~~</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now, return to the example application.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Ahora volvemos a la aplicación de ejemplo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here you will see how to
+define the interface of the frontdesk object::</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Ahora veremos como
+definir la interfaz del objeto registrador ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&gt;&gt;&gt; class IDesk(Interface):</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>&gt;&gt;&gt; class IRegistrador(Interface):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     &quot;&quot;&quot;A frontdesk will register object's details&quot;&quot;&quot;</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     &quot;&quot;&quot;Un registrador registrará los detalles de un objeto&quot;&quot;&quot;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     def register():</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     def registrar():</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...         &quot;&quot;&quot;Register object's details&quot;&quot;&quot;</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...         &quot;&quot;&quot;Registrar detalles de un objeto&quot;&quot;&quot;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here, first you imported ``Interface`` class from ``zope.interface``
+module.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Aquí primero has importado la clase ``Interface`` del módulo
+``zope.interface``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you define a subclass of this ``Interface`` class, it will
+be an interface from Zope component architecture point of view.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Si defines una subclase de esta clase ``Interface``,
+será una interfaz desde el punto de vista de la arquitectura de
+componentes de Zope.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An
+interface can be implemented, as you already noted, in a class or any
+other callable object.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Una interfaz puede ser implementada, como ya
+has visto, en una clase o cualquier otro objeto llamable.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The frontdesk interface defined here is ``IDesk``.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>La interfaz registrador definida aquí es ``IRegistrador``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The
+documentation string for interface gives an idea about the object.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>La cadena
+de documentación del interfaz da una idea del objeto.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>By
+defining a method in the interface, you made a contract for the
+component, that there will be a method with same name available.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Al definir un
+método en la interfaz, has creado un contrato para el componente, en
+el que dice que habrá un método con el mismo nombre disponible.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For
+the method definition interface, the first argument should not be
+`self`, because an interface will never be instantiated nor will its
+methods ever be called.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>En
+la definición del método en la interfaz, el primer argumento no debe
+ser `self`, porque una interfaz nunca será instanciada ni sus métodos
+serán llamados jamás.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Instead, the interface class merely documents
+what methods and attributes should appear in any normal class that
+claims to implement it, and the `self` parameter is an implementation
+detail which doesn't need to be documented.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>En vez de eso, la sentencia class de la interfaz
+meramente documenta qué métodos y atributos deben aparecer en
+cualquier clase normal que diga que la implementa, y el parámetro
+`self` es un detalle de implementación que no necesita ser
+documentado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As you know, an interface can also specify normal attributes::</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Como sabes, una interfaz puede también especificar atributos
+normales: ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&gt;&gt;&gt; class IGuest(Interface):</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>&gt;&gt;&gt; class IHuesped(Interface):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     name = Attribute(&quot;Name of guest&quot;)</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     nombre = Attribute(&quot;Nombre del huesped&quot;)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     place = Attribute(&quot;Place of guest&quot;)</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     lugar = Attribute(&quot;Lugar del huesped&quot;)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this interface, guest object has two attributes specified with
+documentation.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>En esta interfaz, el objeto huesped tiene dos atributos que se
+especifican con documentación.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An interface can also specify both attributes and
+methods together.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Una interfaz también puede especificar
+atributos y métodos juntos.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An interface can be implemented in a class, module
+or any other objects.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Una interfaz puede ser implementada por
+una clase, un módulo o cualquier otro objeto.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example a function can dynamically create
+the component and return, in this case the function is an implementer
+for the interface.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Por ejemplo una
+función puede crear dinámicamente el componente y devolverlo, en
+este caso la función es una implementadora de la interfaz.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now you know what is an interface and how to define and use it.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Ahora ya sabes lo que es una interfaz y como definirla y usarla.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In
+the next chapter you can see how an interface is used to define an
+adapter component.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>En
+el próximo capítulo podrás ver como se usa una interfaz para definir
+un componente adaptador.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Marker interfaces
+~~~~~~~~~~~~~~~~~</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Interfaces de marcado
+~~~~~~~~~~~~~~~~~</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An interface can be used to declare that a particular object belongs
+to a special type.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Una interfaz se puede usar para declarar que un objeto en particular
+pertenece a un tipo especial.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An interface without any attribute or method is
+called `marker interface`.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Un interfaz sin ningún atributo o método
+se llama `interfaz de marcado`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Here is a `marker interface`::</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Aquí tenemos una `interfaz de marcado`::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&gt;&gt;&gt; class ISpecialGuest(Interface):</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>&gt;&gt;&gt; class IHuespedEspecial(Interface):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     &quot;&quot;&quot;A special guest&quot;&quot;&quot;</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     &quot;&quot;&quot;Un huesped especial&quot;&quot;&quot;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This interface can be used to declare an object is a special guest.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Esta interfaz se puede usar para declarar que un objeto es un huesped
+especial.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Invariants
+~~~~~~~~~~</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Invariantes
+~~~~~~~~~~</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Sometimes you will be required to use some rule for your component
+which involve one or more normal attributes.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>A veces te piden usar alguna regla para tu componente que implica
+a uno o más atributos normales.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These kind of rule is
+called `invariants`.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>A este tipo de reglas se les llama
+`invariantes`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can use ``zope.interface.invariant`` for
+setting `invariants` for your objects in their interface.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Puedes usar ``zope.interface.invariant`` para
+establecer `invariantes` para tus objetos en sus interfaces.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Consider a simple example, there is a `person` object.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Considera un ejemplo sencillo, hay un objeto `persona`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A person
+object has `name`, `email` and `phone` attributes.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Una persona
+tiene los atributos `nombre`, `email` y `telefono`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>How do you
+implement a validation rule that says either email or phone have to
+exist, but not necessarily both.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>¿Cómo implementas
+una regla de validación que diga que o bien el email o bien el
+teléfono tienen que existir, pero no necesariamente los dos?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>First you have to make a callable object, either a simple function or
+callable instance of a class like this::</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Lo primero es hacer un objeto llamable, bien una simple función o
+bien una instancia llamable de una clase como esto::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&gt;&gt;&gt; def contacts_invariant(obj):</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>&gt;&gt;&gt; def invariante_contactos(obj):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     if not (obj.email or obj.phone):</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     if not (obj.email or obj.telefono):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...             &quot;At least one contact info is required&quot;)</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...             &quot;Al menos una información de contacto es obligatoria&quot;)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Then define the `person` object's interface like this.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Ahora defines la interfaz del objeto `persona` de esta manera.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Use the
+``zope.interface.invariant`` function to set the invariant::</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Utiliza la función ``zope.interface.invariant`` para establecer la
+invariante::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&gt;&gt;&gt; class IPerson(Interface):</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>&gt;&gt;&gt; class IPersona(Interface):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     name = Attribute(&quot;Name&quot;)</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     nombre = Attribute(&quot;Nombre&quot;)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     email = Attribute(&quot;Email Address&quot;)</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     email = Attribute(&quot;Direccion de email&quot;)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     phone = Attribute(&quot;Phone Number&quot;)</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     telefono = Attribute(&quot;Numero de telefono&quot;)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     invariant(contacts_invariant)</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     invariant(invariante_contactos)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Now use `validateInvariants` method of the interface to validate::</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Ahora usas el método `validateInvariants` de la interfaz para
+validar::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&gt;&gt;&gt; class Person(object):</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>&gt;&gt;&gt; class Persona(object):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     implements(IPerson)</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     implements(IPersona)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     name = None</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     nombre = None</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     phone = None</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     telefono = None</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&gt;&gt;&gt; jack = Person()</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>&gt;&gt;&gt; pepe = Persona()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&gt;&gt;&gt; jack.email = u&quot;jack@some.address.com&quot;</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>&gt;&gt;&gt; pepe.email = u&quot;pepe@algun.sitio.com&quot;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&gt;&gt;&gt; IPerson.validateInvariants(jack)</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>&gt;&gt;&gt; IPersona.validateInvariants(pepe)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&gt;&gt;&gt; jill = Person()</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>&gt;&gt;&gt; maria = Persona()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&gt;&gt;&gt; IPerson.validateInvariants(jill)</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>&gt;&gt;&gt; IPersona.validateInvariants(maria)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Exception: At least one contact info is required</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Exception: Al menos una información de contacto es obligatoria</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As you can see `jack` object validated without raising any
+exception.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Como puedes ver el objeto `pepe` validó sin lanzar ninguna
+excepción.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>But `jill` object didn't validated the invariant
+constraint, so it raised exception.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Pero el objeto `maria` no validó la restricción de
+la invariante, por lo que se lanzó la excepción.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Adapters
+--------</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Adaptadores
+--------</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Implementation
+~~~~~~~~~~~~~~</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Implementación
+~~~~~~~~~~~~~~</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>...     implements(IDesk)</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>...     implements(IRegistrar)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Registration
+~~~~~~~~~~~~</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Registro
+~~~~~~~~~</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Querying adapter
+~~~~~~~~~~~~~~~~</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Patrón de consulta
+~~~~~~~~~~~~~~~~~~</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Retrieving adapter using interface
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Recuperar un adaptador usando una interfaz
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Adapter pattern
+~~~~~~~~~~~~~~~</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Patrón de Adaptador
+~~~~~~~~~~~~~~~~</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Utility
+-------</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Utilidad
+-------</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Simple utility
+~~~~~~~~~~~~~~</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Utilidad simple
+~~~~~~~~~~~</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Named utility
+~~~~~~~~~~~~~</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Utilidad con nombre
+~~~~~~~~~~~~~~~</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Factory
+~~~~~~~</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Fábrica
+~~~~~~~</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Advanced adapters
+-----------------</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Adaptadores avanzados
+---------------------</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Multi adapter
+~~~~~~~~~~~~~</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Multi adaptador
+~~~~~~~~~~~~</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Subscription adapter
+~~~~~~~~~~~~~~~~~~~~</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Adaptador de subscripción
+~~~~~~~~~~~~~~~~~~~~</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Handler
+~~~~~~~</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Manejador
+~~~~~~~~</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>ZCA usage in Zope
+-----------------</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Uso de la ZCA en Zope
+--------------------</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>ZCML
+~~~~</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Lenguaje de Marcado de Configuración Zope - ZCML
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Overrides
+~~~~~~~~~</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Redefiniciones
+~~~~~~~~~~~</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Location: `zope.app.container.contained.NameChooser`</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Ubicación: `zope.app.container.contained.NameChooser`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Location:
+``zope.location.traversing.LocationPhysicallyLocatable``</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Ubicación:
+``zope.location.traversing.LocationPhysicallyLocatable``</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This adapter is frequently used in Zope 3 applications, but
+normally it is called through an API in ``zope.traversing.api``.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Este adaptador This adapter is frequently used in Zope 3 applications, but
+normally it is called through an API in ``zope.traversing.api``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Location: ``zope.size.DefaultSized``</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Ubicación: ``zope.size.DefaultSized``</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Location: ``zope.app.applicationcontrol.ZopeVersionUtility``</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Ubicación: ``zope.app.applicationcontrol.ZopeVersionUtility``</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>- Location: ``zope.component``</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>- Ubicación: ``zope.component``</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Example::</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Ejemplo::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Declare interfaces declared directly for an object.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Declara interfaces declaradas directamente para un objeto.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>- Location: ``zope.interface``</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>- Ubicación: ``zope.interface``</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Attribute
+~~~~~~~~~</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Atributo
+~~~~~~~</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Using this class, you can define normal attributes in an interface.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Usando esta clase, usted puede definir atributos normalesen una interfaz.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Declare additional interfaces implemented for instances of a class.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Declara interfaces adicionales implementadas por instancias de una clase.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Declare the only interfaces implemented by instances of a class.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Declara solamente interfaces implementadas por instancias de una clase.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Declaration
+~~~~~~~~~~~</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Declaración
+~~~~~~~~~~~</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Declare interfaces implemented by instances of a class This function
+is called in a class definition.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Declara interfaces implementadas por instancias de una clase. Esta función es llamada en una definicón de clase.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Using this class, you can define an interface.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Usando esta clase, usted puede definir una interfaz.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Declare interfaces provided by a module.</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>Declara interfaces proveidas por un módulo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>- Location: ``zope.component - IComponentRegistry``</seg>
+      </tuv>
+      <tuv lang="ES">
+        <seg>- Ubicación: ``zope.component - IComponentRegistry``</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

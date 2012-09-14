@@ -1,0 +1,27 @@
+Estadísticas del proyecto
+
+Total:
+	Segmentos	3298
+	Palabras	15239
+	Caracteres (sin espacios)	112431
+	Caracteres (con espacios)	128698
+Únicos pendientes:
+	Segmentos	1917
+	Palabras	8722
+	Caracteres (sin espacios)	63594
+	Caracteres (con espacios)	71758
+Únicos:
+	Segmentos	1668
+	Palabras	11178
+	Caracteres (sin espacios)	74688
+	Caracteres (con espacios)	84652
+Únicos pendientes:
+	Segmentos	1017
+	Palabras	6720
+	Caracteres (sin espacios)	44526
+	Caracteres (con espacios)	50111
+
+Estadísticas por archivo:
+
+Nombre de archivo	Palabras en total	Palabras pendientes	Caracteres en total (sin espacios)	Caracteres pendientes (sin espacios)	Caracteres en total (con espacios)	Caracteres pendientes (con espacios)
+zca.txt	15239	8722	112431	63594	128698	71758
