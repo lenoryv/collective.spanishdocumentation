@@ -82,14 +82,12 @@ en GitHub.com "`collective.spanishdocumentation`_". Si usted tiene una
 credenciales en este servidor y desea convertirse en un colaborador ejecute 
 el siguiente comando: ::
 
-  $ git clone git@github.com:collective/collective.spanishdocumentation.git collective.spanishdocumentation
-  $ git checkout cat
+  $ git clone -b cat git@github.com:collective/collective.spanishdocumentation.git ./cat_spanish_docs
 
 Si usted no tiene las credenciales de acceso al repositorio Git en GitHub.com "`collective.spanishdocumentation`_" o simplemente solo desea obtener y compilar 
 esta documentación ejecute el siguiente comando: ::
 
-  $ git clone https://github.com/collective/collective.spanishdocumentation.git collective.spanishdocumentation
-  $ git checkout cat
+  $ git clone -b cat git@github.com:collective/collective.spanishdocumentation.git ./cat_spanish_docs
 
 
 Acerca de OmegaT
@@ -221,3 +219,4 @@ FAQ
   de los *locales* del sistema operativo que lo esta ejecutando.
 
 .. _collective.spanishdocumentation: https://github.com/collective/collective.spanishdocumentation
+
