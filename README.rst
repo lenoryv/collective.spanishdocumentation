@@ -6,6 +6,40 @@ Traducciones de contenidos
 
 .. contents :: :local:
 
+El objeto de este documento es ofrece una referencia sobre el proceso de traducción 
+de contenidos usando software libre.
+
+La traducción del software libre
+================================
+
+Hace un tiempo atrás `Juan Rafael Fernández García`_, publico una serie de artículos 
+en total son un conjunto de cinco artículos sobre tecnología de la traducción con el 
+título «**La traducción del software libre**» publicados en los números 19 (páginas
+76 a 80), 20 (páginas 79 a 83), 21 (páginas 77 a 81), 22 (páginas 74 a 78) y
+23 (páginas 73 a 76) correspondientes a septiembre, octubre, noviembre,
+diciembre de 2006 y enero de 2007 de la revista `Linux Magazine`_. 
+
+Los cuales son buenos recursos literarios para entender los procesos de traduccion en 
+el Software Libre.
+
+Los artículos se lista a continuación:
+
+* Una oPOrtunidad de colaborar en `HTML <http://people.ofset.org/jrfernandez/edu/n-c/traducc_1/>`_ 
+  y `PDF <PDF: http://people.ofset.org/jrfernandez/edu/n-c/traducc_1.pdf>`_.
+
+* Los problemas de PO y el abrazo fuerte en `HTML <http://people.ofset.org/jrfernandez/edu/n-c/traducc_2/>`_ 
+  y `PDF <http://people.ofset.org/jrfernandez/edu/n-c/traducc_2.pdf>`_.
+
+* Memorias compartidas en `HTML <http://people.ofset.org/jrfernandez/edu/n-c/traducc_3/>`_ 
+  y `PDF <http://people.ofset.org/jrfernandez/edu/n-c/traducc_3.pdf>`_.
+
+* ¿El momento de cambiar de herramientas? en `HTML <http://people.ofset.org/jrfernandez/edu/n-c/traducc_4/>`_ 
+  y `PDF <http://people.ofset.org/jrfernandez/edu/n-c/traducc_4.pdf>`_.
+
+* Cerrando el ciclo en `HTML <http://people.ofset.org/jrfernandez/edu/n-c/traducc_5/>`_ 
+  y `PDF <http://people.ofset.org/jrfernandez/edu/n-c/traducc_5.pdf>`_.
+
+
 Términos básicos
 ================
 
@@ -227,4 +261,5 @@ FAQ
   de los *locales* del sistema operativo que lo esta ejecutando.
 
 .. _collective.spanishdocumentation: https://github.com/collective/collective.spanishdocumentation
-
+.. _Linux Magazine: http://www.linux-magazine.es/
+.. _Juan Rafael Fernández García: http://people.ofset.org/jrfernandez/
