@@ -1,29 +1,17 @@
+06/09/14 10:58 PM
 Estadísticas del proyecto
 
-Total:
-	Segmentos	2403
-	Palabras	26371
-	Caracteres (sin espacios)	137363
-	Caracteres (con espacios)	160058
-Únicos pendientes:
-	Segmentos	941
-	Palabras	3925
-	Caracteres (sin espacios)	31057
-	Caracteres (con espacios)	32617
-Únicos:
-	Segmentos	1975
-	Palabras	24504
-	Caracteres (sin espacios)	125179
-	Caracteres (con espacios)	146704
-Únicos pendientes:
-	Segmentos	588
-	Palabras	2501
-	Caracteres (sin espacios)	21139
-	Caracteres (con espacios)	21899
+                  	Segmentos	Palabras	Caracteres (sin espacios)	Caracteres (incluyendo espacios)	
+Total:            	     4934	   61686	                   308477	                          363761	
+Pendientes:       	     1793	   14754	                    82457	                           93945	
+Únicos:           	     3597	   47730	                   238941	                          281878	
+Pendientes únicos:	     1428	   13263	                    72307	                           82934	
 
-Estadísticas por archivo:
 
-Nombre de archivo	Palabras en total	Palabras pendientes	Caracteres en total (sin espacios)	Caracteres pendientes (sin espacios)	Caracteres en total (con espacios)	Caracteres pendientes (con espacios)
-plone-4-user-manual.html	24532	2117	125406	19232	146893	19611
-plone-4-user-manual_archivos/additemmenufolder.html	906	894	5829	5784	6417	6362
-plone-4-user-manual_archivos/advancedstatepanel.html	933	914	6128	6041	6748	6644
+Estadísticas por archivo individual:
+
+Nombre de archivo                                   	Total segmentos	Segmentos pendientes	Segmentos únicos	Segmentos únicos pendientes	Palabras en total	Palabras pendientes	Palabras únicas	Palabras únicas pendientes	Caracteres en total (sin espacios)	Caracteres pendientes (sin espacios)	Caracteres únicos (sin espacios)	Caracteres únicos pendientes (sin espacios)	Caracteres en total (incluyendo espacios)	Caracteres pendientes (incluyendo espacios)	Caracteres únicos (incluyendo espacios)	Caracteres únicos pendientes (incluyendo espacios)	
+plone-4-user-manual_archivos/additemmenufolder.html 	            177	                 173	             156	                        153	              905	                891	            678	                       665	                              5825	                                5776	                            4510	                                       4463	                                     6413	                                       6354	                                   4903	                                              4846	
+plone-4-user-manual_archivos/advancedstatepanel.html	            177	                 173	              21	                         20	              932	                911	            245	                       228	                              6124	                                6033	                            1625	                                       1543	                                     6744	                                       6636	                                   1815	                                              1717	
+plone-4-user-manual.html                            	           2049	                 552	            1798	                        386	            24531	               2009	          23580	                      1515	                            125402	                               18308	                          119040	                                      14353	                                   146889	                                      18652	                                 139982	                                             14522	
+working-with-content.po                             	           2531	                 895	            1622	                        869	            35318	              10943	          23227	                     10855	                            171126	                               52340	                          113766	                                      51948	                                   203715	                                      62303	                                 135178	                                             61849	

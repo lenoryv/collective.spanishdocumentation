@@ -7319,14 +7319,6 @@ Haga clic en eso. </seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>It also defines Analytics reports that are used to query Google and display the results using Google Visualizations.</seg>
-      </tuv>
-      <tuv lang="ES-VE" changeid="macagua" changedate="20140907T025928Z">
-        <seg>También define Analytics informes que se utilizan para consultar Google y mostrar los resultados a través visualizaciones de Google.</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>It can be enabled through the control panel by a Site Manager (Site Setup -&gt; Editing -&gt; Enable Inline Editing checkbox).</seg>
       </tuv>
       <tuv lang="ES-VE" changeid="macagua" changedate="20140906T205727Z">
