@@ -1300,6 +1300,14 @@ lista, haga clic en él para editarlo. </seg>
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>----------------------------------</seg>
+      </tuv>
+      <tuv lang="ES-VE" changeid="macagua" changedate="20141004T125004Z">
+        <seg>----------------------------------------------</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>---------------------------------------</seg>
       </tuv>
       <tuv lang="ES-VE" changeid="macagua" changedate="20140901T055641Z">
@@ -1312,6 +1320,14 @@ lista, haga clic en él para editarlo. </seg>
       </tuv>
       <tuv lang="ES-VE" changeid="macagua" changedate="20140901T055801Z">
         <seg>--------------------------------------------</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>-------------------------------------------------------------</seg>
+      </tuv>
+      <tuv lang="ES-VE" changeid="macagua" changedate="20141004T130037Z">
+        <seg>---------------------------------------------------------------</seg>
       </tuv>
     </tu>
     <tu>
@@ -2640,8 +2656,8 @@ Componentes
       <tuv lang="EN-US">
         <seg>===================</seg>
       </tuv>
-      <tuv lang="ES-VE" changeid="macagua" changedate="20140831T210606Z">
-        <seg>====================</seg>
+      <tuv lang="ES-VE" changeid="macagua" changedate="20141004T125111Z">
+        <seg>=======================</seg>
       </tuv>
     </tu>
     <tu>
@@ -2650,6 +2666,14 @@ Componentes
       </tuv>
       <tuv lang="ES-VE" changeid="macagua" changedate="20140901T151644Z">
         <seg>======================</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>========================</seg>
+      </tuv>
+      <tuv lang="ES-VE" changeid="macagua" changedate="20141004T130100Z">
+        <seg>=========================================</seg>
       </tuv>
     </tu>
     <tu>
@@ -2670,6 +2694,14 @@ Theming guide for Plone 3
         <seg>==========================
 Guía de temas para Plone 3
 ==========================</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>==============================</seg>
+      </tuv>
+      <tuv lang="ES-VE" changeid="macagua" changedate="20141004T130123Z">
+        <seg>=======================================</seg>
       </tuv>
     </tu>
     <tu>
@@ -3256,9 +3288,9 @@ structurally on the out-of-the box Default Plone theme.</seg>
         <seg>About the Skin Name
 --------------------</seg>
       </tuv>
-      <tuv lang="ES-VE" changeid="macagua" changedate="20140831T235023Z">
+      <tuv lang="ES-VE" changeid="macagua" changedate="20141004T130352Z">
         <seg>Acerca del nombre del Skin
---------------------------</seg>
+----------------------------</seg>
       </tuv>
     </tu>
     <tu>
@@ -5425,9 +5457,9 @@ interested in whether an item was locked or not).</seg>
         <seg>Changing the HTML
 --------------------</seg>
       </tuv>
-      <tuv lang="ES-VE" changeid="macagua" changedate="20140901T190002Z">
+      <tuv lang="ES-VE" changeid="macagua" changedate="20141004T130014Z">
         <seg>Cambiando el HTML
------------------</seg>
+--------------------</seg>
       </tuv>
     </tu>
     <tu>
@@ -5443,9 +5475,9 @@ interested in whether an item was locked or not).</seg>
         <seg>Changing the Image and its Title
 -----------------------------------</seg>
       </tuv>
-      <tuv lang="ES-VE" changeid="macagua" changedate="20140901T184012Z">
+      <tuv lang="ES-VE" changeid="macagua" changedate="20141004T125848Z">
         <seg>Cambiando la Imagen y su Título
--------------------------------</seg>
+----------------------------------</seg>
       </tuv>
     </tu>
     <tu>
@@ -5453,9 +5485,9 @@ interested in whether an item was locked or not).</seg>
         <seg>Changing the portal\_logo style
 ----------------------------------</seg>
       </tuv>
-      <tuv lang="ES-VE" changeid="macagua" changedate="20140901T185322Z">
+      <tuv lang="ES-VE" changeid="macagua" changedate="20141004T125948Z">
         <seg>Cambiando el estilo de portal_logo
-----------------------------------</seg>
+-------------------------------------</seg>
       </tuv>
     </tu>
     <tu>
@@ -6085,9 +6117,9 @@ displayed).</seg>
         <seg>Create an Alternative Edit Template
 ===================================</seg>
       </tuv>
-      <tuv lang="ES-VE" changeid="macagua" changedate="20140901T051819Z">
+      <tuv lang="ES-VE" changeid="macagua" changedate="20141004T130425Z">
         <seg>Crear una plantilla alternativa Edit
-===================================</seg>
+====================================</seg>
       </tuv>
     </tu>
     <tu>
@@ -29717,6 +29749,14 @@ content types that have the IATDocument interface.</seg>
       </tuv>
       <tuv lang="ES-VE">
         <seg>[su instancia zope]/products</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>^^^^^^^^^^^^^^^^^</seg>
+      </tuv>
+      <tuv lang="ES-VE" changeid="macagua" changedate="20141004T125759Z">
+        <seg>^^^^^^^^^^^^^^^^^^^^</seg>
       </tuv>
     </tu>
     <tu>
