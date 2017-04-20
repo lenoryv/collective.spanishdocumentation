@@ -1,4 +1,5 @@
 # sphinx configurations
+zc.recipe.egg == 2.0.2
 collective.recipe.sphinxbuilder == 0.8.2
 Sphinx == 1.2.2
 docutils == 0.12
