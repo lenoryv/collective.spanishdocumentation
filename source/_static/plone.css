@@ -169,6 +169,7 @@ a:visited:hover {
 }
 
 /* -- admonitions ----------------------------------------------------------- */
+/* sphinx.themes.plone/src/sphinx/themes/plone/plone_basic/static/css/admonition.css */
 
 div.admonition {
     -moz-border-bottom-colors: none;
