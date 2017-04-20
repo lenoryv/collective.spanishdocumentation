@@ -11,7 +11,7 @@ Comentarios y foros de discusión
    :Autor(es): Leonardo J. Caballero G.
    :Correo(s): leonardoc@plone.org
    :Compatible con: Plone 4 o versiones superiores
-   :Fecha: 11 de Mayo de 2015
+   :Fecha: 13 de Mayo de 2015
 
 En este articulo busca explicar la instalación del producto ``Ploneboard``, 
 ademas del Panel Discusión y del producto ``disqus`` para establecer foros 
