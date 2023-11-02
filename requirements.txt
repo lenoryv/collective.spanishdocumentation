@@ -10,3 +10,4 @@ repoze.sphinx.autointerface == 0.7.1
 sphinxcontrib-recentpages == 0.7.1
 sphinxcontrib-slide == 0.3.0
 #sphinxcontrib.infrae == 1.0
+pygments>=2.7.4 # not directly required, pinned by Snyk to avoid a vulnerability
